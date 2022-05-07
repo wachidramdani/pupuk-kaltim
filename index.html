@@ -11,64 +11,197 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="style/style.css">
 
+    <!-- CUSTOME STYLE CSS BOOTSTRAP -->
+    <style>
+        /* STYLE INPUT */
+        .form-control:focus {
+            border-color: #FFC000;
+            box-shadow: 0 0 0 .2rem rgba(255,192,0,.25);
+        }
+        .form-control-lg {
+            border-radius: 10px;
+        }
+        .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label, .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label::after, .input-group:not(.has-validation) > .custom-select:not(:last-child), .input-group:not(.has-validation) > .form-control:not(:last-child) {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .input-group-text {
+            border-radius: 10px;
+        }
+        /* VALIDATION INPUT */
+        .form-control.is-valid, .was-validated .form-control:valid {
+            border-color: #FFC000;
+        }
+        .form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+            border-color: #FFC000;
+            box-shadow: 0 0 0 .2rem rgba(255,192,0,.25);
+        }
+        /* BUTTON LOGIN */
+        .btn-warning {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426;
+        }
+        .btn-warning:hover {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426;
+        }
+        .btn-warning.focus, .btn-warning:focus {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426;
+        }
+        .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426; 
+        }
+        .btn-warning:not(:disabled):not(.disabled).active:focus, .btn-warning:not(:disabled):not(.disabled):active:focus, .show>.btn-warning.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgb(244 121 32 / 50%);
+        }
+        .btn-group-lg > .btn, .btn-lg {
+            border-radius: 10px;
+        }
+        .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+            color: #000000;
+        }
+    </style>
+
     <title>Login Pupuk Kaltim</title>
   </head>
   <body>
     <div class="container">
         <div class="row" style="margin-top:100px;">
-            <div class="col-md-7">
-                <h5 class="d-flex justify-content-center">Welcome To</h5>
-                <h2 class="d-flex justify-content-center font-weight-bold">PKT RBI SOFTWARE</h2>
+            <div class="col-md-8">
+                <div class="welcome d-flex justify-content-center mb-3">Welcome To</div>
+                <h1 class="pkt-rbi-welcome d-flex justify-content-center">PKT RBI SOFTWARE</h1>
                 <form class="needs-validation" novalidate>
                     <div class="login d-flex justify-content-center mt-5">
-                        <div class="form-group" style="width: 65%;">
+                        <div class="form-group email-input">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
                                         <img src="style/images/icon/username-login.svg">
                                     </div>
                                 </div>
-                                <input type="email" class="form-control form-control-lg" id="inlineFormInputGroupUsername" placeholder="Email">
+                                <input type="email" class="form-control form-control-lg" id="validationCustom01" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Please enter valid email
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="login d-flex justify-content-center mt-2">
-                        <div class="form-group" style="width: 65%;">
+                        <div class="form-group password-input">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
                                         <img src="style/images/icon/password-login.svg">
                                     </div>
                                 </div>
-                                <input type="password" class="form-control form-control-lg" id="inlineFormInputGroupUsername" placeholder="Password">
+                                <input type="password" class="form-control form-control-lg" id="validationCustom02" placeholder="Password" required>
                                 <div class="invalid-feedback">
-                                    Please provide a valid city.
+                                    Password field is required
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex my-3">
-                        <div class="custom-control custom-radio mr-4" style="margin-left: 110px;">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">Login User</label>
+                    <div class="d-flex mb-4 mt-2">
+                        <div class="form-check form-check-inline mr-4 login-user-radio">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Login User</label>
                         </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">Login with LDP</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Login with LDP</label>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-warning btn-lg" style="width: 65%;">Login</button>
+                        <button type="submit" class="btn btn-warning btn-lg submit-login font-weight-bold">LOGIN</button>
+                    </div>
+                    <div class="d-flex justify-content-center my-4">
+                        <a href="#" style="color: black; font-size: 12px;">FORGOT PASSWORD</a>
                     </div>
                 </form>
             </div>
-            <div class="col-md-5">
-                <div class="alert alert-secondary" role="alert">
-                    A simple secondary alert—check it out!
+            <div class="col-md-4 d-flex align-items-end flex-column" style="position:relative; margin-top:-70px;">
+                <div class="card mb-4" style="width: 16rem; border-radius: 10px;">
+                    <img class="card-img-top" src="style/images/card.png" alt="Card image cap">
+                    <img src="style/images/logo-card.png" style="width: 65px; height: 65px; position: absolute; margin-top: 7.5rem; margin-left: 1rem;">
+                    <a href="#" style="color:black;">
+                        <div class="card-body" style="padding-top: 0px;">
+                        <h5 class="card-title" style="font-size: 16px;">Safety First</h5>
+                        <p class="card-text" style="font-size: 12px;">Article originally published in the April 2019 issue of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 16rem; border-radius: 10px;">
+                    <img class="card-img-top" src="style/images/card.png" alt="Card image cap">
+                    <img src="style/images/logo-card.png" style="width: 65px; height: 65px; position: absolute; margin-top: 7.5rem; margin-left: 1rem;">
+                    <a href="#" style="color:black;">
+                        <div class="card-body" style="padding-top: 0px;">
+                        <h5 class="card-title" style="font-size: 16px;">Safety First</h5>
+                        <p class="card-text" style="font-size: 12px;">Article originally published in the April 2019 issue of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <div style="background-color:#F47920; width:100%; height: 230px; position: relative; margin-top:27px">
+            <div class="row" style="margin-right: 0px; margin-left: 0px;">
+                <div class="col-md-6 d-flex justify-content-center align-self-center" >
+                    <img class="" src="style/images/logo-footer.png" alt="" class="" style="width: 625px; height: 90px;">
+                </div>
+                <div class="col-md-2">
+                    <div style="padding-top:30px; font-weight: bold; color: #fff; font-size: 18px;">SOSIAL MEDIA</div>
+                    <div class="d-flex mt-2">
+                        <img class="" src="style/images/icon/footer-facebook.svg">
+                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff; font-weight: 600;">PT Pupuk Kaltim</div>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img class="" src="style/images/icon/footer-twitter.svg">
+                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff;font-weight: 600;">pupukkaltim_id</div>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img class="" src="style/images/icon/footer-instagram.svg">
+                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff;font-weight: 600;">pupukkaltim_id</div>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img class="" src="style/images/icon/footer-youtube.svg">
+                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff;font-weight: 600;">PUPUK KALTIM</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="padding-top:30px; font-weight: bold; color: #fff; font-size: 18px;">KONTAK</div>
+                    <div class="mt-2" style="font-size: 14px; color: #fff;font-weight: 600;">Plaza Pupuk Kaltim <br>Jl. Kebon Sirih Raya No.6A <br>Jakarta Pusat 10110</div>
+                    <div class="mt-2" style="font-size: 14px; color: #fff;font-weight: 600;">Telepon: +62 21 3443344,45</div>
+                    <div class="mt-2" style="font-size: 14px; color: #fff;font-weight: 600;">Fax: +62 21 3443344</div>
+                </div>
+            </div>
+    </div>
+    <!-- CUSTOM JAVASCRIPT -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+                }, false);
+            });
+            }, false);
+        })();
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -76,4 +209,4 @@
     <script src="bootstrap-4.6.1/js/jquery.slim.min.js"></script>
     <script src="bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
   </body>
-</html>
+</html> 

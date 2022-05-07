@@ -1,6 +1,31 @@
 body {
-    background-image: url(images/background-image-white.jpg);
+    background-image: url(images/background-image-white-v2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #ffffff !important;
+    font-family: myFirstFont;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Montserrat-Medium.ttf);
+ }
+
+/* LOGIN */
+
+/* LOGIN-FORM */
+.welcome {
+    font-weight: 600;
+}
+.pkt-rbi-welcome {
+    font-weight: 600;
+}
+.email-input, .password-input, .submit-login {
+    width: 60%;
+}
+.login-user-radio {
+    margin-left: 150px;
+}
+.submit-login {
+    color: #ffffff;
+    font-size: 16px;
 }
