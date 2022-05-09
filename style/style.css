@@ -134,11 +134,13 @@ body {
 .filter-item {
     margin-right: 20px;
     cursor: pointer;
-    color: #F47920;
+    /* color: #F47920; */
+    color: #6C757D
 }
 
 .filter-item i {
-    color: #FFF1E5;
+    /* color: #FFF1E5; */
+    color: #6C757D
 }
 
 /* Card */
@@ -163,7 +165,7 @@ body {
 }
 
 .card-header span {
-    color: #F47920;
+    /* color: #F47920; */
     font-size: 14px;
 }
 
@@ -185,7 +187,7 @@ body {
 
 .card-body .label-number {
     font-size: 32px;
-    color: #F47920;
+    /* color: #F47920; */
     text-align: center;
     line-height: 28px;
     font-weight: 600;
@@ -193,7 +195,7 @@ body {
 
 .card-body .label-text {
     font-size: 14px;
-    color: #F47920;
+    /* color: #F47920; */
     text-align: center;
 }
 
