@@ -2,8 +2,6 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-
-
 .main-head{
     height: 150px;
     background: #FFF;
@@ -24,6 +22,22 @@ body {
     padding: 0px 10px;
 }
 
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+
+/* Custom screen */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
 }
@@ -58,20 +72,4 @@ body {
     .register-form{
         margin-top: 20%;
     }
-}
-
-
-.login-main-text{
-    margin-top: 20%;
-    padding: 60px;
-    color: #fff;
-}
-
-.login-main-text h2{
-    font-weight: 300;
-}
-
-.btn-black{
-    background-color: #000 !important;
-    color: #fff;
 }

@@ -10,6 +10,16 @@ body {
     src: url(font/Montserrat-Medium.ttf);
  }
 
+ .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.table td, .table th {
+    text-align: center;
+    font-size: 10px;
+}
+
 /* LOGIN */
 
 /* LOGIN-FORM */
@@ -28,4 +38,194 @@ body {
 .submit-login {
     color: #ffffff;
     font-size: 16px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    width: 100%;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #FFF1E5;
+    box-shadow: 3px 3px #F47920;
+}
+
+.tab button i {
+    margin-right: 10px;
+}
+
+.tab .callout {
+    display: flex; 
+    justify-content: center;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #F47920;
+    color: #fff;
+    box-shadow: 3px 3px #FFF1E5;
+}
+
+.callout {
+    position: relative;
+    margin: 18px 0;
+    background-color: transparent;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+.tab .callout button.active .notch {
+    left: calc(50% - 12px);
+    position: absolute;
+    bottom: -12px;
+    margin: 0;
+    border-bottom: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #F47920;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+  
+/* Style the tab content */
+.content {
+    position: relative;
+    height: calc(100vh - 159px);
+    overflow: auto;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    border-top: none;
+}
+
+/* Filter Area */
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+
+.filter-item {
+    margin-right: 20px;
+    cursor: pointer;
+    color: #F47920;
+}
+
+.filter-item i {
+    color: #FFF1E5;
+}
+
+/* Card */
+.content .card {
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.pos-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.pos-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header span {
+    color: #F47920;
+    font-size: 14px;
+}
+
+.card .card-header button {
+    margin-left: 5px;
+    padding: 2px 7px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    background-color: #F47920;
+    color: #fff;
+}
+
+.card .card-header button:focus, .card .card-header button:active {
+    border: none;
+    outline: none;
+}
+
+.card-body .label-number {
+    font-size: 32px;
+    color: #F47920;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.card-body .label-text {
+    font-size: 14px;
+    color: #F47920;
+    text-align: center;
+}
+
+/* Table */
+.table-responsive{
+    height:425px;  
+    overflow-y:scroll;
+}
+
+thead tr:nth-child(1) th{
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
 }

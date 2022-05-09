@@ -12,6 +12,12 @@
     <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
         rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Step 1 - Include the fusioncharts core library -->
+    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
+    <!-- Step 2 - Include the fusion theme -->
+    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
 
     <title>Pupul - Kaltim</title>
 </head>
@@ -98,40 +104,388 @@
                 <div style="width: 0px; height: 62px; border: 1px #000 solid;">
                 </div>
                 <div class="col">
-                    <a class="nav-link" href="#" style="margin-bottom: -10px; color: rgba(0, 0, 0, 0.5);"> <i
+                    <a class="nav-link" href="#" style="margin-top: 7px; color: rgba(0, 0, 0, 0.5);"> <i
                             class="fa fa-search   "
                             style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                 </div>
                 <div style="width: 0px; height: 62px; border: 1px #000 solid;">
                 </div>
                 <div class="col">
-                    <a class="nav-link" href="./index.html" style="margin-bottom: -10px; color: rgba(0, 0, 0, 0.5);"> <i
+                    <a class="nav-link" href="./index.html" style="margin-top: 7px; color: rgba(0, 0, 0, 0.5);"> <i
                             class="fa fa-power-off"
                             style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="card" style="background-color: #f8f9fa;">
+    <div class="card" style="background-color: #f8f9fa; border-radius: 0; border-bottom: 0;">
+        <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+            <div class="row tab">
+                <div class="col callout">
+                    <button type="button" class="btn tablinks"
+                        onclick="openTab(event, 'tab1')"  id="defaultOpen">
+                        <i class="fa fa-tags"></i>
+                        Assets
+                        <b class="notch"></b>
+                    </button>
+                </div>
+                <div class="col callout">
+                    <button type="button" class="btn tablinks"
+                        onclick="openTab(event, 'tab2')">
+                        <i class="fa fa-exclamation-triangle"></i>
+                        Risk
+                        <b class="notch"></b>
+                    </button>
+                </div>
+                <div class="col callout">
+                    <button type="button" class="btn tablinks"
+                        onclick="openTab(event, 'tab3')">
+                        <i class="fa fa-search-minus"></i>
+                        Inspection
+                        <b class="notch"></b>
+                    </button>
+                </div>
+                <div class="col callout">
+                    <button type="button" class="btn tablinks"
+                        onclick="openTab(event, 'tab4')">
+                        <i class="fa fa-calendar-check-o"></i>
+                        Follow Up Item
+                        <b class="notch"></b>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card content" style="background-color: #fff; border-radius: 0;">
         <div class="card-body">
             <div class="row">
-                <div class="col" style="display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-info" style="width: 200px">
-                        Assets</button>
-                </div>
-                <div class="col" style="display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-danger" style="width: 200px">Risk</button>
-                </div>
-                <div class="col" style="display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-warning" style="width: 200px">Inspection</button>
-                </div>
-                <div class="col" style="display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-primary" style="width: 200px">Follow Up Item</button>
+                <div class="col">
+                    <!-- Tab content -->
+                    <div id="tab1" class="tabcontent">
+                        <div class="filter">
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Plant Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Section Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Area Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Equipment Filter
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6"  id="card1">
+                                        <div class="card">
+                                            <!-- <div class="card-header pos-right">
+                                                <button>
+                                                    <i class="fa fa-filter"></i>
+                                                </button>
+                                                <button data-toggle="collapse" data-target="#panel-card1" aria-expanded="true" aria-controls="panel-card1">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                                <button onclick="setDisplayNone('card1')">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div> -->
+                                            <div id="panel-card1" class="collapse show">
+                                                <div class="card-body ">
+                                                    <div class="label-number">555</div>
+                                                    <div class="label-text">Total Registered Equipment</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6"  id="card2">
+                                        <div class="card">
+                                            <!-- <div class="card-header pos-right">
+                                                <button>
+                                                    <i class="fa fa-filter"></i>
+                                                </button>
+                                                <button data-toggle="collapse" data-target="#panel-card2" aria-expanded="true" aria-controls="panel-card2">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                                <button onclick="setDisplayNone('card2')">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div> -->
+                                            <div id="panel-card2" class="collapse show">
+                                                <div class="card-body">
+                                                    <div class="label-number">555</div>
+                                                    <div class="label-text">Total Assessed Equipment</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6"  id="card3">
+                                        <div class="card">
+                                            <!-- <div class="card-header pos-right">
+                                                <button>
+                                                    <i class="fa fa-filter"></i>
+                                                </button>
+                                                <button data-toggle="collapse" data-target="#panel-card3" aria-expanded="true" aria-controls="panel-card3">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                                <button onclick="setDisplayNone('card3')">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div> -->
+                                            <div id="panel-card3" class="collapse show">
+                                                <div class="card-body">
+                                                    <div class="label-number">555</div>
+                                                    <div class="label-text">Total Required Validation Asset</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6"  id="card4">
+                                        <div class="card">
+                                            <!-- <div class="card-header pos-right">
+                                                <button>
+                                                    <i class="fa fa-filter"></i>
+                                                </button>
+                                                <button data-toggle="collapse" data-target="#panel-card4" aria-expanded="true" aria-controls="panel-card4">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                                <button onclick="setDisplayNone('card4')">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div> -->
+                                            <div id="panel-card4" class="collapse show">
+                                                <div class="card-body">
+                                                    <div class="label-number">555</div>
+                                                    <div class="label-text">Total Offline Equipment</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12"  id="card5">
+                                        <div class="card">
+                                            <div class="card-header pos-between">
+                                                <span>Registered Asset Type</span>
+                                                <div>
+                                                    <button>
+                                                        <i class="fa fa-filter"></i>
+                                                    </button>
+                                                    <button data-toggle="collapse" data-target="#panel-card5" aria-expanded="true" aria-controls="panel-card5">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <button onclick="setDisplayNone('card5')">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div id="panel-card5" class="collapse show">
+                                                <div class="card-body" style="height: 250px; padding-top: 0;">
+                                                    <div id="chart-container"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"  id="card6">
+                                <div class="card">
+                                    <div class="card-header pos-between">
+                                        <span>Detailed of Selected Category</span>
+                                        <div>
+                                            <button>
+                                                <i class="fa fa-filter"></i>
+                                            </button>
+                                            <button data-toggle="collapse" data-target="#panel-card6" aria-expanded="true" aria-controls="panel-card6">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                            <button onclick="setDisplayNone('card6')">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div id="panel-card6" class="collapse show">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">No</th>
+                                                            <th scope="col">Plan</th>
+                                                            <th scope="col">Section</th>
+                                                            <th scope="col">System</th>
+                                                            <th scope="col">Equipment</th>
+                                                            <th scope="col">Detail</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tab2" class="tabcontent">
+                        <div class="filter">
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Plant Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Section Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Area Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Equipment Filter
+                            </div>
+                        </div>
+                        <p>Tab Risk</p>
+                    </div>
+                    
+                    <div id="tab3" class="tabcontent">
+                        <div class="filter">
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Plant Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Section Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Area Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Equipment Filter
+                            </div>
+                        </div>
+                        <p>Tab Inspection</p>
+                    </div>
+
+                    <div id="tab4" class="tabcontent">
+                        <div class="filter">
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Plant Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Section Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Area Filter
+                            </div>
+                            <div class="filter-item">
+                                <i class="fa fa-filter"></i> Equipment Filter
+                            </div>
+                        </div>
+                        <p>Tab Follow Up Team</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Optional JavaScript -->
+    <script>
+        function openTab(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        function setDisplayNone(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
+    <script>
+        const dataSource = {
+            chart: {
+                caption: "",
+                yaxisname: " ",
+                aligncaptionwithcanvas: "0",
+                plottooltext: "<b>$dataValue</b>",
+                theme: "fusion",
+                showvalues: "1",
+                showYAxisValues: "0",
+                labelFontBold: "1",
+                divLineThickness: "0",
+                divLineAlpha: "0",
+                placeValuesInside: "1",
+                valuePadding: "0",
+                chartLeftMargin: "0",
+                numberSuffix: "%",
+                valuePadding: "5",
+                palettecolors: "F06292,64B5F6,FFF176,81C784,FFB74D,E57373"
+            },
+            data: [
+                {
+                    label: "Vessel",
+                    value: "70"
+                },
+                {
+                    label: "Storage Tank",
+                    value: "80"
+                },
+                {
+                    label: "Piping",
+                    value: "90"
+                },
+                {
+                    label: "PRD",
+                    value: "90"
+                },
+                {
+                    label: "Heat Exchanger",
+                    value: "75"
+                },
+                {
+                    label: "Tube Bundle",
+                    value: "95"
+                }
+            ]
+            };
+
+            FusionCharts.ready(function() {
+            var myChart = new FusionCharts({
+                type: "bar2d",
+                renderAt: "chart-container",
+                width: "100%",
+                height: "80%",
+                dataFormat: "json",
+                dataSource
+            }).render();
+        });
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
