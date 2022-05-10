@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="style/style.css">
 
     <!-- Step 1 - Include the fusioncharts core library -->
-    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
+    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
     <!-- Step 2 - Include the fusion theme -->
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 
     <title>Pupul - Kaltim</title>
 </head>
@@ -514,7 +514,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="row">
-                                    <div class="col-12" id="card5">
+                                    <div class="col-12" id="card7">
                                         <div class="card">
                                             <div class="card-header pos-between">
                                                 <span>Risk Matrix</span>
@@ -522,23 +522,23 @@
                                                     <button>
                                                         <i class="fa fa-filter"></i>
                                                     </button>
-                                                    <button data-toggle="collapse" data-target="#panel-card5"
-                                                        aria-expanded="true" aria-controls="panel-card5">
+                                                    <button data-toggle="collapse" data-target="#panel-card7"
+                                                        aria-expanded="true" aria-controls="panel-card7">
                                                         <i class="fa fa-minus"></i>
                                                     </button>
-                                                    <button onclick="setDisplayNone('card5')">
+                                                    <button onclick="setDisplayNone('card7')">
                                                         <i class="fa fa-times"></i>
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div id="panel-card5" class="collapse show">
-                                                <div class="card-body" style="height: 250px; padding-top: 0;">
-                                                    <div id="chart-container"></div>
+                                            <div id="panel-card7" class="collapse show">
+                                                <div class="card-body" style="height: 300px; padding-top: 0;">
+                                                    <div id="risk-chart"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6" id="card5">
+                                    <div class="col-6" id="card8">
                                         <div class="card">
                                             <div class="card-header pos-between">
                                                 <span>Risk Distributiion</span>
@@ -546,23 +546,23 @@
                                                     <button>
                                                         <i class="fa fa-filter"></i>
                                                     </button>
-                                                    <button data-toggle="collapse" data-target="#panel-card5"
-                                                        aria-expanded="true" aria-controls="panel-card5">
+                                                    <button data-toggle="collapse" data-target="#panel-card8"
+                                                        aria-expanded="true" aria-controls="panel-card8">
                                                         <i class="fa fa-minus"></i>
                                                     </button>
-                                                    <button onclick="setDisplayNone('card5')">
+                                                    <button onclick="setDisplayNone('card8')">
                                                         <i class="fa fa-times"></i>
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div id="panel-card5" class="collapse show">
+                                            <div id="panel-card8" class="collapse show">
                                                 <div class="card-body" style="height: 250px; padding-top: 0;">
-                                                    <div id="chart-container"></div>
+                                                    <div id="distribution-chart"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6" id="card5">
+                                    <div class="col-6" id="card9">
                                         <div class="card">
                                             <div class="card-header pos-between">
                                                 <span>Complete Assessment</span>
@@ -570,25 +570,25 @@
                                                     <button>
                                                         <i class="fa fa-filter"></i>
                                                     </button>
-                                                    <button data-toggle="collapse" data-target="#panel-card5"
-                                                        aria-expanded="true" aria-controls="panel-card5">
+                                                    <button data-toggle="collapse" data-target="#panel-card9"
+                                                        aria-expanded="true" aria-controls="panel-card9">
                                                         <i class="fa fa-minus"></i>
                                                     </button>
-                                                    <button onclick="setDisplayNone('card5')">
+                                                    <button onclick="setDisplayNone('card9')">
                                                         <i class="fa fa-times"></i>
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div id="panel-card5" class="collapse show">
+                                            <div id="panel-card9" class="collapse show">
                                                 <div class="card-body" style="height: 250px; padding-top: 0;">
-                                                    <div id="chart-container"></div>
+                                                    <div id="complete-chart"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6" id="card6">
+                            <div class="col-6" id="card10">
                                 <div class="card">
                                     <div class="card-header pos-between">
                                         <span>Top List Of Asset</span>
@@ -596,16 +596,16 @@
                                             <button>
                                                 <i class="fa fa-filter"></i>
                                             </button>
-                                            <button data-toggle="collapse" data-target="#panel-card6"
-                                                aria-expanded="true" aria-controls="panel-card6">
+                                            <button data-toggle="collapse" data-target="#panel-card10"
+                                                aria-expanded="true" aria-controls="panel-card10">
                                                 <i class="fa fa-minus"></i>
                                             </button>
-                                            <button onclick="setDisplayNone('card6')">
+                                            <button onclick="setDisplayNone('card10')">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </div>
                                     </div>
-                                    <div id="panel-card6" class="collapse show">
+                                    <div id="panel-card10" class="collapse show">
                                         <div class="card-body">
                                             <div class="table-responsive" style="height: 525px;">
                                                 <table class="table table-bordered table-striped">
@@ -945,7 +945,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12" id="card5">
+                                        <div class="col-12" id="card11">
                                             <div class="card">
                                                 <div class="card-header pos-between">
                                                     <span>Damage Distributiion</span>
@@ -953,25 +953,25 @@
                                                         <button>
                                                             <i class="fa fa-filter"></i>
                                                         </button>
-                                                        <button data-toggle="collapse" data-target="#panel-card5"
-                                                            aria-expanded="true" aria-controls="panel-card5">
+                                                        <button data-toggle="collapse" data-target="#panel-card11"
+                                                            aria-expanded="true" aria-controls="panel-card11">
                                                             <i class="fa fa-minus"></i>
                                                         </button>
-                                                        <button onclick="setDisplayNone('card5')">
+                                                        <button onclick="setDisplayNone('card11')">
                                                             <i class="fa fa-times"></i>
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div id="panel-card5" class="collapse show">
+                                                <div id="panel-card11" class="collapse show">
                                                     <div class="card-body" style="height: 250px; padding-top: 0;">
-                                                        <div id="chart-container"></div>
+                                                        <div id="chart-damage-distribution"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6" id="card6">
+                                <div class="col-6" id="card12">
                                     <div class="card">
                                         <div class="card-header pos-between">
                                             <span>Detailed of Selected Category</span>
@@ -979,16 +979,16 @@
                                                 <button>
                                                     <i class="fa fa-filter"></i>
                                                 </button>
-                                                <button data-toggle="collapse" data-target="#panel-card6"
-                                                    aria-expanded="true" aria-controls="panel-card6">
+                                                <button data-toggle="collapse" data-target="#panel-card12"
+                                                    aria-expanded="true" aria-controls="panel-card12">
                                                     <i class="fa fa-minus"></i>
                                                 </button>
-                                                <button onclick="setDisplayNone('card6')">
+                                                <button onclick="setDisplayNone('card12')">
                                                     <i class="fa fa-times"></i>
                                                 </button>
                                             </div>
                                         </div>
-                                        <div id="panel-card6" class="collapse show">
+                                        <div id="panel-card12" class="collapse show">
                                             <div class="card-body">
                                                 <div class="table-responsive">
                                                     <table class="table table-bordered table-striped">
@@ -1285,7 +1285,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-8" id="card6">
+                                <div class="col-8" id="card13">
                                     <div class="card">
                                         <div class="card-header pos-between">
                                             <span>Detailed of Selected Category</span>
@@ -1293,16 +1293,16 @@
                                                 <button>
                                                     <i class="fa fa-filter"></i>
                                                 </button>
-                                                <button data-toggle="collapse" data-target="#panel-card6"
-                                                    aria-expanded="true" aria-controls="panel-card6">
+                                                <button data-toggle="collapse" data-target="#panel-card13"
+                                                    aria-expanded="true" aria-controls="panel-card13">
                                                     <i class="fa fa-minus"></i>
                                                 </button>
-                                                <button onclick="setDisplayNone('card6')">
+                                                <button onclick="setDisplayNone('card13')">
                                                     <i class="fa fa-times"></i>
                                                 </button>
                                             </div>
                                         </div>
-                                        <div id="panel-card6" class="collapse show">
+                                        <div id="panel-card13" class="collapse show">
                                             <div class="card-body">
                                                 <div class="table-responsive" style="height: 315px;">
                                                     <table class="table table-bordered table-striped">
@@ -1537,7 +1537,9 @@
                     chartLeftMargin: "0",
                     numberSuffix: "%",
                     valuePadding: "5",
-                    palettecolors: "F06292,64B5F6,FFF176,81C784,FFB74D,E57373"
+                    palettecolors: "F06292,64B5F6,FFF176,81C784,FFB74D,E57373",
+                    chartBottomMargin: "0",
+                    canvasPadding: "0"
                 },
                 data: [
                     {
@@ -1572,10 +1574,406 @@
                     type: "bar2d",
                     renderAt: "chart-container",
                     width: "100%",
-                    height: "80%",
+                    height: "83%",
                     dataFormat: "json",
                     dataSource
                 }).render();
+            });
+        </script>
+        <script type="text/javascript">
+            FusionCharts.ready(function(){
+                var chartObj = new FusionCharts({
+                    type: 'stackedcolumn2d',
+                    renderAt: 'chart-damage-distribution',
+                    width: '100%',
+                    height: '80%',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "theme": "fusion",
+                            "caption": "",
+                            "showsum": "1",
+                            "plottooltext":"$label <b>$dataValue</b> of $seriesName",
+                            "drawcrossline": "1",
+                            "palettecolors": "7CB5EC,434348,8EED7D,F7A35C,FFB74D"
+                        },
+                        categories: [
+                            {
+                            category: [
+                                {
+                                label: "Coating Damage"
+                                },
+                                {
+                                label: "General Corrosion"
+                                },
+                                {
+                                label: "External Corrosion"
+                                },
+                                {
+                                label: "Localized Corrosion"
+                                },
+                                {
+                                label: "HNX"
+                                }
+                            ]
+                            }
+                        ],
+                        dataset: [
+                            {
+                            seriesname: "Generic",
+                            data: [
+                                {
+                                value: "4"
+                                },
+                                {
+                                value: "8"
+                                },
+                                {
+                                value: "5"
+                                },
+                                {
+                                value: "4"
+                                },
+                                {
+                                value: "7"
+                                }
+                            ]
+                            },
+                            {
+                            seriesname: "PSV",
+                            data: [
+                                {
+                                value: "3"
+                                },
+                                {
+                                value: "6"
+                                },
+                                {
+                                value: "4"
+                                },
+                                {
+                                value: "3"
+                                },
+                                {
+                                value: "7"
+                                }
+                            ]
+                            },
+                            {
+                            seriesname: "Piping",
+                            data: [
+                                {
+                                value: "2"
+                                },
+                                {
+                                value: "4"
+                                },
+                                {
+                                value: "4"
+                                },
+                                {
+                                value: "1"
+                                },
+                                {
+                                value: "5"
+                                }
+                            ]
+                            },
+                            {
+                            seriesname: "Vessel",
+                            data: [
+                                {
+                                value: "1"
+                                },
+                                {
+                                value: "3"
+                                },
+                                {
+                                value: "2"
+                                },
+                                {
+                                value: "1"
+                                },
+                                {
+                                value: "4"
+                                }
+                            ]
+                            }
+                        ]
+                    }
+                });
+                chartObj.render();
+            });
+        </script>
+        <script type="text/javascript">
+            FusionCharts.ready(function(){
+                var chartObj = new FusionCharts({
+                    type: 'heatmap',
+                    renderAt: 'risk-chart',
+                    width: '100%',
+                    height: '85%',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "theme": "fusion",
+                            "caption": " ",
+                            "showPlotBorder": "1",
+                            "showValues": "1",
+                            "mapByCategory": "1",
+                            "chartTopMargin": "-30"
+                        },
+                        "rows": {
+                            "row": [{
+                                "id": "r1",
+                                "label": "1"
+                            }, {
+                                "id": "r2",
+                                "label": "2"
+                            }, {
+                                "id": "r3",
+                                "label": "3"
+                            }, {
+                                "id": "r4",
+                                "label": "4"
+                            }, {
+                                "id": "r5",
+                                "label": "5"
+                            }]
+                        },
+                        "columns": {
+                            "column": [{
+                                "id": "C1",
+                                "label": "1"
+                            }, {
+                                "id": "C2",
+                                "label": "2"
+                            }, {
+                                "id": "C3",
+                                "label": "3"
+                            }, {
+                                "id": "C4",
+                                "label": "4"
+                            }, {
+                                "id": "C5",
+                                "label": "5"
+                            }]
+                        },
+                        "dataset": [{
+                            "data": [{
+                                "rowid": "R1",
+                                "columnid": "C1",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },{
+                                "rowid": "R1",
+                                "columnid": "C2",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R1",
+                                "columnid": "C3",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R1",
+                                "columnid": "C4",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R1",
+                                "columnid": "C5",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R2",
+                                "columnid": "C1",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },{
+                                "rowid": "R2",
+                                "columnid": "C2",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },{
+                                "rowid": "R2",
+                                "columnid": "C3",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R2",
+                                "columnid": "C4",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R2",
+                                "columnid": "C5",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R3",
+                                "columnid": "C1",
+                                "displayValue": "Low",
+                                "colorRangeLabel": "Low"
+                            },{
+                                "rowid": "R3",
+                                "columnid": "C2",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },{
+                                "rowid": "R3",
+                                "columnid": "C3",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },{
+                                "rowid": "R3",
+                                "columnid": "C4",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R3",
+                                "columnid": "C5",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R4",
+                                "columnid": "C1",
+                                "displayValue": "Low",
+                                "colorRangeLabel": "Low"
+                            },{
+                                "rowid": "R4",
+                                "columnid": "C2",
+                                "displayValue": "Low",
+                                "colorRangeLabel": "Low"
+                            },{
+                                "rowid": "R4",
+                                "columnid": "C3",
+                                "displayValue": "Low",
+                                "colorRangeLabel": "Low"
+                            },{
+                                "rowid": "R4",
+                                "columnid": "C4",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },{
+                                "rowid": "R4",
+                                "columnid": "C5",
+                                "displayValue": "High",
+                                "colorRangeLabel": "High"
+                            },{
+                                "rowid": "R5",
+                                "columnid": "C1",
+                                "displayValue": "Low",
+                                "colorRangeLabel": "Low"
+                            },{
+                                "rowid": "R5",
+                                "columnid": "C2",
+                                "displayValue": "Low",
+                                "colorRangeLabel": "Low"
+                            },{
+                                "rowid": "R5",
+                                "columnid": "C3",
+                                "displayValue": "Low",
+                                "colorRangeLabel": "Low"
+                            },{
+                                "rowid": "R5",
+                                "columnid": "C4",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },{
+                                "rowid": "R5",
+                                "columnid": "C5",
+                                "displayValue": "Medium",
+                                "colorRangeLabel": "Medium"
+                            },]
+                        }],
+                        "colorRange": {
+                            "gradient": "0",
+                            "color": [{
+                                "code": "#81C784",
+                                "label": "Low"
+                            }, {
+                                "code": "#FFF176",
+                                "label": "Medium"
+                            }, {
+                                "code": "#E57373",
+                                "label": "High"
+                            }]
+                        }
+                    }
+                }
+                );
+                chartObj.render();
+            });
+        </script>
+        <script type="text/javascript">
+            FusionCharts.ready(function(){
+                var chartObj = new FusionCharts({
+                    type: 'pie2d',
+                    renderAt: 'distribution-chart',
+                    width: '100%',
+                    height: '80%',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "theme": "fusion",
+                            "caption": "",
+                            "decimals": "0",
+                            "valuePosition": "inside",
+                            "pieRadius": "70",
+                            "chartTopMargin": "0",
+                            "chartBottomMargin": "0",
+                            "showLegend": "0"
+                        },
+                        "data": [{
+                                "label": "Alpha",
+                                "value": "285040"
+                            }, {
+                                "label": "Beta",
+                                "value": "146330"
+                            }
+                        ]
+                    }
+                }
+                );
+                chartObj.render();
+            });
+        </script>
+        <script type="text/javascript">
+            FusionCharts.ready(function(){
+                var chartObj = new FusionCharts({
+                    type: 'angulargauge',
+                    renderAt: 'complete-chart',
+                    width: '100%',
+                    height: '65%',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "theme": "fusion",
+                            "caption": "",
+                            "lowerlimit": "0",
+                            "upperlimit": "100",
+                            "showvalue": "1",
+                            "showtooltip": "0",
+                            "chartTopMargin": "0"
+                        },
+                        "colorRange": {
+                            "gradient": "0",
+                            "color": [{
+                                "minvalue": "0",
+                                "maxvalue": "100",
+                                "code": "#F47920"
+                            }]
+                        },"dials": {
+                            "dial": [
+                                {
+                                    "value": "95"
+                                }
+                            ]
+                        }
+                    }
+                }
+                );
+                chartObj.render();
             });
         </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
