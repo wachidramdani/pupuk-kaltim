@@ -13,6 +13,7 @@
         rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/asset.css">
 
     <!-- Step 1 - Include the fusioncharts core library -->
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
@@ -118,9 +119,87 @@
             </div>
         </div>
     </nav>
-    <div class="card" style="background-color: #f8f9fa; border-radius: 0; border-bottom: 0;">
-        <div class="card-body">
-            <h5>Asset Page</h5>
+    <div class="inner-body">
+        <div class="sidebar">
+            <ul id="tree3">
+                <li><a href="#">Company</a>
+                    <ul>
+                        <li>Plant
+                            <ul>
+                                <li>Plant Section
+                                    <ul>
+                                        <li>System/Area
+                                            <ul>
+                                                <li>Equipment/Piping</li>
+                                                <li>Horizontal Vessel
+                                                    <ul>
+                                                        <li>Shell</li>
+                                                        <li>Head</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Vertical Vessel
+                                                    <ul>
+                                                        <li>Shell</li>
+                                                        <li>Top Head</li>
+                                                        <li>Bottom Head</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Heat Exchanger
+                                                    <ul>
+                                                        <li>Shell</li>
+                                                        <li>Tube Bundle</li>
+                                                        <li>Front End Channel</li>
+                                                        <li>Rear End Channel</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Cooler
+                                                    <ul>
+                                                        <li>Tube Section</li>
+                                                        <li>Header Box</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Boiler
+                                                    <ul>
+                                                        <li>Tube Section</li>
+                                                        <li>Head</li>
+                                                        <li>Shell</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Fired Heater
+                                                    <ul>
+                                                        <li>Heater Box</li>
+                                                        <li>Tube Section</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Piping
+                                                    <ul>
+                                                        <li>Piping Tag</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Tank
+                                                    <ul>
+                                                        <li>Tank Course</li>
+                                                        <li>Tank Bottom</li>
+                                                        <li>Tank Roof</li>
+                                                    </ul>
+                                                </li>
+                                                <li>PSV
+                                                    <ul>
+                                                        <li>PSV</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            main content
         </div>
     </div>
     <!-- Optional JavaScript -->
@@ -135,6 +214,66 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <script>
+            $.fn.extend({
+                treed: function (o) {
+                
+                var openedClass = 'glyphicon-minus-sign';
+                var closedClass = 'glyphicon-plus-sign';
+                
+                if (typeof o != 'undefined'){
+                    if (typeof o.openedClass != 'undefined'){
+                    openedClass = o.openedClass;
+                    }
+                    if (typeof o.closedClass != 'undefined'){
+                    closedClass = o.closedClass;
+                    }
+                };
+                
+                    //initialize each of the top levels
+                    var tree = $(this);
+                    tree.addClass("tree");
+                    tree.find('li').has("ul").each(function () {
+                        var branch = $(this); //li with children ul
+                        branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+                        branch.addClass('branch');
+                        branch.on('click', function (e) {
+                            if (this == e.target) {
+                                var icon = $(this).children('i:first');
+                                icon.toggleClass(openedClass + " " + closedClass);
+                                $(this).children().children().toggle();
+                            }
+                        })
+                        branch.children().children().toggle();
+                    });
+                    //fire event from the dynamically added icon
+                tree.find('.branch .indicator').each(function(){
+                    $(this).on('click', function () {
+                        $(this).closest('li').click();
+                    });
+                });
+                    //fire event to open branch if the li contains an anchor instead of text
+                    tree.find('.branch>a').each(function () {
+                        $(this).on('click', function (e) {
+                            $(this).closest('li').click();
+                            e.preventDefault();
+                        });
+                    });
+                    //fire event to open branch if the li contains a button instead of text
+                    tree.find('.branch>button').each(function () {
+                        $(this).on('click', function (e) {
+                            $(this).closest('li').click();
+                            e.preventDefault();
+                        });
+                    });
+                }
+            });
+    
+            //Initialization of treeviews
+            $('#tree3').treed({openedClass:'fa fa-angle-down', closedClass:'fa fa-angle-right'});
+    
+        </script>
 </body>
 
 </html>
