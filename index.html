@@ -64,7 +64,7 @@
         .btn-group-lg > .btn, .btn-lg {
             border-radius: 10px;
         }
-        .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+        .custom-control-input.is-valid ~ .custom-control-label, .was-validated .custom-control-input:valid ~ .custom-control-label {
             color: #000000;
         }
     </style>
@@ -110,14 +110,22 @@
                         </div>
                     </div>
                     <div class="d-flex mb-4 mt-2">
-                        <div class="form-check form-check-inline mr-4 login-user-radio">
+                        <!-- <div class="form-check form-check-inline mr-4 login-user-radio">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                             <label class="form-check-label" for="inlineRadio1">Login User</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                             <label class="form-check-label" for="inlineRadio1">Login with LDP</label>
-                        </div>
+                        </div> -->
+                        <div class="custom-control custom-radio custom-control-inline login-user-radio">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline1">Login User</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline2">Login with LDP</label>
+                          </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-warning btn-lg submit-login font-weight-bold">LOGIN</button>
@@ -199,6 +207,9 @@
                     event.stopPropagation();
                 }
                 form.classList.add('was-validated');
+                if (form.checkValidity() === true);{
+                    window.location.href="dashboard.html"
+                }
                 }, false);
             });
             }, false);
