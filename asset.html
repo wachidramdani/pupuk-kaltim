@@ -20,7 +20,7 @@
     <!-- Step 2 - Include the fusion theme -->
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 
-    <title>Pupul - Kaltim</title>
+    <title>Pupuk - Kaltim</title>
 </head>
 
 <body>
@@ -31,49 +31,56 @@
                     <div class="row">
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="dashboard.html" style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-home"
+                                <a class="nav-link" href="dashboard.html"
+                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-home"
                                         style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                                 <span style="font-size: 10px;">Home</span>
                             </li>
                         </div>
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="asset.html" style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-folder"
+                                <a class="nav-link" href="asset.html" style="margin-bottom: -10px; text-align: center;">
+                                    <i class="fa fa-folder"
                                         style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center; color: #e16333;"></i></a>
                                 <span style="font-size: 10px;">Asset</span>
                             </li>
                         </div>
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="master.html" style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-database"
+                                <a class="nav-link" href="master.html"
+                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-database"
                                         style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                                 <span style="font-size: 10px;">Master</span>
                             </li>
                         </div>
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="setting.html" style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-gear"
+                                <a class="nav-link" href="setting.html"
+                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-gear"
                                         style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                                 <span style="font-size: 10px;">Setting</span>
                             </li>
                         </div>
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="laporan.html" style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-print"
+                                <a class="nav-link" href="laporan.html"
+                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-print"
                                         style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                                 <span style="font-size: 10px;">Laporan</span>
                             </li>
                         </div>
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="inspection.html" style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-exclamation"
+                                <a class="nav-link" href="inspection.html"
+                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-exclamation"
                                         style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                                 <span style="font-size: 10px;">Inspection</span>
                             </li>
                         </div>
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="document.html" style="margin-bottom: -13px; text-align: center;"> <i class="fa fa-book"
+                                <a class="nav-link" href="document.html"
+                                    style="margin-bottom: -13px; text-align: center;"> <i class="fa fa-book"
                                         style="font-size: 25px; margin-top: 4px;"></i></a>
                                 <span style="font-size: 10px;">Document</span>
                             </li>
@@ -203,7 +210,7 @@
         </div>
     </div>
     <!-- Optional JavaScript -->
-    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -215,65 +222,65 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <script>
-            $.fn.extend({
-                treed: function (o) {
-                
+    <script>
+        $.fn.extend({
+            treed: function (o) {
+
                 var openedClass = 'glyphicon-minus-sign';
                 var closedClass = 'glyphicon-plus-sign';
-                
-                if (typeof o != 'undefined'){
-                    if (typeof o.openedClass != 'undefined'){
-                    openedClass = o.openedClass;
+
+                if (typeof o != 'undefined') {
+                    if (typeof o.openedClass != 'undefined') {
+                        openedClass = o.openedClass;
                     }
-                    if (typeof o.closedClass != 'undefined'){
-                    closedClass = o.closedClass;
+                    if (typeof o.closedClass != 'undefined') {
+                        closedClass = o.closedClass;
                     }
                 };
-                
-                    //initialize each of the top levels
-                    var tree = $(this);
-                    tree.addClass("tree");
-                    tree.find('li').has("ul").each(function () {
-                        var branch = $(this); //li with children ul
-                        branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
-                        branch.addClass('branch');
-                        branch.on('click', function (e) {
-                            if (this == e.target) {
-                                var icon = $(this).children('i:first');
-                                icon.toggleClass(openedClass + " " + closedClass);
-                                $(this).children().children().toggle();
-                            }
-                        })
-                        branch.children().children().toggle();
-                    });
-                    //fire event from the dynamically added icon
-                tree.find('.branch .indicator').each(function(){
+
+                //initialize each of the top levels
+                var tree = $(this);
+                tree.addClass("tree");
+                tree.find('li').has("ul").each(function () {
+                    var branch = $(this); //li with children ul
+                    branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+                    branch.addClass('branch');
+                    branch.on('click', function (e) {
+                        if (this == e.target) {
+                            var icon = $(this).children('i:first');
+                            icon.toggleClass(openedClass + " " + closedClass);
+                            $(this).children().children().toggle();
+                        }
+                    })
+                    branch.children().children().toggle();
+                });
+                //fire event from the dynamically added icon
+                tree.find('.branch .indicator').each(function () {
                     $(this).on('click', function () {
                         $(this).closest('li').click();
                     });
                 });
-                    //fire event to open branch if the li contains an anchor instead of text
-                    tree.find('.branch>a').each(function () {
-                        $(this).on('click', function (e) {
-                            $(this).closest('li').click();
-                            e.preventDefault();
-                        });
+                //fire event to open branch if the li contains an anchor instead of text
+                tree.find('.branch>a').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
                     });
-                    //fire event to open branch if the li contains a button instead of text
-                    tree.find('.branch>button').each(function () {
-                        $(this).on('click', function (e) {
-                            $(this).closest('li').click();
-                            e.preventDefault();
-                        });
+                });
+                //fire event to open branch if the li contains a button instead of text
+                tree.find('.branch>button').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
                     });
-                }
-            });
-    
-            //Initialization of treeviews
-            $('#tree3').treed({openedClass:'fa fa-angle-down', closedClass:'fa fa-angle-right'});
-    
-        </script>
+                });
+            }
+        });
+
+        //Initialization of treeviews
+        $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
+
+    </script>
 </body>
 
 </html>
