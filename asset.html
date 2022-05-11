@@ -138,18 +138,18 @@
                                         <ul>
                                             <li>System/Area
                                                 <ul>
-                                                    <li>Equipment/Piping</li>
+                                                    <li onclick="addTab('Equipment/Pipping')">Equipment/Piping</li>
                                                     <li>Horizontal Vessel
                                                         <ul>
-                                                            <li>Shell</li>
-                                                            <li>Head</li>
+                                                            <li onclick="addTab('HV-Shell')">Shell</li>
+                                                            <li onclick="addTab('HV-Head')">Head</li>
                                                         </ul>
                                                     </li>
                                                     <li>Vertical Vessel
                                                         <ul>
-                                                            <li>Shell</li>
-                                                            <li>Top Head</li>
-                                                            <li>Bottom Head</li>
+                                                            <li onclick="addTab('VV-Shell')">Shell</li>
+                                                            <li onclick="addTab('VV-Top Head')">Top Head</li>
+                                                            <li onclick="addTab('VV-Bottom Head')">Bottom Head</li>
                                                         </ul>
                                                     </li>
                                                     <li>Heat Exchanger
@@ -296,8 +296,20 @@
                     distance: 10
             });
             // $( ".tabpanel" ).tabs("remove", 0);
-            // $( ".tabpanel" ).tabs("add", "new tab", "content goes here");
         });
+        function addTab(name) {
+            const navbar = Array.from(document.querySelectorAll('.tabpanel>ul>li'));
+            console.log(navbar, 'navbar');
+            let found = 0
+            for(var i=0; i<navbar.length; i++){
+                if(navbar[i].innerText == name){
+                    found++
+                }
+            }
+            if(found == 0){
+                $( ".tabpanel" ).tabs("add", name, "content goes here");
+            }
+        }
     </script>
 
         <script>

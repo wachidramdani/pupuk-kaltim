@@ -124,9 +124,10 @@
     font-weight: 500;
 }
 .wrimagecard-topimage_title .label{
-    font-size: 16px;
+    font-size: 14px;
 }
 .wrimagecard-topimage_title .value{
-    font-size: 40px;
+    font-size: 28px;
     line-height: 46px;
+    margin-left: -2px;
 }
