@@ -67,6 +67,9 @@
         .custom-control-input.is-valid ~ .custom-control-label, .was-validated .custom-control-input:valid ~ .custom-control-label {
             color: #000000;
         }
+        .btn {
+            border-radius: 10px;
+        }
     </style>
 
     <title>Login Pupuk Kaltim</title>
@@ -74,7 +77,7 @@
 
 <body>
     <div class="container">
-        <div class="row" style="margin-top:100px;">
+        <div class="row body-custom">
             <div class="col-md-8">
                 <div class="welcome d-flex justify-content-center mb-3">Welcome To</div>
                 <h1 class="pkt-rbi-welcome d-flex justify-content-center">PKT RBI SOFTWARE</h1>
@@ -110,14 +113,6 @@
                         </div>
                     </div>
                     <div class="d-flex mb-4 mt-2">
-                        <!-- <div class="form-check form-check-inline mr-4 login-user-radio">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Login User</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Login with LDP</label>
-                        </div> -->
                         <div class="custom-control custom-radio custom-control-inline login-user-radio">
                             <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline1">Login User</label>
@@ -130,64 +125,198 @@
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-warning btn-lg submit-login font-weight-bold">LOGIN</button>
                     </div>
-                    <div class="d-flex justify-content-center my-4">
-                        <a href="#" style="color: black; font-size: 12px;">FORGOT PASSWORD</a>
+                    <div class="d-flex justify-content-center my-4 forgot-password">
+                        <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@forgotPassword">FORGOT PASSWORD</a>
                     </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">Email :</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPassword" class="col-form-label">New Password :</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmNewPassword" class="col-form-label">New Password :</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <b>Password Rules</b>
+                                <ul>
+                                    <li>6-12 characters long</li>
+                                    <li>Combination of upper and lower case alphabet, number and special character</li>
+                                    <li>Does not contain spaces</li>
+                                    <li>Connat be the same as old password</li>
+                                    <li>New password and its confirmation must be exactly the same</li>
+                                </ul>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-warning">Send</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </form>
             </div>
-            <div class="col-md-4 d-flex align-items-end flex-column" style="position:relative; margin-top:-70px;">
-                <div class="card mb-4" style="width: 16rem; border-radius: 10px;">
+            <div class="col-md-4 d-flex align-items-end flex-column card-custom">
+                <div class="card mb-4 card-custom-sub">
                     <img class="card-img-top" src="style/images/card.png" alt="Card image cap">
-                    <img src="style/images/logo-card.png" style="width: 65px; height: 65px; position: absolute; margin-top: 7.5rem; margin-left: 1rem;">
-                    <a href="#" style="color:black;">
-                        <div class="card-body" style="padding-top: 0px;">
-                        <h5 class="card-title" style="font-size: 16px;">Safety First</h5>
-                        <p class="card-text" style="font-size: 12px;">Article originally published in the April 2019 issue of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
+                    <img src="style/images/logo-card.png" class="card-custom-img">
+                    <a href="#" data-toggle="modal" data-target="#staticBackdrop">
+                        <div class="card-body card-body-custom">
+                        <h5 class="card-title card-title-custom">Safety First</h5>
+                        <p class="card-text card-text-custom" >Article originally published in the April 2019 issue of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
                         </div>
                     </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Safety First</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="style/images/icon/modal_calendar.svg">
+                                    <p class="pt-3 pl-1">Friday, April 15, 2022</p>
+                                    <img src="style/images/icon/modal-user.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">John Kennedy</p>
+                                    <img src="style/images/icon/modal-category.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">Category</p>
+                                </div>
+                                <div><img src="style/images/image-card-modal.jpg" class="float-left pr-3">What follows is just some placeholder text for this modal dialog. You just gotta ignite the light and let it shine! Come just as you are to me. Just own the night like the 4th of July. Infect me with your love and fill me with your poison. Come just as you are to me. End of the rainbow looking treasure.</div>
+                                <br>
+                                I can't sleep let's run away and don't ever look back, don't ever look back. I can't sleep let's run away and don't ever look back, don't ever look back. Yes, we make angels cry, raining down on earth from up above. I'm walking on air (tonight). Let you put your hands on me in my skin-tight jeans. Stinging like a bee I earned my stripes. I went from zero, to my own hero. Even brighter than the moon, moon, moon. Make 'em go, 'Aah, aah, aah' as you shoot across the sky-y-y! Why don't you let me stop by?
+                                <br>
+                                <br>
+                                Boom, boom, boom. Never made me blink one time. Yeah, you're lucky if you're on her plane. Talk about our future like we had a clue. Oh my God no exaggeration. You're original, cannot be replaced. The girl's a freak, she drive a jeep in Laguna Beach. It's no big deal, it's no big deal, it's no big deal. In another life I would make you stay. I'm ma get your heart racing in my skin-tight jeans. I wanna walk on your wave length and be there when you vibrate Never made me blink one time.
+                                <br>
+                                <br>
+                                We'd keep all our promises be us against the world. In another life I would be your girl. We can dance, until we die, you and I, will be young forever. And on my 18th Birthday we got matching tattoos. So open up your heart and just let it begin. 'Cause she's the muse and the artist. She eats your heart out. Like Jeffrey Dahmer (woo). Pop your confetti. (This is how we do) I know one spark will shock the world, yeah yeah. If you only knew what the future holds.
+                                <br>
+                                <br>
+                                Sipping on Rosé, Silver Lake sun, coming up all lazy. It’s in the palm of your hand now baby. So we hit the boulevard. So make a wish, I'll make it like your birthday everyday. Do you ever feel already buried deep six feet under? It's time to bring out the big balloons. You could've been the greatest. Passport stamps, she's cosmopolitan. Your kiss is cosmic, every move is magic.
+                                <br>
+                                <br>
+                                We're living the life. We're doing it right. Open up your heart. I was tryna hit it and quit it. Her love is like a drug. Always leaves a trail of stardust. The girl's a freak, she drive a jeep in Laguna Beach. Fine, fresh, fierce, we got it on lock. All my girls vintage Chanel baby.
+                                <br>
+                                <br>
+                                Before you met me I was alright but things were kinda heavy. Peach-pink lips, yeah, everybody stares. This is no big deal. Calling out my name. I could have rewrite your addiction. She's got that, je ne sais quoi, you know it. Heavy is the head that wears the crown. 'Cause, baby, you're a firework. Like thunder gonna shake the ground.
+                                <br>
+                                <br>
+                                Just own the night like the 4th of July! I’m gon’ put her in a coma. What you're waiting for, it's time for you to show it off. Can't replace you with a million rings. You open my eyes and I'm ready to go, lead me into the light. And here you are. I’m gon’ put her in a coma. Come on, let your colours burst. So cover your eyes, I have a surprise. As I march alone to a different beat. Glitter all over the room pink flamingos in the pool.
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card" style="width: 16rem; border-radius: 10px;">
+                <div class="card mb-4 card-custom-sub">
                     <img class="card-img-top" src="style/images/card.png" alt="Card image cap">
-                    <img src="style/images/logo-card.png" style="width: 65px; height: 65px; position: absolute; margin-top: 7.5rem; margin-left: 1rem;">
-                    <a href="#" style="color:black;">
-                        <div class="card-body" style="padding-top: 0px;">
-                        <h5 class="card-title" style="font-size: 16px;">Safety First</h5>
-                        <p class="card-text" style="font-size: 12px;">Article originally published in the April 2019 issue of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
+                    <img src="style/images/logo-card.png" class="card-custom-img">
+                    <a href="#" data-toggle="modal" data-target="#staticBackdrop">
+                        <div class="card-body card-body-custom">
+                        <h5 class="card-title card-title-custom">Safety First</h5>
+                        <p class="card-text card-text-custom" >Article originally published in the April 2019 issue of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
                         </div>
                     </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Safety First</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="style/images/icon/modal_calendar.svg">
+                                    <p class="pt-3 pl-1">Friday, April 15, 2022</p>
+                                    <img src="style/images/icon/modal-user.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">John Kennedy</p>
+                                    <img src="style/images/icon/modal-category.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">Category</p>
+                                </div>
+                                <div><img src="style/images/image-card-modal.jpg" class="float-left pr-3">What follows is just some placeholder text for this modal dialog. You just gotta ignite the light and let it shine! Come just as you are to me. Just own the night like the 4th of July. Infect me with your love and fill me with your poison. Come just as you are to me. End of the rainbow looking treasure.</div>
+                                <br>
+                                I can't sleep let's run away and don't ever look back, don't ever look back. I can't sleep let's run away and don't ever look back, don't ever look back. Yes, we make angels cry, raining down on earth from up above. I'm walking on air (tonight). Let you put your hands on me in my skin-tight jeans. Stinging like a bee I earned my stripes. I went from zero, to my own hero. Even brighter than the moon, moon, moon. Make 'em go, 'Aah, aah, aah' as you shoot across the sky-y-y! Why don't you let me stop by?
+                                <br>
+                                <br>
+                                Boom, boom, boom. Never maKategoride me blink one time. Yeah, you're lucky if you're on her plane. Talk about our future like we had a clue. Oh my God no exaggeration. You're original, cannot be replaced. The girl's a freak, she drive a jeep in Laguna Beach. It's no big deal, it's no big deal, it's no big deal. In another life I would make you stay. I'm ma get your heart racing in my skin-tight jeans. I wanna walk on your wave length and be there when you vibrate Never made me blink one time.
+                                <br>
+                                <br>
+                                We'd keep all our promises be us against the world. In another life I would be your girl. We can dance, until we die, you and I, will be young forever. And on my 18th Birthday we got matching tattoos. So open up your heart and just let it begin. 'Cause she's the muse and the artist. She eats your heart out. Like Jeffrey Dahmer (woo). Pop your confetti. (This is how we do) I know one spark will shock the world, yeah yeah. If you only knew what the future holds.
+                                <br>
+                                <br>
+                                Sipping on Rosé, Silver Lake sun, coming up all lazy. It’s in the palm of your hand now baby. So we hit the boulevard. So make a wish, I'll make it like your birthday everyday. Do you ever feel already buried deep six feet under? It's time to bring out the big balloons. You could've been the greatest. Passport stamps, she's cosmopolitan. Your kiss is cosmic, every move is magic.
+                                <br>
+                                <br>
+                                We're living the life. We're doing it right. Open up your heart. I was tryna hit it and quit it. Her love is like a drug. Always leaves a trail of stardust. The girl's a freak, she drive a jeep in Laguna Beach. Fine, fresh, fierce, we got it on lock. All my girls vintage Chanel baby.
+                                <br>
+                                <br>
+                                Before you met me I was alright but things were kinda heavy. Peach-pink lips, yeah, everybody stares. This is no big deal. Calling out my name. I could have rewrite your addiction. She's got that, je ne sais quoi, you know it. Heavy is the head that wears the crown. 'Cause, baby, you're a firework. Like thunder gonna shake the ground.
+                                <br>
+                                <br>
+                                Just own the night like the 4th of July! I’m gon’ put her in a coma. What you're waiting for, it's time for you to show it off. Can't replace you with a million rings. You open my eyes and I'm ready to go, lead me into the light. And here you are. I’m gon’ put her in a coma. Come on, let your colours burst. So cover your eyes, I have a surprise. As I march alone to a different beat. Glitter all over the room pink flamingos in the pool.
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="background-color:#F47920; width:100%; height: 230px; position: relative; margin-top:27px">
-            <div class="row" style="margin-right: 0px; margin-left: 0px;">
+    <div class="footer">
+            <div class="row">
                 <div class="col-md-6 d-flex justify-content-center align-self-center" >
-                    <img class="" src="style/images/logo-footer.png" alt="" class="" style="width: 625px; height: 90px;">
+                    <img class="" src="style/images/logo-footer.png" alt="" class="footer-img">
                 </div>
                 <div class="col-md-2">
-                    <div style="padding-top:30px; font-weight: bold; color: #fff; font-size: 18px;">SOSIAL MEDIA</div>
+                    <div class="footer-sosial-media">SOSIAL MEDIA</div>
                     <div class="d-flex mt-2">
                         <img class="" src="style/images/icon/footer-facebook.svg">
-                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff; font-weight: 600;">PT Pupuk Kaltim</div>
+                        <div class="pt-1 pl-2 footer-sosial-media-text">PT Pupuk Kaltim</div>
                     </div>
                     <div class="d-flex mt-2">
                         <img class="" src="style/images/icon/footer-twitter.svg">
-                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff;font-weight: 600;">pupukkaltim_id</div>
+                        <div class="pt-1 pl-2 footer-sosial-media-text">pupukkaltim_id</div>
                     </div>
                     <div class="d-flex mt-2">
                         <img class="" src="style/images/icon/footer-instagram.svg">
-                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff;font-weight: 600;">pupukkaltim_id</div>
+                        <div class="pt-1 pl-2  footer-sosial-media-text">pupukkaltim_id</div>
                     </div>
                     <div class="d-flex mt-2">
                         <img class="" src="style/images/icon/footer-youtube.svg">
-                        <div class="pt-1 pl-2" style="font-size: 14px; color: #fff;font-weight: 600;">PUPUK KALTIM</div>
+                        <div class="pt-1 pl-2  footer-sosial-media-text">PUPUK KALTIM</div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div style="padding-top:30px; font-weight: bold; color: #fff; font-size: 18px;">KONTAK</div>
-                    <div class="mt-2" style="font-size: 14px; color: #fff;font-weight: 600;">Plaza Pupuk Kaltim <br>Jl. Kebon Sirih Raya No.6A <br>Jakarta Pusat 10110</div>
-                    <div class="mt-2" style="font-size: 14px; color: #fff;font-weight: 600;">Telepon: +62 21 3443344,45</div>
-                    <div class="mt-2" style="font-size: 14px; color: #fff;font-weight: 600;">Fax: +62 21 3443344</div>
+                    <div class="footer-kontak">KONTAK</div>
+                    <div class="mt-2 footer-kontak-text">Plaza Pupuk Kaltim <br>Jl. Kebon Sirih Raya No.6A <br>Jakarta Pusat 10110</div>
+                    <div class="mt-2 footer-kontak-text">Telepon: +62 21 3443344,45</div>
+                    <div class="mt-2 footer-kontak-text">Fax: +62 21 3443344</div>
                 </div>
             </div>
     </div>
