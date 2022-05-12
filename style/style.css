@@ -39,25 +39,36 @@ body {
 /* LOGIN-FORM */
 .welcome {
     font-weight: 600;
+    margin-left: -340px;
 }
 
 .pkt-rbi-welcome {
     font-weight: 600;
+    margin-left: -340px;
+}
+
+.input-custom {
+    margin-left: -170px;
 }
 
 .email-input,
 .password-input,
-.submit-login {
+.submit-login{
     width: 60%;
 }
 
 .login-user-radio {
-    margin-left: 130px;
+    margin-left: -23px;
 }
 
 .submit-login {
     color: #ffffff;
     font-size: 16px;
+    margin-left: -340px;
+}
+
+.forgot-password {
+    margin-left: -340px;
 }
 
 .forgot-password a {
@@ -274,12 +285,13 @@ body {
 
 .card-custom {
     position: relative;
-    margin-top: -70px;
+    margin-top: -50px;
 }
 
 .card-custom-sub {
     width: 16rem;
     border-radius: 10px;
+    margin-right: -160px;
 }
 
 .card-custom-img {
