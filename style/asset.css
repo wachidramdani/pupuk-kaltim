@@ -140,17 +140,20 @@
 .company-text {
     position:absolute; 
     top:130px; 
-    left: 1050px;
+    left: 60%
+    /* left: 1050px; */
 }
 
 .company-title1 {
     position:absolute; 
     top:170px; 
-    left: 930px;
+    left: 50%
+    /* left: 930px; */
 }
 
 .company-title2 {
     position:absolute; 
-    top:230px; 
-    left: 930px;
+    top:230px;
+    left: 50% 
+    /* left: 930px; */
 }
