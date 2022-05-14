@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/background-image-white-v2.jpg);
+    background-image: url(images/background-image-white-v3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #ffffff !important;
@@ -31,7 +31,9 @@ body {
 }
 
 .body-custom {
-    margin-top: 80px;
+    margin-top: 85px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 /* LOGIN */
@@ -39,7 +41,7 @@ body {
 /* LOGIN-FORM */
 .welcome {
     font-weight: 600;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 
 .pkt-rbi-welcome {
@@ -49,11 +51,11 @@ body {
 .email-input,
 .password-input,
 .submit-login{
-    width: 40%;
+    width: 45%;
 }
 
 .login-user-radio {
-    /* margin-left: -150px; */
+    margin-left: -125px;
 }
 
 .submit-login {
@@ -70,14 +72,15 @@ body {
 .footer {
     background-color: #F47920;
     width: 100%;
-    height: calc(100vh - 456px);
+    height: calc(100vh - 673px);
     position: relative;
-    /* margin-top:27px; */
+    /* margin-top: 15.5px; */
 }
 
 .footer .row {
     margin-right: 0px;
     margin-left: 0px;
+    margin-top: 1rem;
 }
 
 .footer-img {
@@ -88,7 +91,7 @@ body {
 
 .footer-sosial-media,
 .footer-contact {
-    padding-top: 20px;
+    padding-top: 2rem;
     font-weight: bold;
     color: #fff;
     font-size: 18px;
@@ -280,21 +283,19 @@ body {
 }
 
 .card-custom-sub {
-    width: calc(100% - 2rem);
+    width: calc(100% - 14rem);
     border-radius: 10px;
-    margin-left: 2rem;
-    /* margin-right: -160px; */
 }
 
 .card-img-top {
-    height: 100px;
+    height: 9rem;
 }
 
 .card-custom-img {
-    width: 65px;
-    height: 65px;
+    width: 3.2rem;
+    height: 3.5rem;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 5rem;
     margin-left: 1rem;
 }
 
@@ -381,3 +382,40 @@ a.wrimagecard:hover,
     font-size: 40px;
     line-height: 46px;
 }
+
+@media (min-width: 1280px) and (max-width: 1439px) { 
+    .card-custom-sub {
+        width: calc(100% - 12rem);
+    }
+
+    .card-img-top {
+        height: 8rem;
+    }
+
+    .card-body-custom {
+        padding-top: 10px;
+    }
+
+    .footer .row {
+        margin-top: 0px;
+    }
+
+    .footer {
+        height: calc(100vh - 681px);
+    }
+
+    .footer-img {
+        width: 525px;
+        height: 80px;
+    }
+
+    .email-input,
+    .password-input,
+    .submit-login {
+        width: 50%;
+    }
+
+    .login-user-radio {
+        margin-left: -115px;
+    }
+ }
