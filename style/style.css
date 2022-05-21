@@ -230,7 +230,7 @@ body {
 
 .card-header span {
     /* color: #F47920; */
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .card .card-header button {
@@ -240,7 +240,8 @@ body {
     font-weight: normal;
     border-radius: 5px;
     border: none;
-    background-color: #F47920;
+    /* background-color: #F47920; */
+    background-color: #CED4DA;
     color: #fff;
 }
 
@@ -317,7 +318,8 @@ body {
 }
 
 thead tr:nth-child(1) th {
-    background: white;
+    /* background: white; */
+    background: #FFC107;
     position: sticky;
     top: 0;
     z-index: 10;
