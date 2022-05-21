@@ -382,6 +382,15 @@ a.wrimagecard:hover,
 
 .wrimagecard-topimage_title .label {
     font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.wrimagecard-topimage_title .labelmt {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    /* margin-top: 20px; */
 }
 
 .wrimagecard-topimage_title .value {
