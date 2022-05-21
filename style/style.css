@@ -39,7 +39,7 @@ body {
 /* LOGIN-FORM */
 .welcome {
     font-weight: 600;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .pkt-rbi-welcome {
@@ -65,6 +65,7 @@ body {
 .forgot-password a {
     color: #000000;
     font-size: 12px;
+    font-weight: 600;
 }
 
 /* FOOTER */
@@ -83,24 +84,24 @@ body {
 }
 
 .footer-img {
-    width: 300px;
-    height: 44px;
+    width: 450px;
+    height: 65px;
     margin: 40px 21px 21px;
     padding: 0;
 }
 
 .footer-sosial-media,
 .footer-contact {
-    font-weight: 400;
+    font-weight: 800;
     color: #fff;
     font-size: 14px;
 }
 
 .footer-sosial-media-text,
 .footer-contact-text {
-    font-size: 11px;
+    font-size: 12px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* Style the tab */
@@ -273,6 +274,7 @@ body {
 .card-title-custom {
     font-size: 14px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .card-text-custom {
@@ -285,22 +287,22 @@ body {
 }
 
 .card-custom-sub {
-    width: 172px;
-    height: 229px;
+    /* width: 172px; */
+    /* height: 229px; */
     border-radius: 10px;
     /* margin-left: 2rem; */
     /* margin-right: -160px; */
 }
 
-.card-img-top {
+/* .card-img-top {
     height: 100px;
-}
+} */
 
 .card-custom-img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 72px;
     position: absolute;
-    margin-top: 55px;
+    margin-top: 100px;
     margin-left: 1rem;
 }
 
