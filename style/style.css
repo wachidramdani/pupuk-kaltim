@@ -241,8 +241,9 @@ body {
     border-radius: 5px;
     border: none;
     /* background-color: #F47920; */
+    color: black;
     background-color: #CED4DA;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .card .card-header button:focus,
