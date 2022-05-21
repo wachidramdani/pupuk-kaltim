@@ -1,8 +1,8 @@
 body {
     background-image: url(images/background-image-white.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #ffffff !important;
+    background-size: cover;
+    background-color: #0089ff !important;
     font-family: myFirstFont;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ body {
 .email-input,
 .password-input,
 .submit-login{
-    width: 70%;
+    width: 100%;
 }
 
 .login-user-radio {
@@ -70,10 +70,11 @@ body {
 /* FOOTER */
 .footer {
     background-color: #F47920;
-    width: 100%;
-    position: relative;
-    padding: 1rem;
-    /* margin-top:27px; */
+    clear: both;
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:300px;   /* Height of the footer */
 }
 
 .footer .row {
@@ -82,21 +83,22 @@ body {
 }
 
 .footer-img {
-    width: 225px;
-    height: 60px;
-    margin-top: 20px;
+    width: 300px;
+    height: 44px;
+    margin: 40px 21px 21px;
+    padding: 0;
 }
 
 .footer-sosial-media,
 .footer-contact {
     font-weight: 400;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer-sosial-media-text,
 .footer-contact-text {
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
     font-weight: 400;
 }
@@ -263,15 +265,16 @@ body {
 }
 
 .card-body-custom {
-    padding-top: 0px;
+    padding: 10px;
 }
 
 .card-title-custom {
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 .card-text-custom {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .card-custom {
@@ -280,7 +283,8 @@ body {
 }
 
 .card-custom-sub {
-    width: 100%;
+    width: 172px;
+    height: 229px;
     border-radius: 10px;
     /* margin-left: 2rem; */
     /* margin-right: -160px; */
@@ -291,10 +295,10 @@ body {
 }
 
 .card-custom-img {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 55px;
     margin-left: 1rem;
 }
 
