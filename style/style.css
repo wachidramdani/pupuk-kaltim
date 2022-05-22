@@ -1,8 +1,8 @@
 body {
-    background-image: url(images/background-image-white-v3.jpg);
+    background-image: url(images/background-image-white.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #ffffff !important;
+    background-size: cover;
+    background-color: #0089ff !important;
     font-family: myFirstFont;
     margin: 0;
     padding: 0;
@@ -31,9 +31,7 @@ body {
 }
 
 .body-custom {
-    margin-top: 85px;
-    margin-right: 0;
-    margin-left: 0;
+    margin-top: 80px;
 }
 
 /* LOGIN */
@@ -41,21 +39,22 @@ body {
 /* LOGIN-FORM */
 .welcome {
     font-weight: 600;
-    /* margin-top: -20px; */
+    /* margin-top: 1rem; */
 }
 
 .pkt-rbi-welcome {
     font-weight: 600;
+    font-size: 32px;
 }
 
 .email-input,
 .password-input,
 .submit-login{
-    width: 45%;
+    width: 100%;
 }
 
 .login-user-radio {
-    margin-left: -125px;
+    /* margin-left: -150px; */
 }
 
 .submit-login {
@@ -66,40 +65,41 @@ body {
 .forgot-password a {
     color: #000000;
     font-size: 12px;
+    font-weight: 600;
 }
 
 /* FOOTER */
 .footer {
     background-color: #F47920;
-    width: 100%;
-    height: calc(100vh - 673px);
-    position: relative;
-    /* margin-top: 15.5px; */
+    clear: both;
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:300px;   /* Height of the footer */
 }
 
 .footer .row {
     margin-right: 0px;
     margin-left: 0px;
-    margin-top: 1rem;
 }
 
 .footer-img {
-    width: 625px;
-    height: 90px;
-    margin-top: 20px;
+    width: 450px;
+    height: 65px;
+    margin: 40px 21px 21px;
+    padding: 0;
 }
 
 .footer-sosial-media,
 .footer-contact {
-    padding-top: 2rem;
-    font-weight: bold;
+    font-weight: 800;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footer-sosial-media-text,
 .footer-contact-text {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     font-weight: 600;
 }
@@ -231,7 +231,7 @@ body {
 
 .card-header span {
     /* color: #F47920; */
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .card .card-header button {
@@ -241,8 +241,10 @@ body {
     font-weight: normal;
     border-radius: 5px;
     border: none;
-    background-color: #F47920;
-    color: #fff;
+    /* background-color: #F47920; */
+    color: black;
+    background-color: #CED4DA;
+    /* color: #fff; */
 }
 
 .card .card-header button:focus,
@@ -266,15 +268,17 @@ body {
 }
 
 .card-body-custom {
-    padding-top: 0px;
+    padding: 10px;
 }
 
 .card-title-custom {
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .card-text-custom {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .card-custom {
@@ -283,19 +287,22 @@ body {
 }
 
 .card-custom-sub {
-    width: calc(100% - 14rem);
+    /* width: 172px; */
+    /* height: 229px; */
     border-radius: 10px;
+    /* margin-left: 2rem; */
+    /* margin-right: -160px; */
 }
 
-.card-img-top {
-    height: 9rem;
-}
+/* .card-img-top {
+    height: 100px;
+} */
 
 .card-custom-img {
-    width: 3.2rem;
-    height: 3.5rem;
+    width: 70px;
+    height: 72px;
     position: absolute;
-    margin-top: 5rem;
+    margin-top: 100px;
     margin-left: 1rem;
 }
 
@@ -314,7 +321,8 @@ body {
 }
 
 thead tr:nth-child(1) th {
-    background: white;
+    /* background: white; */
+    background: #FFC107;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -376,46 +384,18 @@ a.wrimagecard:hover,
 
 .wrimagecard-topimage_title .label {
     font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.wrimagecard-topimage_title .labelmt {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    /* margin-top: 20px; */
 }
 
 .wrimagecard-topimage_title .value {
     font-size: 40px;
     line-height: 46px;
 }
-
-@media (min-width: 1280px) and (max-width: 1439px) { 
-    .card-custom-sub {
-        width: calc(100% - 12rem);
-    }
-
-    .card-img-top {
-        height: 8rem;
-    }
-
-    .card-body-custom {
-        padding-top: 10px;
-    }
-
-    .footer .row {
-        margin-top: 0px;
-    }
-
-    .footer {
-        height: calc(100vh - 681px);
-    }
-
-    .footer-img {
-        width: 525px;
-        height: 80px;
-    }
-
-    .email-input,
-    .password-input,
-    .submit-login {
-        width: 50%;
-    }
-
-    .login-user-radio {
-        margin-left: -115px;
-    }
- }
