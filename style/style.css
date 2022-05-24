@@ -316,7 +316,7 @@ body {
 
 /* Table */
 .table-responsive {
-    height: 425px;
+    height: 480px;
     overflow-y: scroll;
 }
 
@@ -363,7 +363,7 @@ thead tr:nth-child(1) th {
     transition: all 0.3s ease; */
     border: 0;
     border-radius: 10px;
-    width: 290px;
+    width: 100%;
     height: 120px;
 }
 
@@ -410,6 +410,7 @@ thead tr:nth-child(1) th {
 
 .card-body .label-number {
     text-align: left;
+    /* color:#000000 */
 }
 
 
@@ -418,6 +419,13 @@ thead tr:nth-child(1) th {
     color: #fff;
     font-weight: 400;
     margin-top: 10px;
+}
+
+.labelmt-number2 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 25px;
 }
 
 .labelmt {
