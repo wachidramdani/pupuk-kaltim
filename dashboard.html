@@ -16,7 +16,7 @@
     <!-- Step 2 - Include the fusion theme -->
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 
-    <title>Pupul - Kaltim</title>
+    <title>Dashboard - Pupuk Kaltim</title>
 </head>
 
 <body>
@@ -122,36 +122,73 @@
             </div>
         </div>
     </nav>
-    <div class="card" style="background-color: #f8f9fa; border-radius: 0; border-bottom: 0;">
-        <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
-            <div class="row tab">
-                <div class="col callout">
-                    <button type="button" class="btn tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">
-                        <i class="fa fa-tags"></i>
-                        Assets
-                        <b class="notch"></b>
-                    </button>
+    <hr class="hr-menu">
+    <div class="tab">
+        <div>
+            <div class="row tab-sub2">
+                <div class="col-3">
+                    <div class="callout">
+                        <div class="row">
+                            <button type="button" class="btn d-flex tablinks tab-btn-asset" onclick="openTab(event, 'tab1')" id="defaultOpen">
+                                <div class="col-4 tab-img-asset">
+                                    <!-- <img src="/style/images/icon/dashboard-tab-asset-active.svg" /> -->
+                                    <i class="fas fa-money-check-alt"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-asset">
+                                    ASSET
+                                </div>
+                                <b class="notch-asset"></b>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col callout">
-                    <button type="button" class="btn tablinks" onclick="openTab(event, 'tab2')">
-                        <i class="fa fa-exclamation-triangle"></i>
-                        Risk
-                        <b class="notch"></b>
-                    </button>
+                <div class="col-3">
+                    <div class="callout">
+                        <div class="row">
+                            <button type="button" class="btn d-flex tablinks tab-btn-risk" onclick="openTab(event, 'tab2')" id="defaultOpen">
+                                <div class="col-4 tab-img-risk">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-risk">
+                                    RISK
+                                </div>
+                                <b class="notch-risk"></b>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col callout">
-                    <button type="button" class="btn tablinks" onclick="openTab(event, 'tab3')">
-                        <i class="fa fa-search-minus"></i>
-                        Inspection
-                        <b class="notch"></b>
-                    </button>
+                <div class="col-3">
+                    <div class="callout">
+                        <div class="row">
+                            <button type="button" class="btn d-flex tablinks tab-btn-inspection" onclick="openTab(event, 'tab3')" id="defaultOpen">
+                                <div class="col-4 tab-img-inspection">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-inspection">
+                                    INSPECTION
+                                </div>
+                                <b class="notch-inspection"></b>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col callout">
-                    <button type="button" class="btn tablinks" onclick="openTab(event, 'tab4')">
-                        <i class="fa fa-calendar-check"></i>
-                        Follow Up Item
-                        <b class="notch"></b>
-                    </button>
+                <div class="col-3">
+                    <div class="callout">
+                        <!-- <button type="button" class="btn tablinks" onclick="openTab(event, 'tab4')">
+                            <i class="fa fa-calendar-check"></i>
+                            Follow Up Item
+                            <b class="notch"></b>
+                        </button> -->
+                        <button type="button" class="btn d-flex tablinks tab-btn-followupitem" onclick="openTab(event, 'tab4')" id="defaultOpen">
+                            <div class="col-4 tab-img-followupitem">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="col-8 d-flex justify-content-start align-self-center tab-text-followupitem">
+                                FOLLOW UP ITEM
+                            </div>
+                            <b class="notch-followupitem"></b>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
