@@ -116,7 +116,8 @@ body {
     padding: 10px;
     font-size: 14px;
     background-color: #FFF1E5;
-    box-shadow: 3px 3px #F47920;
+    /* color: #fff; */
+    /* box-shadow: 3px 3px #F47920; */
 }
 
 .tab button i {
