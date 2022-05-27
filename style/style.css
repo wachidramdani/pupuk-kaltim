@@ -1,144 +1,79 @@
 body {
-    background-image: url(images/background-image-white.jpg);
+    background-image: url(/style/images/background-image-white.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #0089ff !important;
+    /* background-color: #0089ff !important; */
     font-family: myFirstFont;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-}
-
+  }
+  
 @font-face {
     font-family: myFirstFont;
     src: url(font/Montserrat-Medium.ttf);
 }
 
+/* MENU */
 .navbar {
-    border-bottom: 1px solid #cdcdcd;
+    padding: 0 1rem;
 }
 
-.btn:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.table td,
-.table th {
-    text-align: center;
-    font-size: 10px;
-}
-
-.body-custom {
-    margin-top: 80px;
-}
-
-/* LOGIN */
-
-/* LOGIN-FORM */
-.welcome {
-    font-weight: 600;
-    /* margin-top: 1rem; */
-}
-
-.pkt-rbi-welcome {
-    font-weight: 600;
-    font-size: 32px;
-}
-
-.email-input,
-.password-input,
-.submit-login{
-    width: 100%;
-}
-
-/* .login-user-radio {
-    margin-left: -150px;
-} */
-
-.submit-login {
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.forgot-password a {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-/* FOOTER */
-.footer {
-    background-color: #F47920;
-    clear: both;
-    position:relative;
-    bottom:0;
-    width:100%;
-    height:300px;   /* Height of the footer */
-}
-
-.footer .row {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.footer-img {
-    width: 450px;
-    height: 65px;
-    margin: 40px 21px 21px;
-    padding: 0;
-}
-
-.footer-sosial-media,
-.footer-contact {
-    font-weight: 800;
-    color: #fff;
-    font-size: 14px;
-}
-
-.footer-sosial-media-text,
-.footer-contact-text {
-    font-size: 12px;
-    color: #fff;
-    font-weight: 600;
+.hr-menu {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Style the tab */
 .tab {
+    background-color: #F4F6F9;
+}
+
+.tab-sub2 {
     overflow: hidden;
     width: 100%;
+    margin: 0;
+}
+
+.tab-sub2 .row {
+    margin: 0;
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
-    width: 80%;
+/* .tab-sub3 button {
+    width: 100%;
     padding: 10px;
     font-size: 14px;
     background-color: #FFF1E5;
-    /* color: #fff; */
-    /* box-shadow: 3px 3px #F47920; */
-}
+    box-shadow: 3px 3px #F47920;
+    height: 95px;
+    border-radius: 10px;
+} */
 
-.tab button i {
+/* .tab-sub3 button i {
     margin-right: 10px;
-}
+} */
 
-.tab .callout {
+/* .tab-sub3 .callout {
     display: flex;
     justify-content: center;
-}
+} */
 
 /* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
+.tab-sub2 .tab-btn-asset:hover, .tab-btn-risk:hover, .tab-btn-inspection:hover, .tab-btn-followupitem:hover {
+    color: #ffffff;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
-    background-color: #F47920;
-    color: #fff;
-    box-shadow: 3px 3px #FFF1E5;
+.tab-sub2 .tab-btn-asset.active, .tab-btn-risk.active, .tab-btn-inspection.active, .tab-btn-followupitem.active{
+    /* background-color: #FFB74D; */
+    box-shadow: 3px 3px #F4F6F9;
+    color: #ffffff;
+}
+
+.tab-sub2 .tab-btn:focus {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 }
 
 .callout {
@@ -151,7 +86,7 @@ body {
     border-radius: 6px;
 }
 
-.tab .callout button.active .notch {
+.tab-sub2 .callout button.active .notch-asset {
     left: calc(50% - 12px);
     position: absolute;
     bottom: -12px;
@@ -159,7 +94,7 @@ body {
     border-bottom: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: 12px solid #F47920;
+    border-top: 12px solid #FFB74D;
     padding: 0;
     width: 0;
     height: 0;
@@ -170,6 +105,166 @@ body {
     _border-right-color: pink;
     _border-left-color: pink;
     _filter: chroma(color=pink);
+}
+
+.tab-sub2 .callout button.active .notch-risk {
+    left: calc(50% - 12px);
+    position: absolute;
+    bottom: -12px;
+    margin: 0;
+    border-bottom: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #81C784;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+    /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.tab-sub2 .callout button.active .notch-inspection {
+    left: calc(50% - 12px);
+    position: absolute;
+    bottom: -12px;
+    margin: 0;
+    border-bottom: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #E57373;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+    /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.tab-sub2 .callout button.active .notch-followupitem {
+    left: calc(50% - 12px);
+    position: absolute;
+    bottom: -12px;
+    margin: 0;
+    border-bottom: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #64B5F6;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+    /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.tab-btn-asset {
+    position: relative;
+    color: #E5A545;
+    width: 100%;
+    /* font-size: 14px; */
+    background-color: #FFB74D;
+    /* box-shadow: 3px 3px #F47920; */
+    height: 95px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
+}
+
+.tab-btn-risk {
+    position: relative;
+    color: #70AE72;
+    width: 100%;
+    /* font-size: 14px; */
+    background-color: #81C784;
+    /* box-shadow: 3px 3px #F47920; */
+    height: 95px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
+}
+
+.tab-btn-inspection {
+    position: relative;
+    color: #C96161;
+    width: 100%;
+    /* font-size: 14px; */
+    background-color: #E57373;
+    /* box-shadow: 3px 3px #F47920; */
+    height: 95px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
+}
+
+.tab-btn-followupitem {
+    position: relative;
+    color: #549BD4;
+    width: 100%;
+    /* font-size: 14px; */
+    background-color: #64B5F6;
+    /* box-shadow: 3px 3px #F47920; */
+    height: 95px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
+}
+
+.tab-btn-asset .tab-img-asset {
+    position: absolute;
+    background-color: #D49A42;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.tab-btn-risk .tab-img-risk {
+    position: absolute;
+    background-color: #649D65;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.tab-btn-inspection .tab-img-inspection {
+    position: absolute;
+    background-color: #B25959;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.tab-btn-followupitem .tab-img-followupitem {
+    position: absolute;
+    background-color: #4A8CC0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.tab-btn-asset .tab-text-asset, .tab-btn-risk .tab-text-risk, .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+    font-size: 24px;
+    left: 100px;
 }
 
 /* Style the tab content */
