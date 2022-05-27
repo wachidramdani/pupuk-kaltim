@@ -327,8 +327,8 @@ body {
 }
 
 .card-header span {
-    /* color: #F47920; */
-    font-size: 15px;
+    color: #6C757D;
+    font-size: 14px;
 }
 
 .card .card-header button {
@@ -497,7 +497,7 @@ iconcard {
 } */
 
 .wrimagecard-topimage_title {
-    margin-left: 240px;
+    margin-left: 230px;
 }
 
 .label {
