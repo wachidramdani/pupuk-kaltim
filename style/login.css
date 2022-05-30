@@ -177,13 +177,27 @@
 *::after {
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
-  font-family: Open Sans;
 }
+
 body {
   background: hsl(86, 85%, 95%);
+  background-image: url(/style/images/background-image-white.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F4F6F9;
+  font-family: myFirstFont;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Montserrat-Medium.ttf);
 }
 
 .mainlogin {

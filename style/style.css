@@ -1,21 +1,3 @@
-body {
-    /* background-image: url(/style/images/background-image-white.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* background-color: #0089ff !important; */
-    background-color: #F4F6F9;
-    font-family: myFirstFont;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-@font-face {
-    font-family: myFirstFont;
-    src: url(font/Montserrat-Medium.ttf);
-}
-
 /* MENU */
 .navbar {
     padding: 0 1rem;
