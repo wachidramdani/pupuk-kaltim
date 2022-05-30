@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.6.1/css/bootstrap.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- CUSTOME STYLE CSS BOOTSTRAP -->
+    <style>
+        /* STYLE INPUT */
+        .form-control:focus {
+            border-color: #FFC000;
+            box-shadow: 0 0 0 .2rem rgba(255, 192, 0, .25);
+        }
+
+        .form-control-lg {
+            border-radius: 10px;
+        }
+
+        .input-group:not(.has-validation)>.custom-file:not(:last-child) .custom-file-label,
+        .input-group:not(.has-validation)>.custom-file:not(:last-child) .custom-file-label::after,
+        .input-group:not(.has-validation)>.custom-select:not(:last-child),
+        .input-group:not(.has-validation)>.form-control:not(:last-child) {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .input-group-text {
+            border-radius: 10px;
+        }
+
+        /* VALIDATION INPUT */
+        .form-control.is-valid,
+        .was-validated .form-control:valid {
+            border-color: #FFC000;
+        }
+
+        .form-control.is-valid:focus,
+        .was-validated .form-control:valid:focus {
+            border-color: #FFC000;
+            box-shadow: 0 0 0 .2rem rgba(255, 192, 0, .25);
+        }
+
+        /* BUTTON LOGIN */
+        .btn-warning {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426;
+        }
+
+        .btn-warning:hover {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426;
+        }
+
+        .btn-warning.focus,
+        .btn-warning:focus {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426;
+        }
+
+        .btn-warning:not(:disabled):not(.disabled).active,
+        .btn-warning:not(:disabled):not(.disabled):active,
+        .show>.btn-warning.dropdown-toggle {
+            color: #ffffff;
+            background-color: #F47920;
+            border-color: #D36426;
+        }
+
+        .btn-warning:not(:disabled):not(.disabled).active:focus,
+        .btn-warning:not(:disabled):not(.disabled):active:focus,
+        .show>.btn-warning.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgb(244 121 32 / 50%);
+        }
+
+        .btn-group-lg>.btn,
+        .btn-lg {
+            border-radius: 10px;
+        }
+
+        .custom-control-input.is-valid~.custom-control-label,
+        .was-validated .custom-control-input:valid~.custom-control-label {
+            color: #000000;
+        }
+
+        .btn {
+            border-radius: 10px;
+        }
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    </style>
+
+    <title>Login Pupuk Kaltim</title>
+</head>
+
+<body>
+
+    <div class="row body-custom">
+        <div class="col-md-7">
+            <div class="welcome d-flex justify-content-center">Welcome To</div>
+            <h1 class="pkt-rbi-welcome d-flex justify-content-center">PKT RBI SOFTWARE</h1>
+            <form class="needs-validation" novalidate>
+                <div class="login d-flex justify-content-center">
+                    <div class="form-group email-input">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="style/images/icon/username-login.svg">
+                                </div>
+                            </div>
+                            <input type="email" class="form-control form-control-lg" id="validationCustom01"
+                                placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                Please enter valid email
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login d-flex justify-content-center mt-2">
+                    <div class="form-group password-input">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="style/images/icon/password-login.svg">
+                                </div>
+                            </div>
+                            <input type="password" class="form-control form-control-lg" id="validationCustom02"
+                                placeholder="Password" required>
+                            <div class="invalid-feedback">
+                                Password field is required
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex mb-4 mt-2 justify-content-center">
+                    <div class="custom-control custom-radio custom-control-inline login-user-radio">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">Login User</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">Login with LDP</label>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center login-custom">
+                    <button type="submit" class="btn btn-warning btn-lg submit-login font-weight-bold">LOGIN</button>
+                </div>
+                <div class="d-flex justify-content-center my-4 forgot-password">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="@forgotPassword">FORGOT PASSWORD</a>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="email" class="col-form-label">Email :</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newPassword" class="col-form-label">New Password :</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmNewPassword" class="col-form-label">New Password
+                                            :</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <b>Password Rules</b>
+                                    <ul>
+                                        <li>6-12 characters long</li>
+                                        <li>Combination of upper and lower case alphabet, number and special
+                                            character</li>
+                                        <li>Does not contain spaces</li>
+                                        <li>Connat be the same as old password</li>
+                                        <li>New password and its confirmation must be exactly the same</li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-5 d-flex align-items-center flex-column card-custom">
+            <div class="card mb-4 card-custom-sub">
+                <img class="card-img-top" src="style/images/card.png" alt="Card image cap">
+                <img src="style/images/logo-card.png" class="card-custom-img">
+                <a href="#" data-toggle="modal" data-target="#staticBackdrop">
+                    <div class="card-body card-body-custom">
+                        <h5 class="card-title card-title-custom">Safety First</h5>
+                        <p class="card-text card-text-custom">Article originally published in the April 2019 issue
+                            of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
+                    </div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Safety First</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="style/images/icon/modal_calendar.svg">
+                                    <p class="pt-3 pl-1">Friday, April 15, 2022</p>
+                                    <img src="style/images/icon/modal-user.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">John Kennedy</p>
+                                    <img src="style/images/icon/modal-category.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">Category</p>
+                                </div>
+                                <div><img src="style/images/image-card-modal.jpg" class="float-left pr-3">What
+                                    follows is just some placeholder text for this modal dialog. You just gotta
+                                    ignite the light and let it shine! Come just as you are to me. Just own the
+                                    night like the 4th of July. Infect me with your love and fill me with your
+                                    poison. Come just as you are to me. End of the rainbow looking treasure.</div>
+                                <br>
+                                I can't sleep let's run away and don't ever look back, don't ever look back. I can't
+                                sleep let's run away and don't ever look back, don't ever look back. Yes, we make
+                                angels cry, raining down on earth from up above. I'm walking on air (tonight). Let
+                                you put your hands on me in my skin-tight jeans. Stinging like a bee I earned my
+                                stripes. I went from zero, to my own hero. Even brighter than the moon, moon, moon.
+                                Make 'em go, 'Aah, aah, aah' as you shoot across the sky-y-y! Why don't you let me
+                                stop by?
+                                <br>
+                                <br>
+                                Boom, boom, boom. Never made me blink one time. Yeah, you're lucky if you're on her
+                                plane. Talk about our future like we had a clue. Oh my God no exaggeration. You're
+                                original, cannot be replaced. The girl's a freak, she drive a jeep in Laguna Beach.
+                                It's no big deal, it's no big deal, it's no big deal. In another life I would make
+                                you stay. I'm ma get your heart racing in my skin-tight jeans. I wanna walk on your
+                                wave length and be there when you vibrate Never made me blink one time.
+                                <br>
+                                <br>
+                                We'd keep all our promises be us against the world. In another life I would be your
+                                girl. We can dance, until we die, you and I, will be young forever. And on my 18th
+                                Birthday we got matching tattoos. So open up your heart and just let it begin.
+                                'Cause she's the muse and the artist. She eats your heart out. Like Jeffrey Dahmer
+                                (woo). Pop your confetti. (This is how we do) I know one spark will shock the world,
+                                yeah yeah. If you only knew what the future holds.
+                                <br>
+                                <br>
+                                Sipping on Rosé, Silver Lake sun, coming up all lazy. It’s in the palm of your hand
+                                now baby. So we hit the boulevard. So make a wish, I'll make it like your birthday
+                                everyday. Do you ever feel already buried deep six feet under? It's time to bring
+                                out the big balloons. You could've been the greatest. Passport stamps, she's
+                                cosmopolitan. Your kiss is cosmic, every move is magic.
+                                <br>
+                                <br>
+                                We're living the life. We're doing it right. Open up your heart. I was tryna hit it
+                                and quit it. Her love is like a drug. Always leaves a trail of stardust. The girl's
+                                a freak, she drive a jeep in Laguna Beach. Fine, fresh, fierce, we got it on lock.
+                                All my girls vintage Chanel baby.
+                                <br>
+                                <br>
+                                Before you met me I was alright but things were kinda heavy. Peach-pink lips, yeah,
+                                everybody stares. This is no big deal. Calling out my name. I could have rewrite
+                                your addiction. She's got that, je ne sais quoi, you know it. Heavy is the head that
+                                wears the crown. 'Cause, baby, you're a firework. Like thunder gonna shake the
+                                ground.
+                                <br>
+                                <br>
+                                Just own the night like the 4th of July! I’m gon’ put her in a coma. What you're
+                                waiting for, it's time for you to show it off. Can't replace you with a million
+                                rings. You open my eyes and I'm ready to go, lead me into the light. And here you
+                                are. I’m gon’ put her in a coma. Come on, let your colours burst. So cover your
+                                eyes, I have a surprise. As I march alone to a different beat. Glitter all over the
+                                room pink flamingos in the pool.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 card-custom-sub">
+                <img class="card-img-top" src="style/images/card.png" alt="Card image cap">
+                <img src="style/images/logo-card.png" class="card-custom-img">
+                <a href="#" data-toggle="modal" data-target="#staticBackdrop">
+                    <div class="card-body card-body-custom">
+                        <h5 class="card-title card-title-custom">Safety First</h5>
+                        <p class="card-text card-text-custom">Article originally published in the April 2019 issue
+                            of World Fertilizer Paul Kowalski and Michael Nugent, E2G, USA, and Timothy.</p>
+                    </div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Safety First</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="style/images/icon/modal_calendar.svg">
+                                    <p class="pt-3 pl-1">Friday, April 15, 2022</p>
+                                    <img src="style/images/icon/modal-user.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">John Kennedy</p>
+                                    <img src="style/images/icon/modal-category.svg" class="pl-3">
+                                    <p class="pt-3 pl-1">Category</p>
+                                </div>
+                                <div><img src="style/images/image-card-modal.jpg" class="float-left pr-3">What
+                                    follows is just some placeholder text for this modal dialog. You just gotta
+                                    ignite the light and let it shine! Come just as you are to me. Just own the
+                                    night like the 4th of July. Infect me with your love and fill me with your
+                                    poison. Come just as you are to me. End of the rainbow looking treasure.</div>
+                                <br>
+                                I can't sleep let's run away and don't ever look back, don't ever look back. I can't
+                                sleep let's run away and don't ever look back, don't ever look back. Yes, we make
+                                angels cry, raining down on earth from up above. I'm walking on air (tonight). Let
+                                you put your hands on me in my skin-tight jeans. Stinging like a bee I earned my
+                                stripes. I went from zero, to my own hero. Even brighter than the moon, moon, moon.
+                                Make 'em go, 'Aah, aah, aah' as you shoot across the sky-y-y! Why don't you let me
+                                stop by?
+                                <br>
+                                <br>
+                                Boom, boom, boom. Never maKategoride me blink one time. Yeah, you're lucky if you're
+                                on her plane. Talk about our future like we had a clue. Oh my God no exaggeration.
+                                You're original, cannot be replaced. The girl's a freak, she drive a jeep in Laguna
+                                Beach. It's no big deal, it's no big deal, it's no big deal. In another life I would
+                                make you stay. I'm ma get your heart racing in my skin-tight jeans. I wanna walk on
+                                your wave length and be there when you vibrate Never made me blink one time.
+                                <br>
+                                <br>
+                                We'd keep all our promises be us against the world. In another life I would be your
+                                girl. We can dance, until we die, you and I, will be young forever. And on my 18th
+                                Birthday we got matching tattoos. So open up your heart and just let it begin.
+                                'Cause she's the muse and the artist. She eats your heart out. Like Jeffrey Dahmer
+                                (woo). Pop your confetti. (This is how we do) I know one spark will shock the world,
+                                yeah yeah. If you only knew what the future holds.
+                                <br>
+                                <br>
+                                Sipping on Rosé, Silver Lake sun, coming up all lazy. It’s in the palm of your hand
+                                now baby. So we hit the boulevard. So make a wish, I'll make it like your birthday
+                                everyday. Do you ever feel already buried deep six feet under? It's time to bring
+                                out the big balloons. You could've been the greatest. Passport stamps, she's
+                                cosmopolitan. Your kiss is cosmic, every move is magic.
+                                <br>
+                                <br>
+                                We're living the life. We're doing it right. Open up your heart. I was tryna hit it
+                                and quit it. Her love is like a drug. Always leaves a trail of stardust. The girl's
+                                a freak, she drive a jeep in Laguna Beach. Fine, fresh, fierce, we got it on lock.
+                                All my girls vintage Chanel baby.
+                                <br>
+                                <br>
+                                Before you met me I was alright but things were kinda heavy. Peach-pink lips, yeah,
+                                everybody stares. This is no big deal. Calling out my name. I could have rewrite
+                                your addiction. She's got that, je ne sais quoi, you know it. Heavy is the head that
+                                wears the crown. 'Cause, baby, you're a firework. Like thunder gonna shake the
+                                ground.
+                                <br>
+                                <br>
+                                Just own the night like the 4th of July! I’m gon’ put her in a coma. What you're
+                                waiting for, it's time for you to show it off. Can't replace you with a million
+                                rings. You open my eyes and I'm ready to go, lead me into the light. And here you
+                                are. I’m gon’ put her in a coma. Come on, let your colours burst. So cover your
+                                eyes, I have a surprise. As I march alone to a different beat. Glitter all over the
+                                room pink flamingos in the pool.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center align-self-center">
+                <img src="style/images/logo-footer.png" alt="" class="footer-img">
+            </div>
+            <div class="col-md-3 pl-5">
+                <div class="footer-sosial-media">SOSIAL MEDIA</div>
+                <div class="d-flex mt-1">
+                    <img class="" src="style/images/icon/footer-facebook.svg">
+                    <div class="pt-1 pl-2 footer-sosial-media-text">PT Pupuk Kaltim</div>
+                </div>
+                <div class="d-flex mt-1">
+                    <img class="" src="style/images/icon/footer-twitter.svg">
+                    <div class="pt-1 pl-2 footer-sosial-media-text">pupukkaltim_id</div>
+                </div>
+                <div class="d-flex mt-1">
+                    <img class="" src="style/images/icon/footer-instagram.svg">
+                    <div class="pt-1 pl-2  footer-sosial-media-text">pupukkaltim_id</div>
+                </div>
+                <div class="d-flex mt-1">
+                    <img class="" src="style/images/icon/footer-youtube.svg">
+                    <div class="pt-1 pl-2  footer-sosial-media-text">PUPUK KALTIM</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-contact">KONTAK</div>
+                <div class="mt-2 footer-contact-text">Plaza Pupuk Kaltim <br>Jl. Kebon Sirih Raya No.6A <br>Jakarta Pusat
+                    10110</div>
+                <div class="mt-2 footer-contact-text">Telepon: +62 21 3443344,45</div>
+                <div class="mt-2 footer-contact-text">Fax: +62 21 3443344</div>
+            </div>
+        </div>
+    </div>
+    <!-- CUSTOM JAVASCRIPT -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                        if (form.checkValidity() === true); {
+                            window.location.href = "dashboard.html"
+                        }
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="bootstrap-4.6.1/js/jquery.slim.min.js"></script>
+    <script src="bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
