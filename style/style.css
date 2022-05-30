@@ -9,8 +9,8 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-  }
-  
+}
+
 @font-face {
     font-family: myFirstFont;
     src: url(font/Montserrat-Medium.ttf);
@@ -62,12 +62,18 @@ body {
 } */
 
 /* Change background color of buttons on hover */
-.tab-sub2 .tab-btn-asset:hover, .tab-btn-risk:hover, .tab-btn-inspection:hover, .tab-btn-followupitem:hover {
+.tab-sub2 .tab-btn-asset:hover,
+.tab-btn-risk:hover,
+.tab-btn-inspection:hover,
+.tab-btn-followupitem:hover {
     color: #ffffff;
 }
 
 /* Create an active/current tablink class */
-.tab-sub2 .tab-btn-asset.active, .tab-btn-risk.active, .tab-btn-inspection.active, .tab-btn-followupitem.active{
+.tab-sub2 .tab-btn-asset.active,
+.tab-btn-risk.active,
+.tab-btn-inspection.active,
+.tab-btn-followupitem.active {
     /* background-color: #FFB74D; */
     box-shadow: 3px 3px #F4F6F9;
     color: #ffffff;
@@ -263,7 +269,10 @@ body {
     font-size: 50px;
 }
 
-.tab-btn-asset .tab-text-asset, .tab-btn-risk .tab-text-risk, .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+.tab-btn-asset .tab-text-asset,
+.tab-btn-risk .tab-text-risk,
+.tab-btn-inspection .tab-text-inspection,
+.tab-btn-followupitem .tab-text-followupitem {
     font-size: 24px;
     left: 100px;
 }
@@ -548,42 +557,62 @@ thead tr:nth-child(1) th {
 } */
 
 /* MEDIA */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+
     /* ASSET CARD  */
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 180px;
         margin-top: 20px;
     }
 
     /* INSPECTION CARD  */
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta, .wrimagecard-icon-overdue {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
         margin-left: 180px;
         margin-top: 20px;
     }
 
 }
 
-@media (min-width: 1280px) { 
-    .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+@media (min-width: 1280px) {
+
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
         left: 85px;
     }
 
     /* ASSET CARD  */
-    .asset-card-registered, .asset-card-assessed, .asset-card-validation, .asset-card-offline {
+    .asset-card-registered,
+    .asset-card-assessed,
+    .asset-card-validation,
+    .asset-card-offline {
         padding-top: 10px;
     }
 
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 210px;
         margin-top: 10px;
     }
 
     /* INSPECTION CARD  */
-    .inspection-card-remaining, .inspection-card-activity, .inspection-card-overdue, .inspection-card-ta {
+    .inspection-card-remaining,
+    .inspection-card-activity,
+    .inspection-card-overdue,
+    .inspection-card-ta {
         padding-top: 10px;
     }
 
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta {
         margin-top: 10px;
         margin-left: 210px;
     }
@@ -598,7 +627,9 @@ thead tr:nth-child(1) th {
         padding-top: 25px;
     }
 
-    .followupitem-card-area, .followupitem-card-history, .followupitem-card-next-ta {
+    .followupitem-card-area,
+    .followupitem-card-history,
+    .followupitem-card-next-ta {
         padding-top: 10px;
     }
 
@@ -607,19 +638,26 @@ thead tr:nth-child(1) th {
         margin-left: 210px;
     }
 
-    .wrimagecard-icon-area, .wrimagecard-icon-history, .wrimagecard-icon-next-ta {
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
         margin-top: 10px;
         margin-left: 210px;
     }
 }
 
-@media (min-width: 1366px) { 
-    .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+@media (min-width: 1366px) {
+
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
         left: 95px;
     }
 
     /* ASSET CARD  */
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 230px;
     }
 
@@ -628,7 +666,10 @@ thead tr:nth-child(1) th {
     }
 
     /* INSPECTION CARD  */
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta, .wrimagecard-icon-overdue {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
         margin-left: 230px;
     }
 
@@ -637,7 +678,10 @@ thead tr:nth-child(1) th {
     }
 
     /* FOLLOW UP ITEM */
-    .wrimagecard-icon-arround, .wrimagecard-icon-area, .wrimagecard-icon-history, .wrimagecard-icon-next-ta {
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
         margin-left: 230px;
     }
 
@@ -646,27 +690,39 @@ thead tr:nth-child(1) th {
     }
 }
 
-@media (min-width: 1440px) { 
-    .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+@media (min-width: 1440px) {
+
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
         left: 100px;
     }
 
     /* ASSET CARD  */
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 245px;
     }
 
-    .wrimagecard-icon-assessed, .wrimagecard-icon-offline {
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-offline {
         margin-top: 35px;
     }
 
     /* INSPECTION CARD  */
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta, .wrimagecard-icon-overdue {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
         margin-left: 245px;
     }
 
     /* FOLLOW UP ITEM */
-    .wrimagecard-icon-arround, .wrimagecard-icon-area, .wrimagecard-icon-history, .wrimagecard-icon-next-ta {
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
         margin-left: 245px;
     }
 
@@ -675,13 +731,20 @@ thead tr:nth-child(1) th {
     }
 }
 
-@media (min-width: 1550px) { 
-    .tab-btn-asset .tab-text-asset, .tab-btn-risk .tab-text-risk, .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+@media (min-width: 1550px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
         left: 115px;
     }
 
     /* ASSET CARD  */
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 270px;
     }
 
@@ -690,27 +753,41 @@ thead tr:nth-child(1) th {
     }
 
     /* INSPECTION CARD  */
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta, .wrimagecard-icon-overdue {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
         margin-left: 270px;
     }
 
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity {
         margin-top: 35px;
     }
 
     /* FOLLOW UP ITEM */
-    .wrimagecard-icon-arround, .wrimagecard-icon-area, .wrimagecard-icon-history, .wrimagecard-icon-next-ta {
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
         margin-left: 270px;
     }
 }
 
-@media (min-width: 1660px) { 
-    .tab-btn-asset .tab-text-asset, .tab-btn-risk .tab-text-risk, .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+@media (min-width: 1660px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
         left: 120px;
     }
 
     /* ASSET CARD  */
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 300px;
     }
 
@@ -719,12 +796,18 @@ thead tr:nth-child(1) th {
     }
 
     /* INSPECTION CARD  */
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta, .wrimagecard-icon-overdue {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
         margin-left: 300px;
     }
 
     /* FOLLOW UP ITEM */
-    .wrimagecard-icon-arround, .wrimagecard-icon-area, .wrimagecard-icon-history, .wrimagecard-icon-next-ta {
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
         margin-left: 300px;
     }
 
@@ -733,44 +816,70 @@ thead tr:nth-child(1) th {
     }
 }
 
-@media (min-width: 1770px) { 
-    .tab-btn-asset .tab-text-asset, .tab-btn-risk .tab-text-risk, .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+@media (min-width: 1770px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
         left: 130px;
     }
 
     /* ASSET CARD  */
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 330px;
     }
 
     /* INSPECTION CARD  */
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta, .wrimagecard-icon-overdue {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
         margin-left: 330px;
     }
 
     /* FOLLOW UP ITEM */
-    .wrimagecard-icon-arround, .wrimagecard-icon-area, .wrimagecard-icon-history, .wrimagecard-icon-next-ta {
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
         margin-left: 330px;
     }
 }
 
-@media (min-width: 1920px) { 
-    .tab-btn-asset .tab-text-asset, .tab-btn-risk .tab-text-risk, .tab-btn-inspection .tab-text-inspection, .tab-btn-followupitem .tab-text-followupitem {
+@media (min-width: 1920px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
         left: 150px;
     }
 
     /* ASSET CARD  */
-    .wrimagecard-icon-registered, .wrimagecard-icon-assessed, .wrimagecard-icon-validation, .wrimagecard-icon-offline {
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
         margin-left: 360px;
     }
 
     /* INSPECTION CARD  */
-    .wrimagecard-icon-remaining, .wrimagecard-icon-activity, .wrimagecard-icon-ta, .wrimagecard-icon-overdue {
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
         margin-left: 360px;
     }
 
     /* FOLLOW UP ITEM */
-    .wrimagecard-icon-arround, .wrimagecard-icon-area, .wrimagecard-icon-history, .wrimagecard-icon-next-ta {
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
         margin-left: 360px;
     }
 }
