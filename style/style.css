@@ -280,7 +280,7 @@ body {
 /* Style the tab content */
 .content {
     position: relative;
-    height: calc(100vh - 159px);
+    /* height: calc(100vh - 159px); */
     overflow: auto;
 }
 
