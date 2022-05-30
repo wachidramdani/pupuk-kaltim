@@ -1,7 +1,7 @@
 .inner-body {
     margin: 0;
     padding: 0;
-    height: calc(100vh - 79px);
+    height: calc(100vh - 64px);
     width: 100%;
     overflow-y: auto;
 }
@@ -23,95 +23,107 @@
     border-left: 1px solid #cdcdcd;
     background-color: #fff;
     padding: 0;
-    margin-top: -9px;
 }
 
 /* tree */
 .tree .fa {
- font-size: 14px;
+    font-size: 14px;
 }
-.tree, .tree ul {
-    margin:0;
-    padding:0;
-    list-style:none
-}
+
+.tree,
 .tree ul {
-    margin-left:1em;
-    position:relative
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
+
+.tree ul {
+    margin-left: 1em;
+    position: relative
+}
+
 .tree ul ul {
-    margin-left:.5em
+    margin-left: .5em
 }
+
 .tree ul:before {
-    content:"";
-    display:block;
-    width:0;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    border-left:1px solid
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid
 }
+
 .tree li {
-    margin:0;
-    padding:0 1em;
-    line-height:2em;
-    color:#000;
-    font-weight:400;
+    margin: 0;
+    padding: 0 1em;
+    line-height: 2em;
+    color: #000;
+    font-weight: 400;
     font-size: 12px;
-    position:relative;
+    position: relative;
     cursor: pointer;
 }
+
 .tree ul li:before {
-    content:"";
-    display:block;
-    width:10px;
-    height:0;
-    border-top:1px solid;
-    margin-top:-1px;
-    position:absolute;
-    top:1em;
-    left:0
+    content: "";
+    display: block;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid;
+    margin-top: -1px;
+    position: absolute;
+    top: 1em;
+    left: 0
 }
+
 .tree ul li:last-child:before {
-    background:#f8f9fa;
-    height:auto;
-    top:1em;
-    bottom:0
+    background: #f8f9fa;
+    height: auto;
+    top: 1em;
+    bottom: 0
 }
+
 .indicator {
-    margin-right:5px;
+    margin-right: 5px;
 }
+
 .tree li a {
     text-decoration: none;
-    color:#369;
+    color: #369;
 }
-.tree li button, .tree li button:active, .tree li button:focus {
+
+.tree li button,
+.tree li button:active,
+.tree li button:focus {
     text-decoration: none;
-    color:#369;
-    border:none;
-    background:transparent;
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
+    color: #369;
+    border: none;
+    background: transparent;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     outline: 0;
 }
 
 /* Tabpanel */
 .tabpanel {
-	width: 100%;
-	border: none !important;
+    width: 100%;
+    border: none !important;
 }
 
-.tabpanel li:first-child .closeTab{
-	display: none;
+.tabpanel li:first-child .closeTab {
+    display: none;
 }
 
-.tabpanel li:nth-last-child(1){
-	display: none !important;
+.tabpanel li:nth-last-child(1) {
+    display: none !important;
 }
 
 /* card */
-.wrimagecard-topimage_header{
+.wrimagecard-topimage_header {
     padding: 20px;
 }
 
@@ -124,10 +136,12 @@
     flex-direction: column;
     font-weight: 500;
 }
-.wrimagecard-topimage_title .label{
+
+.wrimagecard-topimage_title .label {
     font-size: 14px;
 }
-.wrimagecard-topimage_title .value{
+
+.wrimagecard-topimage_title .value {
     font-size: 28px;
     line-height: 46px;
     margin-left: -2px;
@@ -139,22 +153,95 @@
 }
 
 .company-text {
-    position:absolute; 
-    top:130px; 
+    position: absolute;
+    top: 130px;
     left: 60%
-    /* left: 1050px; */
+        /* left: 1050px; */
 }
 
 .company-title1 {
-    position:absolute; 
-    top:170px; 
+    position: absolute;
+    top: 170px;
     left: 50%
-    /* left: 930px; */
+        /* left: 930px; */
 }
 
 .company-title2 {
-    position:absolute; 
-    top:230px;
-    left: 50% 
-    /* left: 930px; */
+    position: absolute;
+    top: 230px;
+    left: 50%
+        /* left: 930px; */
+}
+
+/* tab css */
+.tabs {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#tab-button {
+    /* display: table; */
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+#tab-button li {
+    display: table-cell;
+    min-width: 100px;
+}
+
+#tab-button li a {
+    display: block;
+    padding: 2px 8px;
+    background: #eee;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+#tab-button li:not(:first-child) a {
+    border-left: none;
+}
+
+#tab-button li a:hover,
+#tab-button .is-active a {
+    border-bottom-color: transparent;
+    background: #fff;
+}
+
+.tab-contents {
+    padding: .5em 2em 1em;
+    border-top: 1px solid #ddd;
+}
+
+.tab-button-outer {
+    display: none;
+}
+
+.tab-contents {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .tab-button-outer {
+      position: relative;
+      z-index: 2;
+      display: block;
+    }
+    .tab-select-outer {
+      display: none;
+    }
+    .tab-contents {
+      position: relative;
+      top: -1px;
+      margin-top: 0;
+      height: calc(100vh - 88px);
+    }
 }

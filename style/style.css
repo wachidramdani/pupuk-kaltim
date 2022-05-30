@@ -18,6 +18,7 @@ body {
 /* MENU */
 .navbar {
     padding: 0 1rem;
+    border: 1px solid #cdcdcd;
 }
 
 .hr-menu {
@@ -279,7 +280,7 @@ body {
 /* Style the tab content */
 .content {
     position: relative;
-    height: calc(100vh - 159px);
+    height: calc(100vh - 196px);
     overflow: auto;
 }
 
