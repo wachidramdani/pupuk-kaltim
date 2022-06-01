@@ -25,6 +25,39 @@
     padding: 0;
 }
 
+.wrimagecard-asset {
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 120px;
+}
+
+.label-asset-text {
+    color: #fff;
+    font-weight: 900;
+}
+
+.label-asset-number {
+    color: #fff;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.labelmt-asset-text, .labelmt-asset-number, .labelmt-asset-history, .labelmt-asset-inspection {
+    color: #fff;
+    font-weight: 400;
+}
+
+.label-asset-inspection {
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;  
+}
+.line-ver {
+    position:absolute; 
+    left:108px;
+}
+
 /* tree */
 .tree .fa {
     font-size: 14px;
@@ -218,7 +251,7 @@
 
 .tab-contents {
     padding: .5em 2em 1em;
-    border-top: 1px solid #ddd;
+    /* border-top: 1px solid #ddd; */
 }
 
 .tab-button-outer {
@@ -243,5 +276,239 @@
       top: -1px;
       margin-top: 0;
       height: calc(100vh - 88px);
+    }
+
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+        margin-left: 120px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 180px;
+        margin-top: 10px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 190px;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number {
+        margin-left: 135px;
+        margin-top: 15px;
+    }
+
+    .wrimagecard-image-asset-text {
+        margin-left: 130px;
+    }
+
+    .label-asset-text {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .labelmt-asset-text {
+        margin-top: 10px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history {
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 220px;
+        margin-top: 10px;
+    }
+
+    .label-asset-inspection {
+        padding-top: 15px; 
+    }
+
+    .labelmt-asset-inspection {
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 1366px) {
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number {
+        margin-left: 150px;
+        margin-top: 5px;
+    }
+
+    .wrimagecard-image-asset-text {
+        margin-left: 150px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history {
+        margin-left: 230px;
+        margin-top: 20px;
+    }
+
+    .label-asset-inspection {
+        padding-top: 8px; 
+    }
+
+    .labelmt-asset-history {
+        margin-top: 15px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 240px;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+        margin-left: 170px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history {
+        margin-left: 255px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 265px;
+        margin-top: 15px;
+    }
+
+    .label-asset-inspection {
+        font-size: 16px; 
+        padding-top: 7px;
+    }
+
+    .line-ver {
+        left: 119px;
+    }
+}
+
+@media (min-width: 1550px) {
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+        margin-left: 195px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history {
+        margin-left: 290px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+
+    .label-asset-inspection {
+        font-size: 18px;
+        padding-top: 6px;
+    }
+
+    .line-ver {
+        left: 128px;
+    }
+}
+
+@media (min-width: 1660px) {
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+        margin-left: 225px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history {
+        margin-left: 325px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 335px;
+    }
+
+    .label-asset-inspection {
+        padding-top: 15px;
+    }
+
+    .labelmt-asset-inspection {
+        margin-top: 15px;
+    }
+
+    .line-ver {
+        left: 128px;
+    }
+}
+
+@media (min-width: 1770px) {
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number {
+        margin-left: 245px;
+        margin-top: 20px;
+    }
+
+    .wrimagecard-image-asset-text {
+        margin-left: 245px;
+    }
+
+    .labelmt-asset-number {
+        margin-top: 10px;
+    }
+
+    .labelmt-asset-text {
+        margin-top: 20px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history {
+        margin-left: 360px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 370px;
+    }
+
+    .label-asset-inspection {
+        font-size: 20px;
+    }
+
+    .labelmt-asset-inspection {
+        margin-top: 10px;
+    }
+
+    .line-ver {
+        left: 138px;
+    }
+}
+
+@media (min-width: 1920px) {
+    /* CARD ASSET */
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+        margin-left: 285px;
+    }
+
+    /* CARD CONTENT */
+    .wrimagecard-image-asset-history {
+        margin-left: 410px;
+    }
+
+    .wrimagecard-image-asset-inspection {
+        margin-left: 415px;
+    }
+
+    .label-asset-inspection {
+        font-size: 22px;
+    }
+
+    .labelmt-asset-inspection {
+        margin-top: 5px;
+    }
+
+    .line-ver {
+        left: 148px;
     }
 }
