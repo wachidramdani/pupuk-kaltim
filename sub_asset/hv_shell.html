@@ -36,7 +36,8 @@
                         </div>
                         <div class="col">
                             <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="../asset.html" style="margin-bottom: -10px; text-align: center;">
+                                <a class="nav-link" href="../asset.html"
+                                    style="margin-bottom: -10px; text-align: center;">
                                     <i class="fa fa-folder"
                                         style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center; color: #e16333;"></i></a>
                                 <span style="font-size: 10px;">Asset</span>
@@ -126,8 +127,10 @@
     <div class="inner-body">
         <div class="sidebar">
             <div class="d-flex">
-                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i class="fas fa-sync-alt"></i> Syn With System</button>
-                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i class="fas fa-plus"></i> New Component</button>
+                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
+                        class="fas fa-sync-alt"></i> Syn With System</button>
+                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
+                        class="fas fa-plus"></i> New Component</button>
             </div>
             <div class="sidebar-body">
                 <ul id="tree3">
@@ -211,16 +214,16 @@
         <div class="main-content">
             <div class="tabs">
                 <div class="tab-button-outer">
-                  <ul id="tab-button">
-                    <li><a href="#tab01">HOME</a></li>
-                    <li><a href="#tab02">DATA PROPERTY</a></li>
-                    <li><a href="#tab03">ASSESSMENT INFORMATION</a></li>
-                    <li><a href="#tab04">DAMAGE MECHANISM</a></li>
-                    <li><a href="#tab05">RISK CALCULATION</a></li>
-                    <li><a href="#tab06">RISK SUMMARY</a></li>
-                    <li><a href="#tab07">FOTO/GAMBAR</a></li>
-                  </ul>
-                </div>              
+                    <ul id="tab-button">
+                        <li><a href="#tab01">HOME</a></li>
+                        <li><a href="#tab02">DATA PROPERTY</a></li>
+                        <li><a href="#tab03">ASSESSMENT INFORMATION</a></li>
+                        <li><a href="#tab04">DAMAGE MECHANISM</a></li>
+                        <li><a href="#tab05">RISK CALCULATION</a></li>
+                        <li><a href="#tab06">RISK SUMMARY</a></li>
+                        <li><a href="#tab07">FOTO/GAMBAR</a></li>
+                    </ul>
+                </div>
                 <div id="tab01" class="tab-contents">
                     <h2>Tab Home</h2>
                 </div>
@@ -323,7 +326,7 @@
         function openSaPage(param) {
             window.location.href = param;
         }
-        $(function() {
+        $(function () {
             var $tabButtonItem = $('#tab-button li'),
                 $tabSelect = $('#tab-select'),
                 $tabContents = $('.tab-contents'),
@@ -332,7 +335,7 @@
             $tabButtonItem.first().addClass(activeClass);
             $tabContents.not(':first').hide();
 
-            $tabButtonItem.find('a').on('click', function(e) {
+            $tabButtonItem.find('a').on('click', function (e) {
                 var target = $(this).attr('href');
 
                 $tabButtonItem.removeClass(activeClass);
@@ -343,7 +346,7 @@
                 e.preventDefault();
             });
 
-            $tabSelect.on('change', function() {
+            $tabSelect.on('change', function () {
                 var target = $(this).val(),
                     targetSelectNum = $(this).prop('selectedIndex');
 
@@ -353,32 +356,32 @@
                 $(target).show();
             });
         });
-        $(function(){
-            $( ".tabpanel" ).tabs({closable: true, addTab:true}).tabs('stretchyTabs')
-                .find( ".ui-tabs-nav" ).sortable({
+        $(function () {
+            $(".tabpanel").tabs({ closable: true, addTab: true }).tabs('stretchyTabs')
+                .find(".ui-tabs-nav").sortable({
                     distance: 10
-            });
+                });
             // $( ".tabpanel" ).tabs("remove", 0);
         });
         function addTab(name) {
             const navbar = Array.from(document.querySelectorAll('.tabpanel>ul>li'));
             console.log(navbar, 'navbar');
             let found = 0
-            for(var i=0; i<navbar.length; i++){
-                if(navbar[i].innerText == name){
+            for (var i = 0; i < navbar.length; i++) {
+                if (navbar[i].innerText == name) {
                     found++
                 }
             }
-            if(found == 0){
-                $( ".tabpanel" ).tabs("add", name, "content goes here");
+            if (found == 0) {
+                $(".tabpanel").tabs("add", name, "content goes here");
             }
         }
     </script>
 
-        <script>
-            $.fn.extend({
-                treed: function (o) {
-                
+    <script>
+        $.fn.extend({
+            treed: function (o) {
+
                 var openedClass = 'glyphicon-minus-sign';
                 var closedClass = 'glyphicon-plus-sign';
 
