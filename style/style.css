@@ -1,24 +1,6 @@
-body {
-    background-image: url(/style/images/background-image-white.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: #0089ff !important; */
-    font-family: myFirstFont;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-@font-face {
-    font-family: myFirstFont;
-    src: url(font/Montserrat-Medium.ttf);
-}
-
 /* MENU */
 .navbar {
     padding: 0 1rem;
-    border: 1px solid #cdcdcd;
 }
 
 .hr-menu {
@@ -280,14 +262,14 @@ body {
 /* Style the tab content */
 .content {
     position: relative;
-    height: calc(100vh - 196px);
+    /* height: calc(100vh - 159px); */
     overflow: auto;
 }
 
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    background-color: #fff;
+    background-color: #F4F6F9;
     border-radius: 8px;
     border-top: none;
 }
@@ -300,10 +282,10 @@ body {
     font-size: 14px;
     font-weight: normal;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .filter-item {
-    margin-right: 20px;
     cursor: pointer;
     /* color: #F47920; */
     color: #6C757D
@@ -318,6 +300,8 @@ body {
 .content .card {
     margin-bottom: 1.5rem;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 0;
 }
 
 .card-header {
@@ -476,7 +460,7 @@ thead tr:nth-child(1) th {
     height: 120px;
 }
 
-iconcard {
+.iconcard {
     margin-top: 5px;
     color: #6C757D;
 }
@@ -532,7 +516,7 @@ iconcard {
     font-size: 14px;
     color: #fff;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .labelmt-number2 {
@@ -553,3 +537,340 @@ iconcard {
     font-size: 40px;
     line-height: 46px;
 } */
+
+/* MEDIA */
+@media (min-width: 768px) {
+
+    /* ASSET CARD  */
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 180px;
+        margin-top: 20px;
+    }
+
+    /* INSPECTION CARD  */
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
+        margin-left: 180px;
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
+        left: 85px;
+    }
+
+    /* ASSET CARD  */
+    .asset-card-registered,
+    .asset-card-assessed,
+    .asset-card-validation,
+    .asset-card-offline {
+        padding-top: 10px;
+    }
+
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 210px;
+        margin-top: 10px;
+    }
+
+    /* INSPECTION CARD  */
+    .inspection-card-remaining,
+    .inspection-card-activity,
+    .inspection-card-overdue,
+    .inspection-card-ta {
+        padding-top: 10px;
+    }
+
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta {
+        margin-top: 10px;
+        margin-left: 210px;
+    }
+
+    .wrimagecard-icon-overdue {
+        margin-top: 30px;
+        margin-left: 210px;
+    }
+
+    /* FOLLOW UP ITEM */
+    .followupitem-card-arround {
+        padding-top: 25px;
+    }
+
+    .followupitem-card-area,
+    .followupitem-card-history,
+    .followupitem-card-next-ta {
+        padding-top: 10px;
+    }
+
+    .wrimagecard-icon-arround {
+        margin-top: 25px;
+        margin-left: 210px;
+    }
+
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
+        margin-top: 10px;
+        margin-left: 210px;
+    }
+}
+
+@media (min-width: 1366px) {
+
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
+        left: 95px;
+    }
+
+    /* ASSET CARD  */
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 230px;
+    }
+
+    .wrimagecard-icon-offline {
+        margin-top: 30px;
+    }
+
+    /* INSPECTION CARD  */
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
+        margin-left: 230px;
+    }
+
+    .wrimagecard-icon-ta {
+        margin-top: 30px;
+    }
+
+    /* FOLLOW UP ITEM */
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
+        margin-left: 230px;
+    }
+
+    .wrimagecard-icon-area {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
+        left: 100px;
+    }
+
+    /* ASSET CARD  */
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 245px;
+    }
+
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-offline {
+        margin-top: 35px;
+    }
+
+    /* INSPECTION CARD  */
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
+        margin-left: 245px;
+    }
+
+    /* FOLLOW UP ITEM */
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
+        margin-left: 245px;
+    }
+
+    .wrimagecard-icon-next-ta {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 1550px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
+        left: 115px;
+    }
+
+    /* ASSET CARD  */
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 270px;
+    }
+
+    .wrimagecard-icon-registered {
+        margin-top: 35px;
+    }
+
+    /* INSPECTION CARD  */
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
+        margin-left: 270px;
+    }
+
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity {
+        margin-top: 35px;
+    }
+
+    /* FOLLOW UP ITEM */
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
+        margin-left: 270px;
+    }
+}
+
+@media (min-width: 1660px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
+        left: 120px;
+    }
+
+    /* ASSET CARD  */
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 300px;
+    }
+
+    .wrimagecard-icon-validation {
+        margin-top: 35px;
+    }
+
+    /* INSPECTION CARD  */
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
+        margin-left: 300px;
+    }
+
+    /* FOLLOW UP ITEM */
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
+        margin-left: 300px;
+    }
+
+    .wrimagecard-icon-history {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 1770px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
+        left: 130px;
+    }
+
+    /* ASSET CARD  */
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 330px;
+    }
+
+    /* INSPECTION CARD  */
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
+        margin-left: 330px;
+    }
+
+    /* FOLLOW UP ITEM */
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
+        margin-left: 330px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .tab-btn-asset .tab-text-asset,
+    .tab-btn-risk .tab-text-risk,
+    .tab-btn-inspection .tab-text-inspection,
+    .tab-btn-followupitem .tab-text-followupitem {
+        left: 150px;
+    }
+
+    /* ASSET CARD  */
+    .wrimagecard-icon-registered,
+    .wrimagecard-icon-assessed,
+    .wrimagecard-icon-validation,
+    .wrimagecard-icon-offline {
+        margin-left: 360px;
+    }
+
+    /* INSPECTION CARD  */
+    .wrimagecard-icon-remaining,
+    .wrimagecard-icon-activity,
+    .wrimagecard-icon-ta,
+    .wrimagecard-icon-overdue {
+        margin-left: 360px;
+    }
+
+    /* FOLLOW UP ITEM */
+    .wrimagecard-icon-arround,
+    .wrimagecard-icon-area,
+    .wrimagecard-icon-history,
+    .wrimagecard-icon-next-ta {
+        margin-left: 360px;
+    }
+}
+
+/* FILTER */
+.custom-select {
+    border-radius: 10px;
+}
+
+.input-group-text {
+    border-radius: 10px;
+}
