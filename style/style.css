@@ -444,6 +444,7 @@ thead tr:nth-child(1) th {
     text-align: center;
 }
 
+
 /* custom scrollbar */
 ::-webkit-scrollbar {
     width: 20px;
@@ -549,6 +550,13 @@ thead tr:nth-child(1) th {
     font-size: 14px;
     color: #fff;
     font-weight: 400;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* .value {

@@ -38,7 +38,7 @@
                             <li class="nav-item" style="text-align: center;">
                                 <a class="nav-link" href="asset.html" style="margin-bottom: -10px; text-align: center;">
                                     <i class="fa fa-folder"
-                                        style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
+                                        style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center; color: #e16333;"></i></a>
                                 <span style="font-size: 10px;">Asset</span>
                             </li>
                         </div>
@@ -46,7 +46,7 @@
                             <li class="nav-item" style="text-align: center;">
                                 <a class="nav-link" href="master.html"
                                     style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-database"
-                                        style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center; color: #e16333;"></i></a>
+                                        style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                                 <span style="font-size: 10px;">Master</span>
                             </li>
                         </div>
@@ -116,7 +116,7 @@
                 <div style="width: 0px; height: 62px; border: 1px #000 solid;">
                 </div>
                 <div class="col">
-                    <a class="nav-link" href="index.html" style="margin-top: 7px; color: rgba(0, 0, 0, 0.5);"> <i
+                    <a class="nav-link" href="./index.html" style="margin-top: 7px; color: rgba(0, 0, 0, 0.5);"> <i
                             class="fa fa-power-off"
                             style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                 </div>
@@ -125,60 +125,99 @@
     </nav>
     <div class="inner-body">
         <div class="sidebar">
+            <div class="d-flex">
+                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
+                        class="fas fa-sync-alt"></i> Syn With System</button>
+                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
+                        class="fas fa-plus"></i> New Component</button>
+            </div>
             <div class="sidebar-body">
                 <ul id="tree3">
-                    <li>
-                        <a href="#">Anomaly Type</a>
-                        <!-- <ul>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Carrosive Fluid </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Damage Loop </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">List Of Damage Mechanism </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Potensial Damage Mechanism </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Type Of Unit </li>
-                        </ul> -->
-                    </li>
-                    <li>
-                        <a href="#">Asset Configuration</a>
-                    </li>
-                    <li>
-                        <a href="#">Consequence Level Setting</a>
-                    </li>
-                    <li>
-                        <a href="#">Coponent Damage Cost</a>
-                    </li>
-                    <li>
-                        <a href="#">Corrison Loops</a>
-                    </li>
-                    <li>
-                        <a href="#">Damage Mechanism</a>
+                    <li><a href="#">Company</a>
                         <ul>
-                            <li onclick="openSaPage('./master/master_cf.html')">Carrosive Fluid </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Damage Loop </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">List Of Damage Mechanism </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Potensial Damage Mechanism </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Type Of Unit </li>
+                            <li>Plant
+                                <ul>
+                                    <li>Plant Section
+                                        <ul>
+                                            <li>System/Area
+                                                <ul>
+                                                    <li onclick="openSaPage('./sub_asset/equipment.html')">
+                                                    Equipment/Piping </li>
+                                            </li>
+                                            <li>Horizontal Vessel
+                                                <ul>
+                                                    <li onclick="openSaPage('./sub_asset/hv_shell.html')">Shell</li>
+                                                    <!-- <li onclick="addTab('HV-Shell')">Shell</li> -->
+                                                    <li onclick="addTab('HV-Head')">Head</li>
+                                                </ul>
+                                            </li>
+                                            <li>Vertical Vessel
+                                                <ul>
+                                                    <li onclick="addTab('VV-Shell')">Shell</li>
+                                                    <li onclick="addTab('VV-Top Head')">Top Head</li>
+                                                    <li onclick="addTab('VV-Bottom Head')">Bottom Head</li>
+                                                </ul>
+                                            </li>
+                                            <li>Heat Exchanger
+                                                <ul>
+                                                    <li>Shell</li>
+                                                    <li>Tube Bundle</li>
+                                                    <li>Front End Channel</li>
+                                                    <li>Rear End Channel</li>
+                                                </ul>
+                                            </li>
+                                            <li>Cooler
+                                                <ul>
+                                                    <li>Tube Section</li>
+                                                    <li>Header Box</li>
+                                                </ul>
+                                            </li>
+                                            <li>Boiler
+                                                <ul>
+                                                    <li>Tube Section</li>
+                                                    <li>Head</li>
+                                                    <li>Shell</li>
+                                                </ul>
+                                            </li>
+                                            <li>Fired Heater
+                                                <ul>
+                                                    <li>Heater Box</li>
+                                                    <li>Tube Section</li>
+                                                </ul>
+                                            </li>
+                                            <li>Piping
+                                                <ul>
+                                                    <li>Piping Tag</li>
+                                                </ul>
+                                            </li>
+                                            <li>Tank
+                                                <ul>
+                                                    <li>Tank Course</li>
+                                                    <li>Tank Bottom</li>
+                                                    <li>Tank Roof</li>
+                                                </ul>
+                                            </li>
+                                            <li>PSV
+                                                <ul>
+                                                    <li>PSV</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">Inventory Group</a>
-                    </li>
-                    <li>
-                        <a href="#">Effectiveness Guideliness</a>
-                    </li>
-                    <li>
-                        <a href="#">Fluid Master</a>
-                    </li>
-                    <li>
-                        <a href="#">Material Data</a>
-                    </li>
-                    <li>
-                        <a href="#">Inspection</a>
-                    </li>
+                </ul>
+                </li>
                 </ul>
             </div>
         </div>
         <div class="main-content">
-            <span style="display: flex; justify-content: center; margin-top: 10px;">Data Master Page</span>
+            <img src="style/images/company.png" class="w-100 h-100 company-img">
+            <p class="company-text">Welcome to</p>
+            <h1 class="company-title1">PKT RBI Software</h1>
+            <h1 class="company-title2">Please Navigate to</h1>
         </div>
     </div>
     <!-- Optional JavaScript -->
@@ -198,36 +237,6 @@
         function openSaPage(param) {
             window.location.href = param;
         }
-        $(function () {
-            var $tabButtonItem = $('#tab-button li'),
-                $tabSelect = $('#tab-select'),
-                $tabContents = $('.tab-contents'),
-                activeClass = 'is-active';
-
-            $tabButtonItem.first().addClass(activeClass);
-            $tabContents.not(':first').hide();
-
-            $tabButtonItem.find('a').on('click', function (e) {
-                var target = $(this).attr('href');
-
-                $tabButtonItem.removeClass(activeClass);
-                $(this).parent().addClass(activeClass);
-                $tabSelect.val(target);
-                $tabContents.hide();
-                $(target).show();
-                e.preventDefault();
-            });
-
-            $tabSelect.on('change', function () {
-                var target = $(this).val(),
-                    targetSelectNum = $(this).prop('selectedIndex');
-
-                $tabButtonItem.removeClass(activeClass);
-                $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
-                $tabContents.hide();
-                $(target).show();
-            });
-        });
         $(function () {
             $(".tabpanel").tabs({ closable: true, addTab: true }).tabs('stretchyTabs')
                 .find(".ui-tabs-nav").sortable({

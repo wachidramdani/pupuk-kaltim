@@ -43,7 +43,10 @@
     font-size: 32px;
 }
 
-.labelmt-asset-text, .labelmt-asset-number, .labelmt-asset-history, .labelmt-asset-inspection {
+.labelmt-asset-text,
+.labelmt-asset-number,
+.labelmt-asset-history,
+.labelmt-asset-inspection {
     color: #fff;
     font-weight: 400;
 }
@@ -51,11 +54,12 @@
 .label-asset-inspection {
     color: #fff;
     font-weight: 900;
-    font-size: 14px;  
+    font-size: 14px;
 }
+
 .line-ver {
-    position:absolute; 
-    left:108px;
+    position: absolute;
+    left: 108px;
 }
 
 /* tree */
@@ -264,31 +268,36 @@
 
 @media screen and (min-width: 768px) {
     .tab-button-outer {
-      position: relative;
-      z-index: 2;
-      display: block;
+        position: relative;
+        z-index: 2;
+        display: block;
     }
+
     .tab-select-outer {
-      display: none;
+        display: none;
     }
+
     .tab-contents {
-      position: relative;
-      top: -1px;
-      margin-top: 0;
-      height: calc(100vh - 88px);
+        position: relative;
+        top: -1px;
+        margin-top: 0;
+        height: calc(100vh - 88px);
     }
 
     /* CARD ASSET */
-    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+    .wrimagecard-image-asset-number,
+    .wrimagecard-image-asset-text {
         margin-left: 120px;
     }
 
-    .wrimagecard-image-asset-number2, .wrimagecard-image-asset-text2 {
+    .wrimagecard-image-asset-number2,
+    .wrimagecard-image-asset-text2 {
         margin-left: 170px;
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+    .wrimagecard-image-asset-history,
+    .wrimagecard-image-asset-inspection {
         margin-left: 180px;
         margin-top: 10px;
     }
@@ -299,6 +308,7 @@
 }
 
 @media (min-width: 1280px) {
+
     /* CARD ASSET */
     .wrimagecard-image-asset-number {
         margin-left: 135px;
@@ -339,7 +349,7 @@
     }
 
     .label-asset-inspection {
-        padding-top: 15px; 
+        padding-top: 15px;
     }
 
     .labelmt-asset-inspection {
@@ -348,6 +358,7 @@
 }
 
 @media (min-width: 1366px) {
+
     /* CARD ASSET */
     .wrimagecard-image-asset-number {
         margin-left: 150px;
@@ -374,7 +385,7 @@
     }
 
     .label-asset-inspection {
-        padding-top: 8px; 
+        padding-top: 8px;
     }
 
     .labelmt-asset-history {
@@ -387,12 +398,15 @@
 }
 
 @media (min-width: 1440px) {
+
     /* CARD ASSET */
-    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+    .wrimagecard-image-asset-number,
+    .wrimagecard-image-asset-text {
         margin-left: 170px;
     }
 
-    .wrimagecard-image-asset-number2, .wrimagecard-image-asset-text2 {
+    .wrimagecard-image-asset-number2,
+    .wrimagecard-image-asset-text2 {
         margin-left: 220px;
     }
 
@@ -407,7 +421,7 @@
     }
 
     .label-asset-inspection {
-        font-size: 16px; 
+        font-size: 16px;
         padding-top: 7px;
     }
 
@@ -417,12 +431,15 @@
 }
 
 @media (min-width: 1550px) {
+
     /* CARD ASSET */
-    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+    .wrimagecard-image-asset-number,
+    .wrimagecard-image-asset-text {
         margin-left: 195px;
     }
 
-    .wrimagecard-image-asset-number2, .wrimagecard-image-asset-text2 {
+    .wrimagecard-image-asset-number2,
+    .wrimagecard-image-asset-text2 {
         margin-left: 245px;
     }
 
@@ -447,12 +464,15 @@
 }
 
 @media (min-width: 1660px) {
+
     /* CARD ASSET */
-    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+    .wrimagecard-image-asset-number,
+    .wrimagecard-image-asset-text {
         margin-left: 225px;
     }
 
-    .wrimagecard-image-asset-number2, .wrimagecard-image-asset-text2 {
+    .wrimagecard-image-asset-number2,
+    .wrimagecard-image-asset-text2 {
         margin-left: 265px;
     }
 
@@ -479,6 +499,7 @@
 }
 
 @media (min-width: 1770px) {
+
     /* CARD ASSET */
     .wrimagecard-image-asset-number {
         margin-left: 245px;
@@ -529,12 +550,15 @@
 }
 
 @media (min-width: 1920px) {
+
     /* CARD ASSET */
-    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+    .wrimagecard-image-asset-number,
+    .wrimagecard-image-asset-text {
         margin-left: 285px;
     }
 
-    .wrimagecard-image-asset-number2, .wrimagecard-image-asset-text2 {
+    .wrimagecard-image-asset-number2,
+    .wrimagecard-image-asset-text2 {
         margin-left: 335px;
     }
 
