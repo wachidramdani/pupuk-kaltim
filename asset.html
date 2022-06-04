@@ -411,6 +411,12 @@
             },
         })});
 
+        $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
+            if(data.node.text == 'Equipment/Piping'){
+                window.open("./sub_asset/equipment.html", "_self")
+            }
+        });
+
         FusionCharts.ready(function () {
             var chartObj = new FusionCharts({
                 type: 'heatmap',
