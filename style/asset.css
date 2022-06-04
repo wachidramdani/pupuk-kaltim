@@ -266,6 +266,15 @@
     margin-top: 20px;
 }
 
+/* jstree custom  */
+.jstree-custom {
+    margin: 1rem 0;
+}
+
+.jstree-default .jstree-anchor {
+    font-size: 12px;
+}
+
 @media screen and (min-width: 768px) {
     .tab-button-outer {
         position: relative;

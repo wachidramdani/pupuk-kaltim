@@ -17,6 +17,8 @@
     <!-- Step 2 - Include the fusion theme -->
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+
     <title>Pupuk - Kaltim</title>
 </head>
 
@@ -144,7 +146,8 @@
                 </div>
             </div>
             <div class="sidebar-body">
-                <ul id="tree3">
+                <div class="jstree-custom" id="jstree_demo_div"></div>
+                <!-- <ul id="tree3">
                     <li><a href="#">Company</a>
                         <ul>
                             <li>Plant
@@ -219,7 +222,7 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
         <div class="main-content">
@@ -310,15 +313,104 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="bootstrap-4.6.1/js/jquery.slim.min.js"></script>
     <script src="bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
     <script type="text/javascript" src="tabs/ui.tabs.stretchyTabs.js"></script>
     <script type="text/javascript" src="tabs/lib/ui.tabs.closable.js"></script>
     <script type="text/javascript" src="tabs/lib/ui.tabs.addTab.js"></script>
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
     <script type="text/javascript">
+        $(function () { $('#jstree_demo_div').jstree({ 'core' : 
+            {
+                "themes" : {
+                    "icons": false
+                },
+                'data' : [
+                    {
+                        'text' : 'Company',
+                        'state' : { 'opened' : true, 'selected' : true },
+                        'children' : [
+                            { 'text' : 'Plant',
+                                'state' : { 'opened' : true },
+                                'children' : [
+                                    { 'text' : 'Plant Section',
+                                        'state' : { 'opened' : true },
+                                        'children' : [
+                                            { 'text' : 'System/Area',
+                                                'state' : { 'opened' : true },
+                                                'children' : [
+                                                    { 'text' : 'Equipment/Piping' },
+                                                    { 'text' : 'Horizontal Vessel',
+                                                        'children' : [
+                                                            { 'text' : 'Shell' },
+                                                            { 'text' : 'Head' }        
+                                                        ]
+                                                    },
+                                                    { 'text' : 'Vertical Vessel',
+                                                        'children' : [
+                                                            { 'text' : 'Shell' },
+                                                            { 'text' : 'Top Head' },
+                                                            { 'text' : 'Bottom Head'}
+                                                        ]
+                                                    },
+                                                    { 'text' : 'Heat Exchanger',
+                                                        'children' : [
+                                                            { 'text' : 'Shell' },
+                                                            { 'text' : 'Tube Bundle' },
+                                                            { 'text' : 'Front End Channel'},
+                                                            { 'text' : 'Rear End Channel'},
+                                                        ]
+                                                    },
+                                                    { 'text' : 'Cooler',
+                                                        'children' : [
+                                                            { 'text' : 'Tube Section' },
+                                                            { 'text' : 'Header Box' }
+                                                        ]
+                                                    },
+                                                    { 'text' : 'Boiler',
+                                                        'children' : [
+                                                            { 'text' : 'Tube Section' },
+                                                            { 'text' : 'Head' },
+                                                            { 'text' : 'Shell'}
+                                                        ]
+                                                    },
+                                                    { 'text' : 'Fired Heater',
+                                                        'children' : [
+                                                            { 'text' : 'Heater Box' },
+                                                            { 'text' : 'Tube Section' },
+                                                        ]
+                                                    },
+                                                    { 'text' : 'Piping',
+                                                        'children' : [
+                                                            { 'text' : 'Piping Tag' }
+                                                        ]
+                                                    },
+                                                    { 'text' : 'Tank',
+                                                        'children' : [
+                                                            { 'text' : 'Tank Course' },
+                                                            { 'text' : 'Tank Bottom' },
+                                                            { 'text' : 'Tank Roof' }
+                                                        ]
+                                                    },
+                                                    { 'text' : 'PSV',
+                                                        'children' : [
+                                                            { 'text' : 'PSV' }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]   
+                            }
+                        ]
+                    }
+                ]
+            },
+        })});
+
         FusionCharts.ready(function () {
             var chartObj = new FusionCharts({
                 type: 'heatmap',
