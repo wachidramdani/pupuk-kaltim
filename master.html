@@ -17,6 +17,8 @@
     <!-- Step 2 - Include the fusion theme -->
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+
     <title>Pupuk - Kaltim</title>
 </head>
 
@@ -126,16 +128,10 @@
     <div class="inner-body">
         <div class="sidebar">
             <div class="sidebar-body">
-                <ul id="tree3">
+                <div class="jstree-custom" id="jstree_demo_div"></div>
+                <!-- <ul id="tree3">
                     <li>
                         <a href="#">Anomaly Type</a>
-                        <!-- <ul>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Carrosive Fluid </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Damage Loop </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">List Of Damage Mechanism </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Potensial Damage Mechanism </li>
-                            <li onclick="openSaPage('./sub_asset/equipment.html')">Type Of Unit </li>
-                        </ul> -->
                     </li>
                     <li>
                         <a href="#">Asset Configuration</a>
@@ -203,7 +199,7 @@
                             <li >CLSCC </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
         <div class="main-content">
@@ -215,14 +211,127 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="bootstrap-4.6.1/js/jquery.slim.min.js"></script>
     <script src="bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
     <script type="text/javascript" src="tabs/ui.tabs.stretchyTabs.js"></script>
     <script type="text/javascript" src="tabs/lib/ui.tabs.closable.js"></script>
     <script type="text/javascript" src="tabs/lib/ui.tabs.addTab.js"></script>
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
+
+    <script type="text/javascript">
+        $(function () {
+            $('#jstree_demo_div').jstree({
+                'core':
+                {
+                    "themes": {
+                        "icons": false
+                    },
+                    'data': [
+                        {
+                            'text': 'Anomaly Type',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Asset Configuration',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Consequence Level Setting',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Coponent Damage Cost',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Corrison Loops',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': [
+                                {'text': 'RBI-PKT-CL-1'},
+                                {'text': 'RBI-PKT-CL-2'},
+                                {'text': 'RBI-PKT-CL-3'},
+                                {'text': 'RBI-PKT-CL-4'},
+                                {'text': 'RBI-PKT-CL-5'},
+                                {'text': 'RBI-PKT-CL-6'},
+                                {'text': 'RBI-PKT-CL-7'},
+                                {'text': 'RBI-PKT-CL-8'},
+                                {'text': 'RBI-PKT-CL-9'},
+                                {'text': 'RBI-PKT-CL-10'},
+                                {'text': 'RBI-PKT-CL-11'},
+                                {'text': 'RBI-PKT-CL-12'},
+                                {'text': 'RBI-PKT-CL-13'},
+                                {'text': 'RBI-PKT-CL-14'},
+                            ]
+                        },
+                        {
+                            'text': 'Damage Mechanism',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': [
+                                {'text': 'Carrosive Fluid'},
+                                {'text': 'Damage Loop'},
+                                {'text': 'List Of Damage Mechanism'},
+                                {'text': 'Potensial Damage Mechanism '},
+                                {'text': 'Type Of Unit'},
+                            ]
+                        },
+                        {
+                            'text': 'Inventory Group',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Effectiveness Guideliness',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Fluid Master',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Material Data',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': []
+                        },
+                        {
+                            'text': 'Inspection',
+                            // 'state': { 'opened': true, 'selected': true },
+                            'children': [
+                                {'text': 'General Thining'},
+                                {'text': 'Local Thining'},
+                                {'text': 'Caustic Cracking'},
+                                {'text': 'Sulphide Stress Cracking '},
+                                {'text': 'Carbonate Cracking'},
+                                {'text': 'CISCC'},
+                                {'text': 'External Corrosion'},
+                                {'text': 'Corrosion Under Insulation'},
+                                {'text': 'Amine Cracking'},
+                                {'text': 'External CLSCC'},
+                                {'text': 'CLSCC'},
+                            ]
+                        },
+                    ]
+                },
+            })
+        });
+
+        $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
+            console.log(data.node, 'data')
+            if (data.node.original.text == 'Carrosive Fluid') {
+                window.open("./master/master_cf.html", "_self")
+            }
+            if (data.node.original.text == 'Type Of Unit') {
+                window.open("./master/master_tou.html", "_self")
+            }
+        });
+    </Script>
     <script>
         function openSaPage(param) {
             window.location.href = param;
