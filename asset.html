@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/fontawesome-free-5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/asset.css">
+    <link rel="stylesheet" href="style/datepicker/bootstrap-datepicker.min.css">
 
     <!-- Step 1 - Include the fusioncharts core library -->
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
@@ -229,14 +230,92 @@
             <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button">
-                        <li><a href="#tab01"><i class="fa fa-info-circle"><span style="margin-left: 7px;">DATA PROPERTY</span></i></a></li>
-                        <li><a href="#tab02"><i class="fa fa-image"><span style="margin-left: 7px;">IMAGES</span></i></a></li>
-                        <li><a href="#tab03"><i class="fa fa-file"><span style="margin-left: 7px;">FILE</span></i></a>
+                        <li>
+                            <a href="#tab01" class="d-flex">
+                                <i class="fa fa-info-circle pr-2"></i>
+                                <div class="pt-2">DATA PROPERTY</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab02" class="d-flex">
+                                <i class="fa fa-image pr-2"></i>
+                                <div class="pt-2">IMAGES</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab03" class="d-flex">
+                                <i class="fa fa-file pr-2"></i>
+                                <div class="pt-2">FILE</div>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div id="tab01" class="tab-contents">
-                    <h2>Tab Data Property</h2>
+                    <!-- <h2>Tab Data Property</h2> -->
+                    <!-- Name input -->
+                    <form autocomplete="off" class="mt-5 form-data-property">
+                        <p class="form-title">Risk Parameter</p>
+                        <div class="form-group row">
+                          <label for="datepicker" class="col-3 col-form-label">RBI Date</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="datepicker">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="lv1" class="col-3 col-form-label">DF Target (Based on COF Lv 1)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="lv1">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="lv2" class="col-3 col-form-label">DF Target (Based on COF Lv 2)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="lv2">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="lv3" class="col-3 col-form-label">DF Target (Based on COF Lv 3)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="lv3">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="lv4" class="col-3 col-form-label">DF Target (Based on COF Lv 4)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="lv4">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="lv5" class="col-3 col-form-label">DF Target (Based on COF Lv 5)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="lv5">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="datepickerYear" class="col-3 col-form-label">Max Year</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="datepickerYear">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="pofTarget" class="col-3 col-form-label">POF Target (events/yr)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="pofTarget">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="areariskTarget " class="col-3 col-form-label">Area Risk Target (ft2/yr)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="areariskTarget ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="financialriskTarget" class="col-3 col-form-label">Financial Risk Target ($/yr)</label>
+                          <div class="col-4">
+                            <input type="text" class="form-control form-control-sm" id="financialriskTarget">
+                          </div>
+                        </div>
+                    </form>
                 </div>
                 <div id="tab02" class="tab-contents">
                     <h2>Tab Images</h2>
@@ -319,6 +398,7 @@
     <script type="text/javascript" src="tabs/ui.tabs.stretchyTabs.js"></script>
     <script type="text/javascript" src="tabs/lib/ui.tabs.closable.js"></script>
     <script type="text/javascript" src="tabs/lib/ui.tabs.addTab.js"></script>
+    <script type="text/javascript" src="style/datepicker/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
     <script type="text/javascript">
@@ -734,6 +814,17 @@
         //Initialization of treeviews
         $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
 
+        // DATEPICKER
+        $('#datepicker').datepicker({
+            format: 'dd-mm-yyyy',
+            autoclose: true
+        });
+        $("#datepickerYear").datepicker({
+            format: "yyyy",
+            viewMode: "years", 
+            minViewMode: "years",
+            autoclose:true //to close picker once year is selected
+        });
     </script>
 </body>
 

@@ -239,7 +239,7 @@
     background: #eee;
     border: 1px solid #ddd;
     text-align: center;
-    color: #000;
+    color: #212529;
     text-decoration: none;
 }
 
@@ -260,6 +260,17 @@
 
 .tab-button-outer {
     display: none;
+    color: #6C757D;
+}
+
+.tab-button-outer li a {
+    padding-top: 20px;
+}
+
+.tab-button-outer li i {
+    color: #6C757D;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .tab-contents {
@@ -273,6 +284,10 @@
 
 .jstree-default .jstree-anchor {
     font-size: 12px;
+}
+
+.jstree-default .jstree-icon:empty {
+    height: 40px !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -364,6 +379,11 @@
     .labelmt-asset-inspection {
         padding-top: 10px;
     }
+
+    /* COMPANY, DATA PROPERTY */
+    .form-data-property .form-title {
+        width: 14%;
+    }
 }
 
 @media (min-width: 1366px) {
@@ -404,6 +424,11 @@
     .wrimagecard-image-asset-inspection {
         margin-left: 240px;
     }
+
+    /* COMPANY, DATA PROPERTY */
+    .form-data-property .form-title {
+        width: 13%;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -437,6 +462,11 @@
     .line-ver {
         left: 119px;
     }
+
+    /* COMPANY, DATA PROPERTY */
+    .form-data-property .form-title {
+        width: 12%;
+    }
 }
 
 @media (min-width: 1550px) {
@@ -469,6 +499,11 @@
 
     .line-ver {
         left: 128px;
+    }
+
+    /* COMPANY, DATA PROPERTY */
+    .form-data-property .form-title {
+        width: 11%;
     }
 }
 
@@ -504,6 +539,11 @@
 
     .line-ver {
         left: 128px;
+    }
+
+    /* COMPANY, DATA PROPERTY */
+    .form-data-property .form-title {
+        width: 10%;
     }
 }
 
@@ -556,6 +596,11 @@
     .line-ver {
         left: 138px;
     }
+
+    /* COMPANY, DATA PROPERTY */
+    .form-data-property .form-title {
+        width: 9%;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -591,4 +636,38 @@
     .line-ver {
         left: 148px;
     }
+
+    /* COMPANY, DATA PROPERTY */
+    .form-data-property .form-title {
+        width: 8%;
+    }
+}
+
+/* COMPANY, DATA PROPERTY */
+.form-data-property {
+    border: 1px solid #6C757D;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-data-property .form-title {
+    position: relative;
+    bottom: 23px;
+    background-color: #ffffff;
+    padding-left: 7px;
+    font-size: 14px;
+}
+
+.col-form-label {
+    font-size: 12px;
+    color: #212529;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    border-color: #FFC000;
+    box-shadow: 0 0 0 .2rem rgba(255, 192, 0, .25);
 }
