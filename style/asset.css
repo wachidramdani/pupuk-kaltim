@@ -236,8 +236,8 @@
 #tab-button li a {
     display: block;
     padding: 2px 8px;
-    background: #eee;
-    border: 1px solid #ddd;
+    /* background: #eee; */
+    /* border: 1px solid #ddd; */
     text-align: center;
     color: #212529;
     text-decoration: none;
@@ -249,8 +249,10 @@
 
 #tab-button li a:hover,
 #tab-button .is-active a {
-    border-bottom-color: transparent;
-    background: #fff;
+    /* border-bottom-color: transparent; */
+    /* background: blue; */
+    border-bottom: 1px;
+    color: #e16333;
 }
 
 .tab-contents {
@@ -644,6 +646,10 @@
 }
 
 /* COMPANY, DATA PROPERTY */
+.form-group {
+    margin-bottom: 5px;
+}
+
 .form-data-property {
     border: 1px solid #6C757D;
     border-radius: 10px;
