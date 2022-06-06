@@ -286,9 +286,9 @@
     font-size: 12px;
 }
 
-.jstree-default .jstree-icon:empty {
+/* .jstree-default .jstree-icon:empty {
     height: 40px !important;
-}
+} */
 
 @media screen and (min-width: 768px) {
     .tab-button-outer {
