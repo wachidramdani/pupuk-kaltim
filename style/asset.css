@@ -1,7 +1,7 @@
 .inner-body {
     margin: 0;
     padding: 0;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 83px);
     width: 100%;
     overflow-y: auto;
 }
@@ -11,9 +11,14 @@
     width: 295px;
     height: calc(100% - 2px);
     background-color: #fff;
-    padding: 5px 0;
+    padding-top: 7px;
     overflow-y: auto;
     background-color: #f8f9fa;
+}
+
+.sidebar .navbar-btn {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 6px;
 }
 
 .main-content {
@@ -235,7 +240,7 @@
 
 #tab-button li a {
     display: block;
-    padding: 2px 8px;
+    /* padding: 2px 8px; */
     /* background: #eee; */
     /* border: 1px solid #ddd; */
     text-align: center;
@@ -247,12 +252,22 @@
     border-left: none;
 }
 
-#tab-button li a:hover,
-#tab-button .is-active a {
-    /* border-bottom-color: transparent; */
-    /* background: blue; */
-    border-bottom: 1px;
+#tab-button li a:hover, #tab-button .is-active a, #tab-button .is-active .fa {
     color: #e16333;
+}
+
+#tab-button li a .tab-text {
+    padding-top: 6px;
+}
+
+#tab-button .tab-border {
+    border-right: 1px solid #cdcdcd;
+}
+
+.is-active {
+    /* border-bottom: 4px solid #e16333; */
+    -webkit-box-shadow: inset 0 -4px 0 #e16333;
+    transition: all 0.3s;
 }
 
 .tab-contents {
@@ -263,6 +278,7 @@
 .tab-button-outer {
     display: none;
     color: #6C757D;
+    border-bottom: 1px solid #cdcdcd;
 }
 
 .tab-button-outer li a {
@@ -306,8 +322,8 @@
     .tab-contents {
         position: relative;
         top: -1px;
-        margin-top: 0;
-        height: calc(100vh - 88px);
+        margin-top: 0px;
+        height: calc(100vh - 105px);
     }
 
     /* CARD ASSET */
@@ -651,9 +667,10 @@
 }
 
 .form-data-property {
-    border: 1px solid #6C757D;
+    border: 1px solid #cdcdcd;
     border-radius: 10px;
     padding: 10px;
+    width: 70%;
 }
 
 .form-data-property .form-title {
@@ -677,3 +694,4 @@
     border-color: #FFC000;
     box-shadow: 0 0 0 .2rem rgba(255, 192, 0, .25);
 }
+

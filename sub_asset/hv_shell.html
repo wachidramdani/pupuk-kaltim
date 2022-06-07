@@ -595,6 +595,9 @@
             if(data.node.text == 'Equipment/Piping'){
                 window.open("equipment.html", "_self")
             }
+            if (data.node.original.text == 'Plant') {
+                window.open("plant.html", "_self")
+            }
         });
         FusionCharts.ready(function () {
             var chartObj = new FusionCharts({

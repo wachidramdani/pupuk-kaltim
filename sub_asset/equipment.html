@@ -395,7 +395,7 @@
         <!-- <div class="main-content">
             <div class="tabpanel">
                 <ul>
-                  <li><a href="#tabs-1" class="closable">Home</a></li>
+                <li><a href="#tabs-1" class="closable">Home</a></li>
                 </ul>
                 <div class="ui-layout-content">
                     <div id="tabs-1">
@@ -469,103 +469,122 @@
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../tabs/ui.tabs.stretchyTabs.css">
     <script type="text/javascript">
-        $(function () { $('#jstree_demo_div').jstree({ 'core' : 
-            {
-                "themes" : {
-                    "icons": false
+        $(function () {
+            $('#jstree_demo_div').jstree({
+                'core':
+                {
+                    "themes": {
+                        "icons": false
+                    },
+                    'data': [
+                        {
+                            'text': 'Company',
+                            'state': { 'opened': true },
+                            'children': [
+                                {
+                                    'text': 'Plant',
+                                    'state': { 'opened': true },
+                                    'children': [
+                                        {
+                                            'text': 'Plant Section',
+                                            'state': { 'opened': true },
+                                            'children': [
+                                                {
+                                                    'text': 'System/Area',
+                                                    'state': { 'opened': true },
+                                                    'children': [
+                                                        {
+                                                            'text': 'Equipment/Piping',
+                                                            'state': { 'selected': true },
+                                                        },
+                                                        {
+                                                            'text': 'Horizontal Vessel',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Head' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Vertical Vessel',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Top Head' },
+                                                                { 'text': 'Bottom Head' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Heat Exchanger',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Tube Bundle' },
+                                                                { 'text': 'Front End Channel' },
+                                                                { 'text': 'Rear End Channel' },
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Cooler',
+                                                            'children': [
+                                                                { 'text': 'Tube Section' },
+                                                                { 'text': 'Header Box' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Boiler',
+                                                            'children': [
+                                                                { 'text': 'Tube Section' },
+                                                                { 'text': 'Head' },
+                                                                { 'text': 'Shell' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Fired Heater',
+                                                            'children': [
+                                                                { 'text': 'Heater Box' },
+                                                                { 'text': 'Tube Section' },
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Piping',
+                                                            'children': [
+                                                                { 'text': 'Piping Tag' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Tank',
+                                                            'children': [
+                                                                { 'text': 'Tank Course' },
+                                                                { 'text': 'Tank Bottom' },
+                                                                { 'text': 'Tank Roof' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'PSV',
+                                                            'children': [
+                                                                { 'text': 'PSV' }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
-                'data' : [
-                    {
-                        'text' : 'Company',
-                        'state' : { 'opened' : true },
-                        'children' : [
-                            { 'text' : 'Plant',
-                                'state' : { 'opened' : true },
-                                'children' : [
-                                    { 'text' : 'Plant Section',
-                                        'state' : { 'opened' : true },
-                                        'children' : [
-                                            { 'text' : 'System/Area',
-                                                'state' : { 'opened' : true },
-                                                'children' : [
-                                                    { 'text' : 'Equipment/Piping',
-                                                        'state' : { 'selected' : true },
-                                                    },
-                                                    { 'text' : 'Horizontal Vessel',
-                                                        'children' : [
-                                                            { 'text' : 'Shell' },
-                                                            { 'text' : 'Head' }        
-                                                        ]
-                                                    },
-                                                    { 'text' : 'Vertical Vessel',
-                                                        'children' : [
-                                                            { 'text' : 'Shell' },
-                                                            { 'text' : 'Top Head' },
-                                                            { 'text' : 'Bottom Head'}
-                                                        ]
-                                                    },
-                                                    { 'text' : 'Heat Exchanger',
-                                                        'children' : [
-                                                            { 'text' : 'Shell' },
-                                                            { 'text' : 'Tube Bundle' },
-                                                            { 'text' : 'Front End Channel'},
-                                                            { 'text' : 'Rear End Channel'},
-                                                        ]
-                                                    },
-                                                    { 'text' : 'Cooler',
-                                                        'children' : [
-                                                            { 'text' : 'Tube Section' },
-                                                            { 'text' : 'Header Box' }
-                                                        ]
-                                                    },
-                                                    { 'text' : 'Boiler',
-                                                        'children' : [
-                                                            { 'text' : 'Tube Section' },
-                                                            { 'text' : 'Head' },
-                                                            { 'text' : 'Shell'}
-                                                        ]
-                                                    },
-                                                    { 'text' : 'Fired Heater',
-                                                        'children' : [
-                                                            { 'text' : 'Heater Box' },
-                                                            { 'text' : 'Tube Section' },
-                                                        ]
-                                                    },
-                                                    { 'text' : 'Piping',
-                                                        'children' : [
-                                                            { 'text' : 'Piping Tag' }
-                                                        ]
-                                                    },
-                                                    { 'text' : 'Tank',
-                                                        'children' : [
-                                                            { 'text' : 'Tank Course' },
-                                                            { 'text' : 'Tank Bottom' },
-                                                            { 'text' : 'Tank Roof' }
-                                                        ]
-                                                    },
-                                                    { 'text' : 'PSV',
-                                                        'children' : [
-                                                            { 'text' : 'PSV' }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]   
-                            }
-                        ]
-                    }
-                ]
-            },
-        })});
+            })
+        });
 
         $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-            if(data.node.text == 'Company'){
+            if (data.node.text == 'Company') {
                 window.open("../asset.html", "_self")
             }
-            if(data.node.original.text == 'Shell'){
+            if (data.node.original.text == 'Shell') {
                 window.open("hv_shell.html", "_self")
+            }
+            if (data.node.original.text == 'Plant') {
+                window.open("plant.html", "_self")
             }
         });
 
