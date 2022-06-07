@@ -298,26 +298,25 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form autocomplete="off" class="mt-1 form-data-property" style="border: none;">
+                        <!-- <p class="form-title">Risk Parameter</p> -->
                         <div class="form-group row">
-                            <label for="inputFluid" class="col-sm-5 col-form-label" style="font-size: 12px;">Fluid or
+                            <label for="datepicker" class="col-5 col-form-label">Fluid or
                                 Corrosive Fluid</label>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" id="inputPassword">
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="datepicker">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="inputFluid" class="col-sm-5 col-form-label" style="font-size: 12px;">
-                                Example Date</label>
-                            <div class="col-sm-7">
-                                <input type="date" class="form-control" id="inputPassword" placeholder="">
+                            <label for="datepicker" class="col-5 col-form-label">Example Date</label>
+                            <div class="col-7">
+                                <input type="date" class="form-control form-control-sm" id="datepicker">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="inputFluid" class="col-sm-5 col-form-label" style="font-size: 12px;">
-                                Example Select</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" id="exampleFormControlSelect1">
+                            <label for="datepicker" class="col-5 col-form-label">Example Select</label>
+                            <div class="col-7">
+                                <select class="form-control form-control-sm" id="exampleFormControlSelect1">
                                     <option>-- Silahkan Pilih --</option>
                                     <option>opt 1</option>
                                     <option>opt 2</option>
@@ -330,6 +329,13 @@
                             <label class="form-check-label" for="defaultCheck1" style="font-size: 12px;">
                                 Default checkbox
                             </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="defaultRadio1">
+                            <label class="form-check-label" for="defaultRadio1" style="font-size: 12px;">
+                                Default Radio
+                            </label>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
