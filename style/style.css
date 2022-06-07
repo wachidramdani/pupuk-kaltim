@@ -15,6 +15,14 @@ body {
     src: url(font/Montserrat-Medium.ttf);
 }
 
+.inner-body {
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 83px);
+    width: 100%;
+    overflow-y: auto;
+}
+
 /* MENU */
 .navbar {
     padding: 0 1rem;
