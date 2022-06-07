@@ -127,15 +127,16 @@
         </div>
     </nav>
     <div class="inner-body">
-        <div class="sidebar">
-            <div class="d-flex">
+        <div class="sidebar" style="height: calc(100% + 185px);">
+            <div class="d-flex navbar-btn">
                 <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
                         class="fas fa-sync-alt"></i> Syn With System</button>
-                <!-- <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
-                        class="fas fa-plus"></i> New Component</button> -->
                 <div>
-                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="font-size: 10px;">
+                    <!-- <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2"
+                        style="font-size: 10px;"><i class="fas fa-plus" data-toggle="dropdown"></i> New
+                        Component</button> -->
+                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2 p-2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 10px;">
                         <i class="fas fa-plus"></i>
                         New Component
                     </button>
@@ -147,312 +148,207 @@
             </div>
             <div class="sidebar-body">
                 <div class="jstree-custom" id="jstree_demo_div"></div>
-                <!-- <ul id="tree3">
-                    <li><a href="#">Company</a>
-                        <ul>
-                            <li>Plant
-                                <ul>
-                                    <li>Plant Section
-                                        <ul>
-                                            <li>System/Area
-                                                <ul>
-                                                    <li onclick="openSaPage('#')">Equipment/Piping</li>
-                                                    <li>Horizontal Vessel
-                                                        <ul>
-                                                            <li onclick="openSaPage('hv_shell.html')">Shell</li>
-                                                            <li onclick="addTab('HV-Head')">Head</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>Vertical Vessel
-                                                        <ul>
-                                                            <li onclick="addTab('VV-Shell')">Shell</li>
-                                                            <li onclick="addTab('VV-Top Head')">Top Head</li>
-                                                            <li onclick="addTab('VV-Bottom Head')">Bottom Head</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>Heat Exchanger
-                                                        <ul>
-                                                            <li>Shell</li>
-                                                            <li>Tube Bundle</li>
-                                                            <li>Front End Channel</li>
-                                                            <li>Rear End Channel</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>Cooler
-                                                        <ul>
-                                                            <li>Tube Section</li>
-                                                            <li>Header Box</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>Boiler
-                                                        <ul>
-                                                            <li>Tube Section</li>
-                                                            <li>Head</li>
-                                                            <li>Shell</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>Fired Heater
-                                                        <ul>
-                                                            <li>Heater Box</li>
-                                                            <li>Tube Section</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>Piping
-                                                        <ul>
-                                                            <li>Piping Tag</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>Tank
-                                                        <ul>
-                                                            <li>Tank Course</li>
-                                                            <li>Tank Bottom</li>
-                                                            <li>Tank Roof</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>PSV
-                                                        <ul>
-                                                            <li>PSV</li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul> -->
             </div>
         </div>
-        <div class="main-content pt-3">
-            <div id="tab01" class="tab-contents">
-                <div class="row">
-                    <div class="col-3" id="card2">
-                        <div class="card wrimagecard-asset" style="background-color:#BA68C8">
-                            <div id="panel-card3" class="collapse show">
-                                <div class="row">
-                                    <div class="col-8 d-flex align-self-center pt-2">
-                                        <div>
-                                            <div class="label-asset-number pl-3">2</div>
-                                            <div class="labelmt-asset-number pl-3">Number of Component</div>
+        <div class="main-content pt-3" style="height: calc(100% + 185px);">
+            <div class="tabs">
+                <div class="tab-button-outer">
+                    <ul id="tab-button" class="row">
+                        <li class="col-3 tab-border">
+                            <a href="#tab01" class="d-flex justify-content-center py-2 tab-hover">
+                                <i class="fa fa-home pr-2"></i>
+                                <div class="tab-text">Home</div>
+                            </a>
+                        </li>
+                        <li class="col-3 tab-border">
+                            <a href="#tab02" class="d-flex justify-content-center py-2">
+                                <i class="fa fa-info-circle pr-2"></i>
+                                <div class="tab-text">Data Property</div>
+                            </a>
+                        </li>
+                        <li class="col-3 tab-border">
+                            <a href="#tab03" class="d-flex justify-content-center py-2">
+                                <i class="fa fa-image pr-2"></i>
+                                <div class="tab-text">IMAGES</div>
+                            </a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#tab04" class="d-flex justify-content-center py-2">
+                                <i class="fa fa-file pr-2"></i>
+                                <div class="tab-text">FILE</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br />
+                <div id="tab01" class="tab-contents">
+                    <div class="row">
+                        <div class="col-3" id="card2">
+                            <div class="card wrimagecard-asset" style="background-color:#BA68C8">
+                                <div id="panel-card3" class="collapse show">
+                                    <div class="row">
+                                        <div class="col-8 d-flex align-self-center pt-2">
+                                            <div>
+                                                <div class="label-asset-number pl-3">2</div>
+                                                <div class="labelmt-asset-number pl-3">Number of Component</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-4 d-flex align-self-center pt-1 position-absolute">
-                                        <div>
-                                            <img src="../style/images/icon/asset-number.svg"
-                                                class="wrimagecard-image-asset-number" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3" id="card2">
-                        <div class="card wrimagecard-asset" style="background-color:#4DB6AC">
-                            <div id="panel-card3" class="collapse show">
-                                <div class="row">
-                                    <div class="col-8 d-flex align-self-center pt-2">
-                                        <div>
-                                            <div class="label-asset-text pl-3">Medium</div>
-                                            <div class="labelmt-asset-text pl-3">Risk Category</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 d-flex align-self-center pt-4 position-absolute">
-                                        <div>
-                                            <img src="../style/images/icon/asset-risk.svg"
-                                                class="wrimagecard-image-asset-text" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3" id="card3">
-                        <div class="card wrimagecard-asset" style="background-color:#A1887F">
-                            <div id="panel-card2" class="collapse show">
-                                <div class="row">
-                                    <div class="col-8 d-flex align-self-center pt-2">
-                                        <div>
-                                            <div class="label-asset-text pl-3">Moderate</div>
-                                            <div class="labelmt-asset-text pl-3">Likelihood Category
+                                        <div class="col-4 d-flex align-self-center pt-1 position-absolute">
+                                            <div>
+                                                <img src="../style/images/icon/asset-number.svg"
+                                                    class="wrimagecard-image-asset-number" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4 d-flex align-self-center pt-4 position-absolute">
-                                        <div>
-                                            <img src="../style/images/icon/asset-likelihood.svg"
-                                                class="wrimagecard-image-asset-text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="card2">
+                            <div class="card wrimagecard-asset" style="background-color:#4DB6AC">
+                                <div id="panel-card3" class="collapse show">
+                                    <div class="row">
+                                        <div class="col-8 d-flex align-self-center pt-2">
+                                            <div>
+                                                <div class="label-asset-text pl-3">Medium</div>
+                                                <div class="labelmt-asset-text pl-3">Risk Category</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 d-flex align-self-center pt-4 position-absolute">
+                                            <div>
+                                                <img src="../style/images/icon/asset-risk.svg"
+                                                    class="wrimagecard-image-asset-text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="card3">
+                            <div class="card wrimagecard-asset" style="background-color:#A1887F">
+                                <div id="panel-card2" class="collapse show">
+                                    <div class="row">
+                                        <div class="col-8 d-flex align-self-center pt-2">
+                                            <div>
+                                                <div class="label-asset-text pl-3">Moderate</div>
+                                                <div class="labelmt-asset-text pl-3">Likelihood Category
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 d-flex align-self-center pt-4 position-absolute">
+                                            <div>
+                                                <img src="../style/images/icon/asset-likelihood.svg"
+                                                    class="wrimagecard-image-asset-text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="card4">
+                            <div class="card wrimagecard-asset" style="background-color:#C96161">
+                                <div id="panel-card4" class="collapse show">
+                                    <div class="row">
+                                        <div class="col-8 d-flex align-self-center pt-2">
+                                            <div>
+                                                <div class="label-asset-text pl-3">Low</div>
+                                                <div class="labelmt-asset-text pl-3">Consequence Category</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 d-flex align-self-center pt-4 position-absolute">
+                                            <div>
+                                                <img src="../style/images/icon/asset-qonsequence.svg"
+                                                    class="wrimagecard-image-asset-text" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3" id="card4">
-                        <div class="card wrimagecard-asset" style="background-color:#C96161">
-                            <div id="panel-card4" class="collapse show">
-                                <div class="row">
-                                    <div class="col-8 d-flex align-self-center pt-2">
-                                        <div>
-                                            <div class="label-asset-text pl-3">Low</div>
-                                            <div class="labelmt-asset-text pl-3">Consequence Category</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 d-flex align-self-center pt-4 position-absolute">
-                                        <div>
-                                            <img src="../style/images/icon/asset-qonsequence.svg"
-                                                class="wrimagecard-image-asset-text" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row pt-5">
-                    <div class="col-4" id="card2">
-                        <div class="card wrimagecard-asset" style="background-color:#F3B04B">
-                            <div id="panel-card3" class="collapse show">
-                                <div class="row">
-                                    <div class="col-8 d-flex align-self-center pt-2">
-                                        <div>
-                                            <div class="label-asset-number pl-3">52</div>
-                                            <div class="labelmt-asset-history pl-3">Remaining Life (Year)</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 d-flex align-self-center pt-1 position-absolute">
-                                        <div>
-                                            <img src="../style/images/icon/asset-content-history.svg"
-                                                class="wrimagecard-image-asset-history" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card wrimagecard-asset mt-5" style="background-color:#5299D0">
-                            <div id="panel-card3" class="collapse show">
-                                <div class="row">
-                                    <div class="col-9 d-flex align-self-center pt-2">
-                                        <div>
-                                            <div class="d-flex">
-                                                <div class="label-asset-inspection pl-3">Intrunsive</div>
-                                                <div class="label-asset-inspection pl-3"><span class="line-ver">|</span>
-                                                    22 November 2025</div>
+                    <div class="row pt-5">
+                        <div class="col-4" id="card2">
+                            <div class="card wrimagecard-asset" style="background-color:#F3B04B">
+                                <div id="panel-card3" class="collapse show">
+                                    <div class="row">
+                                        <div class="col-8 d-flex align-self-center pt-2">
+                                            <div>
+                                                <div class="label-asset-number pl-3">52</div>
+                                                <div class="labelmt-asset-history pl-3">Remaining Life (Year)</div>
                                             </div>
-                                            <div class="labelmt-asset-inspection pl-3">Inspection Information</div>
+                                        </div>
+                                        <div class="col-4 d-flex align-self-center pt-1 position-absolute">
+                                            <div>
+                                                <img src="../style/images/icon/asset-content-history.svg"
+                                                    class="wrimagecard-image-asset-history" />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 d-flex align-self-center pt-1 position-absolute">
-                                        <div>
-                                            <img src="../style/images/icon/asset-content-inspection.svg"
-                                                class="wrimagecard-image-asset-inspection" />
+                                </div>
+                            </div>
+                            <div class="card wrimagecard-asset mt-5" style="background-color:#5299D0">
+                                <div id="panel-card3" class="collapse show">
+                                    <div class="row">
+                                        <div class="col-9 d-flex align-self-center pt-2">
+                                            <div>
+                                                <div class="d-flex">
+                                                    <div class="label-asset-inspection pl-3">Intrunsive</div>
+                                                    <div class="label-asset-inspection pl-3"><span
+                                                            class="line-ver">|</span>
+                                                        22 November 2025</div>
+                                                </div>
+                                                <div class="labelmt-asset-inspection pl-3">Inspection Information</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 d-flex align-self-center pt-1 position-absolute">
+                                            <div>
+                                                <img src="../style/images/icon/asset-content-inspection.svg"
+                                                    class="wrimagecard-image-asset-inspection" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-8" id="card2">
-                        <div class="card">
-                            <div class="card-header pos-between">
-                                <span>Risk Distribution</span>
-                                <div>
-                                    <button data-toggle="collapse" data-target="#panel-card7" aria-expanded="true"
-                                        aria-controls="panel-card7">
-                                        <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
-                                    </button>
-                                    <button data-toggle="modal" data-target="#staticBackdrop">
-                                        <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
-                                    </button>
-                                    <button onclick="setDiplayNone('card7')">
-                                        <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
-                                    </button>
+                        <div class="col-8" id="card2">
+                            <div class="card">
+                                <div class="card-header pos-between">
+                                    <span>Risk Distribution</span>
+                                    <div>
+                                        <button data-toggle="collapse" data-target="#panel-card7" aria-expanded="true"
+                                            aria-controls="panel-card7">
+                                            <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                        <button data-toggle="modal" data-target="#staticBackdrop">
+                                            <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                        <button onclick="setDiplayNone('card7')">
+                                            <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="panel-card7" class="collapse show">
-                                <div class="card-body" style="height: 280px; padding-top: 0;">
-                                    <div id="risk-chart" style="height: 300px;"></div>
+                                <div id="panel-card7" class="collapse show">
+                                    <div class="card-body" style="height: 280px; padding-top: 0;">
+                                        <div id="risk-chart" style="height: 300px;"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <form>
-                            <div class="form-group">
-                                <label for="disabledTextInput">Notes</label>
-                                <textarea disabled class="form-control" id="exampleFormControlTextarea1" rows="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <div class="row">
+                        <div class="col-12">
+                            <form>
+                                <div class="form-group">
+                                    <label for="disabledTextInput">Notes</label>
+                                    <textarea disabled class="form-control" id="exampleFormControlTextarea1" rows="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </textarea>
-                            </div>
-                        </form>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="main-content">
-            <div class="tabpanel">
-                <ul>
-                <li><a href="#tabs-1" class="closable">Home</a></li>
-                </ul>
-                <div class="ui-layout-content">
-                    <div id="tabs-1">
-                        <div class="row">
-                            <div class="col-4" id="card2">
-                                <div class="card">
-                                    <div id="panel-card2" class="collapse show">
-                                        <div class="wrimagecard wrimagecard-topimage">
-                                            <div class="wrimagecard-topimage_header" style="background-color:#81C784">
-                                                <i class="fa fa-heart" style="color:#000000"></i>
-                                            </div>
-                                            <div class="wrimagecard-topimage_title">
-                                                <div class="label">Risk Category</div>
-                                                <div class="value">Medium</div>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4" id="card2">
-                                <div class="card">
-                                    <div id="panel-card2" class="collapse show">
-                                        <div class="wrimagecard wrimagecard-topimage">
-                                            <div class="wrimagecard-topimage_header" style="background-color:#81C784">
-                                                <i class="fa fa-heart" style="color:#000000"></i>
-                                            </div>
-                                            <div class="wrimagecard-topimage_title">
-                                                <div class="label">Likelihood Category</div>
-                                                <div class="value">Moderate</div>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4" id="card2">
-                                <div class="card">
-                                    <div id="panel-card2" class="collapse show">
-                                        <div class="wrimagecard wrimagecard-topimage">
-                                            <div class="wrimagecard-topimage_header" style="background-color:#81C784">
-                                                <i class="fa fa-heart" style="color:#000000"></i>
-                                            </div>
-                                            <div class="wrimagecard-topimage_title">
-                                                <div class="label">Consequence Category</div>
-                                                <div class="value">Low</div>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
     <!-- Optional JavaScript -->
 
@@ -585,6 +481,12 @@
             }
             if (data.node.original.text == 'Plant') {
                 window.open("plant.html", "_self")
+            }
+            if (data.node.original.text == 'Plant Section') {
+                window.open("plant_section.html", "_self")
+            }
+            if (data.node.original.text == 'System/Area') {
+                window.open("system_area.html", "_self")
             }
         });
 
