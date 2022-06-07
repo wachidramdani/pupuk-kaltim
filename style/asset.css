@@ -1,7 +1,7 @@
 .inner-body {
     margin: 0;
     padding: 0;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 83px);
     width: 100%;
     overflow-y: auto;
 }
@@ -306,7 +306,7 @@
     .tab-contents {
         position: relative;
         top: -1px;
-        margin-top: 0;
+        margin-top: 0px;
         height: calc(100vh - 88px);
     }
 
@@ -654,6 +654,7 @@
     border: 1px solid #6C757D;
     border-radius: 10px;
     padding: 10px;
+    width: 70%;
 }
 
 .form-data-property .form-title {
