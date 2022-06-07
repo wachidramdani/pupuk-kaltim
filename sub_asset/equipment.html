@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/asset.css">
 
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="../style/images/icon/logo-pavicon-v6.png">
+
     <!-- Step 1 - Include the fusioncharts core library -->
     <script type="text/javascript" src="../fusioncharts/fusioncharts.js"></script>
     <!-- Step 2 - Include the fusion theme -->
@@ -127,8 +130,8 @@
         </div>
     </nav>
     <div class="inner-body">
-        <div class="sidebar" style="height: calc(100% + 185px);">
-            <div class="d-flex navbar-btn">
+        <div class="sidebar" style="height: calc(100% + 270px);">
+            <div class="d-flex navbar-btn" style="padding-bottom: 22px;">
                 <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
                         class="fas fa-sync-alt"></i> Syn With System</button>
                 <div>
@@ -150,7 +153,7 @@
                 <div class="jstree-custom" id="jstree_demo_div"></div>
             </div>
         </div>
-        <div class="main-content pt-3" style="height: calc(100% + 185px);">
+        <div class="main-content pt-3" style="height: calc(100% + 270px);">
             <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
@@ -346,6 +349,99 @@
                             </form>
                         </div>
                     </div>
+                </div>
+
+                <div id="tab02" class="tab-contents" style="margin-top: -29px;">
+                    <!-- <h2>Tab Data Property</h2> -->
+                    <!-- Name input -->
+                    <form autocomplete="off" class="mt-5 form-data-property">
+                        <p class="form-title" style="width: 330px;">Detection, Isolation and Mitigation System</p>
+                        <div class="form-group row">
+                            <label for="lv4" class="col-4 col-form-label">Type of Mitigation System</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lv5" class="col-4 col-form-label">Type of Detection System</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv5" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="datepickerYear" class="col-4 col-form-label">Type of Isolation System</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="datepickerYear" disabled>
+                            </div>
+                        </div>
+                    </form>
+                    <form autocomplete="off" class="mt-5 form-data-property">
+                        <p class="form-title" style="width: 90px;">Geometry</p>
+                        <div class="form-group row">
+                            <label for="lv4" class="col-4 col-form-label">Geometry Type</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lv5" class="col-4 col-form-label">Inside Diameter</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv5" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="datepickerYear" class="col-4 col-form-label">Length</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="datepickerYear" disabled>
+                            </div>
+                        </div>
+                    </form>
+                    <form autocomplete="off" class="mt-5 form-data-property">
+                        <div class="form-title" style="width: 190px;">Financial Consequence</div>
+                        <div class="form-group row">
+                            <label for="lv1" class="col-4 col-form-label">Equipment Cost ($/m2)</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv1" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lv2" class="col-4 col-form-label">Personnel Injury Cost ($/person)</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv2" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lv3" class="col-4 col-form-label">Environmental Cost ($/barrel)</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv3" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lv4" class="col-4 col-form-label">Production Loss ($/day)</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lv5" class="col-4 col-form-label">Population Density (people/m2)</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="lv5" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="datepickerYear" class="col-4 col-form-label">Population Density (people/m2)</label>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" id="datepickerYear" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="datepickerYear" class="col-4 col-form-label">Rate Reduction</label>
+                            <div class="col-7">
+                                <input type="number" class="form-control form-control-sm" id="datepickerYear">
+                            </div>
+                        </div>
+                    </form>
+                    <br />
                 </div>
             </div>
         </div>
