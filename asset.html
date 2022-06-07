@@ -511,13 +511,12 @@
         });
 
         $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-            console.log(data.node, 'data')
             if (data.node.text == 'Equipment/Piping') {
                 window.open("./sub_asset/equipment.html", "_self")
             }
-            if (data.node.original.text == 'Shell') {
-                window.open("./sub_asset/hv_shell.html", "_self")
-            }
+            // if (data.node.original.text == 'Shell') {
+            //     window.open("./sub_asset/hv_shell.html", "_self")
+            // }
         });
 
         FusionCharts.ready(function () {
