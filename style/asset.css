@@ -11,7 +11,7 @@
     width: 295px;
     height: calc(100% - 2px);
     background-color: #fff;
-    padding: 5px 0;
+    padding-top: 15px;
     overflow-y: auto;
     background-color: #f8f9fa;
 }
@@ -248,11 +248,16 @@
 }
 
 #tab-button li a:hover,
-#tab-button .is-active a {
+#tab-button .is-active a, #tab-button li a:hover,
+#tab-button .is-active .fa {
     /* border-bottom-color: transparent; */
     /* background: blue; */
     border-bottom: 1px;
     color: #e16333;
+}
+
+.is-active {
+    border-bottom: 4px solid #e16333;
 }
 
 .tab-contents {
@@ -678,3 +683,4 @@
     border-color: #FFC000;
     box-shadow: 0 0 0 .2rem rgba(255, 192, 0, .25);
 }
+
