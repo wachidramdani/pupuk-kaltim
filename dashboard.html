@@ -140,978 +140,175 @@
             </div>
         </div>
     </nav>
-    <hr class="hr-menu">
-    <div class="tab">
-        <div>
-            <div class="row tab-sub2">
-                <div class="col-3">
-                    <div class="callout">
-                        <div class="row">
-                            <button type="button" class="btn d-flex tablinks tab-btn-asset"
-                                onclick="openTab(event, 'tab1')" id="defaultOpen">
-                                <div class="col-4 tab-img-asset">
-                                    <!-- <img src="/style/images/icon/dashboard-tab-asset-active.svg" /> -->
-                                    <i class="fas fa-money-check-alt"></i>
-                                </div>
-                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-asset">
-                                    ASSET
-                                </div>
-                                <b class="notch-asset"></b>
-                            </button>
+    <!-- <hr class="hr-menu"> -->
+    <div class="inner-body">
+
+        <div class="tab">
+            <div>
+                <div class="row tab-sub2">
+                    <div class="col-3">
+                        <div class="callout">
+                            <div class="row">
+                                <button type="button" class="btn d-flex tablinks tab-btn-asset"
+                                    onclick="openTab(event, 'tab1')" id="defaultOpen">
+                                    <div class="col-4 tab-img-asset">
+                                        <!-- <img src="/style/images/icon/dashboard-tab-asset-active.svg" /> -->
+                                        <i class="fas fa-money-check-alt"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-start align-self-center tab-text-asset">
+                                        ASSET
+                                    </div>
+                                    <b class="notch-asset"></b>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="callout">
-                        <div class="row">
-                            <button type="button" class="btn d-flex tablinks tab-btn-risk"
-                                onclick="openTab(event, 'tab2')" id="defaultOpen">
-                                <div class="col-4 tab-img-risk">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                </div>
-                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-risk">
-                                    RISK
-                                </div>
-                                <b class="notch-risk"></b>
-                            </button>
+                    <div class="col-3">
+                        <div class="callout">
+                            <div class="row">
+                                <button type="button" class="btn d-flex tablinks tab-btn-risk"
+                                    onclick="openTab(event, 'tab2')" id="defaultOpen">
+                                    <div class="col-4 tab-img-risk">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-start align-self-center tab-text-risk">
+                                        RISK
+                                    </div>
+                                    <b class="notch-risk"></b>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="callout">
-                        <div class="row">
-                            <button type="button" class="btn d-flex tablinks tab-btn-inspection"
-                                onclick="openTab(event, 'tab3')" id="defaultOpen">
-                                <div class="col-4 tab-img-inspection">
-                                    <i class="fas fa-tasks"></i>
-                                </div>
-                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-inspection">
-                                    INSPECTION
-                                </div>
-                                <b class="notch-inspection"></b>
-                            </button>
+                    <div class="col-3">
+                        <div class="callout">
+                            <div class="row">
+                                <button type="button" class="btn d-flex tablinks tab-btn-inspection"
+                                    onclick="openTab(event, 'tab3')" id="defaultOpen">
+                                    <div class="col-4 tab-img-inspection">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <div
+                                        class="col-8 d-flex justify-content-start align-self-center tab-text-inspection">
+                                        INSPECTION
+                                    </div>
+                                    <b class="notch-inspection"></b>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="callout">
-                        <!-- <button type="button" class="btn tablinks" onclick="openTab(event, 'tab4')">
+                    <div class="col-3">
+                        <div class="callout">
+                            <!-- <button type="button" class="btn tablinks" onclick="openTab(event, 'tab4')">
                             <i class="fa fa-calendar-check"></i>
                             Follow Up Item
                             <b class="notch"></b>
                         </button> -->
-                        <button type="button" class="btn d-flex tablinks tab-btn-followupitem"
-                            onclick="openTab(event, 'tab4')" id="defaultOpen">
-                            <div class="col-4 tab-img-followupitem">
-                                <i class="fas fa-calendar-check"></i>
-                            </div>
-                            <div class="col-8 d-flex justify-content-start align-self-center tab-text-followupitem">
-                                FOLLOW UP ITEM
-                            </div>
-                            <b class="notch-followupitem"></b>
-                        </button>
+                            <button type="button" class="btn d-flex tablinks tab-btn-followupitem"
+                                onclick="openTab(event, 'tab4')" id="defaultOpen">
+                                <div class="col-4 tab-img-followupitem">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-followupitem">
+                                    FOLLOW UP ITEM
+                                </div>
+                                <b class="notch-followupitem"></b>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="content">
-        <div class="">
-            <div class="row">
-                <div class="col">
-                    <!-- Tab content -->
-                    <div id="tab1" class="tabcontent">
-                        <div class="filter">
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Plant Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Plant Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Setion Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Section Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Area Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Area Filter -->
-                            </div>
-                            <div class="filter-item">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Equipment Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Equipment Filter -->
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-6" id="card2">
-                                        <div class="card wrimagecard" style="background-color:#BA68C8">
-                                            <div id="panel-card3" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center asset-card-registered">
-                                                        <div>
-                                                            <div class="label-number pl-3">555</div>
-                                                            <div class="labelmt-number pl-3">Total Registered
-                                                                Equipment ? </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <div>
-                                                            <img src="style/images/icon/dashboard-asset-1.svg"
-                                                                class="wrimagecard-icon-registered" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+        <div class="content">
+            <div class="">
+                <div class="row">
+                    <div class="col">
+                        <!-- Tab content -->
+                        <div id="tab1" class="tabcontent">
+                            <div class="filter">
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
                                         </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Plant Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
-                                    <div class="col-6" id="card2">
-                                        <div class="card wrimagecard" style="background-color:#4DB6AC">
-                                            <div id="panel-card3" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center asset-card-assessed">
-                                                        <div>
-                                                            <div class="label-number pl-3">555</div>
-                                                            <div class="labelmt-number pl-3">Total Assessed
-                                                                Equipment</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <div>
-                                                            <img src="style/images/icon/dashboard-asset-2.svg"
-                                                                class="wrimagecard-icon-assessed" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- <i class="fa fa-filter"></i> Plant Filter -->
+                                </div>
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
                                         </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Setion Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
-                                    <div class="col-6" id="card3">
-                                        <div class="card wrimagecard" style="background-color:#A1887F">
-                                            <div id="panel-card2" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center asset-card-validation">
-                                                        <div>
-                                                            <div class="label-number pl-3">555</div>
-                                                            <div class="labelmt-number pl-3">Total Required
-                                                                Validation Asset
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center  position-absolute">
-                                                        <div>
-                                                            <img src="style/images/icon/dashboard-asset-3.svg"
-                                                                class="wrimagecard-icon-validation" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- <i class="fa fa-filter"></i> Section Filter -->
+                                </div>
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
                                         </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Area Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
-                                    <div class="col-6" id="card4">
-                                        <div class="card wrimagecard" style="background-color:#C96161">
-                                            <div id="panel-card4" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center asset-card-offline">
-                                                        <div>
-                                                            <div class="label-number pl-3">555</div>
-                                                            <div class="labelmt-number pl-3">Total Offline
-                                                                Equipment</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <div>
-                                                            <img src="style/images/icon/dashboard-asset-4.svg"
-                                                                class="wrimagecard-icon-offline" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- <i class="fa fa-filter"></i> Area Filter -->
+                                </div>
+                                <div class="filter-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
                                         </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Equipment Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
-                                    <div class="col-12" id="card5">
-                                        <div class="card">
-                                            <div class="card-header pos-between">
-                                                <span>Registered Asset Type</span>
-                                                <div>
-                                                    <button data-toggle="collapse" data-target="#panel-card5"
-                                                        aria-expanded="true" aria-controls="panel-card5">
-                                                        <i class="fa fa-minus"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button data-toggle="modal" data-target="#staticBackdrop">
-                                                        <i class="fa fa-filter"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button onclick="setDisplayNone('card5')">
-                                                        <i class="fa fa-times"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="panel-card5" class="collapse show">
-                                                <div class="card-body" style="height: 270px; padding-top: 0;">
-                                                    <div id="chart-container"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Equipment Filter -->
                                 </div>
                             </div>
-                            <div class="col-6" id="card6">
-                                <div class="card">
-                                    <div class="card-header pos-between">
-                                        <span>Detailed of Selected Category</span>
-                                        <div>
-                                            <button data-toggle="collapse" data-target="#panel-card6"
-                                                aria-expanded="true" aria-controls="panel-card6">
-                                                <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
-                                            </button>
-                                            <button data-toggle="modal" data-target="#staticBackdrop">
-                                                <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
-                                            </button>
-                                            <button onclick="setDisplayNone('card6')">
-                                                <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div id="panel-card6" class="collapse show">
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">No</th>
-                                                            <th scope="col">Plan</th>
-                                                            <th scope="col">Section</th>
-                                                            <th scope="col">System</th>
-                                                            <th scope="col">Equipment</th>
-                                                            <th scope="col">Detail</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab2" class="tabcontent">
-                        <div class="filter">
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Plant Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Plant Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Setion Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Section Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Area Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Area Filter -->
-                            </div>
-                            <div class="filter-item">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Equipment Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Equipment Filter -->
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-12" id="card7">
-                                        <div class="card">
-                                            <div class="card-header pos-between">
-                                                <span>Risk Matrix</span>
-                                                <div>
-                                                    <button data-toggle="collapse" data-target="#panel-card7"
-                                                        aria-expanded="true" aria-controls="panel-card7">
-                                                        <i class="fa fa-minus"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button data-toggle="modal" data-target="#staticBackdrop">
-                                                        <i class="fa fa-filter"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button onclick="setDiplayNone('card7')">
-                                                        <i class="fa fa-times"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="panel-card7" class="collapse show">
-                                                <div class="card-body" style="height: 310px; padding-top: 0;">
-                                                    <div id="risk-chart"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6" id="card8">
-                                        <div class="card">
-                                            <div class="card-header pos-between">
-                                                <span>Risk Distributiion</span>
-                                                <div>
-                                                    <button data-toggle="collapse" data-target="#panel-card8"
-                                                        aria-expanded="true" aria-controls="panel-card8">
-                                                        <i class="fa fa-minus"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button data-toggle="modal" data-target="#staticBackdrop">
-                                                        <i class="fa fa-filter"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button onclick="setDisplayNone('card8')">
-                                                        <i class="fa fa-times"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="panel-card8" class="collapse show">
-                                                <div class="card-body" style="height: 250px; padding-top: 0;">
-                                                    <div id="distribution-chart"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6" id="card9">
-                                        <div class="card">
-                                            <div class="card-header pos-between">
-                                                <span style="font-size: 12px; margin-top: 5px;">Complete
-                                                    Assessment</span>
-                                                <div>
-                                                    <button data-toggle="collapse" data-target="#panel-card9"
-                                                        aria-expanded="true" aria-controls="panel-card9">
-                                                        <i class="fa fa-minus"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button data-toggle="modal" data-target="#staticBackdrop">
-                                                        <i class="fa fa-filter"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                    <button onclick="setDisplayNone('card9')">
-                                                        <i class="fa fa-times"
-                                                            style="margin-top: 6px; color: #6C757D"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="panel-card9" class="collapse show">
-                                                <div class="card-body" style="height: 250px; padding-top: 0;">
-                                                    <div id="complete-chart"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6" id="card10">
-                                <div class="card">
-                                    <div class="card-header pos-between">
-                                        <span>Top List Of Asset</span>
-                                        <div>
-                                            <button data-toggle="collapse" data-target="#panel-card10"
-                                                aria-expanded="true" aria-controls="panel-card10">
-                                                <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
-                                            </button>
-                                            <button data-toggle="modal" data-target="#staticBackdrop">
-                                                <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
-                                            </button>
-                                            <button onclick="setDisplayNone('card10')">
-                                                <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div id="panel-card10" class="collapse show">
-                                        <div class="card-body">
-                                            <div class="table-responsive" style="height: 600px;">
-                                                <table class="table table-bordered table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">No</th>
-                                                            <th scope="col">Plan</th>
-                                                            <th scope="col">Section</th>
-                                                            <th scope="col">System</th>
-                                                            <th scope="col">Equipment</th>
-                                                            <th scope="col">Risk</th>
-                                                            <th scope="col">The Latest Inspection (Year)</th>
-                                                            <th scope="col">Detail</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab3" class="tabcontent">
-                        <div class="filter">
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Plant Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Plant Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Setion Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Section Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Area Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Area Filter -->
-                            </div>
-                            <div class="filter-item">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Equipment Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Equipment Filter -->
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-6" id="card1">
-
-                                        <div class="card wrimagecard" style="background-color:#F3B04B">
-                                            <div id="panel-card3" class="collapse show">
-                                                <div class="row">
-                                                    <div
-                                                        class="col-8 d-flex align-self-center  inspection-card-remaining">
-                                                        <div>
-                                                            <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Remaining Life
-                                                                < 6 Months ? </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-6" id="card2">
+                                            <div class="card wrimagecard" style="background-color:#BA68C8">
+                                                <div id="panel-card3" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center asset-card-registered">
+                                                            <div>
+                                                                <div class="label-number pl-3">555</div>
+                                                                <div class="labelmt-number pl-3">Total Registered
+                                                                    Equipment ? </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-4 d-flex align-self-center position-absolute">
                                                             <div>
-                                                                <img src="style/images/icon/dashboard-inspection-1.svg"
-                                                                    class="wrimagecard-icon-remaining" />
+                                                                <img src="style/images/icon/dashboard-asset-1.svg"
+                                                                    class="wrimagecard-icon-registered" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1119,21 +316,20 @@
                                             </div>
                                         </div>
                                         <div class="col-6" id="card2">
-                                            <div class="card wrimagecard" style="background-color:#5299D0">
+                                            <div class="card wrimagecard" style="background-color:#4DB6AC">
                                                 <div id="panel-card3" class="collapse show">
                                                     <div class="row">
-                                                        <div
-                                                            class="col-8 d-flex align-self-center inspection-card-activity">
+                                                        <div class="col-8 d-flex align-self-center asset-card-assessed">
                                                             <div>
-                                                                <div class="label-number pl-3">5</div>
-                                                                <div class="labelmt-number pl-3">Inspection
-                                                                    Activity This Year </div>
+                                                                <div class="label-number pl-3">555</div>
+                                                                <div class="labelmt-number pl-3">Total Assessed
+                                                                    Equipment</div>
                                                             </div>
                                                         </div>
                                                         <div class="col-4 d-flex align-self-center position-absolute">
                                                             <div>
-                                                                <img src="style/images/icon/dashboard-inspection-2.svg"
-                                                                    class="wrimagecard-icon-activity" />
+                                                                <img src="style/images/icon/dashboard-asset-2.svg"
+                                                                    class="wrimagecard-icon-assessed" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1141,21 +337,22 @@
                                             </div>
                                         </div>
                                         <div class="col-6" id="card3">
-                                            <div class="card wrimagecard" style="background-color:#74BA77">
+                                            <div class="card wrimagecard" style="background-color:#A1887F">
                                                 <div id="panel-card2" class="collapse show">
                                                     <div class="row">
                                                         <div
-                                                            class="col-8 d-flex align-self-center inspection-card-overdue">
+                                                            class="col-8 d-flex align-self-center asset-card-validation">
                                                             <div>
-                                                                <div class="label-number pl-3">5</div>
-                                                                <div class="labelmt-number pl-3">Overdue Inspection
+                                                                <div class="label-number pl-3">555</div>
+                                                                <div class="labelmt-number pl-3">Total Required
+                                                                    Validation Asset
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                        <div class="col-4 d-flex align-self-center  position-absolute">
                                                             <div>
-                                                                <img src="style/images/icon/dashboard-inspection-3.svg"
-                                                                    class="wrimagecard-icon-overdue" />
+                                                                <img src="style/images/icon/dashboard-asset-3.svg"
+                                                                    class="wrimagecard-icon-validation" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1166,30 +363,30 @@
                                             <div class="card wrimagecard" style="background-color:#C96161">
                                                 <div id="panel-card4" class="collapse show">
                                                     <div class="row">
-                                                        <div class="col-8 d-flex align-self-center inspection-card-ta">
+                                                        <div class="col-8 d-flex align-self-center asset-card-offline">
                                                             <div>
-                                                                <div class="label-number pl-3">5</div>
-                                                                <div class="labelmt-number pl-3">Overdue
-                                                                    Certification TA</div>
+                                                                <div class="label-number pl-3">555</div>
+                                                                <div class="labelmt-number pl-3">Total Offline
+                                                                    Equipment</div>
                                                             </div>
                                                         </div>
                                                         <div class="col-4 d-flex align-self-center position-absolute">
                                                             <div>
-                                                                <img src="style/images/icon/dashboard-inspection-4.svg"
-                                                                    class="wrimagecard-icon-ta" />
+                                                                <img src="style/images/icon/dashboard-asset-4.svg"
+                                                                    class="wrimagecard-icon-offline" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12" id="card11">
+                                        <div class="col-12" id="card5">
                                             <div class="card">
                                                 <div class="card-header pos-between">
-                                                    <span>Damage Distributiion</span>
+                                                    <span>Registered Asset Type</span>
                                                     <div>
-                                                        <button data-toggle="collapse" data-target="#panel-card11"
-                                                            aria-expanded="true" aria-controls="panel-card11">
+                                                        <button data-toggle="collapse" data-target="#panel-card5"
+                                                            aria-expanded="true" aria-controls="panel-card5">
                                                             <i class="fa fa-minus"
                                                                 style="margin-top: 6px; color: #6C757D"></i>
                                                         </button>
@@ -1197,39 +394,40 @@
                                                             <i class="fa fa-filter"
                                                                 style="margin-top: 6px; color: #6C757D"></i>
                                                         </button>
-                                                        <button onclick="setDisplayNone('card11')">
+                                                        <button onclick="setDisplayNone('card5')">
                                                             <i class="fa fa-times"
                                                                 style="margin-top: 6px; color: #6C757D"></i>
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div id="panel-card11" class="collapse show">
-                                                    <div class="card-body" style="height: 265px; padding-top: 0;">
-                                                        <div id="chart-damage-distribution"></div>
+                                                <div id="panel-card5" class="collapse show">
+                                                    <div class="card-body" style="height: 270px; padding-top: 0;">
+                                                        <div id="chart-container"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6" id="card12">
+                                <div class="col-6" id="card6">
                                     <div class="card">
                                         <div class="card-header pos-between">
                                             <span>Detailed of Selected Category</span>
                                             <div>
-                                                <button data-toggle="collapse" data-target="#panel-card12"
-                                                    aria-expanded="true" aria-controls="panel-card12">
+                                                <button data-toggle="collapse" data-target="#panel-card6"
+                                                    aria-expanded="true" aria-controls="panel-card6">
                                                     <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
                                                 </button>
                                                 <button data-toggle="modal" data-target="#staticBackdrop">
                                                     <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
                                                 </button>
-                                                <button onclick="setDisplayNone('card12')">
+                                                <button onclick="setDisplayNone('card6')">
                                                     <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
                                                 </button>
                                             </div>
                                         </div>
-                                        <div id="panel-card12" class="collapse show">
+
+                                        <div id="panel-card6" class="collapse show">
                                             <div class="card-body">
                                                 <div class="table-responsive">
                                                     <table class="table table-bordered table-striped">
@@ -1422,7 +620,7 @@
                             </div>
                         </div>
 
-                        <div id="tab4" class="tabcontent">
+                        <div id="tab2" class="tabcontent">
                             <div class="filter">
                                 <div class="filter-item mr-4">
                                     <div class="input-group mb-3">
@@ -1489,118 +687,114 @@
                                     <!-- <i class="fa fa-filter"></i> Equipment Filter -->
                                 </div>
                             </div>
+
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-6">
                                     <div class="row">
-                                        <div class="col-12" id="card1">
-                                            <div class="card wrimagecard" style="background-color:#4DB6AC">
-                                                <div id="panel-card1" class="collapse show">
-                                                    <div class="row">
-                                                        <div
-                                                            class="col-8 d-flex align-self-center followupitem-card-arround">
-                                                            <div>
-                                                                <div class="label pl-3">5 December 2025</div>
-                                                                <div class="labelmt pl-3">Next Turn Arround</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 d-flex align-self-center position-absolute">
-                                                            <div>
-                                                                <img src="style/images/icon/dashboard-followup-around.svg"
-                                                                    class="wrimagecard-icon-arround" />
-                                                            </div>
-                                                        </div>
+                                        <div class="col-12" id="card7">
+                                            <div class="card">
+                                                <div class="card-header pos-between">
+                                                    <span>Risk Matrix</span>
+                                                    <div>
+                                                        <button data-toggle="collapse" data-target="#panel-card7"
+                                                            aria-expanded="true" aria-controls="panel-card7">
+                                                            <i class="fa fa-minus"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                        <button data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fa fa-filter"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                        <button onclick="setDiplayNone('card7')">
+                                                            <i class="fa fa-times"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-card7" class="collapse show">
+                                                    <div class="card-body" style="height: 310px; padding-top: 0;">
+                                                        <div id="risk-chart"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12" id="card2">
-                                            <div class="card wrimagecard" style="background-color:#A1887F">
-                                                <div id="panel-card2" class="collapse show">
-                                                    <div class="row">
-                                                        <div
-                                                            class="col-8 d-flex align-self-center followupitem-card-area">
-                                                            <div>
-                                                                <div class="label-number pl-3">5</div>
-                                                                <div class="labelmt-number pl-3">Next Turn Arround Area
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 d-flex align-self-center position-absolute">
-                                                            <div>
-                                                                <img src="style/images/icon/dashboard-followup-area.svg"
-                                                                    class="wrimagecard-icon-area" />
-                                                            </div>
-                                                        </div>
+                                        <div class="col-6" id="card8">
+                                            <div class="card">
+                                                <div class="card-header pos-between">
+                                                    <span>Risk Distributiion</span>
+                                                    <div>
+                                                        <button data-toggle="collapse" data-target="#panel-card8"
+                                                            aria-expanded="true" aria-controls="panel-card8">
+                                                            <i class="fa fa-minus"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                        <button data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fa fa-filter"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                        <button onclick="setDisplayNone('card8')">
+                                                            <i class="fa fa-times"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-card8" class="collapse show">
+                                                    <div class="card-body" style="height: 250px; padding-top: 0;">
+                                                        <div id="distribution-chart"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12" id="card3">
-                                            <div class="card wrimagecard" style="background-color:#F3B04B">
-                                                <div id="panel-card3" class="collapse show">
-                                                    <div class="row">
-                                                        <div
-                                                            class="col-8 d-flex align-self-center followupitem-card-history">
-                                                            <div>
-                                                                <div class="label-number pl-3">5</div>
-                                                                <div class="labelmt-number pl-3">Latest Inspection
-                                                                    History 1 Year</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 d-flex align-self-center position-absolute">
-                                                            <div>
-                                                                <img src="style/images/icon/dashboard-followup-latest.svg"
-                                                                    class="wrimagecard-icon-history" />
-                                                            </div>
-                                                        </div>
+                                        <div class="col-6" id="card9">
+                                            <div class="card">
+                                                <div class="card-header pos-between">
+                                                    <span style="font-size: 12px; margin-top: 5px;">Complete
+                                                        Assessment</span>
+                                                    <div>
+                                                        <button data-toggle="collapse" data-target="#panel-card9"
+                                                            aria-expanded="true" aria-controls="panel-card9">
+                                                            <i class="fa fa-minus"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                        <button data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fa fa-filter"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
+                                                        <button onclick="setDisplayNone('card9')">
+                                                            <i class="fa fa-times"
+                                                                style="margin-top: 6px; color: #6C757D"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12" id="card4">
-                                            <div class="card wrimagecard" style="background-color:#74BA77">
-                                                <div id="panel-card4" class="collapse show">
-                                                    <div class="row">
-                                                        <div
-                                                            class="col-8 d-flex align-self-center followupitem-card-next-ta">
-                                                            <div>
-                                                                <div class="label-number pl-3">5</div>
-                                                                <div class="labelmt-number pl-3">Follow up Item For Next
-                                                                    TA</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 d-flex align-self-center position-absolute">
-                                                            <div>
-                                                                <img src="style/images/icon/dashboard-followup-ta.svg"
-                                                                    class="wrimagecard-icon-next-ta" />
-                                                            </div>
-                                                        </div>
+                                                <div id="panel-card9" class="collapse show">
+                                                    <div class="card-body" style="height: 250px; padding-top: 0;">
+                                                        <div id="complete-chart"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-9" id="card13">
+                                <div class="col-6" id="card10">
                                     <div class="card">
                                         <div class="card-header pos-between">
-                                            <span>Detailed of Selected Category</span>
+                                            <span>Top List Of Asset</span>
                                             <div>
-                                                <button data-toggle="collapse" data-target="#panel-card13"
-                                                    aria-expanded="true" aria-controls="panel-card13">
+                                                <button data-toggle="collapse" data-target="#panel-card10"
+                                                    aria-expanded="true" aria-controls="panel-card10">
                                                     <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
                                                 </button>
                                                 <button data-toggle="modal" data-target="#staticBackdrop">
                                                     <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
                                                 </button>
-                                                <button onclick="setDisplayNone('card13')">
+                                                <button onclick="setDisplayNone('card10')">
                                                     <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
                                                 </button>
                                             </div>
                                         </div>
-                                        <div id="panel-card13" class="collapse show">
+                                        <div id="panel-card10" class="collapse show">
                                             <div class="card-body">
-                                                <div class="table-responsive-followupitem">
+                                                <div class="table-responsive" style="height: 600px;">
                                                     <table class="table table-bordered table-striped">
                                                         <thead>
                                                             <tr>
@@ -1609,6 +803,8 @@
                                                                 <th scope="col">Section</th>
                                                                 <th scope="col">System</th>
                                                                 <th scope="col">Equipment</th>
+                                                                <th scope="col">Risk</th>
+                                                                <th scope="col">The Latest Inspection (Year)</th>
                                                                 <th scope="col">Detail</th>
                                                             </tr>
                                                         </thead>
@@ -1620,24 +816,12 @@
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
                                                                 <td></td>
                                                                 <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td></td>
                                                                 <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
@@ -1652,24 +836,12 @@
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
                                                                 <td></td>
                                                                 <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td></td>
                                                                 <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
@@ -1684,24 +856,12 @@
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
                                                                 <td></td>
                                                                 <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td></td>
                                                                 <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
@@ -1716,6 +876,18 @@
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td></td>
@@ -1724,8 +896,122 @@
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
+                                                                <td></td>
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
                                                                 <td></td>
                                                                 <td></td>
                                                                 <td></td>
@@ -1741,7 +1027,744 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
+                        <div id="tab3" class="tabcontent">
+                            <div class="filter">
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Plant Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Plant Filter -->
+                                </div>
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Setion Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Section Filter -->
+                                </div>
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Area Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Area Filter -->
+                                </div>
+                                <div class="filter-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Equipment Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Equipment Filter -->
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-6" id="card1">
+
+                                            <div class="card wrimagecard" style="background-color:#F3B04B">
+                                                <div id="panel-card3" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center  inspection-card-remaining">
+                                                            <div>
+                                                                <div class="label-number pl-3">5</div>
+                                                                <div class="labelmt-number pl-3">Remaining Life
+                                                                    < 6 Months ? </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-inspection-1.svg"
+                                                                        class="wrimagecard-icon-remaining" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6" id="card2">
+                                                <div class="card wrimagecard" style="background-color:#5299D0">
+                                                    <div id="panel-card3" class="collapse show">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-8 d-flex align-self-center inspection-card-activity">
+                                                                <div>
+                                                                    <div class="label-number pl-3">5</div>
+                                                                    <div class="labelmt-number pl-3">Inspection
+                                                                        Activity This Year </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-inspection-2.svg"
+                                                                        class="wrimagecard-icon-activity" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6" id="card3">
+                                                <div class="card wrimagecard" style="background-color:#74BA77">
+                                                    <div id="panel-card2" class="collapse show">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-8 d-flex align-self-center inspection-card-overdue">
+                                                                <div>
+                                                                    <div class="label-number pl-3">5</div>
+                                                                    <div class="labelmt-number pl-3">Overdue Inspection
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-inspection-3.svg"
+                                                                        class="wrimagecard-icon-overdue" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6" id="card4">
+                                                <div class="card wrimagecard" style="background-color:#C96161">
+                                                    <div id="panel-card4" class="collapse show">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-8 d-flex align-self-center inspection-card-ta">
+                                                                <div>
+                                                                    <div class="label-number pl-3">5</div>
+                                                                    <div class="labelmt-number pl-3">Overdue
+                                                                        Certification TA</div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-inspection-4.svg"
+                                                                        class="wrimagecard-icon-ta" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" id="card11">
+                                                <div class="card">
+                                                    <div class="card-header pos-between">
+                                                        <span>Damage Distributiion</span>
+                                                        <div>
+                                                            <button data-toggle="collapse" data-target="#panel-card11"
+                                                                aria-expanded="true" aria-controls="panel-card11">
+                                                                <i class="fa fa-minus"
+                                                                    style="margin-top: 6px; color: #6C757D"></i>
+                                                            </button>
+                                                            <button data-toggle="modal" data-target="#staticBackdrop">
+                                                                <i class="fa fa-filter"
+                                                                    style="margin-top: 6px; color: #6C757D"></i>
+                                                            </button>
+                                                            <button onclick="setDisplayNone('card11')">
+                                                                <i class="fa fa-times"
+                                                                    style="margin-top: 6px; color: #6C757D"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="panel-card11" class="collapse show">
+                                                        <div class="card-body" style="height: 265px; padding-top: 0;">
+                                                            <div id="chart-damage-distribution"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6" id="card12">
+                                        <div class="card">
+                                            <div class="card-header pos-between">
+                                                <span>Detailed of Selected Category</span>
+                                                <div>
+                                                    <button data-toggle="collapse" data-target="#panel-card12"
+                                                        aria-expanded="true" aria-controls="panel-card12">
+                                                        <i class="fa fa-minus"
+                                                            style="margin-top: 6px; color: #6C757D"></i>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#staticBackdrop">
+                                                        <i class="fa fa-filter"
+                                                            style="margin-top: 6px; color: #6C757D"></i>
+                                                    </button>
+                                                    <button onclick="setDisplayNone('card12')">
+                                                        <i class="fa fa-times"
+                                                            style="margin-top: 6px; color: #6C757D"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div id="panel-card12" class="collapse show">
+                                                <div class="card-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">No</th>
+                                                                    <th scope="col">Plan</th>
+                                                                    <th scope="col">Section</th>
+                                                                    <th scope="col">System</th>
+                                                                    <th scope="col">Equipment</th>
+                                                                    <th scope="col">Detail</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="tab4" class="tabcontent">
+                                <div class="filter">
+                                    <div class="filter-item mr-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">
+                                                    <i class="fa fa-filter"></i>
+                                                </label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Plant Filter</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <!-- <i class="fa fa-filter"></i> Plant Filter -->
+                                    </div>
+                                    <div class="filter-item mr-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">
+                                                    <i class="fa fa-filter"></i>
+                                                </label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Setion Filter</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <!-- <i class="fa fa-filter"></i> Section Filter -->
+                                    </div>
+                                    <div class="filter-item mr-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">
+                                                    <i class="fa fa-filter"></i>
+                                                </label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Area Filter</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <!-- <i class="fa fa-filter"></i> Area Filter -->
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">
+                                                    <i class="fa fa-filter"></i>
+                                                </label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Equipment Filter</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <!-- <i class="fa fa-filter"></i> Equipment Filter -->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="row">
+                                            <div class="col-12" id="card1">
+                                                <div class="card wrimagecard" style="background-color:#4DB6AC">
+                                                    <div id="panel-card1" class="collapse show">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-8 d-flex align-self-center followupitem-card-arround">
+                                                                <div>
+                                                                    <div class="label pl-3">5 December 2025</div>
+                                                                    <div class="labelmt pl-3">Next Turn Arround</div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-followup-around.svg"
+                                                                        class="wrimagecard-icon-arround" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" id="card2">
+                                                <div class="card wrimagecard" style="background-color:#A1887F">
+                                                    <div id="panel-card2" class="collapse show">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-8 d-flex align-self-center followupitem-card-area">
+                                                                <div>
+                                                                    <div class="label-number pl-3">5</div>
+                                                                    <div class="labelmt-number pl-3">Next Turn Arround
+                                                                        Area
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-followup-area.svg"
+                                                                        class="wrimagecard-icon-area" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" id="card3">
+                                                <div class="card wrimagecard" style="background-color:#F3B04B">
+                                                    <div id="panel-card3" class="collapse show">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-8 d-flex align-self-center followupitem-card-history">
+                                                                <div>
+                                                                    <div class="label-number pl-3">5</div>
+                                                                    <div class="labelmt-number pl-3">Latest Inspection
+                                                                        History 1 Year</div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-followup-latest.svg"
+                                                                        class="wrimagecard-icon-history" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" id="card4">
+                                                <div class="card wrimagecard" style="background-color:#74BA77">
+                                                    <div id="panel-card4" class="collapse show">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-8 d-flex align-self-center followupitem-card-next-ta">
+                                                                <div>
+                                                                    <div class="label-number pl-3">5</div>
+                                                                    <div class="labelmt-number pl-3">Follow up Item For
+                                                                        Next
+                                                                        TA</div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-4 d-flex align-self-center position-absolute">
+                                                                <div>
+                                                                    <img src="style/images/icon/dashboard-followup-ta.svg"
+                                                                        class="wrimagecard-icon-next-ta" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9" id="card13">
+                                        <div class="card">
+                                            <div class="card-header pos-between">
+                                                <span>Detailed of Selected Category</span>
+                                                <div>
+                                                    <button data-toggle="collapse" data-target="#panel-card13"
+                                                        aria-expanded="true" aria-controls="panel-card13">
+                                                        <i class="fa fa-minus"
+                                                            style="margin-top: 6px; color: #6C757D"></i>
+                                                    </button>
+                                                    <button data-toggle="modal" data-target="#staticBackdrop">
+                                                        <i class="fa fa-filter"
+                                                            style="margin-top: 6px; color: #6C757D"></i>
+                                                    </button>
+                                                    <button onclick="setDisplayNone('card13')">
+                                                        <i class="fa fa-times"
+                                                            style="margin-top: 6px; color: #6C757D"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div id="panel-card13" class="collapse show">
+                                                <div class="card-body">
+                                                    <div class="table-responsive-followupitem">
+                                                        <table class="table table-bordered table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">No</th>
+                                                                    <th scope="col">Plan</th>
+                                                                    <th scope="col">Section</th>
+                                                                    <th scope="col">System</th>
+                                                                    <th scope="col">Equipment</th>
+                                                                    <th scope="col">Detail</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
