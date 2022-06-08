@@ -10,10 +10,10 @@
     float: left;
     width: 295px;
     height: calc(100% - 2px);
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding-top: 7px;
     overflow-y: auto;
-    /* background-color: #f8f9fa; */
+    background-color: #f8f9fa;
 }
 
 .sidebar .navbar-btn {
