@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/asset.css">
 
+    <link rel="shortcut icon" href="../style/images/icon/logo-pavicon-v6.png">
+
     <!-- Step 1 - Include the fusioncharts core library -->
     <script type="text/javascript" src="../fusioncharts/fusioncharts.js"></script>
     <!-- Step 2 - Include the fusion theme -->
@@ -128,7 +130,7 @@
     </nav>
     <div class="inner-body">
         <div class="sidebar" style="height: calc(100% + 185px);">
-            <div class="d-flex navbar-btn" style="padding-bottom: 22px;">
+            <div class="d-flex navbar-btn">
                 <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
                         class="fas fa-sync-alt"></i> Syn With System</button>
                 <div>
@@ -150,53 +152,29 @@
                 <div class="jstree-custom" id="jstree_demo_div"></div>
             </div>
         </div>
-        <div class="main-content pt-3" style="height: calc(100% + 185px);">
+        <div class="main-content" style="height: calc(100% + 270px);">
             <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
-                        <li class="col-1 tab-border">
+                        <li class="col-4 tab-border">
                             <a href="#tab01" class="d-flex justify-content-center py-2 tab-hover">
                                 <i class="fa fa-home pr-2"></i>
                                 <div class="tab-text">Home</div>
                             </a>
                         </li>
-                        <li class="col-2 tab-border">
-                            <a href="#tab02" class="d-flex justify-content-center py-2">
+                        <li class="col-4 tab-border">
+                            <a href="#tab02" class="d-flex justify-content-center py-2 tab-hover">
                                 <i class="fa fa-info-circle pr-2"></i>
-                                <div class="tab-text">Data Property</div>
+                                <div class="tab-text">DATA PROPERTY</div>
                             </a>
                         </li>
-                        <li class="col-2 tab-border">
+                        <!-- <li class="col-4 tab-border">
                             <a href="#tab03" class="d-flex justify-content-center py-2">
-                                <i class="fa fa-image pr-2"></i>
-                                <div class="tab-text">Assesment Information/div>
+                                <i class="fa fa-check-circle pr-2"></i>
+                                <div class="tab-text">Assesment Information</div>
                             </a>
-                        </li>
-                        <li class="col-2">
-                            <a href="#tab04" class="d-flex justify-content-center py-2">
-                                <i class="fa fa-file pr-2"></i>
-                                <div class="tab-text">Damage Mechanism</div>
-                            </a>
-                        </li>
-                        <li class="col-1 tab-border">
-                            <a href="#tab01" class="d-flex justify-content-center py-2 tab-hover">
-                                <i class="fa fa-home pr-2"></i>
-                                <div class="tab-text">Risk Calculation</div>
-                            </a>
-                        </li>
-                        <li class="col-1 tab-border">
-                            <a href="#tab02" class="d-flex justify-content-center py-2">
-                                <i class="fa fa-info-circle pr-2"></i>
-                                <div class="tab-text">Risk Summary</div>
-                            </a>
-                        </li>
-                        <li class="col-1 tab-border">
-                            <a href="#tab03" class="d-flex justify-content-center py-2">
-                                <i class="fa fa-image pr-2"></i>
-                                <div class="tab-text">Insp Plant</div>
-                            </a>
-                        </li>
-                        <li class="col-1">
+                        </li> -->
+                        <li class="col-4">
                             <a href="#tab04" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-file pr-2"></i>
                                 <div class="tab-text">Foto/Gambar</div>
@@ -364,7 +342,7 @@
                             <form>
                                 <div class="form-group">
                                     <label for="disabledTextInput">Notes</label>
-                                    <textarea disabled class="form-control" id="exampleFormControlTextarea1" rows="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </textarea>
                                 </div>
                             </form>
@@ -419,7 +397,7 @@
                                                         {
                                                             'text': 'Horizontal Vessel',
                                                             'children': [
-                                                                { 'text': 'Shell','state': { 'selected': true }, },
+                                                                { 'text': 'Shell', 'state': { 'selected': true }, },
                                                                 { 'text': 'Head' }
                                                             ]
                                                         },
