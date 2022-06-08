@@ -148,8 +148,84 @@
                     </div>
                 </div>
             </div>
-            <div class="sidebar-body">
-                <div class="jstree-custom" id="jstree_demo_div"></div>
+            <div class="sidebar-body mt-2">
+                <ul id="tree1">
+                    <li><a href="#company">Company</a>
+                        <ul>
+                            <li><a href="#plant">Plant</a>
+                                <ul>
+                                    <li>Plant Section
+                                        <ul>
+                                            <li>System / Area
+                                                <ul>
+                                                    <li>Equipment / Piping</li>
+                                                    <li>Horizontal Vessel
+                                                        <ul>
+                                                            <li>Shell</li>
+                                                            <li>Head</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Vertical Vessel
+                                                        <ul>
+                                                            <li>Shell</li>
+                                                            <li>Top Head</li>
+                                                            <li>Bottom Head</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Heat Exchanger
+                                                        <ul>
+                                                            <li>Shell</li>
+                                                            <li>Tubo Bundle</li>
+                                                            <li>Front End Channel</li>
+                                                            <li>Rear End Channel</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Cooler
+                                                        <ul>
+                                                            <li>Tube Section</li>
+                                                            <li>Header Box</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Boiler
+                                                        <ul>
+                                                            <li>Tube Section</li>
+                                                            <li>Head</li>
+                                                            <li>Shell</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Fired Heater
+                                                        <ul>
+                                                            <li>Heater Box</li>
+                                                            <li>Tube Section</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Piping
+                                                        <ul>
+                                                            <li>Piping Tag</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Tank
+                                                        <ul>
+                                                            <li>Tank Course</li>
+                                                            <li>Tank Bottom</li>
+                                                            <li>Tank Roof</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>PSV
+                                                        <ul>
+                                                            <li>PSV</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- <div class="jstree-custom" id="jstree_demo_div"></div> -->
                 <!-- <ul id="tree3">
                     <li><a href="#">Company</a>
                         <ul>
@@ -229,7 +305,7 @@
             </div>
         </div>
         <div class="main-content">
-            <div class="tabs">
+            <div class="tabs" id="company">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
                         <li class="col-4 tab-border">
@@ -322,12 +398,12 @@
                 </div>
                 <div id="tab02" class="tab-contents">
                     <div class="d-flex justify-content-center mt-5">
-                        <img src="/style/images/under_construnction-v2.jpg" class="w-25">
+                        <img src="/style/images/under_construction-v3.png" class="w-25">
                     </div>
                 </div>
                 <div id="tab03" class="tab-contents">
                     <div class="d-flex justify-content-center mt-5">
-                        <img src="/style/images/under_construnction-v2.jpg" class="w-25">
+                        <img src="/style/images/under_construction-v3.png" class="w-25">
                     </div>
                 </div>
             </div>
@@ -409,127 +485,189 @@
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
     <script type="text/javascript">
-        $(function () {
-            $('#jstree_demo_div').jstree({
-                'core':
-                {
-                    "themes": {
-                        "icons": false
-                    },
-                    'data': [
-                        {
-                            'text': 'Company',
-                            'state': { 'opened': true, 'selected': true },
-                            'children': [
-                                {
-                                    'text': 'Plant',
-                                    'state': { 'opened': true },
-                                    'children': [
-                                        {
-                                            'text': 'Plant Section',
-                                            'state': { 'opened': true },
-                                            'children': [
-                                                {
-                                                    'text': 'System/Area',
-                                                    'state': { 'opened': true },
-                                                    'children': [
-                                                        { 'text': 'Equipment/Piping' },
-                                                        {
-                                                            'text': 'Horizontal Vessel',
-                                                            'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Head' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Vertical Vessel',
-                                                            'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Top Head' },
-                                                                { 'text': 'Bottom Head' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Heat Exchanger',
-                                                            'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Tube Bundle' },
-                                                                { 'text': 'Front End Channel' },
-                                                                { 'text': 'Rear End Channel' },
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Cooler',
-                                                            'children': [
-                                                                { 'text': 'Tube Section' },
-                                                                { 'text': 'Header Box' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Boiler',
-                                                            'children': [
-                                                                { 'text': 'Tube Section' },
-                                                                { 'text': 'Head' },
-                                                                { 'text': 'Shell' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Fired Heater',
-                                                            'children': [
-                                                                { 'text': 'Heater Box' },
-                                                                { 'text': 'Tube Section' },
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Piping',
-                                                            'children': [
-                                                                { 'text': 'Piping Tag' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Tank',
-                                                            'children': [
-                                                                { 'text': 'Tank Course' },
-                                                                { 'text': 'Tank Bottom' },
-                                                                { 'text': 'Tank Roof' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'PSV',
-                                                            'children': [
-                                                                { 'text': 'PSV' }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+        $.fn.extend({
+            treed: function (o) {
+            
+            var openedClass = 'fas fa-plus-circle';
+            var closedClass = 'fas fa-minus-circle';
+            
+            if (typeof o != 'undefined'){
+                if (typeof o.openedClass != 'undefined'){
+                openedClass = o.openedClass;
+                }
+                if (typeof o.closedClass != 'undefined'){
+                closedClass = o.closedClass;
+                }
+            };
+            
+                //initialize each of the top levels
+                var tree = $(this);
+                tree.addClass("tree");
+                tree.find('li').has("ul").each(function () {
+                    var branch = $(this); //li with children ul
+                    branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+                    branch.addClass('branch');
+                    branch.on('click', function (e) {
+                        if (this == e.target) {
+                            var icon = $(this).children('i:first');
+                            icon.toggleClass(openedClass + " " + closedClass);
+                            $(this).children().children().toggle();
                         }
-                    ]
-                },
-            })
+                    })
+                    branch.children().children().toggle();
+                });
+                //fire event from the dynamically added icon
+            tree.find('.branch .indicator').each(function(){
+                $(this).on('click', function () {
+                    $(this).closest('li').click();
+                });
+            });
+                //fire event to open branch if the li contains an anchor instead of text
+                tree.find('.branch>a').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
+                    });
+                });
+                //fire event to open branch if the li contains a button instead of text
+                tree.find('.branch>button').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
+                    });
+                });
+            }
         });
 
-        $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-            if (data.node.text == 'Equipment/Piping') {
-                window.open("./sub_asset/equipment.html", "_self")
-            }
-            if (data.node.original.text == 'Shell') {
-                window.open("./sub_asset/hv_shell.html", "_self")
-            }
-            if (data.node.original.text == 'Plant') {
-                window.open("./sub_asset/plant.html", "_self")
-            }
-            if (data.node.original.text == 'Plant Section') {
-                window.open("./sub_asset/plant_section.html", "_self")
-            }
-            if (data.node.original.text == 'System/Area') {
-                window.open("./sub_asset/system_area.html", "_self")
-            }
-        });
+        //Initialization of treeviews
+
+        $('#tree1').treed();
+
+        $('#tree2').treed({openedClass:'glyphicon-folder-open', closedClass:'glyphicon-folder-close'});
+
+        $('#tree3').treed({openedClass:'glyphicon-chevron-right', closedClass:'glyphicon-chevron-down'});
+
+        // $(function () {
+        //     $('#jstree_demo_div').jstree({
+        //         'core':
+        //         {
+        //             "themes": {
+        //                 "icons": false
+        //             },
+        //             'data': [
+        //                 {
+        //                     'text': 'Company',
+        //                     'state': { 'opened': true, 'selected': true },
+        //                     'children': [
+        //                         {
+        //                             'text': 'Plant',
+        //                             'state': { 'opened': true },
+        //                             'children': [
+        //                                 {
+        //                                     'text': 'Plant Section',
+        //                                     'state': { 'opened': true },
+        //                                     'children': [
+        //                                         {
+        //                                             'text': 'System/Area',
+        //                                             'state': { 'opened': true },
+        //                                             'children': [
+        //                                                 { 'text': 'Equipment/Piping' },
+        //                                                 {
+        //                                                     'text': 'Horizontal Vessel',
+        //                                                     'children': [
+        //                                                         { 'text': 'Shell' },
+        //                                                         { 'text': 'Head' }
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'Vertical Vessel',
+        //                                                     'children': [
+        //                                                         { 'text': 'Shell' },
+        //                                                         { 'text': 'Top Head' },
+        //                                                         { 'text': 'Bottom Head' }
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'Heat Exchanger',
+        //                                                     'children': [
+        //                                                         { 'text': 'Shell' },
+        //                                                         { 'text': 'Tube Bundle' },
+        //                                                         { 'text': 'Front End Channel' },
+        //                                                         { 'text': 'Rear End Channel' },
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'Cooler',
+        //                                                     'children': [
+        //                                                         { 'text': 'Tube Section' },
+        //                                                         { 'text': 'Header Box' }
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'Boiler',
+        //                                                     'children': [
+        //                                                         { 'text': 'Tube Section' },
+        //                                                         { 'text': 'Head' },
+        //                                                         { 'text': 'Shell' }
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'Fired Heater',
+        //                                                     'children': [
+        //                                                         { 'text': 'Heater Box' },
+        //                                                         { 'text': 'Tube Section' },
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'Piping',
+        //                                                     'children': [
+        //                                                         { 'text': 'Piping Tag' }
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'Tank',
+        //                                                     'children': [
+        //                                                         { 'text': 'Tank Course' },
+        //                                                         { 'text': 'Tank Bottom' },
+        //                                                         { 'text': 'Tank Roof' }
+        //                                                     ]
+        //                                                 },
+        //                                                 {
+        //                                                     'text': 'PSV',
+        //                                                     'children': [
+        //                                                         { 'text': 'PSV' }
+        //                                                     ]
+        //                                                 }
+        //                                             ]
+        //                                         }
+        //                                     ]
+        //                                 }
+        //                             ]
+        //                         }
+        //                     ]
+        //                 }
+        //             ]
+        //         },
+        //     })
+        // });
+
+        // $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
+        //     if (data.node.text == 'Equipment/Piping') {
+        //         window.open("./sub_asset/equipment.html", "_self")
+        //     }
+        //     if (data.node.original.text == 'Shell') {
+        //         window.open("./sub_asset/hv_shell.html", "_self")
+        //     }
+        //     if (data.node.original.text == 'Plant') {
+        //         window.open("./sub_asset/plant.html", "_self")
+        //     }
+        //     if (data.node.original.text == 'Plant Section') {
+        //         window.open("./sub_asset/plant_section.html", "_self")
+        //     }
+        //     if (data.node.original.text == 'System/Area') {
+        //         window.open("./sub_asset/system_area.html", "_self")
+        //     }
+        // });
 
         FusionCharts.ready(function () {
             var chartObj = new FusionCharts({
@@ -786,7 +924,7 @@
         }
     </script>
 
-    <script>
+    <!-- <script>
         $.fn.extend({
             treed: function (o) {
 
@@ -855,7 +993,7 @@
             minViewMode: "years",
             autoclose: true //to close picker once year is selected
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
