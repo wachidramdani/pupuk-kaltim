@@ -131,16 +131,16 @@
         </div>
     </nav>
     <div class="inner-body">
-        <div class="sidebar" style="height: calc(100% + 83px);">
-            <div class="d-flex">
+        <div class="sidebar">
+            <div class="d-flex navbar-btn">
                 <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
                         class="fas fa-sync-alt"></i> Syn With System</button>
                 <div>
                     <!-- <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2"
                         style="font-size: 10px;"><i class="fas fa-plus" data-toggle="dropdown"></i> New
                         Component</button> -->
-                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="font-size: 10px;">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2 p-2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 10px;">
                         <i class="fas fa-plus"></i>
                         New Component
                     </button>
@@ -154,7 +154,7 @@
                 <div class="jstree-custom" id="jstree_demo_div"></div>
             </div>
         </div>
-        <div class="main-content" style="height: calc(100% + 83px);">
+        <div class="main-content">
             <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
@@ -182,75 +182,26 @@
                     <!-- <h2>Tab Data Property</h2> -->
                     <!-- Name input -->
                     <form autocomplete="off" class="mt-5 form-data-property">
-                        <div class="form-title" style="width: 190px;">Financial Consequence</div>
+                        <p class="form-title" style="width: 330px;">Detection, Isolation and Mitigation System</p>
                         <div class="form-group row">
-                            <label for="lv1" class="col-4 col-form-label">Equipment Cost ($/m2)</label>
+                            <label for="lv4" class="col-4 col-form-label">Type of Mitigation System</label>
                             <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv1">
+                                <input type="text" class="form-control form-control-sm" id="lv4" disabled>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lv2" class="col-4 col-form-label">Personnel Injury Cost ($/person)</label>
+                            <label for="lv5" class="col-4 col-form-label">Type of Detection System</label>
                             <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv2">
+                                <input type="text" class="form-control form-control-sm" id="lv5" disabled>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lv3" class="col-4 col-form-label">Environmental Cost ($/barrel)</label>
+                            <label for="datepickerYear" class="col-4 col-form-label">Type of Isolation System</label>
                             <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv3">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv4" class="col-4 col-form-label">Production Loss ($/day)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv4">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv5" class="col-4 col-form-label">Population Density (people/m2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv5">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="datepickerYear" class="col-4 col-form-label">Population Density (people/m2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="datepickerYear">
+                                <input type="text" class="form-control form-control-sm" id="datepickerYear" disabled>
                             </div>
                         </div>
                     </form>
-                    <form autocomplete="off" class="mt-5 form-data-property">
-                        <div class="form-title" style="width: 190px;">Management Setting</div>
-                        <div class="form-group row">
-                            <label for="lv1" class="col-4 col-form-label">Equipment Cost ($/m2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv1">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv2" class="col-4 col-form-label">Personnel Injury Cost ($/person)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv2">
-                            </div>
-                        </div>
-                    </form>
-                    <form autocomplete="off" class="mt-5 form-data-property">
-                        <div class="form-title" style="width: 140px;">Risk Parameter</div>
-                        <div class="form-group row">
-                            <label for="lv1" class="col-4 col-form-label">Turnaround Date 1</label>
-                            <div class="col-7">
-                                <input type="date" class="form-control form-control-sm" id="lv1">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv2" class="col-4 col-form-label">Turnaround Date 2</label>
-                            <div class="col-7">
-                                <input type="date" class="form-control form-control-sm" id="lv2">
-                            </div>
-                        </div>
-                    </form>
-                    <br />
                 </div>
                 <div id="tab02" class="tab-contents">
                     <!-- <h2>Tab Images</h2> -->
@@ -290,7 +241,7 @@
                             'children': [
                                 {
                                     'text': 'Plant',
-                                    'state': { 'opened': true, 'selected': true },
+                                    'state': { 'opened': true },
                                     'children': [
                                         {
                                             'text': 'Plant Section',
@@ -298,7 +249,7 @@
                                             'children': [
                                                 {
                                                     'text': 'System/Area',
-                                                    'state': { 'opened': true },
+                                                    'state': { 'opened': true, 'selected': true },
                                                     'children': [
                                                         { 'text': 'Equipment/Piping' },
                                                         {
@@ -381,20 +332,20 @@
         });
 
         $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-            if(data.node.text == 'Company'){
+            if (data.node.text == 'Company') {
                 window.open("../asset.html", "_self")
             }
             if (data.node.text == 'Equipment/Piping') {
                 window.open("equipment.html", "_self")
             }
-            if (data.node.original.text == 'Shell') {
-                window.open("hv_shell.html", "_self")
+            if (data.node.text == 'Plant') {
+                window.open("plant.html", "_self")
             }
-            if (data.node.original.text == 'Plant Section') {
+            if (data.node.text == 'Plant Section') {
                 window.open("plant_section.html", "_self")
             }
-            if (data.node.original.text == 'System/Area') {
-                window.open("system_area.html", "_self")
+            if (data.node.original.text == 'Shell') {
+                window.open("hv_shell.html", "_self")
             }
         });
     </script>
