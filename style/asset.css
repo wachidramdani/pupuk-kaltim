@@ -30,6 +30,17 @@
     padding: 0;
 }
 
+.sub-main-content{
+    float: left;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    /* border-left: 1px solid #cdcdcd; */
+    background-color: #fff;
+    padding: 0;
+    position: relative;
+    top:-24px
+}
+
 .wrimagecard-asset {
     border: 0;
     border-radius: 10px;
@@ -222,6 +233,10 @@
     padding: 0;
 }
 
+.tabs .card {
+    border: 0;
+}
+
 #tab-button {
     /* display: table; */
     table-layout: fixed;
@@ -281,8 +296,18 @@
     border-bottom: 1px solid #cdcdcd;
 }
 
+.sub-tab-button-outer {
+    display: none;
+    color: #6C757D;
+    border-bottom: 1px solid #cdcdcd;
+}
+
 .tab-button-outer li a {
-    padding-top: 20px;
+    padding: 10px;
+}
+
+.sub-tab-button-outer li a {
+    padding: 10px;
 }
 
 .tab-button-outer li i {
@@ -291,9 +316,17 @@
     padding: 5px;
 }
 
+.sub-tab-button-outer li i {
+    color: #6C757D;
+    font-size: 20px;
+    padding: 5px;
+}
+
 .tab-contents {
     margin-top: 20px;
 }
+
+
 
 /* jstree custom  */
 .jstree-custom {
@@ -310,6 +343,12 @@
 
 @media screen and (min-width: 768px) {
     .tab-button-outer {
+        position: relative;
+        z-index: 2;
+        display: block;
+    }
+
+    .sub-tab-button-outer {
         position: relative;
         z-index: 2;
         display: block;
@@ -523,6 +562,11 @@
     .form-data-property .form-title {
         width: 11%;
     }
+
+    /* TAB */
+    .tab-button-outer li a {
+        padding: 10px 20px;
+    }
 }
 
 @media (min-width: 1660px) {
@@ -562,6 +606,11 @@
     /* COMPANY, DATA PROPERTY */
     .form-data-property .form-title {
         width: 10%;
+    }
+
+    /* TAB */
+    .tab-button-outer li a {
+        padding: 10px 30px;
     }
 }
 
@@ -618,6 +667,11 @@
     /* COMPANY, DATA PROPERTY */
     .form-data-property .form-title {
         width: 9%;
+    }
+
+    /* TAB */
+    .tab-button-outer li a {
+        padding: 10px 40px;
     }
 }
 

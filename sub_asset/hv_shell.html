@@ -155,33 +155,59 @@
         <div class="main-content" style="height: calc(100% + 270px);">
             <div class="tabs">
                 <div class="tab-button-outer">
-                    <ul id="tab-button" class="row">
-                        <li class="col-4 tab-border">
-                            <a href="#tab01" class="d-flex justify-content-center py-2 tab-hover">
-                                <i class="fa fa-home pr-2"></i>
-                                <div class="tab-text">Home</div>
+                    <ul id="tab-button">
+                        <li class="tab-border">
+                            <a href="#tab01" class="d-flex justify-content-center">
+                                <i class="fa fa-home"></i>
+                                <div class="pt-2">Home</div>
                             </a>
                         </li>
-                        <li class="col-4 tab-border">
-                            <a href="#tab02" class="d-flex justify-content-center py-2 tab-hover">
-                                <i class="fa fa-info-circle pr-2"></i>
-                                <div class="tab-text">DATA PROPERTY</div>
+                        <li class="tab-border">
+                            <a href="#tab02" class="d-flex justify-content-center">
+                                <i class="fa fa-database"></i>
+                                <div>Data Property</div>
                             </a>
                         </li>
-                        <!-- <li class="col-4 tab-border">
-                            <a href="#tab03" class="d-flex justify-content-center py-2">
-                                <i class="fa fa-check-circle pr-2"></i>
-                                <div class="tab-text">Assesment Information</div>
+                        <li class="tab-border">
+                            <a href="#tab03" class="d-flex justify-content-center">
+                                <i class="fa fa-database"></i>
+                                <div>Assessment Information</div>
                             </a>
-                        </li> -->
-                        <li class="col-4">
-                            <a href="#tab04" class="d-flex justify-content-center py-2">
-                                <i class="fa fa-file pr-2"></i>
-                                <div class="tab-text">Foto/Gambar</div>
+                        </li>
+                        <li class="tab-border">
+                            <a href="#tab04" class="d-flex justify-content-center">
+                                <i class="fa fa-database"></i>
+                                <div>Damage Mechanism</div>
+                            </a>
+                        </li>
+                        <li class="tab-border">
+                            <a href="#tab05" class="d-flex justify-content-center">
+                                <i class="fa fa-database"></i>
+                                <div>Risk Calculation</div>
+                            </a>
+                        </li>
+                        <li class="tab-border">
+                            <a href="#tab06" class="d-flex justify-content-center">
+                                <i class="fa fa-database"></i>
+                                <div>Risk Summary</div>
+                            </a>
+                        </li>
+                        <li class="tab-border">
+                            <a href="#tab07" class="d-flex justify-content-center">
+                                <i class="fa fa-database"></i>
+                                <div>INSP Plan</div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#tab08" class="d-flex justify-content-center">
+                                <i class="fa fa-image"></i>
+                                <div>Foto / Gambar</div>
                             </a>
                         </li>
                     </ul>
                 </div>
+
+                <!-- SHELL - HOME -->
                 <br />
                 <div id="tab01" class="tab-contents">
                     <div class="row">
@@ -350,280 +376,320 @@
                     </div>
                 </div>
 
-                <div id="tab02" class="tab-contents" style="margin-top: -29px;">
-                    <span class="title"> == For Sub Tab ==</span>
-                    <div class="card">
-                        <div class="card-header pos-between">
-                            <div class="d-flex"></div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
-                                        class="fas fa-upload"></i> Export</button>
-                                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
-                                        class="fas fa-download"></i> Import</button>
+                <!-- SHELL - DATA PROPERTY - COMPONENT INFORMATION -->
+                <div id="tab02">
+                    <div class="sub-main-content" style="height: calc(100% + 270px);">
+                        <div class="tabs">
+                            <div class="tab-button-outer">
+                                <ul id="tab-button" class="row">
+                                    <li class="col-3 tab-border">
+                                        <a href="#component-information" class="d-flex justify-content-center py-2 tab-hover">
+                                            <i class="fa fa-info-circle pr-2"></i>
+                                            <div class="tab-text">Component Information</div>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 tab-border">
+                                        <a href="#operating-conditions" class="d-flex justify-content-center py-2 tab-hover">
+                                            <i class="fa fa-cogs pr-2"></i>
+                                            <div class="tab-text">Operating Conditions</div>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 tab-border">
+                                        <a href="#consequence-data" class="d-flex justify-content-center py-2">
+                                            <i class="fa fa-server pr-2"></i>
+                                            <div class="tab-text">Consequence Data</div>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a href="#inspection-data" class="d-flex justify-content-center py-2">
+                                            <i class="fa fa-tasks pr-2"></i>
+                                            <div class="tab-text">Inspection Data</div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-
-
-                        <div id="panel-card6" class="collapse show">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <form autocomplete="off" class="mt-1 form-data-property" style="width: 100%;">
-                                            <p class="form-title" style="width: 240px;">Component Reference by SAP</p>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Parent Component</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Component Name</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Component
-                                                    Description</label> </label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
-                                            <p class="form-title" style="width: 280px;">Component Reference by PFD P&ID
-                                            </p>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">PFD Number</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">P&IDNumber</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">As Build Drawing
-                                                    Numb</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">P&ID Tag Number</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
-                                            <p class="form-title" style="width: 150px;">Component Design</p>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Component Start
-                                                    Date</label>
-                                                <div class="col-7">
-                                                    <input type="date" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Design Pressure
-                                                    (psig)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Design Temperature
-                                                    (F)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Weld Joint
-                                                    Efficiency</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-5 col-form-label2">Post Weld Heat
-                                                    Treatment</label>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                    </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-5 col-form-label2">Cladding</label>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Required Thickness
-                                                    Basis</label>
-                                                <div class="col-7">
-                                                    <select class="form-control form-control-sm"
-                                                        id="exampleFormControlSelect1">
-                                                        <option>-- Silahkan Pilih --</option>
-                                                        <option>opt 1</option>
-                                                        <option>opt 2</option>
-                                                        <option>opt 3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Required Thickness
-                                                    (in)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Corrosion Allowance
-                                                    (i)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                        </form>
+                            <div id="component-information" class="card tab-contents">
+                                <div class="card-header pos-between">
+                                    <div class="d-flex"></div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
+                                                class="fas fa-upload"></i> Export</button>
+                                        <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
+                                                class="fas fa-download"></i> Import</button>
                                     </div>
-                                    <div class="col-6">
-                                        <form autocomplete="off" class="mt-1 form-data-property" style="width: 100%;">
-                                            <p class="form-title" style="width: 200px;">Base Metal Specification</p>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Specification</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4"
-                                                        disabled>
-                                                </div>
+                                </div>
+            
+            
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-1 form-data-property" style="width: 100%;">
+                                                    <p class="form-title" style="width: 240px;">Component Reference by SAP</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Parent Component</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Component Name</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Component
+                                                            Description</label> </label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
+                                                    <p class="form-title" style="width: 280px;">Component Reference by PFD P&ID
+                                                    </p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">PFD Number</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">P&IDNumber</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">As Build Drawing
+                                                            Numb</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">P&ID Tag Number</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
+                                                    <p class="form-title" style="width: 150px;">Component Design</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Component Start
+                                                            Date</label>
+                                                        <div class="col-7">
+                                                            <input type="date" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Design Pressure
+                                                            (psig)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Design Temperature
+                                                            (F)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Weld Joint
+                                                            Efficiency</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Post Weld Heat
+                                                            Treatment</label>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Cladding</label>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Required Thickness
+                                                            Basis</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Required Thickness
+                                                            (in)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Corrosion Allowance
+                                                            (i)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Grade</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4"
-                                                        disabled>
-                                                </div>
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-1 form-data-property" style="width: 100%;">
+                                                    <p class="form-title" style="width: 200px;">Base Metal Specification</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Specification</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Grade</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Year</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">UNS Number</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4"
+                                                            class="col-4 col-form-label2">Class/Condition/Tempe</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Size/Thickness</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Material Modifier</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Specification</label>
+                                                        <div class="col-7">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                style="font-size: 10px; width: 100%;">
+                                                                Select Material</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
+                                                    <p class="form-title" style="width: 180px; margin-bottom: 1px;">Base Metal Properties</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Custom Materia</label>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Material Type</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Allowable Tensile Stress (ps)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Yield Stress (psi)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Ultimate tensile Stress (psi)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Young Modulus (psi)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>      
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Material Figure</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Toughness Curve Designat</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Impact Test Temperature (F)
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Allowable Stress Factor</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm" id="lv4">
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Year</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4"
-                                                        disabled>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">UNS Number</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4"
-                                                        disabled>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4"
-                                                    class="col-4 col-form-label2">Class/Condition/Tempe</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4"
-                                                        disabled>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Size/Thickness</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4"
-                                                        disabled>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Material Modifier</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4"
-                                                        disabled>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Specification</label>
-                                                <div class="col-7">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        style="font-size: 10px; width: 100%;">
-                                                        Select Material</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
-                                            <p class="form-title" style="width: 180px; margin-bottom: 1px;">Base Metal Properties</p>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-5 col-form-label2">Custom Materia</label>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Material Type</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Allowable Tensile Stress (ps)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Yield Stress (psi)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Ultimate tensile Stress (psi)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Young Modulus (psi)</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>      
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Material Figure</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Toughness Curve Designat</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Impact Test Temperature (F)
-                                                </label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="lv4" class="col-4 col-form-label2">Allowable Stress Factor</label>
-                                                <div class="col-7">
-                                                    <input type="text" class="form-control form-control-sm" id="lv4">
-                                                </div>
-                                            </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-
+                <div class="tab-contents" id="operating-conditions">
+                    operating-conditions
+                </div>
+                <div class="tab-contents" id="consequence-data">
+                    consequence-data
+                </div>
+                <div class="tab-contents" id="inspection-data">
+                    inspection-data
                 </div>
             </div>
         </div>
