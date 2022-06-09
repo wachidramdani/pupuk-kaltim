@@ -686,6 +686,11 @@
     color: #212529;
 }
 
+.col-form-label2 {
+    font-size: 10px;
+    color: #212529;
+}
+
 .form-control {
     border-radius: 10px;
 }
