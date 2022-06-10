@@ -14,6 +14,7 @@
     padding-top: 7px;
     overflow-y: auto;
     background-color: #f8f9fa;
+    border-right: 1px solid #cdcdcd;
 }
 
 .sidebar .navbar-btn {
@@ -25,7 +26,7 @@
     float: left;
     width: calc(100% - 295px);
     height: calc(100% - 0px);
-    border-left: 1px solid #cdcdcd;
+    /* border-left: 1px solid #cdcdcd; */
     background-color: #fff;
     padding: 0;
 }
@@ -747,6 +748,7 @@
 .col-form-label2 {
     font-size: 10px;
     color: #212529;
+    margin-top: 3px;
 }
 
 .form-control {

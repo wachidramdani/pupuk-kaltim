@@ -153,7 +153,7 @@
                 <div class="jstree-custom" id="jstree_demo_div"></div>
             </div>
         </div>
-        <div class="main-content" style="height: calc(100% + 270px);">
+        <div class="main-content">
             <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
@@ -575,6 +575,9 @@
             }
             if (data.node.original.text == 'Shell') {
                 window.open("hv_shell.html", "_self")
+            }
+            if (data.node.original.text == 'Head') {
+                window.open("hv_head.html", "_self")
             }
             if (data.node.original.text == 'Plant') {
                 window.open("plant.html", "_self")
