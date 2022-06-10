@@ -393,8 +393,8 @@
                                         class="fa fa-server pr-2"></i>Consequence
                                     Data</a>
                                 <a class="nav-item nav-link subTab" id="nav-contact-tab" data-toggle="tab"
-                                    href="#nav-inspection" role="tab" aria-controls="nav-contact" aria-selected="false"><i
-                                        class="fa fa-tasks pr-2"></i>Inspection Data</a>
+                                    href="#nav-inspection" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false"><i class="fa fa-tasks pr-2"></i>Inspection Data</a>
                             </div>
                         </nav>
                     </div>
@@ -827,12 +827,285 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            Tab Operating Condition
+                            <div class="card" id="nav-home" role="tabpanel">
+                                <div class="card-header pos-between">
+                                    <div class="d-flex"></div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-dark mx-2"
+                                            style="font-size: 10px;"><i class="fas fa-upload"></i> Export</button>
+                                        <button type="button" class="btn btn-outline-dark mx-2"
+                                            style="font-size: 10px;"><i class="fas fa-download"></i> Import</button>
+                                    </div>
+                                </div>
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-1 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 170px;">Operating Envelope</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Operating
+                                                            Pressure (psig)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Max Operating
+                                                            Pressure (psig)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Operating
+                                                            Temperature (psig)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Max Operating
+                                                            Temperature (psig)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <form autocomplete="off" class="mt-4 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 140px;">Inventory Group</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Inventory
+                                                            Group</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Area</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Stystem</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <form autocomplete="off" class="mt-4 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 140px;">Fluid Inventory</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Estimated Liquid
+                                                            Volume (%)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-6 col-form-label2">User Defined
+                                                            Volume and Mass</label>
+                                                        <div>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="defaultCheck1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Component Vapour
+                                                            Volume (ft3)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Component Liquid
+                                                            Volume (ft3)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Total Component
+                                                            Mass (lbm)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Equipment Vapour
+                                                            Volume (ft3)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Equipment Liquid
+                                                            Volume (ft3)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Total Equipment
+                                                            Mass (lbm)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Inventory Group
+                                                            Vapour Volume (ft)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Inventory Group
+                                                            Liquid Volume (ft)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-1 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 140px;">Fluid Parameter</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Consequence
+                                                            Model</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Fluid
+                                                            Group</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                                <form autocomplete="off" class="mt-4 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 150px;">Fluid Component</p>
+                                                    <div class="table-responsive" style="height: 100%;">
+                                                        <table class="table table-bordered table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" style="background-color: #cacaca;">
+                                                                        Name</th>
+                                                                    <th scope="col" style="background-color: #cacaca;">
+                                                                        Mole Percent (%)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody style="font-size: 12px; text-align:center;">
+                                                                <tr>
+                                                                    <td>C1</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C2</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C3</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C4</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C5</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C6</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C7</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C8</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C9</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C10</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C11</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C12</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C13</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Etc</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                             Tab Consequence Data
                         </div>
-                        <div class="tab-pane fade" id="nav-inspection" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="tab-pane fade" id="nav-inspection" role="tabpanel"
+                            aria-labelledby="nav-contact-tab">
                             Tab Inspection Data
                         </div>
                     </div>
@@ -888,8 +1161,8 @@
                                                         {
                                                             'text': 'Horizontal Vessel',
                                                             'children': [
-                                                                { 'text': 'Shell', 'state': { 'selected': true }, },
-                                                                { 'text': 'Head' }
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Head', 'state': { 'selected': true } }
                                                             ]
                                                         },
                                                         {
@@ -971,8 +1244,8 @@
             if (data.node.original.text == 'Equipment/Piping') {
                 window.open("equipment.html", "_self")
             }
-            if (data.node.original.text == 'Head') {
-                window.open("hv_head.html", "_self")
+            if (data.node.original.text == 'Shell') {
+                window.open("hv_shell.html", "_self")
             }
             if (data.node.original.text == 'Plant Section') {
                 window.open("plant_section.html", "_self")

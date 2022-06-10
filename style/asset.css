@@ -1,7 +1,7 @@
 .inner-body {
     margin: 0;
     padding: 0;
-    height: calc(100vh - 83px);
+    height: calc(100vh - 64px);
     width: 100%;
     overflow-y: auto;
 }
@@ -10,10 +10,11 @@
     float: left;
     width: 295px;
     height: calc(100% - 2px);
-    background-color: #fff;
+    /* background-color: #ffffff; */
     padding-top: 7px;
     overflow-y: auto;
     background-color: #f8f9fa;
+    border-right: 1px solid #cdcdcd;
 }
 
 .sidebar .navbar-btn {
@@ -25,9 +26,20 @@
     float: left;
     width: calc(100% - 295px);
     height: calc(100% - 0px);
-    border-left: 1px solid #cdcdcd;
+    /* border-left: 1px solid #cdcdcd; */
     background-color: #fff;
     padding: 0;
+}
+
+.sub-main-content{
+    float: left;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    /* border-left: 1px solid #cdcdcd; */
+    background-color: #fff;
+    padding: 0;
+    position: relative;
+    top:-24px
 }
 
 .wrimagecard-asset {
@@ -222,6 +234,14 @@
     padding: 0;
 }
 
+.subTab {
+    color: burlywood;
+}
+
+/* .tabs .card {
+    border: 0;
+} */
+
 #tab-button {
     /* display: table; */
     table-layout: fixed;
@@ -281,8 +301,18 @@
     border-bottom: 1px solid #cdcdcd;
 }
 
+.sub-tab-button-outer {
+    display: none;
+    color: #6C757D;
+    border-bottom: 1px solid #cdcdcd;
+}
+
 .tab-button-outer li a {
-    padding-top: 20px;
+    padding: 10px;
+}
+
+.sub-tab-button-outer li a {
+    padding: 10px;
 }
 
 .tab-button-outer li i {
@@ -291,9 +321,17 @@
     padding: 5px;
 }
 
+.sub-tab-button-outer li i {
+    color: #6C757D;
+    font-size: 20px;
+    padding: 5px;
+}
+
 .tab-contents {
     margin-top: 20px;
 }
+
+
 
 /* jstree custom  */
 .jstree-custom {
@@ -310,6 +348,12 @@
 
 @media screen and (min-width: 768px) {
     .tab-button-outer {
+        position: relative;
+        z-index: 2;
+        display: block;
+    }
+
+    .sub-tab-button-outer {
         position: relative;
         z-index: 2;
         display: block;
@@ -523,6 +567,11 @@
     .form-data-property .form-title {
         width: 11%;
     }
+
+    /* TAB */
+    .tab-button-outer li a {
+        padding: 10px 20px;
+    }
 }
 
 @media (min-width: 1660px) {
@@ -562,6 +611,11 @@
     /* COMPANY, DATA PROPERTY */
     .form-data-property .form-title {
         width: 10%;
+    }
+
+    /* TAB */
+    .tab-button-outer li a {
+        padding: 10px 30px;
     }
 }
 
@@ -618,6 +672,11 @@
     /* COMPANY, DATA PROPERTY */
     .form-data-property .form-title {
         width: 9%;
+    }
+
+    /* TAB */
+    .tab-button-outer li a {
+        padding: 10px 40px;
     }
 }
 
@@ -686,6 +745,12 @@
     color: #212529;
 }
 
+.col-form-label2 {
+    font-size: 10px;
+    color: #212529;
+    margin-top: 3px;
+}
+
 .form-control {
     border-radius: 10px;
 }
@@ -695,3 +760,67 @@
     box-shadow: 0 0 0 .2rem rgba(255, 192, 0, .25);
 }
 
+/* TREE NAVBAR */
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid
+}
+.tree li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color:#6C757D;
+    font-weight:700;
+    position:relative
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree ul li:last-child:before {
+    background:#fff;
+    height:auto;
+    top:1em;
+    bottom:0
+}
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#6C757D;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#6C757D;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
