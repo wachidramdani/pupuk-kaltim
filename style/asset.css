@@ -233,9 +233,13 @@
     padding: 0;
 }
 
-.tabs .card {
-    border: 0;
+.subTab {
+    color: burlywood;
 }
+
+/* .tabs .card {
+    border: 0;
+} */
 
 #tab-button {
     /* display: table; */
