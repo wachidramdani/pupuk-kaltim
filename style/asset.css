@@ -751,6 +751,14 @@
     margin-top: 3px;
 }
 
+.col-form-label2-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    font-size: 10px;
+    color: #212529;
+}
+
 .form-control {
     border-radius: 10px;
 }
