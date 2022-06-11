@@ -298,49 +298,59 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form autocomplete="off" class="mt-1 form-data-property" style="border: none; width: 100%;">
+                    <form autocomplete="off" id="sampleForm" class="mt-1 form-data-property" style="border: none; width: 100%;" novalidate="" action="" method="">
                         <!-- <p class="form-title">Risk Parameter</p> -->
                         <div class="form-group row">
                             <label for="datepicker" class="col-5 col-form-label">Fluid or
                                 Corrosive Fluid</label>
                             <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="datepicker">
+                                <input type="text" class="form-control form-control-sm" id="datepicker" required>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">This field is required.</div>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="datepicker" class="col-5 col-form-label">Example Date</label>
                             <div class="col-7">
-                                <input type="date" class="form-control form-control-sm" id="datepicker">
+                                <input type="date" class="form-control form-control-sm" id="datepicker" required>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">This field is required.</div>
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group form-select row">
                             <label for="datepicker" class="col-5 col-form-label">Example Select</label>
                             <div class="col-7">
-                                <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-                                    <option>-- Silahkan Pilih --</option>
+                                <select class="form-control form-control-sm" id="exampleFormControlSelect1" required>
+                                    <option value="">-- Silahkan Pilih --</option>
                                     <option>opt 1</option>
                                     <option>opt 2</option>
                                     <option>opt 3</option>
                                 </select>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">This field is required.</div>
                             </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <div class="form-group form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                             <label class="form-check-label" for="defaultCheck1" style="font-size: 12px;">
                                 Default checkbox
                             </label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">This field is required.</div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultRadio1">
-                            <label class="form-check-label" for="defaultRadio1" style="font-size: 12px;">
+                        <div class="form-group form-check">
+                            <input class="form-check-input" type="radio" name="choice" id="emailConsentRadio" value="optionB" required>
+                            <label class="form-check-label" for="emailConsentRadio" style="font-size: 12px;">
                                 Default Radio
                             </label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">This field is required.</div>
+                        </div>
+                        <div style="border-top: 1px solid #cdcdcd; padding: 1rem 0 0; display: flex; justify-content: flex-end;">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Save</button>
                         </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
                 </div>
             </div>
         </div>
@@ -363,6 +373,17 @@
 
     <script type="text/javascript">
         $(function () {
+            $("#sampleForm").submit(function(event) {
+                var vForm = $(this);
+                if (vForm[0].checkValidity() === false) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                } else {
+                    alert("your form is valid");
+                }
+                vForm.addClass('was-validated');
+            });
+
             $('#jstree_demo_div').jstree({
                 'core':
                 {
