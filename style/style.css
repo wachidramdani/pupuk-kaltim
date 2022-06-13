@@ -441,6 +441,10 @@ body {
     overflow-y: scroll;
 }
 
+.checkBoxTbl {
+    margin-left: 20px
+}
+
 thead tr:nth-child(1) th {
     /* background: white; */
     background: #FFC107;
