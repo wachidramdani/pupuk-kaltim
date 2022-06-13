@@ -1505,7 +1505,8 @@
                                             <div class="col-12">
                                                 <div style="display: flex; justify-content: center">
                                                     <nav>
-                                                        <div class="nav nav-tabs" id="nav-tab2" role="tablist" style="font-size: 10px;">
+                                                        <div class="nav nav-tabs" id="nav-tab2" role="tablist"
+                                                            style="font-size: 10px;">
                                                             <a class="nav-item nav-link subTab active"
                                                                 id="nav-inspection-record-tab" data-toggle="tab"
                                                                 href="#nav-inspection-record" role="tab"
@@ -1595,7 +1596,7 @@
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody
-                                                                                        style="font-size: 12px; text-align:center;">
+                                                                                        style="font-size: 10px; text-align:center;">
                                                                                         <tr>
                                                                                             <td>11-Sep-13</td>
                                                                                             <td>042-ISP-MC-6016</td>
@@ -1766,7 +1767,7 @@
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody
-                                                                                        style="font-size: 12px; text-align:center;">
+                                                                                        style="font-size: 10px; text-align:center;">
                                                                                         <tr>
                                                                                             <td>3</td>
                                                                                             <td>Inacti</td>
@@ -2466,15 +2467,15 @@
                                     href="#nav-dmo" role="tab" aria-controls="nav-home" aria-selected="true"><i
                                         class="fa fa-info-circle pr-2"></i>
                                     Damage Mechanism Option</a>
-                                <a class="nav-item nav-link subTab" id="nav-adm-tab" data-toggle="tab"
-                                    href="#nav-adm" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                                <a class="nav-item nav-link subTab" id="nav-adm-tab" data-toggle="tab" href="#nav-adm"
+                                    role="tab" aria-controls="nav-profile" aria-selected="false"><i
                                         class="fa fa-cogs pr-2"></i>Active Damage Mechanism</a>
                                 <a class="nav-item nav-link subTab" id="nav-thinning-tab" data-toggle="tab"
                                     href="#nav-thinning" role="tab" aria-controls="nav-contact" aria-selected="false"><i
                                         class="fa fa-server pr-2"></i>Thinning</a>
-                                <a class="nav-item nav-link subTab" id="nav-ed-tab" data-toggle="tab"
-                                    href="#nav-ed" role="tab" aria-controls="nav-contact"
-                                    aria-selected="false"><i class="fa fa-tasks pr-2"></i>External Damage</a>
+                                <a class="nav-item nav-link subTab" id="nav-ed-tab" data-toggle="tab" href="#nav-ed"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false"><i
+                                        class="fa fa-tasks pr-2"></i>External Damage</a>
                                 <a class="nav-item nav-link subTab" id="nav-home-tab" data-toggle="tab"
                                     href="#nav-cracking" role="tab" aria-controls="nav-home" aria-selected="true"><i
                                         class="fa fa-info-circle pr-2"></i>
@@ -2482,15 +2483,15 @@
                                 <a class="nav-item nav-link subTab" id="nav-hdamage-tab" data-toggle="tab"
                                     href="#nav-hdamage" role="tab" aria-controls="nav-profile" aria-selected="false"><i
                                         class="fa fa-cogs pr-2"></i>HTHA Damage</a>
-                                <a class="nav-item nav-link subTab" id="nav-mf-tab" data-toggle="tab"
-                                    href="#nav-mf" role="tab" aria-controls="nav-contact" aria-selected="false"><i
+                                <a class="nav-item nav-link subTab" id="nav-mf-tab" data-toggle="tab" href="#nav-mf"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false"><i
                                         class="fa fa-server pr-2"></i>Mechanical Fatigue</a>
-                                <a class="nav-item nav-link subTab" id="nav-bf-tab" data-toggle="tab"
-                                    href="#nav-bf" role="tab" aria-controls="nav-contact"
-                                    aria-selected="false"><i class="fa fa-tasks pr-2"></i>Brittle Fracture</a>
+                                <a class="nav-item nav-link subTab" id="nav-bf-tab" data-toggle="tab" href="#nav-bf"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false"><i
+                                        class="fa fa-tasks pr-2"></i>Brittle Fracture</a>
                                 <a class="nav-item nav-link subTab" id="nav-other-tab" data-toggle="tab"
-                                    href="#nav-other" role="tab" aria-controls="nav-contact"
-                                    aria-selected="false"><i class="fa fa-tasks pr-2"></i>Other</a>
+                                    href="#nav-other" role="tab" aria-controls="nav-contact" aria-selected="false"><i
+                                        class="fa fa-tasks pr-2"></i>Other</a>
                             </div>
                         </nav>
                     </div>
@@ -2504,14 +2505,353 @@
                                             <div class="col-6">
                                                 <form autocomplete="off" class="mt-1 form-data-property"
                                                     style="width: 100%;">
-                                                    <p class="form-title" style="width: 210px;">Damage Screening Criteria</p>
+                                                    <p class="form-title" style="width: 210px;">Damage Screening
+                                                        Criteria</p>
                                                     <div class="form-group row">
-                                                        <label for="lv4" class="col-4 col-form-label2">Type of Unit
+                                                        <label for="lv4" class="col-5 col-form-label2">Type of Unit
                                                         </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Damage
+                                                            Loop</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Material
+                                                            Grade</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Equipment Type
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Operating Tempt
+                                                            (F)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Operating
+                                                            Pressure (psi)
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Operating
+                                                            Pressure (psi)</label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">pH</label>
                                                         <div class="col-7">
                                                             <input type="text" class="form-control form-control-sm"
                                                                 id="lv4">
                                                         </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Flow Velocity
+                                                            (m/s)
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Lining</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4"
+                                                            class="col-5 col-form-label2">Insulation</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Equipment has
+                                                            Weld</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Equipment
+                                                            Buried</label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Vibration
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Stress
+                                                            Concentration
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">PWHT
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Galvanic
+                                                            Condition
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Thermal Schock
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Brittle Condition
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Equipment has
+                                                            Refractory
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Molten Metal
+                                                            Preent
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Start & Shutdown;
+                                                            TOp swing > 230 F
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-5 col-form-label2">Equipment
+                                                            Manufactured by the Besseme
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <select class="form-control form-control-sm"
+                                                                id="exampleFormControlSelect1">
+                                                                <option>-- Silahkan Pilih --</option>
+                                                                <option>opt 1</option>
+                                                                <option>opt 2</option>
+                                                                <option>opt 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <br />
+                                                    <div class="card-header pos-between" style="border: transparent;">
+                                                        <div class="d-flex"></div>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-outline-dark mx-2"
+                                                                style="font-size: 10px;"><i class="fas fa-sync"></i>
+                                                                Screening Button</button>
+                                                            <button type="button" class="btn btn-outline-dark mx-2"
+                                                                style="font-size: 10px;"><i class="fas fa-times"></i>
+                                                                Clear</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-1 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 150px;">Potential Damage</p>
+                                                    <div class="table-responsive" style="height: 100%;">
+                                                        <table class="table table-bordered table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" style="background-color: #cacaca;">Damage Mechanism</th>
+                                                                    <th scope="col" style="background-color: #cacaca;">Susceptibl</th>
+                                                                    <th scope="col" style="background-color: #cacaca;">Screening Basis</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody style="font-size: 10px; text-align:center;">
+                                                                <tr>
+                                                                    <td><b>Environment Assisted Cracking</b</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Amine Stress Corrosion Cracking</td>
+                                                                    <td>
+                                                                        <div class="checkBoxTbl">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Amine in Service</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ammonia Stress Corrosion Cracking</td>
+                                                                    <td>
+                                                                        <div class="checkBoxTbl">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Ammonia in Service</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Carbonate Stress Corrosion Cracking</td>
+                                                                    <td>
+                                                                        <div class="checkBoxTbl">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td> Sour water H2S and CO2 in service</td>
+                                                                </tr><tr>
+                                                                    <td>Polythionic Acid Stress Corrosion Cracking</td>
+                                                                    <td>
+                                                                        <div class="checkBoxTbl">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Material Austenitic SS or Alloy 600 or 800</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </form>
                                             </div>
