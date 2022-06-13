@@ -381,7 +381,7 @@
                     <br />
                     <div style="display: flex; justify-content: center">
                         <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist" style="font-size: 10px;">
                                 <a class="nav-item nav-link subTab active" id="nav-home-tab" data-toggle="tab"
                                     href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i
                                         class="fa fa-info-circle pr-2"></i>
@@ -1505,7 +1505,7 @@
                                             <div class="col-12">
                                                 <div style="display: flex; justify-content: center">
                                                     <nav>
-                                                        <div class="nav nav-tabs" id="nav-tab2" role="tablist">
+                                                        <div class="nav nav-tabs" id="nav-tab2" role="tablist" style="font-size: 10px;">
                                                             <a class="nav-item nav-link subTab active"
                                                                 id="nav-inspection-record-tab" data-toggle="tab"
                                                                 href="#nav-inspection-record" role="tab"
@@ -1930,7 +1930,7 @@
                                                         aria-labelledby="nav-thickness-result-tab">
                                                         <div class="card" id="nav-home" role="tabpanel">
                                                             <div id="panel-card7" class="collapse show">
-                                                                <div class="card-body">
+                                                                <div class="card-body-mb-2">
                                                                     <div class="row">
                                                                         <div class="col-6">
                                                                             <form autocomplete="off"
@@ -2054,90 +2054,137 @@
                                                                                 </div>
                                                                             </form>
 
-                                                                            <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
-                                                                                <p class="form-title" style="width: 230px;">Latest Thickness Information</p>
+                                                                            <form autocomplete="off"
+                                                                                class="mt-4 form-data-property"
+                                                                                style="width: 100%;">
+                                                                                <p class="form-title"
+                                                                                    style="width: 230px;">Latest
+                                                                                    Thickness Information</p>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Latest Inspection Date</label>
+                                                                                        class="col-5 col-form-label2">Latest
+                                                                                        Inspection Date</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                                        <input type="date"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Smallest Thickness (in)</label>
+                                                                                        class="col-5 col-form-label2">Smallest
+                                                                                        Thickness (in)</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">CML ID</label>
+                                                                                        class="col-5 col-form-label2">CML
+                                                                                        ID</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Remaining thickness to minimum (in)</label>
+                                                                                        class="col-5 col-form-label2">Remaining
+                                                                                        thickness to minimum
+                                                                                        (in)</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Remaining thickness to perforated (in)</label>
+                                                                                        class="col-5 col-form-label2">Remaining
+                                                                                        thickness to perforated
+                                                                                        (in)</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                             </form>
 
-                                                                            <form autocomplete="off" class="mt-4 form-data-property" style="width: 100%;">
-                                                                                <p class="form-title" style="width: 250px;">Previous Thickness Information</p>
+                                                                            <form autocomplete="off"
+                                                                                class="mt-4 form-data-property"
+                                                                                style="width: 100%;">
+                                                                                <p class="form-title"
+                                                                                    style="width: 250px;">Previous
+                                                                                    Thickness Information</p>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Latest Inspection Date</label>
+                                                                                        class="col-5 col-form-label2">Latest
+                                                                                        Inspection Date</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                                        <input type="date"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Smallest Thickness (in)</label>
+                                                                                        class="col-5 col-form-label2">Smallest
+                                                                                        Thickness (in)</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">CML ID</label>
+                                                                                        class="col-5 col-form-label2">CML
+                                                                                        ID</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Remaining thickness to minimum (in)</label>
+                                                                                        class="col-5 col-form-label2">Remaining
+                                                                                        thickness to minimum
+                                                                                        (in)</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="lv4"
-                                                                                        class="col-5 col-form-label2">Remaining thickness to perforated (in)</label>
+                                                                                        class="col-5 col-form-label2">Remaining
+                                                                                        thickness to perforated
+                                                                                        (in)</label>
                                                                                     <div class="col-7">
-                                                                                        <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                                        <input type="text"
+                                                                                            class="form-control form-control-sm"
+                                                                                            id="lv4" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                             </form>
                                                                         </div>
                                                                         <div class="col-6">
-                                                                            <form autocomplete="off" class="mt-5 form-data-property" style="width: 100%;">
-                                                                                <p class="form-title" style="width: 60px;">Notes</p>
+                                                                            <form autocomplete="off"
+                                                                                class="mt-5 form-data-property"
+                                                                                style="width: 100%;">
+                                                                                <p class="form-title"
+                                                                                    style="width: 60px;">Notes</p>
                                                                                 <div class="form-group row">
                                                                                     <div class="col-12">
-                                                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                        <textarea class="form-control"
+                                                                                            id="exampleFormControlTextarea1"
+                                                                                            rows="5"></textarea>
                                                                                     </div>
                                                                                 </div>
                                                                             </form>
@@ -2157,7 +2204,7 @@
                     </div>
                 </div>
 
-                <!-- ============ TAB DATA ASSESSMENT INFORMATION ========== -->
+                <!-- ============ TAB ASSESSMENT INFORMATION ========== -->
                 <div id="tab03" class="tab-contents" style="margin-top: -29px;">
                     <div class="row">
                         <div class="col-6">
@@ -2407,6 +2454,145 @@
                         </div>
                     </div>
 
+                </div>
+
+                <!-- ============ TAB DAMAGE MECHANISM ========== -->
+                <div id="tab04" class="tab-contents" style="margin-top: -29px;">
+                    <br />
+                    <div style="display: flex; justify-content: center">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist" style="font-size: 7px;">
+                                <a class="nav-item nav-link subTab active" id="nav-dmo-tab" data-toggle="tab"
+                                    href="#nav-dmo" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                                        class="fa fa-info-circle pr-2"></i>
+                                    Damage Mechanism Option</a>
+                                <a class="nav-item nav-link subTab" id="nav-adm-tab" data-toggle="tab"
+                                    href="#nav-adm" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                                        class="fa fa-cogs pr-2"></i>Active Damage Mechanism</a>
+                                <a class="nav-item nav-link subTab" id="nav-thinning-tab" data-toggle="tab"
+                                    href="#nav-thinning" role="tab" aria-controls="nav-contact" aria-selected="false"><i
+                                        class="fa fa-server pr-2"></i>Thinning</a>
+                                <a class="nav-item nav-link subTab" id="nav-ed-tab" data-toggle="tab"
+                                    href="#nav-ed" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false"><i class="fa fa-tasks pr-2"></i>External Damage</a>
+                                <a class="nav-item nav-link subTab" id="nav-home-tab" data-toggle="tab"
+                                    href="#nav-cracking" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                                        class="fa fa-info-circle pr-2"></i>
+                                    Cracking</a>
+                                <a class="nav-item nav-link subTab" id="nav-hdamage-tab" data-toggle="tab"
+                                    href="#nav-hdamage" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                                        class="fa fa-cogs pr-2"></i>HTHA Damage</a>
+                                <a class="nav-item nav-link subTab" id="nav-mf-tab" data-toggle="tab"
+                                    href="#nav-mf" role="tab" aria-controls="nav-contact" aria-selected="false"><i
+                                        class="fa fa-server pr-2"></i>Mechanical Fatigue</a>
+                                <a class="nav-item nav-link subTab" id="nav-bf-tab" data-toggle="tab"
+                                    href="#nav-bf" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false"><i class="fa fa-tasks pr-2"></i>Brittle Fracture</a>
+                                <a class="nav-item nav-link subTab" id="nav-other-tab" data-toggle="tab"
+                                    href="#nav-other" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false"><i class="fa fa-tasks pr-2"></i>Other</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-dmo" role="tabpanel"
+                            aria-labelledby="nav-dmo-tab">
+                            <div class="card" id="nav-dmo" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-1 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 210px;">Damage Screening Criteria</p>
+                                                    <div class="form-group row">
+                                                        <label for="lv4" class="col-4 col-form-label2">Type of Unit
+                                                        </label>
+                                                        <div class="col-7">
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                id="lv4">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-adm" role="tabpanel" aria-labelledby="nav-adm-tab">
+                            <div class="card" id="nav-adm" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab Active Damage Mechanism
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-thinning" role="tabpanel" aria-labelledby="nav-thinning-tab">
+                            <div class="card" id="nav-thinning" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab Thinning
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-ed" role="tabpanel" aria-labelledby="nav-ed-tab">
+                            <div class="card" id="nav-ed" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab External Damage
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-cracking" role="tabpanel" aria-labelledby="nav-cracking-tab">
+                            <div class="card" id="nav-cracking" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab Cracking
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-hdamage" role="tabpanel" aria-labelledby="nav-hdamage-tab">
+                            <div class="card" id="nav-hdamage" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab HTHA Damage
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-mf" role="tabpanel" aria-labelledby="nav-mf-tab">
+                            <div class="card" id="nav-mf" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab Mechanical Fatigue
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-bf" role="tabpanel" aria-labelledby="nav-bf-tab">
+                            <div class="card" id="nav-bf" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab Brittle Fracture
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab">
+                            <div class="card" id="nav-other" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        Tab Other
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
