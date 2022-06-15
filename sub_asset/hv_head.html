@@ -1918,8 +1918,9 @@
                                                             <div id="panel-card7" class="collapse show">
                                                                 <div class="card-body">
                                                                     <div class="row">
-                                                                        <div class="col-12">
-
+                                                                        <div class="col-12" style="min-height: 600px">
+                                                                            <div id="chart-cml-summary"></div>
+                                                                            <div style="margin-top: -30px" id="chart-cml-summary2"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4927,7 +4928,217 @@
     <script type="text/javascript" src="../tabs/lib/ui.tabs.addTab.js"></script>
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../tabs/ui.tabs.stretchyTabs.css">
+    <!-- Step 1 - Include the fusioncharts core library -->
+    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+    <!-- Step 2 - Include the fusion theme -->
+    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
+        FusionCharts.ready(function () {
+            var chartObj = new FusionCharts({
+                type: 'mscolumnline3d',
+                renderAt: 'chart-cml-summary',
+                width: '100%',
+                height: '50%',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "theme": "fusion",
+                        "caption": "",
+                        "plottooltext": "$label <b>$dataValue</b> of $seriesName",
+                        "drawcrossline": "1",
+                        "palettecolors": "51e649",
+                        "showLabels": "0",
+                        "legendPosition": "right",
+                        "anchorRadius": "6",
+                        "anchorBorderThickness": "2",
+                        "anchorBorderColor": "#127fcb",
+                        "anchorSides": "3",
+                        "anchorBgColor": "#d3f7ff"
+                    },
+                    categories: [
+                        {
+                            category: [
+                                { label: "001.01" },
+                                { label: "001.02" },
+                                { label: "001.03" },
+                                { label: "001.04" },
+                                { label: "002.01" },
+                                { label: "002.02" },
+                                { label: "002.03" },
+                                { label: "002.04" },
+                                { label: "003.01" },
+                                { label: "003.02" },
+                                { label: "003.03" },
+                                { label: "003.04" },
+                                { label: "004.01" },
+                                { label: "004.02" },
+                                { label: "004.03" },
+                                { label: "004.04" },
+                                { label: "005.01" },
+                                { label: "005.02" },
+                                { label: "005.03" },
+                                { label: "005.04" }
+                            ]
+                        }
+                    ],
+                    dataset: [
+                        {
+                            seriesname: "Long Rates",
+                            data: [
+                                { value: "1.0" },
+                                { value: "0.8" },
+                                { value: "0.6" },
+                                { value: "0.6" },
+                                { value: "0.8" },
+                                { value: "0.5" },
+                                { value: "0.9" },
+                                { value: "0.7" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0.95" },
+                                { value: "1.1" },
+                                { value: "0.7" },
+                                { value: "1.2" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                            ]
+                        },
+                        {
+                        seriesname: "Circult Average Rate",
+                        renderas: "line",
+                            data: [
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                                { value: "0.8" },
+                            ]
+                        }
+                    ]
+                }
+            });
+            chartObj.render();
+        });
+
+        FusionCharts.ready(function () {
+            var chartObj = new FusionCharts({
+                type: 'mscolumn3d',
+                renderAt: 'chart-cml-summary2',
+                width: '100%',
+                height: '50%',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "theme": "fusion",
+                        "caption": "",
+                        "showsum": "1",
+                        "plottooltext": "$label <b>$dataValue</b> of $seriesName",
+                        "drawcrossline": "1",
+                        "palettecolors": "1b4ef5, fc0303",
+                        "legendPosition": "right",
+                    },
+                    categories: [
+                        {
+                            category: [
+                                { label: "001.01" },
+                                { label: "001.02" },
+                                { label: "001.03" },
+                                { label: "001.04" },
+                                { label: "002.01" },
+                                { label: "002.02" },
+                                { label: "002.03" },
+                                { label: "002.04" },
+                                { label: "003.01" },
+                                { label: "003.02" },
+                                { label: "003.03" },
+                                { label: "003.04" },
+                                { label: "004.01" },
+                                { label: "004.02" },
+                                { label: "004.03" },
+                                { label: "004.04" },
+                                { label: "005.01" },
+                                { label: "005.02" },
+                                { label: "005.03" },
+                                { label: "005.04" }
+                            ]
+                        }
+                    ],
+                    dataset: [
+                        {
+                        seriesname: "Estimated Thickness",
+                        data: [
+                            { value: "4.9" },
+                            { value: "5" },
+                            { value: "5.2" },
+                            { value: "5.2" },
+                            { value: "5" },
+                            { value: "5.2" },
+                            { value: "5" },
+                            { value: "5.2" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "5" },
+                            { value: "4.8" },
+                            { value: "5.2" },
+                            { value: "4.8" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                        ]
+                        },
+                        {
+                        seriesname: "Rating Limit",
+                        data: [
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                            { value: "0" },
+                        ]
+                        }
+                    ]
+                }
+            });
+            chartObj.render();
+        });
+
         $(function () {
             $('#jstree_demo_div').jstree({
                 'core':
