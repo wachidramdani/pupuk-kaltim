@@ -1920,7 +1920,8 @@
                                                                     <div class="row">
                                                                         <div class="col-12" style="min-height: 600px">
                                                                             <div id="chart-cml-summary"></div>
-                                                                            <div style="margin-top: -30px" id="chart-cml-summary2"></div>
+                                                                            <div style="margin-top: -30px"
+                                                                                id="chart-cml-summary2"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4114,7 +4115,61 @@
 
                 <!-- ============ TAB RISK CALCULATION ========== -->
                 <div id="tab05" class="tab-contents" style="margin-top: -29px;">
-                    Tab Calculation
+                    <!-- Tab Calculation -->
+                    <br />
+                    <div style="display: flex; justify-content: center">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist" style="font-size: 12px;">
+                                <a class="nav-item nav-link subTab active" id="nav-pof-tab" data-toggle="tab"
+                                    href="#nav-pof" role="tab" aria-controls="nav-pof" aria-selected="true"><i
+                                        class="fa fa-info-circle pr-2"></i>
+                                    Pof</a>
+                                <a class="nav-item nav-link subTab" id="nav-cof-tab" data-toggle="tab" href="#nav-cof"
+                                    role="tab" aria-controls="nav-cof" aria-selected="false"><i
+                                        class="fa fa-cogs pr-2"></i>Cof</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-pof" role="tabpanel"
+                            aria-labelledby="nav-pof-tab">
+                            <div class="card" id="nav-pof" role="tabpanel">
+                                <div id="panel-card6" class="collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-4 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 110px;">Initial Factor</p>
+                                                </form>
+                                                <form autocomplete="off" class="mt-4 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 210px;">Damage Factors and PoF
+                                                    </p>
+                                                </form>
+                                            </div>
+                                            <div class="col-6">
+                                                <form autocomplete="off" class="mt-4 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 220px;">Governing Corrosion
+                                                        Rates</p>
+                                                </form>
+                                                <form autocomplete="off" class="mt-4 form-data-property"
+                                                    style="width: 100%;">
+                                                    <p class="form-title" style="width: 220px;">Thickness Data at RBI
+                                                        Date</p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="nav-cof" role="tabpanel"
+                            aria-labelledby="nav-cof-tab">
+                            cof
+                        </div>
+                    </div>
                 </div>
 
                 <!-- ============ TAB RISK SUMMARY ========== -->
@@ -5008,8 +5063,8 @@
                             ]
                         },
                         {
-                        seriesname: "Circult Average Rate",
-                        renderas: "line",
+                            seriesname: "Circult Average Rate",
+                            renderas: "line",
                             data: [
                                 { value: "0.8" },
                                 { value: "0.8" },
@@ -5084,54 +5139,54 @@
                     ],
                     dataset: [
                         {
-                        seriesname: "Estimated Thickness",
-                        data: [
-                            { value: "4.9" },
-                            { value: "5" },
-                            { value: "5.2" },
-                            { value: "5.2" },
-                            { value: "5" },
-                            { value: "5.2" },
-                            { value: "5" },
-                            { value: "5.2" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "5" },
-                            { value: "4.8" },
-                            { value: "5.2" },
-                            { value: "4.8" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                        ]
+                            seriesname: "Estimated Thickness",
+                            data: [
+                                { value: "4.9" },
+                                { value: "5" },
+                                { value: "5.2" },
+                                { value: "5.2" },
+                                { value: "5" },
+                                { value: "5.2" },
+                                { value: "5" },
+                                { value: "5.2" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "5" },
+                                { value: "4.8" },
+                                { value: "5.2" },
+                                { value: "4.8" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                            ]
                         },
                         {
-                        seriesname: "Rating Limit",
-                        data: [
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                            { value: "0" },
-                        ]
+                            seriesname: "Rating Limit",
+                            data: [
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                                { value: "0" },
+                            ]
                         }
                     ]
                 }
