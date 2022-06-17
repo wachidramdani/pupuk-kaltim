@@ -2816,7 +2816,7 @@
                                                             </thead>
                                                             <tbody style="font-size: 10px; text-align:center;">
                                                                 <tr>
-                                                                    <td><b>Environment Assisted Cracking</b< /td>
+                                                                    <td><b>Environment Assisted Cracking</b></td>
                                                                     <td></td>
                                                                     <td></td>
                                                                 </tr>
@@ -2893,7 +2893,7 @@
                                                     </thead>
                                                     <tbody style="font-size: 10px; text-align:center;">
                                                         <tr>
-                                                            <td><b>Environment Assisted Cracking</b< /td>
+                                                            <td><b>Environment Assisted Cracking</b></td>
                                                             <td></td>
                                                             <td></td>
                                                         </tr>
@@ -3741,15 +3741,1316 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="tab-pane fade" id="nav-cracking" role="tabpanel" aria-labelledby="nav-cracking-tab">
-                            <div class="card" id="nav-cracking" role="tabpanel">
-                                <div id="panel-card6" class="collapse show">
-                                    <div class="card-body">
-                                        Tab Cracking
+                            <br />
+                            <div style="display: flex; justify-content: center">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist" style="font-size: 7px;">
+                                        <a class="nav-item nav-link subTab active" id="nav-cracking-caustic-tab" data-toggle="tab" href="#nav-cracking-caustic" role="tab" aria-selected="false">
+                                            <i class="fa fa-info-circle pr-2"></i>
+                                            Caustic
+                                        </a>
+                                        <a class="nav-item nav-link subTab" id="nav-cracking-amine-tab" data-toggle="tab" href="#nav-cracking-amine" role="tab"  aria-selected="false">
+                                            <i class="fa fa-cogs pr-2"></i>
+                                            Amine
+                                        </a>
+                                        <a class="nav-item nav-link subTab" id="nav-cracking-sulfide-tab" data-toggle="tab" href="#nav-cracking-sulfide" role="tab" aria-selected="false">
+                                            <i class="fa fa-server pr-2"></i>
+                                            Sulfide
+                                        </a>
+                                        <a class="nav-item nav-link subTab" id="nav-cracking-h2s-tab" data-toggle="tab" href="#nav-cracking-h2s" role="tab" aria-selected="false">
+                                            <i class="fa fa-tasks pr-2"></i>
+                                            HIC/SOHIC - H2S
+                                        </a>
+                                        <a class="nav-item nav-link subTab" id="nav-cracking-carbonate-tab" data-toggle="tab" href="#nav-cracking-carbonate" role="tab"  aria-selected="false">
+                                            <i class="fa fa-info-circle pr-2"></i>
+                                            Carbonate
+                                        </a>
+                                        <a class="nav-item nav-link subTab" id="nav-cracking-hydrogen-tab" data-toggle="tab" href="#nav-cracking-hydrogen" role="tab" aria-selected="false">
+                                            <i class="fa fa-cogs pr-2"></i>
+                                            HF Hydrogen
+                                        </a>
+                                        <a class="nav-item nav-link subTab" id="nav-cracking-hf-tab" data-toggle="tab" href="#nav-cracking-hf" role="tab" aria-selected="false">
+                                            <i class="fa fa-server pr-2"></i>
+                                            HIF/SOHIC - HF
+                                        </a>
+                                        <a class="nav-item nav-link subTab" id="nav-cracking-other-tab" data-toggle="tab" href="#nav-cracking-other" role="tab" aria-selected="false">
+                                            <i class="fa fa-tasks pr-2"></i>
+                                            Other
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-cracking-caustic" role="tabpanel"
+                                aria-labelledby="nav-cracking-caustic-tab">
+                                    <div class="card" id="nav-cracking-caustic" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Highest Inspection Effectiveness</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Number of Inspection</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Max Operating Temperature (F)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">NaOH Concentration (%)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Present of Cracks</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4"
+                                                                    class="col-5 col-form-label2">PWHT</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Streamed Out Prior to water Flushing</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Heat Traced</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                                <div>Calculated</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Intermediate Result</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">HPlot Point on NACE Caustic Soda Service Graph</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility to Caustic Crackin</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Severity Index, SVI</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Year Since Last Inspection (year)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">YBase Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Caustic Cracking Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="nav-cracking-amine" role="tabpanel"
+                                aria-labelledby="nav-cracking-amine-tab">
+                                    <div class="card" id="nav-cracking-amine" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Highest Inspection Effectiveness</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Number of Inspection</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Max Operating Temperature (F)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Present of Cracks</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">PWHT</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4"
+                                                                    class="col-5 col-form-label2">Streamed Out Prior to water Flushing</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Heat Traced</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Amine Solution</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Exposure to Amine</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                                <div>Calculated</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Intermediate Result</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility to Amine Cracking</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Severity Index, SVI</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Year Since Last Inspection (year)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Base Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Amine Cracking Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="nav-cracking-sulfide" role="tabpanel"
+                                aria-labelledby="nav-cracking-sulfide-tab">
+                                    <div class="card" id="nav-cracking-sulfide" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Highest Inspection Effectiveness</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Number of Inspection</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">H2S Content in Water (ppm)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Present of Cracks</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">PWHT</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4"
+                                                                    class="col-5 col-form-label2">Environment Contain H2S</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">pH of Water</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Presence of Cyanides</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Max Brinnell Hardness of Weld</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                                <div>Calculated</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Intermediate Result</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Environmental Severity</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility to Sulphide Stress</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Severity Index, SVI</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Year Since Last Inspection (year)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Base Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Amine Cracking Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="nav-cracking-h2s" role="tabpanel"
+                                aria-labelledby="nav-cracking-h2s-tab">
+                                    <div class="card" id="nav-cracking-h2s" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Highest Inspection Effectiveness</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Number of Inspection</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Present of Cracks</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">H2S Content in Water (ppm)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">pH of Water</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4"
+                                                                    class="col-5 col-form-label2">Presence of Cyanides</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Sulphur Content</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                                <div>Calculated</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Intermediate Result</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Environmental Severity</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility to HIC/SOHIC-H2S</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Severity Index, SVI</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Year Since Last Inspection (year)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Base Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">HIC/SOHIC-H2S Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="nav-cracking-carbonate" role="tabpanel"
+                                aria-labelledby="nav-cracking-carbonate-tab">
+                                    <div class="card" id="nav-cracking-carbonate" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Highest Inspection Effectiveness</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Number of Inspection</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Present of Cracks</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Carbonate Concentration (ppm)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">pH of Water</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4"
+                                                                    class="col-5 col-form-label2">Presence of Cyanides</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                                <div>Calculated</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Intermediate Result</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Environmental Severity</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility to Carbonate</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Severity Index, SVI</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Year Since Last Inspection (year)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Base Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Carbonate Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="nav-cracking-hydrogen" role="tabpanel"
+                                aria-labelledby="nav-cracking-hydrogen-tab">
+                                    <div class="card" id="nav-cracking-hydrogen" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Highest Inspection Effectiveness</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Number of Inspection</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Present of Cracks</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">PWHT</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Presence of Hydrofluoric Acid</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4"
+                                                                    class="col-5 col-form-label2">Maximum Brinnell Hardness of Weld</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                                <div>Calculated</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Intermediate Result</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility to HSC-HF Crackin</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Severity Index, SVI</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Year Since Last Inspection (year)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Base Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">HF Hydrogen Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="nav-cracking-hf" role="tabpanel"
+                                aria-labelledby="nav-cracking-hf-tab">
+                                    <div class="card" id="nav-cracking-hf" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Highest Inspection Effectiveness</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Number of Inspection</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Present of Cracks</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">PWHT</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Sulphur Content</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4"
+                                                                    class="col-5 col-form-label2">Online Monitoring</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                                <div>Calculated</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Intermediate Result</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility to HIC/SOHIC-HF</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Severity Index, SVI</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Year Since Last Inspection (year)</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Base Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">HIC/SOHIC-HF Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="nav-cracking-other" role="tabpanel"
+                                aria-labelledby="nav-cracking-other-tab">
+                                    <div class="card" id="nav-cracking-other" role="tabpanel">
+                                        <div id="panel-card6" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 210px;">Assessment Data Input</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility Basis
+                                                                </label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Susceptibility</label>
+                                                                <div class="col-7">
+                                                                    <select class="form-control form-control-sm"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>-- Silahkan Pilih --</option>
+                                                                        <option>opt 1</option>
+                                                                        <option>opt 2</option>
+                                                                        <option>opt 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Assesment Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Start Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Last Inspection Date</label>
+                                                                <div class="col-7">
+                                                                    <input type="date" class="form-control form-control-sm" id="lv4">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-5"></div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility Basis :</div>
+                                                                <div>Estimated</div>
+                                                                <div>Detected</div>
+                                                            </div>
+                                                            <div class="col-3 cracking-left-bot">
+                                                                <div>Susceptibility :</div>
+                                                                <div>None</div>
+                                                                <div>Low</div>
+                                                                <div>Medium</div>
+                                                                <div>High</div>
+                                                            </div>
+                                                            <div class="col-1"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <form autocomplete="off" class="mt-1 form-data-property"
+                                                            style="width: 100%;">
+                                                            <p class="form-title" style="width: 150px;">Damage Factor</p>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Base Value of Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="lv4" class="col-5 col-form-label2">Damage Factor</label>
+                                                                <div class="col-7">
+                                                                    <input type="text" class="form-control form-control-sm" id="lv4" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="tab-pane fade" id="nav-hdamage" role="tabpanel" aria-labelledby="nav-hdamage-tab">
                             <div class="card" id="nav-hdamage" role="tabpanel">
                                 <div id="panel-card6" class="collapse show">
