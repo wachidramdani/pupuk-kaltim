@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/asset.css">
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="style/images/icon/logo-pavicon-v6.png">
 
@@ -121,7 +123,7 @@
                 <div style="width: 0px; height: 62px; border: 1px #000 solid;">
                 </div>
                 <div class="col">
-                    <a class="nav-link" href="index.html" style="margin-top: 7px; color: rgba(0, 0, 0, 0.5);"> <i
+                    <a class="nav-link" onclick="logout()" style="margin-top: 7px; color: rgba(0, 0, 0, 0.5);"> <i
                             class="fa fa-power-off"
                             style="font-size: 25px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                 </div>
@@ -224,6 +226,21 @@
     <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
 
     <script type="text/javascript">
+        function logout() {
+            swal({
+                title: "Are you sure?",
+                text: "Once logout, you will not be able to acces this aplication!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        window.location.href = "index.html"
+                    }
+                });
+
+        }
         $(function () {
             $('#jstree_demo_div').jstree({
                 'core':
@@ -256,31 +273,31 @@
                             'text': 'Corrison Loops',
                             // 'state': { 'opened': true, 'selected': true },
                             'children': [
-                                {'text': 'RBI-PKT-CL-1'},
-                                {'text': 'RBI-PKT-CL-2'},
-                                {'text': 'RBI-PKT-CL-3'},
-                                {'text': 'RBI-PKT-CL-4'},
-                                {'text': 'RBI-PKT-CL-5'},
-                                {'text': 'RBI-PKT-CL-6'},
-                                {'text': 'RBI-PKT-CL-7'},
-                                {'text': 'RBI-PKT-CL-8'},
-                                {'text': 'RBI-PKT-CL-9'},
-                                {'text': 'RBI-PKT-CL-10'},
-                                {'text': 'RBI-PKT-CL-11'},
-                                {'text': 'RBI-PKT-CL-12'},
-                                {'text': 'RBI-PKT-CL-13'},
-                                {'text': 'RBI-PKT-CL-14'},
+                                { 'text': 'RBI-PKT-CL-1' },
+                                { 'text': 'RBI-PKT-CL-2' },
+                                { 'text': 'RBI-PKT-CL-3' },
+                                { 'text': 'RBI-PKT-CL-4' },
+                                { 'text': 'RBI-PKT-CL-5' },
+                                { 'text': 'RBI-PKT-CL-6' },
+                                { 'text': 'RBI-PKT-CL-7' },
+                                { 'text': 'RBI-PKT-CL-8' },
+                                { 'text': 'RBI-PKT-CL-9' },
+                                { 'text': 'RBI-PKT-CL-10' },
+                                { 'text': 'RBI-PKT-CL-11' },
+                                { 'text': 'RBI-PKT-CL-12' },
+                                { 'text': 'RBI-PKT-CL-13' },
+                                { 'text': 'RBI-PKT-CL-14' },
                             ]
                         },
                         {
                             'text': 'Damage Mechanism',
                             // 'state': { 'opened': true, 'selected': true },
                             'children': [
-                                {'text': 'Carrosive Fluid'},
-                                {'text': 'Damage Loop'},
-                                {'text': 'List Of Damage Mechanism'},
-                                {'text': 'Potensial Damage Mechanism '},
-                                {'text': 'Type Of Unit'},
+                                { 'text': 'Carrosive Fluid' },
+                                { 'text': 'Damage Loop' },
+                                { 'text': 'List Of Damage Mechanism' },
+                                { 'text': 'Potensial Damage Mechanism ' },
+                                { 'text': 'Type Of Unit' },
                             ]
                         },
                         {
@@ -307,17 +324,17 @@
                             'text': 'Inspection',
                             // 'state': { 'opened': true, 'selected': true },
                             'children': [
-                                {'text': 'General Thining'},
-                                {'text': 'Local Thining'},
-                                {'text': 'Caustic Cracking'},
-                                {'text': 'Sulphide Stress Cracking '},
-                                {'text': 'Carbonate Cracking'},
-                                {'text': 'CISCC'},
-                                {'text': 'External Corrosion'},
-                                {'text': 'Corrosion Under Insulation'},
-                                {'text': 'Amine Cracking'},
-                                {'text': 'External CLSCC'},
-                                {'text': 'CLSCC'},
+                                { 'text': 'General Thining' },
+                                { 'text': 'Local Thining' },
+                                { 'text': 'Caustic Cracking' },
+                                { 'text': 'Sulphide Stress Cracking ' },
+                                { 'text': 'Carbonate Cracking' },
+                                { 'text': 'CISCC' },
+                                { 'text': 'External Corrosion' },
+                                { 'text': 'Corrosion Under Insulation' },
+                                { 'text': 'Amine Cracking' },
+                                { 'text': 'External CLSCC' },
+                                { 'text': 'CLSCC' },
                             ]
                         },
                     ]
@@ -450,6 +467,9 @@
         $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -833,3 +833,11 @@
     outline: 0;
 }
 
+.cracking-left-bot {
+    font-size: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
