@@ -17,10 +17,20 @@
     border-right: 1px solid #cdcdcd;
 }
 
+.sidebar-hv_shell, .sidebar-hv_head {
+    padding-top: 11px    !important;
+}
+
 .sidebar .navbar-btn {
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 6px;
 }
+
+.sidebar-hv_shell .navbar-btn, .sidebar-hv_head .navbar-btn {
+    padding-bottom: 11px !important;
+}
+
+
 
 .main-content {
     float: left;
