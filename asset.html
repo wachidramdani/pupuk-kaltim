@@ -124,7 +124,8 @@
                 <div style="width: 0px; height: 80px; border: 1px #6C757D solid;">
                 </div>
                 <div class="col mt-3">
-                    <a class="nav-link" onclick="logout()" style="color: rgba(0, 0, 0, 0.5);"> <i class="fa fa-power-off"
+                    <a class="nav-link" onclick="logout()" style="color: rgba(0, 0, 0, 0.5);"> <i
+                            class="fa fa-power-off"
                             style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                 </div>
             </div>
@@ -179,9 +180,104 @@
                     </ul>
                 </div>
                 <div id="tab01" class="tab-contents" style="margin-top: -29px;">
-                    <!-- <h2>Tab Data Property</h2> -->
-                    <!-- Name input -->
-                    <form autocomplete="off" class="mt-5 form-data-property">
+                    <div class="col-6 mt-5" id="card5">
+                        <div class="card">
+                            <div class="card-header pos-between" style="background-color: #e16333;">
+                                <span style="color: #f8f9fa;">Risk Parameter</span>
+                                <div>
+                                    <button data-toggle="collapse" data-target="#panel-card5" aria-expanded="true"
+                                        aria-controls="panel-card5">
+                                        <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
+                                    </button>
+                                    <!-- <button data-toggle="modal" data-target="#staticBackdrop">
+                                        <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
+                                    </button> -->
+                                    <button onclick="setDisplayNone('card5')">
+                                        <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="panel-card5" class="collapse show">
+                                <div class="card-body" style="padding-top: 0;">
+                                    <form class="mt-3">
+                                        <div class="form-group row">
+                                            <label for="datepicker" class="col-5 col-form-label">RBI Date</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="datepicker">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lv1" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                1)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="lv1">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lv2" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                2)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="lv2">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lv3" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                3)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="lv3">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lv4" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                4)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="lv4">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lv5" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                5)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="lv5">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="datepickerYear" class="col-5 col-form-label">Max Year</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm"
+                                                    id="datepickerYear">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pofTarget" class="col-5 col-form-label">POF Target
+                                                (events/yr)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="pofTarget">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="areariskTarget " class="col-5 col-form-label">Area Risk Target
+                                                (ft2/yr)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm"
+                                                    id="areariskTarget ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="financialriskTarget" class="col-5 col-form-label">Financial Risk
+                                                Target
+                                                ($/yr)</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm"
+                                                    id="financialriskTarget">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <form autocomplete="off" class="mt-5 form-data-property">
                         <p class="form-title" style="width: 140px;">Risk Parameter</p>
                         <div class="form-group row">
                             <label for="datepicker" class="col-4 col-form-label">RBI Date</label>
@@ -244,7 +340,7 @@
                                 <input type="text" class="form-control form-control-sm" id="financialriskTarget">
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
                 <div id="tab02" class="tab-contents">
                     <div class="d-flex justify-content-center mt-5">
@@ -258,67 +354,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="main-content">
-            <div class="tabpanel">
-                <ul>
-                  <li><a href="#tabs-1" class="closable">Home</a></li>
-                </ul>
-                <div class="ui-layout-content">
-                    <div id="tabs-1">
-                        <div class="row">
-                            <div class="col-4" id="card2">
-                                <div class="card">
-                                    <div id="panel-card2" class="collapse show">
-                                        <div class="wrimagecard wrimagecard-topimage">
-                                            <div class="wrimagecard-topimage_header" style="background-color:#81C784">
-                                                <i class="fa fa-heart" style="color:#000000"></i>
-                                            </div>
-                                            <div class="wrimagecard-topimage_title">
-                                                <div class="label">Risk Category</div>
-                                                <div class="value">Medium</div>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4" id="card2">
-                                <div class="card">
-                                    <div id="panel-card2" class="collapse show">
-                                        <div class="wrimagecard wrimagecard-topimage">
-                                            <div class="wrimagecard-topimage_header" style="background-color:#81C784">
-                                                <i class="fa fa-heart" style="color:#000000"></i>
-                                            </div>
-                                            <div class="wrimagecard-topimage_title">
-                                                <div class="label">Likelihood Category</div>
-                                                <div class="value">Moderate</div>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4" id="card2">
-                                <div class="card">
-                                    <div id="panel-card2" class="collapse show">
-                                        <div class="wrimagecard wrimagecard-topimage">
-                                            <div class="wrimagecard-topimage_header" style="background-color:#81C784">
-                                                <i class="fa fa-heart" style="color:#000000"></i>
-                                            </div>
-                                            <div class="wrimagecard-topimage_title">
-                                                <div class="label">Consequence Category</div>
-                                                <div class="value">Low</div>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
     <!-- Optional JavaScript -->
 
@@ -737,6 +772,9 @@
         });
     </script>
     <script>
+        function setDisplayNone(id) {
+            document.getElementById(id).style.display = "none";
+        }
         function openSaPage(param) {
             window.location.href = param;
         }
@@ -863,8 +901,8 @@
         });
     </script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
