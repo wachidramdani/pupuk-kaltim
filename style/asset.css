@@ -458,14 +458,14 @@
     }
 
     /* DAMAGE MECHANISM SUB TAB */
-    .damage-mechanism-sub-tab {
+    /* .damage-mechanism-sub-tab {
         font-size: 10px;
     }
 
     .damage-mechanism-sub-tab-a {
         width: 100px; 
         padding:10px;
-    }
+    } */
 }
 
 @media (min-width: 1366px) {
@@ -513,9 +513,9 @@
     }
 
     /* DAMAGE MECHANISM SUB TAB */
-    .damage-mechanism-sub-tab-a {
+    /* .damage-mechanism-sub-tab-a {
         width: 109.5px;
-    }
+    } */
 }
 
 @media (min-width: 1440px) {
@@ -556,9 +556,9 @@
     }
 
     /* DAMAGE MECHANISM SUB TAB */
-    .damage-mechanism-sub-tab-a {
+    /* .damage-mechanism-sub-tab-a {
         width: 117.8px;
-    }
+    } */
 }
 
 @media (min-width: 1550px) {
@@ -604,13 +604,13 @@
     }
 
     /* DAMAGE MECHANISM SUB TAB */
-    .damage-mechanism-sub-tab {
+    /* .damage-mechanism-sub-tab {
         font-size: 12px;
     }
 
     .damage-mechanism-sub-tab-a {
         width: 130px;
-    }
+    } */
 }
 
 @media (min-width: 1660px) {
@@ -658,9 +658,9 @@
     }
 
     /* DAMAGE MECHANISM SUB TAB */
-    .damage-mechanism-sub-tab-a {
+    /* .damage-mechanism-sub-tab-a {
         width: 142px;
-    }
+    } */
 }
 
 @media (min-width: 1770px) {
@@ -724,9 +724,9 @@
     }
 
     /* DAMAGE MECHANISM SUB TAB */
-    .damage-mechanism-sub-tab-a {
+    /* .damage-mechanism-sub-tab-a {
         width: 154.5px;
-    }
+    } */
 }
 
 @media (min-width: 1920px) {
@@ -769,9 +769,9 @@
     }
 
     /* DAMAGE MECHANISM SUB TAB */
-    .damage-mechanism-sub-tab-a {
+    /* .damage-mechanism-sub-tab-a {
         width: 171px;
-    }
+    } */
 }
 
 /* COMPANY, DATA PROPERTY */
