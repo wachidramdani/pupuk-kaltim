@@ -178,355 +178,497 @@
                         </li>
                     </ul>
                 </div>
-                <div id="tab01" class="tab-contents col-6" style="margin-top: -29px;">
-                    <!-- <h2>Tab Data Property</h2> -->
-                    <!-- Name input -->
-                    <form autocomplete="off" class="mt-5 form-data-property">
-                        <div class="form-title" style="width: 190px;">Financial Consequence</div>
-                        <div class="form-group row">
-                            <label for="lv1" class="col-5 col-form-label">Equipment Cost ($/m2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv1">
+                <div id="tab01" class="tab-contents" style="margin-top: -29px;">
+                    <div class="row">
+                        <div class="col-6 mt-5" id="card1">
+                            <div class="card">
+                                <div class="card-header pos-between" style="background-color: #e16333;">
+                                    <span style="color: #f8f9fa;">Financial Consequence</span>
+                                    <div>
+                                        <button data-toggle="collapse" data-target="#panel-card1" aria-expanded="true"
+                                            aria-controls="panel-card1">
+                                            <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                        <button onclick="setDisplayNone('card1')">
+                                            <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="panel-card1" class="collapse show">
+                                    <div class="card-body" style="padding-top: 0;">
+                                        <form class="mt-3">
+                                            <div class="form-group row">
+                                                <label for="lv1" class="col-5 col-form-label">Equipment Cost
+                                                    ($/m2)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv1">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lv2" class="col-5 col-form-label">Personnel Injury Cost
+                                                    ($/person)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv2">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lv3" class="col-5 col-form-label">Environmental Cost
+                                                    ($/barrel)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lv4" class="col-5 col-form-label">Production Loss
+                                                    ($/day)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv4">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lv5" class="col-5 col-form-label">Population Density
+                                                    (people/m2)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv5">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="datepickerYear" class="col-5 col-form-label">Population
+                                                    Density
+                                                    (people/m2)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        id="datepickerYear">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <form autocomplete="off" class="mt-5 form-data-property">
+                            <div class="form-title" style="width: 190px;">Financial Consequence</div>
+                            <div class="form-group row">
+                                <label for="lv1" class="col-5 col-form-label">Equipment Cost ($/m2)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="lv1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lv2" class="col-5 col-form-label">Personnel Injury Cost ($/person)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="lv2">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lv3" class="col-5 col-form-label">Environmental Cost ($/barrel)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="lv3">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lv4" class="col-5 col-form-label">Production Loss ($/day)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="lv4">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lv5" class="col-5 col-form-label">Population Density (people/m2)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="lv5">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="datepickerYear" class="col-5 col-form-label">Population Density
+                                    (people/m2)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="datepickerYear">
+                                </div>
+                            </div>
+                        </form> -->
+                            <!-- <form autocomplete="off" class="mt-5 form-data-property">
+                            <div class="form-title" style="width: 190px;">Management Setting</div>
+                            <div class="form-group row">
+                                <label for="lv1" class="col-5 col-form-label">Equipment Cost ($/m2)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="lv1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lv2" class="col-5 col-form-label">Personnel Injury Cost ($/person)</label>
+                                <div class="col-7">
+                                    <input type="text" class="form-control form-control-sm" id="lv2">
+                                </div>
+                            </div>
+                        </form> -->
+                            <!-- <form autocomplete="off" class="mt-5 form-data-property">
+                            <div class="form-title" style="width: 140px;">Risk Parameter</div>
+                            <div class="form-group row">
+                                <label for="lv1" class="col-5 col-form-label">Turnaround Date 1</label>
+                                <div class="col-7">
+                                    <input type="date" class="form-control form-control-sm" id="lv1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lv2" class="col-5 col-form-label">Turnaround Date 2</label>
+                                <div class="col-7">
+                                    <input type="date" class="form-control form-control-sm" id="lv2">
+                                </div>
+                            </div>
+                        </form> -->
+                            <br />
+                        </div>
+                        <div class="col-6 mt-5" id="card2">
+                            <div class="card">
+                                <div class="card-header pos-between" style="background-color: #e16333;">
+                                    <span style="color: #f8f9fa;">Management Setting</span>
+                                    <div>
+                                        <button data-toggle="collapse" data-target="#panel-card2" aria-expanded="true"
+                                            aria-controls="panel-card2">
+                                            <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                        <button onclick="setDisplayNone('card2')">
+                                            <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="panel-card2" class="collapse show">
+                                    <div class="card-body" style="padding-top: 0;">
+                                        <form class="mt-3">
+                                            <div class="form-group row">
+                                                <label for="lv1" class="col-5 col-form-label">Equipment Cost
+                                                    ($/m2)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv1">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lv2" class="col-5 col-form-label">Personnel Injury Cost
+                                                    ($/person)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv2">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="lv2" class="col-5 col-form-label">Personnel Injury Cost ($/person)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv2">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-3" id="card3">
+                            <div class="card">
+                                <div class="card-header pos-between" style="background-color: #e16333;">
+                                    <span style="color: #f8f9fa;">Risk Parameter</span>
+                                    <div>
+                                        <button data-toggle="collapse" data-target="#panel-card3" aria-expanded="true"
+                                            aria-controls="panel-card3">
+                                            <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                        <button onclick="setDisplayNone('card3')">
+                                            <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="panel-card3" class="collapse show">
+                                    <div class="card-body" style="padding-top: 0;">
+                                        <form class="mt-3">
+                                            <div class="form-group row">
+                                                <label for="lv1" class="col-5 col-form-label">Turnaround Date 1</label>
+                                                <div class="col-7">
+                                                    <input type="date" class="form-control form-control-sm" id="lv1">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lv2" class="col-5 col-form-label">Turnaround Date 2</label>
+                                                <div class="col-7">
+                                                    <input type="date" class="form-control form-control-sm" id="lv2">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="lv3" class="col-5 col-form-label">Environmental Cost ($/barrel)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv3">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv4" class="col-5 col-form-label">Production Loss ($/day)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv4">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv5" class="col-5 col-form-label">Population Density (people/m2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv5">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="datepickerYear" class="col-5 col-form-label">Population Density (people/m2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="datepickerYear">
-                            </div>
-                        </div>
-                    </form>
-                    <form autocomplete="off" class="mt-5 form-data-property">
-                        <div class="form-title" style="width: 190px;">Management Setting</div>
-                        <div class="form-group row">
-                            <label for="lv1" class="col-5 col-form-label">Equipment Cost ($/m2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv1">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv2" class="col-5 col-form-label">Personnel Injury Cost ($/person)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv2">
-                            </div>
-                        </div>
-                    </form>
-                    <form autocomplete="off" class="mt-5 form-data-property">
-                        <div class="form-title" style="width: 140px;">Risk Parameter</div>
-                        <div class="form-group row">
-                            <label for="lv1" class="col-5 col-form-label">Turnaround Date 1</label>
-                            <div class="col-7">
-                                <input type="date" class="form-control form-control-sm" id="lv1">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv2" class="col-5 col-form-label">Turnaround Date 2</label>
-                            <div class="col-7">
-                                <input type="date" class="form-control form-control-sm" id="lv2">
-                            </div>
-                        </div>
-                    </form>
-                    <br />
-                </div>
-                <div id="tab02" class="tab-contents">
-                    <!-- <h2>Tab Images</h2> -->
-                </div>
-                <div id="tab03" class="tab-contents">
-                    <!-- <h2>Tab File</h2> -->
+                    </div>
+                    <div id="tab02" class="tab-contents">
+                        <!-- <h2>Tab Images</h2> -->
+                    </div>
+                    <div id="tab03" class="tab-contents">
+                        <!-- <h2>Tab File</h2> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
+        <!-- Optional JavaScript -->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../bootstrap-4.6.1/js/jquery.slim.min.js"></script>
-    <script src="../bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
-    <script type="text/javascript" src="../tabs/ui.tabs.stretchyTabs.js"></script>
-    <script type="text/javascript" src="../tabs/lib/ui.tabs.closable.js"></script>
-    <script type="text/javascript" src="../tabs/lib/ui.tabs.addTab.js"></script>
-    <script type="text/javascript" src="../style/datepicker/bootstrap-datepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
-    <script type="text/javascript">
-        $(function () {
-            $('#jstree_demo_div').jstree({
-                'core':
-                {
-                    "themes": {
-                        "icons": false
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../bootstrap-4.6.1/js/jquery.slim.min.js"></script>
+        <script src="../bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+        <script type="text/javascript" src="../tabs/ui.tabs.stretchyTabs.js"></script>
+        <script type="text/javascript" src="../tabs/lib/ui.tabs.closable.js"></script>
+        <script type="text/javascript" src="../tabs/lib/ui.tabs.addTab.js"></script>
+        <script type="text/javascript" src="../style/datepicker/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
+        <script type="text/javascript">
+            $(function () {
+                $('#jstree_demo_div').jstree({
+                    'core':
+                    {
+                        "themes": {
+                            "icons": false
+                        },
+                        'data': [
+                            {
+                                'text': 'Company',
+                                'state': { 'opened': true },
+                                'children': [
+                                    {
+                                        'text': 'Plant',
+                                        'state': { 'opened': true, 'selected': true },
+                                        'children': [
+                                            {
+                                                'text': 'Plant Section',
+                                                'state': { 'opened': true },
+                                                'children': [
+                                                    {
+                                                        'text': 'System/Area',
+                                                        'state': { 'opened': true },
+                                                        'children': [
+                                                            { 'text': 'Equipment/Piping' },
+                                                            {
+                                                                'text': 'Horizontal Vessel',
+                                                                'children': [
+                                                                    { 'text': 'Shell' },
+                                                                    { 'text': 'Head' }
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'Vertical Vessel',
+                                                                'children': [
+                                                                    { 'text': 'Shell' },
+                                                                    { 'text': 'Top Head' },
+                                                                    { 'text': 'Bottom Head' }
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'Heat Exchanger',
+                                                                'children': [
+                                                                    { 'text': 'Shell' },
+                                                                    { 'text': 'Tube Bundle' },
+                                                                    { 'text': 'Front End Channel' },
+                                                                    { 'text': 'Rear End Channel' },
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'Cooler',
+                                                                'children': [
+                                                                    { 'text': 'Tube Section' },
+                                                                    { 'text': 'Header Box' }
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'Boiler',
+                                                                'children': [
+                                                                    { 'text': 'Tube Section' },
+                                                                    { 'text': 'Head' },
+                                                                    { 'text': 'Shell' }
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'Fired Heater',
+                                                                'children': [
+                                                                    { 'text': 'Heater Box' },
+                                                                    { 'text': 'Tube Section' },
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'Piping',
+                                                                'children': [
+                                                                    { 'text': 'Piping Tag' }
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'Tank',
+                                                                'children': [
+                                                                    { 'text': 'Tank Course' },
+                                                                    { 'text': 'Tank Bottom' },
+                                                                    { 'text': 'Tank Roof' }
+                                                                ]
+                                                            },
+                                                            {
+                                                                'text': 'PSV',
+                                                                'children': [
+                                                                    { 'text': 'PSV' }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
-                    'data': [
-                        {
-                            'text': 'Company',
-                            'state': { 'opened': true },
-                            'children': [
-                                {
-                                    'text': 'Plant',
-                                    'state': { 'opened': true, 'selected': true },
-                                    'children': [
-                                        {
-                                            'text': 'Plant Section',
-                                            'state': { 'opened': true },
-                                            'children': [
-                                                {
-                                                    'text': 'System/Area',
-                                                    'state': { 'opened': true },
-                                                    'children': [
-                                                        { 'text': 'Equipment/Piping' },
-                                                        {
-                                                            'text': 'Horizontal Vessel',
-                                                            'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Head' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Vertical Vessel',
-                                                            'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Top Head' },
-                                                                { 'text': 'Bottom Head' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Heat Exchanger',
-                                                            'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Tube Bundle' },
-                                                                { 'text': 'Front End Channel' },
-                                                                { 'text': 'Rear End Channel' },
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Cooler',
-                                                            'children': [
-                                                                { 'text': 'Tube Section' },
-                                                                { 'text': 'Header Box' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Boiler',
-                                                            'children': [
-                                                                { 'text': 'Tube Section' },
-                                                                { 'text': 'Head' },
-                                                                { 'text': 'Shell' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Fired Heater',
-                                                            'children': [
-                                                                { 'text': 'Heater Box' },
-                                                                { 'text': 'Tube Section' },
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Piping',
-                                                            'children': [
-                                                                { 'text': 'Piping Tag' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'Tank',
-                                                            'children': [
-                                                                { 'text': 'Tank Course' },
-                                                                { 'text': 'Tank Bottom' },
-                                                                { 'text': 'Tank Roof' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            'text': 'PSV',
-                                                            'children': [
-                                                                { 'text': 'PSV' }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-            })
-        });
-
-        $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-            if(data.node.text == 'Company'){
-                window.open("../asset.html", "_self")
-            }
-            if (data.node.text == 'Equipment/Piping') {
-                window.open("equipment.html", "_self")
-            }
-            if (data.node.original.text == 'Shell') {
-                window.open("hv_shell.html", "_self")
-            }
-            if (data.node.original.text == 'Head') {
-                window.open("hv_head.html", "_self")
-            }
-            if (data.node.original.text == 'Plant Section') {
-                window.open("plant_section.html", "_self")
-            }
-            if (data.node.original.text == 'System/Area') {
-                window.open("system_area.html", "_self")
-            }
-        });
-    </script>
-    <script>
-        function openSaPage(param) {
-            window.location.href = param;
-        }
-        $(function () {
-            var $tabButtonItem = $('#tab-button li'),
-                $tabSelect = $('#tab-select'),
-                $tabContents = $('.tab-contents'),
-                activeClass = 'is-active';
-
-            $tabButtonItem.first().addClass(activeClass);
-            $tabContents.not(':first').hide();
-
-            $tabButtonItem.find('a').on('click', function (e) {
-                var target = $(this).attr('href');
-
-                $tabButtonItem.removeClass(activeClass);
-                $(this).parent().addClass(activeClass);
-                $tabSelect.val(target);
-                $tabContents.hide();
-                $(target).show();
-                e.preventDefault();
+                })
             });
 
-            $tabSelect.on('change', function () {
-                var target = $(this).val(),
-                    targetSelectNum = $(this).prop('selectedIndex');
-
-                $tabButtonItem.removeClass(activeClass);
-                $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
-                $tabContents.hide();
-                $(target).show();
+            $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
+                if (data.node.text == 'Company') {
+                    window.open("../asset.html", "_self")
+                }
+                if (data.node.text == 'Equipment/Piping') {
+                    window.open("equipment.html", "_self")
+                }
+                if (data.node.original.text == 'Shell') {
+                    window.open("hv_shell.html", "_self")
+                }
+                if (data.node.original.text == 'Head') {
+                    window.open("hv_head.html", "_self")
+                }
+                if (data.node.original.text == 'Plant Section') {
+                    window.open("plant_section.html", "_self")
+                }
+                if (data.node.original.text == 'System/Area') {
+                    window.open("system_area.html", "_self")
+                }
             });
-        });
-        $(function () {
-            $(".tabpanel").tabs({ closable: true, addTab: true }).tabs('stretchyTabs')
-                .find(".ui-tabs-nav").sortable({
-                    distance: 10
+        </script>
+        <script>
+            function openSaPage(param) {
+                window.location.href = param;
+            }
+            $(function () {
+                var $tabButtonItem = $('#tab-button li'),
+                    $tabSelect = $('#tab-select'),
+                    $tabContents = $('.tab-contents'),
+                    activeClass = 'is-active';
+
+                $tabButtonItem.first().addClass(activeClass);
+                $tabContents.not(':first').hide();
+
+                $tabButtonItem.find('a').on('click', function (e) {
+                    var target = $(this).attr('href');
+
+                    $tabButtonItem.removeClass(activeClass);
+                    $(this).parent().addClass(activeClass);
+                    $tabSelect.val(target);
+                    $tabContents.hide();
+                    $(target).show();
+                    e.preventDefault();
                 });
-            // $( ".tabpanel" ).tabs("remove", 0);
-        });
-        function addTab(name) {
-            const navbar = Array.from(document.querySelectorAll('.tabpanel>ul>li'));
-            console.log(navbar, 'navbar');
-            let found = 0
-            for (var i = 0; i < navbar.length; i++) {
-                if (navbar[i].innerText == name) {
-                    found++
+
+                $tabSelect.on('change', function () {
+                    var target = $(this).val(),
+                        targetSelectNum = $(this).prop('selectedIndex');
+
+                    $tabButtonItem.removeClass(activeClass);
+                    $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+                    $tabContents.hide();
+                    $(target).show();
+                });
+            });
+            $(function () {
+                $(".tabpanel").tabs({ closable: true, addTab: true }).tabs('stretchyTabs')
+                    .find(".ui-tabs-nav").sortable({
+                        distance: 10
+                    });
+                // $( ".tabpanel" ).tabs("remove", 0);
+            });
+            function addTab(name) {
+                const navbar = Array.from(document.querySelectorAll('.tabpanel>ul>li'));
+                console.log(navbar, 'navbar');
+                let found = 0
+                for (var i = 0; i < navbar.length; i++) {
+                    if (navbar[i].innerText == name) {
+                        found++
+                    }
+                }
+                if (found == 0) {
+                    $(".tabpanel").tabs("add", name, "content goes here");
                 }
             }
-            if (found == 0) {
-                $(".tabpanel").tabs("add", name, "content goes here");
+        </script>
+
+        <script>
+            function setDisplayNone(id) {
+                document.getElementById(id).style.display = "none";
             }
-        }
-    </script>
 
-    <script>
-        $.fn.extend({
-            treed: function (o) {
+            $.fn.extend({
+                treed: function (o) {
 
-                var openedClass = 'glyphicon-minus-sign';
-                var closedClass = 'glyphicon-plus-sign';
+                    var openedClass = 'glyphicon-minus-sign';
+                    var closedClass = 'glyphicon-plus-sign';
 
-                if (typeof o != 'undefined') {
-                    if (typeof o.openedClass != 'undefined') {
-                        openedClass = o.openedClass;
-                    }
-                    if (typeof o.closedClass != 'undefined') {
-                        closedClass = o.closedClass;
-                    }
-                };
-
-                //initialize each of the top levels
-                var tree = $(this);
-                tree.addClass("tree");
-                tree.find('li').has("ul").each(function () {
-                    var branch = $(this); //li with children ul
-                    branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
-                    branch.addClass('branch');
-                    branch.on('click', function (e) {
-                        if (this == e.target) {
-                            var icon = $(this).children('i:first');
-                            icon.toggleClass(openedClass + " " + closedClass);
-                            $(this).children().children().toggle();
+                    if (typeof o != 'undefined') {
+                        if (typeof o.openedClass != 'undefined') {
+                            openedClass = o.openedClass;
                         }
-                    })
-                    branch.children().children().toggle();
-                });
-                //fire event from the dynamically added icon
-                tree.find('.branch .indicator').each(function () {
-                    $(this).on('click', function () {
-                        $(this).closest('li').click();
-                    });
-                });
-                //fire event to open branch if the li contains an anchor instead of text
-                tree.find('.branch>a').each(function () {
-                    $(this).on('click', function (e) {
-                        $(this).closest('li').click();
-                        e.preventDefault();
-                    });
-                });
-                //fire event to open branch if the li contains a button instead of text
-                tree.find('.branch>button').each(function () {
-                    $(this).on('click', function (e) {
-                        $(this).closest('li').click();
-                        e.preventDefault();
-                    });
-                });
-            }
-        });
+                        if (typeof o.closedClass != 'undefined') {
+                            closedClass = o.closedClass;
+                        }
+                    };
 
-        //Initialization of treeviews
-        $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
+                    //initialize each of the top levels
+                    var tree = $(this);
+                    tree.addClass("tree");
+                    tree.find('li').has("ul").each(function () {
+                        var branch = $(this); //li with children ul
+                        branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+                        branch.addClass('branch');
+                        branch.on('click', function (e) {
+                            if (this == e.target) {
+                                var icon = $(this).children('i:first');
+                                icon.toggleClass(openedClass + " " + closedClass);
+                                $(this).children().children().toggle();
+                            }
+                        })
+                        branch.children().children().toggle();
+                    });
+                    //fire event from the dynamically added icon
+                    tree.find('.branch .indicator').each(function () {
+                        $(this).on('click', function () {
+                            $(this).closest('li').click();
+                        });
+                    });
+                    //fire event to open branch if the li contains an anchor instead of text
+                    tree.find('.branch>a').each(function () {
+                        $(this).on('click', function (e) {
+                            $(this).closest('li').click();
+                            e.preventDefault();
+                        });
+                    });
+                    //fire event to open branch if the li contains a button instead of text
+                    tree.find('.branch>button').each(function () {
+                        $(this).on('click', function (e) {
+                            $(this).closest('li').click();
+                            e.preventDefault();
+                        });
+                    });
+                }
+            });
 
-        // DATEPICKER
-        $('#datepicker').datepicker({
-            format: 'dd-mm-yyyy',
-            autoclose: true
-        });
-        $("#datepickerYear").datepicker({
-            format: "yyyy",
-            viewMode: "years",
-            minViewMode: "years",
-            autoclose: true //to close picker once year is selected
-        });
-    </script>
+            //Initialization of treeviews
+            $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
+
+            // DATEPICKER
+            $('#datepicker').datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true
+            });
+            $("#datepickerYear").datepicker({
+                format: "yyyy",
+                viewMode: "years",
+                minViewMode: "years",
+                autoclose: true //to close picker once year is selected
+            });
+        </script>
 </body>
 
 </html>
