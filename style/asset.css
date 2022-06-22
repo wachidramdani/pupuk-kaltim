@@ -17,6 +17,13 @@
     border-right: 1px solid #cdcdcd;
 }
 
+.btn {
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-color: black;
+}
+
 .sidebar-hv_shell, .sidebar-hv_head {
     padding-top: 11px    !important;
 }
