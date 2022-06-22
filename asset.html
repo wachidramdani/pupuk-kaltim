@@ -142,9 +142,10 @@
                                 <i class="fa fa-search"></i>
                             </label>
                         </div>
-                        <input type="text" class="form-control form-control-sm" id="datepicker" placeholder="search...">
+                        <input type="text" class="form-control form-control-sm" placeholder="search...">
                     </div>
                 </div>
+
                 <!-- <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
                         class="fas fa-sync-alt"></i> Syn With System</button>
                 <div>
@@ -158,6 +159,28 @@
                         <a class="dropdown-item" href="#">Option 2</a>
                     </div>
                 </div> -->
+            </div>
+            <div class="d-flex navbar-btn mt-2">
+                <button class="btn" data-toggle="collapse" data-target="#panel-card5" aria-expanded="true"
+                    aria-controls="panel-card5" data-toggle="tooltip" data-placement="top" title="Asset">
+                    <i class="fa fa-plus" style="margin-top: 6px; color: #6C757D"></i>
+                </button>
+                <button class="btn" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
+                    title="Export">
+                    <i class="fa fa-upload" style="margin-top: 6px; color: #6C757D"></i>
+                </button>
+                <button class="btn" data-toggle="collapse" data-target="#panel-card5" aria-expanded="true"
+                    aria-controls="panel-card5" data-toggle="tooltip" data-placement="top" title="Import">
+                    <i class="fa fa-download" style="margin-top: 6px; color: #6C757D"></i>
+                </button>
+                <button class="btn" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
+                    title="Calculate">
+                    <i class="fa fa-calculator" style="margin-top: 6px; color: #6C757D"></i>
+                </button>
+                <button class="btn" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
+                    title="Save">
+                    <i class="fa fa-save" style="margin-top: 6px; color: #6C757D"></i>
+                </button>
             </div>
             <div class="sidebar-body">
                 <div class="jstree-custom" id="jstree_demo_div"></div>
@@ -188,104 +211,111 @@
                     </ul>
                 </div>
                 <div id="tab01" class="tab-contents" style="margin-top: -29px;">
-                    <div class="col-6 mt-5" id="card5">
-                        <div class="card">
-                            <div class="card-header pos-between" style="background-color: #e16333;">
-                                <span style="color: #f8f9fa;">Risk Parameter</span>
-                                <div>
-                                    <button data-toggle="collapse" data-target="#panel-card5" aria-expanded="true"
-                                        aria-controls="panel-card5">
-                                        <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
-                                    </button>
-                                    <!-- <button data-toggle="modal" data-target="#staticBackdrop">
+                    <div class="row">
+                        <div class="col-6 mt-5" id="card1">
+                            <div class="card">
+                                <div class="card-header pos-between" style="background-color: #e16333;">
+                                    <span style="color: #f8f9fa;">Risk Parameter</span>
+                                    <div>
+                                        <button data-toggle="collapse" data-target="#panel-card5" aria-expanded="true"
+                                            aria-controls="panel-card5">
+                                            <i class="fa fa-minus" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                        <!-- <button data-toggle="modal" data-target="#staticBackdrop">
                                         <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
                                     </button> -->
-                                    <button onclick="setDisplayNone('card5')">
-                                        <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
-                                    </button>
+                                        <button onclick="setDisplayNone('card5')">
+                                            <i class="fa fa-times" style="margin-top: 6px; color: #6C757D"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="panel-card5" class="collapse show">
-                                <div class="card-body" style="padding-top: 0;">
-                                    <form class="mt-3">
-                                        <div class="form-group row">
-                                            <label for="datepicker" class="col-5 col-form-label">RBI Date</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="datepicker">
+                                <div id="panel-card5" class="collapse show">
+                                    <div class="card-body" style="padding-top: 0;">
+                                        <form class="mt-3">
+                                            <div class="form-group row">
+                                                <label for="datepicker" class="col-5 col-form-label">RBI Date</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        id="datepicker">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="lv1" class="col-5 col-form-label">DF Target (Based on COF Lv
-                                                1)</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="lv1">
+                                            <div class="form-group row">
+                                                <label for="lv1" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                    1)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv1">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="lv2" class="col-5 col-form-label">DF Target (Based on COF Lv
-                                                2)</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="lv2">
+                                            <div class="form-group row">
+                                                <label for="lv2" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                    2)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv2">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="lv3" class="col-5 col-form-label">DF Target (Based on COF Lv
-                                                3)</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="lv3">
+                                            <div class="form-group row">
+                                                <label for="lv3" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                    3)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv3">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="lv4" class="col-5 col-form-label">DF Target (Based on COF Lv
-                                                4)</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="lv4">
+                                            <div class="form-group row">
+                                                <label for="lv4" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                    4)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv4">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="lv5" class="col-5 col-form-label">DF Target (Based on COF Lv
-                                                5)</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="lv5">
+                                            <div class="form-group row">
+                                                <label for="lv5" class="col-5 col-form-label">DF Target (Based on COF Lv
+                                                    5)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm" id="lv5">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="datepickerYear" class="col-5 col-form-label">Max Year</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm"
-                                                    id="datepickerYear">
+                                            <div class="form-group row">
+                                                <label for="datepickerYear" class="col-5 col-form-label">Max
+                                                    Year</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        id="datepickerYear">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="pofTarget" class="col-5 col-form-label">POF Target
-                                                (events/yr)</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="pofTarget">
+                                            <div class="form-group row">
+                                                <label for="pofTarget" class="col-5 col-form-label">POF Target
+                                                    (events/yr)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        id="pofTarget">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="areariskTarget " class="col-5 col-form-label">Area Risk Target
-                                                (ft2/yr)</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm"
-                                                    id="areariskTarget ">
+                                            <div class="form-group row">
+                                                <label for="areariskTarget " class="col-5 col-form-label">Area Risk
+                                                    Target
+                                                    (ft2/yr)</label>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        id="areariskTarget ">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="financialriskTarget" class="col-5 col-form-label">Financial Risk
-                                                Target
-                                                ($/yr)</label>
-                                            <div class="col-7">
-                                                <!-- <input type="text" class="form-control form-control-sm"
+                                            <div class="form-group row">
+                                                <label for="financialriskTarget" class="col-5 col-form-label">Financial
+                                                    Risk
+                                                    Target
+                                                    ($/yr)</label>
+                                                <div class="col-7">
+                                                    <!-- <input type="text" class="form-control form-control-sm"
                                                     id="financialriskTarget"> -->
-                                                <select class="form-control form-control-sm js-example-responsive"
-                                                    style="width: 100%" name="states">
-                                                    <option value="">-- Silahkan Pilih --</option>
-                                                    <option value="WY">Wyoming</option>
-                                                </select>
+                                                    <select class="form-control form-control-sm js-example-responsive"
+                                                        style="width: 100%" name="states">
+                                                        <option value="">-- Silahkan Pilih --</option>
+                                                        <option value="WY">Wyoming</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -785,6 +815,9 @@
         });
     </script>
     <script>
+        $(document).ready(function () {
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        });
         function setDisplayNone(id) {
             document.getElementById(id).style.display = "none";
         }
