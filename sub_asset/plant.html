@@ -133,12 +133,19 @@
     <div class="inner-body">
         <div class="sidebar" style="height: calc(100% + 84px);">
             <div class="d-flex navbar-btn">
-                <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
+                <div class="filter-item mr-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">
+                                <i class="fa fa-search"></i>
+                            </label>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" placeholder="search...">
+                    </div>
+                </div>
+                <!-- <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
                         class="fas fa-sync-alt"></i> Syn With System</button>
                 <div>
-                    <!-- <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2"
-                        style="font-size: 10px;"><i class="fas fa-plus" data-toggle="dropdown"></i> New
-                        Component</button> -->
                     <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2 p-2"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 10px;">
                         <i class="fas fa-plus"></i>
@@ -148,7 +155,7 @@
                         <a class="dropdown-item" href="#">Option 1</a>
                         <a class="dropdown-item" href="#">Option 2</a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="sidebar-body">
                 <div class="jstree-custom" id="jstree_demo_div"></div>
