@@ -24,6 +24,11 @@
     border-color: black;
 }
 
+.bc {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .sidebar-hv_shell, .sidebar-hv_head {
     padding-top: 11px    !important;
 }
