@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: myFirstFont;
-    src: url(font/Montserrat-Medium.ttf);
+    src: url(font/Poppins-Medium.ttf);
 }
 
 .inner-body {
@@ -343,10 +343,11 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1px;
+    background-color: #e16333;
 }
 
 .card-header span {
-    color: #6C757D;
+    color: #f8f9fa;
     font-size: 14px;
 }
 
