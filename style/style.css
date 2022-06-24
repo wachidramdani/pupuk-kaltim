@@ -14,6 +14,10 @@ body {
     src: url(font/Poppins-Medium.ttf);
 }
 
+.hideScroll {
+    overflow: hidden;
+}
+
 .inner-body {
     margin: 0;
     padding: 0;
@@ -333,6 +337,11 @@ body {
     background-color: #fff;
 }
 
+.card-header2 {
+    background-color: #fff;
+}
+
+
 .pos-right {
     display: flex;
     justify-content: flex-end;
@@ -343,7 +352,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1px;
-    background-color: #e16333;
+    /* background-color: #e16333; */
+    background-color: #005bac;
+}
+
+.pos-between2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
 }
 
 .card-header span {
@@ -351,7 +367,25 @@ body {
     font-size: 14px;
 }
 
+.card-header2 span {
+    font-size: 14px;
+}
+
 .card .card-header button {
+    margin-left: 5px;
+    padding: 2px 7px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    /* background-color: #F47920; */
+    color: black;
+    /* background-color: #CED4DA; */
+    background-color: #ffffff;
+    /* color: #fff; */
+}
+
+.card .card-header2 button {
     margin-left: 5px;
     padding: 2px 7px;
     font-size: 14px;

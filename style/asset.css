@@ -182,6 +182,7 @@
     color: #6C757D;
     border: 1px rgba(0,0,0,0.2) solid;
     border-radius: 10px;
+    background-color: #fff;
 }
 
 .navbar-btn .btn:focus {
@@ -476,7 +477,6 @@
 }
 
 
-
 /* jstree custom  */
 .jstree-custom {
     margin: 1rem 0;
@@ -490,12 +490,14 @@
 
 .jstree-default .jstree-anchor:hover{
     background-color: #f8f9fa !important;
-    color:#212529 !important;
+    color:#f47920 !important;
+    /* color:#212529 !important; */
     box-shadow: inset 0 0 0 #999 !important;
 }
 
 .jstree-default .jstree-clicked {
-    color: #212529 !important;
+    /* color: #212529 !important; */
+    color:#f47920 !important;
     background-color: #f8f9fa !important;
     box-shadow: inset 0 0 0 #999 !important;
 }
@@ -952,8 +954,9 @@
 }
 
 .col-form-label {
-    font-size: 12px;
+    font-size: 10px;
     color: #6C757D;
+    font-weight: bold;
 }
 
 .col-form-label2 {

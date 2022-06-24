@@ -29,7 +29,7 @@
     <title>Pupuk - Kaltim</title>
 </head>
 
-<body style="overflow: hidden;">
+<body class="hideScroll">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -53,7 +53,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="./master/master_cf.html"> 
+                                <a class="nav-link menu-a" href="./master/master_cf.html">
                                     <i class="fa fa-database menu-i"></i>
                                 </a>
                                 <span class="menu-text">Master</span>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="setting.html"> 
+                                <a class="nav-link menu-a" href="setting.html">
                                     <i class="fa fa-cog menu-i"></i>
                                 </a>
                                 <span class="menu-text">Setting</span>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="laporan.html"> 
+                                <a class="nav-link menu-a" href="laporan.html">
                                     <i class="fa fa-print menu-i"></i>
                                 </a>
                                 <span class="menu-text">Laporan</span>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="inspection.html"> 
+                                <a class="nav-link menu-a" href="inspection.html">
                                     <i class="fa fa-clipboard-check menu-i"></i>
                                 </a>
                                 <span class="menu-text">Inspection</span>
@@ -85,7 +85,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="document.html"> 
+                                <a class="nav-link menu-a" href="document.html">
                                     <i class="fa fa-book menu-i"></i>
                                 </a>
                                 <span class="menu-text">Document</span>
@@ -100,9 +100,7 @@
                                 <div class="menu-avatar mt-3">
                                     <span class="menu-avatar-name">John Kennedy</span>
                                     <span class="menu-avatar-status">Super Admin</span>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -114,13 +112,13 @@
                 </div>
                 <div class="menu-line"></div>
                 <div class="col mt-3">
-                    <a class="nav-link menu-side-right" href="#"> 
+                    <a class="nav-link menu-side-right" href="#">
                         <i class="fa fa-search menu-i"></i>
                     </a>
                 </div>
                 <div class="menu-line"></div>
                 <div class="col mt-3">
-                    <a class="nav-link menu-side-right" onclick="logout()" pointer> 
+                    <a class="nav-link menu-side-right" onclick="logout()" pointer>
                         <i class="fa fa-power-off menu-i"></i>
                     </a>
                 </div>
@@ -128,7 +126,7 @@
         </div>
     </nav>
     <div class="inner-body">
-        <div class="sidebar">
+        <div class="sidebar" style="height: calc(100% + 100px);">
             <div class="d-flex justify-content-center navbar-btn">
                 <div class="filter-item mx-4">
                     <div class="input-group">
@@ -140,30 +138,18 @@
                         <input type="text" class="form-control form-control-sm" placeholder="search...">
                     </div>
                 </div>
-
-                <!-- <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
-                        class="fas fa-sync-alt"></i> Syn With System</button>
-                <div>
-                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2 p-2"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 10px;">
-                        <i class="fas fa-plus"></i>
-                        New Component
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <a class="dropdown-item" href="#">Option 1</a>
-                        <a class="dropdown-item" href="#">Option 2</a>
-                    </div>
-                </div> -->
             </div>
             <div class="d-flex navbar-btn mt-2">
-                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true"  data-toggle="tooltip" data-placement="top" title="Asset">
+                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true" data-toggle="tooltip"
+                    data-placement="top" title="Asset">
                     <i class="fa fa-plus sidebar-left-i"></i>
                 </button>
                 <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
                     title="Export">
                     <i class="fa fa-upload sidebar-left-i"></i>
                 </button>
-                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true"  data-toggle="tooltip" data-placement="top" title="Import">
+                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true" data-toggle="tooltip"
+                    data-placement="top" title="Import">
                     <i class="fa fa-download sidebar-left-i"></i>
                 </button>
                 <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
@@ -180,44 +166,42 @@
             </div>
         </div>
         <div class="main-content">
-            <div class="tabs" id="company">
+            <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
                         <li class="col-4 tab-border">
-                            <a href="#tab01" class="d-flex justify-content-center py-2">
+                            <a href="#tab01" class="d-flex justify-content-center py-2 tab-hover">
                                 <i class="fa fa-info-circle pr-2"></i>
-                                <div class="tab-text">Data Property</div>
+                                <div class="tab-text">DATA PROPERTY</div>
                             </a>
                         </li>
                         <li class="col-4 tab-border">
                             <a href="#tab02" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-image pr-2"></i>
-                                <div class="tab-text">Images</div>
+                                <div class="tab-text">IMAGES</div>
                             </a>
                         </li>
                         <li class="col-4">
                             <a href="#tab03" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-file pr-2"></i>
-                                <div class="tab-text">File</div>
+                                <div class="tab-text">FILE</div>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div id="tab01" class="tab-contents-company">
-                    <div class="row mt-4">
+                <div id="tab01" class="tab-contents">
+                    <div class="row">
                         <div class="col-sm-6 mt-3">
                             <!-- <nav aria-label="breadcrumb" class="bc"> -->
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Asset</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Company</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Data Property</li>
                                 </ol>
                             </nav>
-                            <span class="title-content">Data Property</span>
+                            <span class="title-content">Company</span>
                         </div>
-                        <div class="col-sm-6">
-
-                        </div>
+                        <div class="col-sm-6"></div>
                     </div>
                     <div class="row">
                         <div class="col-6 mt-3" id="card1">
@@ -229,17 +213,13 @@
                                             aria-controls="panel-card5">
                                             <i class="fa fa-minus button-top-right"></i>
                                         </button>
-                                        <!-- <button data-toggle="modal" data-target="#staticBackdrop">
-                                        <i class="fa fa-filter" style="margin-top: 6px; color: #6C757D"></i>
-                                    </button> -->
                                         <button onclick="setDisplayNone('card5')">
                                             <i class="fa fa-times button-top-right"></i>
                                         </button>
                                     </div>
                                 </div>
                                 <div id="panel-card5" class="collapse show">
-
-                                    <div class="card-body" >
+                                    <div class="card-body">
                                         <form>
                                             <div class="form-group row">
                                                 <label for="datepicker" class="col-5 col-form-label">RBI Date</label>
@@ -327,85 +307,19 @@
                                     </div>
                                 </div>
                             </div>
+                            <br />
                         </div>
                     </div>
-                    <!-- <form autocomplete="off" class="mt-5 form-data-property">
-                        <p class="form-title" style="width: 140px;">Risk Parameter</p>
-                        <div class="form-group row">
-                            <label for="datepicker" class="col-4 col-form-label">RBI Date</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="datepicker">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv1" class="col-4 col-form-label">DF Target (Based on COF Lv 1)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv1">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv2" class="col-4 col-form-label">DF Target (Based on COF Lv 2)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv2">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv3" class="col-4 col-form-label">DF Target (Based on COF Lv 3)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv3">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv4" class="col-4 col-form-label">DF Target (Based on COF Lv 4)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv4">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lv5" class="col-4 col-form-label">DF Target (Based on COF Lv 5)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="lv5">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="datepickerYear" class="col-4 col-form-label">Max Year</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="datepickerYear">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="pofTarget" class="col-4 col-form-label">POF Target (events/yr)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="pofTarget">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="areariskTarget " class="col-4 col-form-label">Area Risk Target (ft2/yr)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="areariskTarget ">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="financialriskTarget" class="col-4 col-form-label">Financial Risk Target
-                                ($/yr)</label>
-                            <div class="col-7">
-                                <input type="text" class="form-control form-control-sm" id="financialriskTarget">
-                            </div>
-                        </div>
-                    </form> -->
-                </div>
-                <div id="tab02" class="tab-contents">
-                    <div class="d-flex justify-content-center mt-5">
-                        <img src="/style/images/under_construction-v3.png" class="w-25">
+                    <div id="tab02" class="tab-contents">
+                        <!-- <h2>Tab Images</h2> -->
                     </div>
-                </div>
-                <div id="tab03" class="tab-contents">
-                    <div class="d-flex justify-content-center mt-5">
-                        <img src="/style/images/under_construction-v3.png" class="w-25">
+                    <div id="tab03" class="tab-contents">
+                        <!-- <h2>Tab File</h2> -->
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Optional JavaScript -->
 
