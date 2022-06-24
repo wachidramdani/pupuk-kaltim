@@ -385,12 +385,11 @@ body {
     font-weight: normal;
     border-radius: 5px;
     border: none;
-    width: 100px;
     /* background-color: #F47920; */
-    /* color: black; */
-    background-color: #005bac;
-    /* background-color: #ffffff; */
-    color: #fff;
+    color: black;
+    /* background-color: #CED4DA; */
+    background-color: #ffffff;
+    /* color: #fff; */
 }
 
 .card .card-header2 button {
