@@ -36,12 +36,12 @@
 
 .sidebar .navbar-btn {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     justify-content: center;
 }
 
 .sidebar-hv_shell .navbar-btn, .sidebar-hv_head .navbar-btn {
-    padding-bottom: 11px !important;
+    padding-bottom: 14px !important;
 }
 
 
