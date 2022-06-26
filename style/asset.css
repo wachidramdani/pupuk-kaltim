@@ -44,7 +44,14 @@
     padding-bottom: 14px !important;
 }
 
+.risk-chart {
+    height: 300px;
+}
 
+.tabs-center {
+    display: flex;
+    justify-content: center;
+}
 
 .main-content {
     float: left;
