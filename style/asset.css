@@ -9,7 +9,7 @@
 .sidebar {
     float: left;
     width: 295px;
-    height: calc(100% - 2px);
+    height: calc(100% + 100px);
     /* background-color: #ffffff; */
     padding-top: 7px;
     overflow-y: auto;
@@ -17,6 +17,9 @@
     border-right: 1px solid #cdcdcd;
 }
 
+.sidebar-height {
+    height: calc(100% + 100px);
+}
 
 .btn {
     margin-right: 10px;
@@ -60,6 +63,10 @@
     /* border-left: 1px solid #cdcdcd; */
     background-color: #f8f9fa;
     padding: 0;
+}
+
+.main-content-height {
+    height: calc(100% + 100px);
 }
 
 .sub-main-content{
@@ -110,11 +117,10 @@
     left: 108px;
 }
 
-
-.menu-a {
+/* .menu-a {
     margin-bottom: -5px; 
     text-align: center;
-}
+} */
 
 .menu-i {
     font-size: 30px; 
@@ -123,18 +129,18 @@
     justify-content: center;
 }
 
-.menu-i-active {
+/* .menu-i-active {
     font-size: 30px; 
     margin-top: 4px; 
     display: flex; 
     justify-content: center;
     color: #e16333;  
-}
-
+} */
+/* 
 .menu-text {
     font-size: 12px;
     color: #6C757D;
-}
+} */
 
 .menu-line {
     width: 0px; 
@@ -203,6 +209,14 @@
     font-size: 14px;
 }
 
+.nav-link:hover {
+    color: #E16333 !important;
+}
+
+.menu-active i, .menu-active p {
+    color: #E16333;
+}
+
 .title-content {
     font-size: 24px;
     color: rgba(0,0,0,0.7);
@@ -225,6 +239,7 @@
 
 .title-form {
     color: #f8f9fa;
+    font-size: 16px;
 }
 
 .button-top-right {
@@ -394,6 +409,14 @@
 /* .tabs .card {
     border: 0;
 } */
+
+/* Card */
+.card {
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 0;
+}
 
 #tab-button {
     /* display: table; */
