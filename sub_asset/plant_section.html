@@ -27,6 +27,8 @@
 </head>
 
 <body class="hideScroll">
+
+    <!-- MENU -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -34,58 +36,58 @@
                     <div class="row">
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="../dashboard.html">
+                                <a class="nav-link" href="../dashboard.html">
                                     <i class="fa fa-home menu-i"></i>
+                                    <p>Home</p>
                                 </a>
-                                <span class="menu-text">Home</span>
                             </li>
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="../asset.html">
-                                    <i class="fa fa-folder menu-i-active"></i>
+                                <a class="nav-link menu-active" href="../asset.html">
+                                    <i class="fa fa-folder menu-i"></i>
+                                    <p>Asset</p>
                                 </a>
-                                <span class="menu-text">Asset</span>
                             </li>
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href=".././master/master_cf.html">
+                                <a class="nav-link" href=".././master/master_cf.html">
                                     <i class="fa fa-database menu-i"></i>
+                                    <p>Master</p>
                                 </a>
-                                <span class="menu-text">Master</span>
                             </li>
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="../setting.html">
+                                <a class="nav-link" href="../setting.html">
                                     <i class="fa fa-cog menu-i"></i>
+                                    <p>Setting</p>
                                 </a>
-                                <span class="menu-text">Setting</span>
                             </li>
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="../laporan.html">
+                                <a class="nav-link" href="../laporan.html">
                                     <i class="fa fa-print menu-i"></i>
+                                    <p>Laporan</p>
                                 </a>
-                                <span class="menu-text">Laporan</span>
                             </li>
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="inspection.html">
+                                <a class="nav-link" href="inspection.html">
                                     <i class="fa fa-clipboard-check menu-i"></i>
+                                    <p>Inspection</p>
                                 </a>
-                                <span class="menu-text">Inspection</span>
                             </li>
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-a" href="document.html">
+                                <a class="nav-link" href="document.html">
                                     <i class="fa fa-book menu-i"></i>
+                                    <p>Document</p>
                                 </a>
-                                <span class="menu-text">Document</span>
                             </li>
                         </div>
                         <div class="menu-line"></div>
@@ -122,8 +124,12 @@
             </div>
         </div>
     </nav>
+
+    <!-- BODY CONTENT -->
     <div class="inner-body">
-        <div class="sidebar" style="height: calc(100% - 10px);">
+
+        <!-- SIDEBAR LEFT MENU -->
+        <div class="sidebar sidebar-height-plant-section">
             <div class="d-flex navbar-btn">
                 <div class="filter-item mr-4">
                     <div class="input-group">
@@ -135,19 +141,6 @@
                         <input type="text" class="form-control form-control-sm" placeholder="search...">
                     </div>
                 </div>
-                <!-- <button type="button" class="btn btn-outline-dark mx-2" style="font-size: 10px;"><i
-                        class="fas fa-sync-alt"></i> Syn With System</button>
-                <div>
-                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark mx-2 p-2"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 10px;">
-                        <i class="fas fa-plus"></i>
-                        New Component
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <a class="dropdown-item" href="#">Option 1</a>
-                        <a class="dropdown-item" href="#">Option 2</a>
-                    </div>
-                </div> -->
             </div>
             <div class="d-flex navbar-btn mt-2">
                 <button class="btn mx-1" data-toggle="collapse" aria-expanded="true" data-toggle="tooltip"
@@ -175,26 +168,28 @@
                 <div class="jstree-custom" id="jstree_demo_div"></div>
             </div>
         </div>
+
+        <!-- MAIN RIGHT CONTENT -->
         <div class="main-content">
             <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
                         <li class="col-4 tab-border">
-                            <a href="#tab01" class="d-flex justify-content-center py-2 tab-hover">
+                            <a href="#tab01" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-info-circle pr-2"></i>
-                                <div class="tab-text">DATA PROPERTY</div>
+                                <div class="tab-text">Data Property</div>
                             </a>
                         </li>
                         <li class="col-4 tab-border">
                             <a href="#tab02" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-image pr-2"></i>
-                                <div class="tab-text">IMAGES</div>
+                                <div class="tab-text">Images</div>
                             </a>
                         </li>
                         <li class="col-4">
                             <a href="#tab03" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-file pr-2"></i>
-                                <div class="tab-text">FILE</div>
+                                <div class="tab-text">File</div>
                             </a>
                         </li>
                     </ul>
@@ -202,15 +197,14 @@
                 <div id="tab01" class="tab-contents">
                     <div class="row">
                         <div class="col-sm-6 mt-3">
-                            <span class="title-content">Plant Section</span>
-                        </div>
-                        <div class="col-sm-6 mt-3">
-                            <nav aria-label="breadcrumb" class="bc">
+                            <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Asset</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Plant Section</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Data Property</li>
                                 </ol>
                             </nav>
+                            <span class="title-content">Plant Section</span>
                         </div>
                         <div class="col-sm-6"></div>
                     </div>
@@ -430,6 +424,9 @@
         });
     </script>
     <script>
+        $(document).ready(function () {
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        });
         function setDisplayNone(id) {
             document.getElementById(id).style.display = "none";
         }
