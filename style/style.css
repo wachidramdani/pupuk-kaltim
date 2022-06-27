@@ -719,6 +719,11 @@ thead tr:nth-child(1) th {
 } */
 
 /* RISK */
+.registered-chart {
+    height: 270px; 
+    padding-top: 0;
+}
+
 .risk-matrix-chart {
     height: 310px;
     padding-top: 0;
