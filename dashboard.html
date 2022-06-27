@@ -405,7 +405,7 @@
                                     <div class="card-header pos-between">
                                         <div class="title-chart-dashboard">Detailed of Selected Category</div>
                                         <div>
-                                            <button data-toggle="collapse" data-target="#panel-card6"
+                                            <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card6"
                                                 aria-expanded="true" aria-controls="panel-card6">
                                                 <i class="fa fa-minus button-top-right"></i>
                                             </button>
@@ -1994,6 +1994,14 @@
 
         <script>
             $(document).ready(function(){
+                $('.btn-collapse').on("click", function(e){
+                    if($(this).hasClass('collapsed')){
+                        $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+                    }else{
+                        $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+                    }
+                });
+                    
                 var json = {
                     result: [
                         { field1: "1", field2: "", field3: "", field4: '', field5: '', field6: ''},
