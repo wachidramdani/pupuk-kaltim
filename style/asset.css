@@ -29,6 +29,10 @@
     height: calc(100% + 10px);
 }
 
+.sidebar-height-equipment {
+    height: calc(100% + 380px);
+}
+
 .btn {
     margin-right: 10px;
     box-sizing: border-box;
@@ -80,6 +84,10 @@
 
 .main-content-height-plant {
     height: calc(100% + 254px);
+}
+
+.main-content-height-equipment {
+    height: calc(100% + 380px);
 }
 
 .sub-main-content{
