@@ -303,13 +303,17 @@
                                                     Target
                                                     ($/yr)</label>
                                                 <div class="col-7">
-                                                    <!-- <input type="text" class="form-control form-control-sm"
-                                                    id="financialriskTarget"> -->
-                                                    <select class="form-control form-control-sm js-example-responsive"
+                                                    <select class="js-example-basic-single form-control form-control-sm" name="state">
+                                                        <option value=""></option>
+                                                        <option value="1">Satu</option>
+                                                        <option value="2">Dua</option>
+                                                        <option value="3">Tiga</option>
+                                                    </select>
+                                                    <!-- <select class="form-control form-control-sm js-example-responsive"
                                                         style="width: 100%" name="states">
                                                         <option value="">-- Silahkan Pilih --</option>
                                                         <option value="WY">Wyoming</option>
-                                                    </select>
+                                                    </select> -->
                                                 </div>
                                             </div>
                                         </form>
@@ -755,6 +759,16 @@
         function openSaPage(param) {
             window.location.href = param;
         }
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2({
+                width: '100%'
+            });
+        });
+
+        // $(".js-example-responsive").select2({
+        //     width: 'resolve' 
+        // });
+
         $(function () {
             var $tabButtonItem = $('#tab-button li'),
                 $tabSelect = $('#tab-select'),
@@ -805,10 +819,6 @@
                 $(".tabpanel").tabs("add", name, "content goes here");
             }
         }
-
-        $(".js-example-responsive").select2({
-            width: 'resolve' // need to override the changed default
-        });
 
     </script>
 
