@@ -43,7 +43,7 @@ body {
 }
 
 .nav-link {
-    margin-bottom: -5px; 
+    margin-bottom: -5px;
     text-align: center
 }
 
@@ -57,33 +57,34 @@ body {
 }
 
 .menu-i {
-    font-size: 30px; 
+    font-size: 30px;
     margin-top: 4px;
     margin-bottom: 8px;
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
 
-.menu-active i, .menu-active p {
+.menu-active i,
+.menu-active p {
     color: #E16333;
 }
 
 .menu-line {
-    width: 0px; 
-    height: 80px; 
+    width: 0px;
+    height: 80px;
     border: 1px #6C757D solid;
 }
 
 .menu-image {
     margin-top: 4px;
-    width:50px; 
-    height:50px;
+    width: 50px;
+    height: 50px;
 }
 
 .menu-avatar {
-    width: 120px; 
-    margin-left: 10px; 
-    color: #6C757D; 
+    width: 120px;
+    margin-left: 10px;
+    color: #6C757D;
     font-weight: 500;
 }
 
@@ -96,19 +97,19 @@ body {
 }
 
 .menu-logo {
-    width:60px; 
-    height:60px; 
+    width: 60px;
+    height: 60px;
 }
 
 .menu-side-right {
-    margin-bottom: -5px; 
+    margin-bottom: -5px;
     text-align: center;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
 .menu-side-right:hover {
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Style the tab */
@@ -464,8 +465,8 @@ body {
 }
 
 .card-header:first-child {
-    border-radius:10px 10px 0 0 !important;
-  }
+    border-radius: 10px 10px 0 0 !important;
+}
 
 .custom-select {
     color: #6C757D;
@@ -486,7 +487,7 @@ select {
 }
 
 .button-top-right {
-    margin-top: 6px; 
+    margin-top: 6px;
     color: #6C757D;
 }
 
@@ -588,7 +589,7 @@ select {
 
 .table-risk {
     height: 600px;
-    overflow-y: scroll;   
+    overflow-y: scroll;
 }
 
 .table-responsive-followupitem {
@@ -651,12 +652,14 @@ thead tr:nth-child(1) th {
     color: #6C757D;
 }
 
-.bg-registered, .bg-offline {
+.bg-registered,
+.bg-offline {
     /* background-color: #CED4DA; */
     background-color: #FFB64D;
 }
 
-.bg-assessed, .bg-validation {
+.bg-assessed,
+.bg-validation {
     background-color: #64b5f6;
 }
 
@@ -722,36 +725,40 @@ thead tr:nth-child(1) th {
 }
 
 .risk-distribution-chart {
-    height: 250px; 
+    height: 250px;
     padding-top: 0;
 }
 
 .complete-assessment-chart {
-    height: 250px; 
+    height: 250px;
     padding-top: 0;
 }
 
 /* INSPECTION */
-.bg-remaining, .bg-overdue-ta {
+.bg-remaining,
+.bg-overdue-ta {
     background-color: #FFB64D;
 }
 
-.bg-inspection, .bg-overdue {
+.bg-inspection,
+.bg-overdue {
     background-color: #64b5f6;
 }
 
 .damage-distribution-chart {
-    height: 265px; 
+    height: 265px;
     padding-top: 0;
 }
 
 /* FOLLOW UP ITEM */
-.bg-around, .bg-latest{
+.bg-around,
+.bg-latest {
     background-color: #FFB64D;
 }
 
-.bg-area, .bg-ta {
-    background-color: #64b5f6;   
+.bg-area,
+.bg-ta {
+    background-color: #64b5f6;
 }
 
 /* MEDIA */
