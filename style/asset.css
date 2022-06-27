@@ -18,7 +18,7 @@
 }
 
 .sidebar-height-asset {
-    height: calc(100% + 100px);
+    height: calc(100% + 184px);
 }
 
 .sidebar-height-plant {
@@ -79,7 +79,7 @@
 }
 
 .main-content-height-asset {
-    height: calc(100% + 100px);
+    height: calc(100% + 184px);
 }
 
 .main-content-height-plant {
