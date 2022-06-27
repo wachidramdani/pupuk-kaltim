@@ -25,6 +25,10 @@
     height: calc(100% + 184px);
 }
 
+.sidebar-height-plant-section {
+    height: calc(100% + 10px);
+}
+
 .btn {
     margin-right: 10px;
     box-sizing: border-box;
