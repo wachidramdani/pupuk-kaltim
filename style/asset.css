@@ -17,8 +17,12 @@
     border-right: 1px solid #cdcdcd;
 }
 
-.sidebar-height {
+.sidebar-height-asset {
     height: calc(100% + 100px);
+}
+
+.sidebar-height-plant {
+    height: calc(100% + 184px);
 }
 
 .btn {
@@ -65,8 +69,12 @@
     padding: 0;
 }
 
-.main-content-height {
+.main-content-height-asset {
     height: calc(100% + 100px);
+}
+
+.main-content-height-plant {
+    height: calc(100% + 184px);
 }
 
 .sub-main-content{
@@ -985,9 +993,8 @@
 }
 
 .col-form-label {
-    font-size: 10px;
+    font-size: 12px;
     color: #6C757D;
-    font-weight: bold;
 }
 
 .col-form-label2 {
