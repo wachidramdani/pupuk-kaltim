@@ -22,7 +22,7 @@
 }
 
 .sidebar-height-plant {
-    height: calc(100% + 184px);
+    height: calc(100% + 254px);
 }
 
 .sidebar-height-plant-section {
@@ -79,7 +79,7 @@
 }
 
 .main-content-height-plant {
-    height: calc(100% + 184px);
+    height: calc(100% + 254px);
 }
 
 .sub-main-content{
@@ -1000,6 +1000,7 @@
 .col-form-label {
     font-size: 12px;
     color: #6C757D;
+    font-weight: bold;
 }
 
 .col-form-label2 {
