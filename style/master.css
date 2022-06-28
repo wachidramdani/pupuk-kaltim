@@ -86,6 +86,10 @@
     border-radius: 10px;
 }
 
+.btn-right-cancel:hover {
+    color: #FFFFFF;
+}
+
 .btn-right-save {
     background-color: #418bca !important;
     border: 0;
@@ -149,8 +153,7 @@
     border-radius: 10px 0 0 10px !important;
     position: absolute;
     right: 219px;
-    height: 30px;
-    top: 16px 
+    height: 31px;
 }
 
 .bg-icon-save {
@@ -159,8 +162,7 @@
     border-radius: 10px 0 0 10px;
     position: absolute;
     right: 99px;
-    height: 30px;
-    top: 16px 
+    height: 31px;
 }
 
 .btn-text {
