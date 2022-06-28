@@ -1,0 +1,202 @@
+.title-content {
+    font-size: 24px;
+    color: rgba(0,0,0,0.7);
+    padding-left: 23px;
+}
+
+
+.breadcrumb {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-left: 0;
+    font-size: 12px;
+}
+
+.breadcrumb-item a {
+    color: #6C757D;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb-position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pos-between-master {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    /* background-color: #E16333; */
+    background-color: #FFFFFF;
+    color: #F8F9FA;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header-master {
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+
+.card-header-master:first-child {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.card .card-header-master button {
+    /* margin-left: 5px; */
+    padding: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    background-color: black;
+    width: 110px;
+    justify-content: center;
+}
+
+.card .card-header-master .btn-left-export {
+    background-color: #015aab;
+}
+
+.card .card-header-master .btn-left-import {
+    background-color: #e16333;
+}
+
+.card .card-header-master .btn-right-add {
+    background-color: #64b5f6;
+}
+
+.card .card-header-master .btn-right-delete {
+    background-color: #585858;
+}
+
+.card .card-header-master .btn-right-edit {
+    background-color: #ffc107;
+}
+
+.btn-right-cancel {
+    background-color: rgba(0,0,0,.5) !important;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-right-cancel:hover {
+    color: #FFFFFF;
+}
+
+.btn-right-save {
+    background-color: #418bca !important;
+    border: 0;
+    color: #FFFFFF !important;
+    border-radius: 10px;
+}
+
+.bg-icon-export {
+    background-color: #004d94;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    left: 16px;
+    height: 30px;
+    top: 16px
+}
+
+.bg-icon-import {
+    background-color: #c8592d;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    left: 136px;
+    height: 30px;
+    top: 16px
+}
+
+.bg-icon-add {
+    background-color: #5ca3dd;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 346px;
+    height: 30px;
+    top: 16px
+}
+
+.bg-icon-delete {
+    background-color: #424141;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 228px;
+    height: 30px;
+    top: 16px
+}
+
+.bg-icon-edit {
+    background-color: #ecb206;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 106px;
+    height: 30px;
+    top: 16px 
+}
+
+.bg-icon-cancel {
+    background-color: rgba(0,0,0,.5);
+    padding: 8px;
+    border-radius: 10px 0 0 10px !important;
+    position: absolute;
+    right: 219px;
+    height: 31px;
+}
+
+.bg-icon-save {
+    background-color: #3874aa;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 99px;
+    height: 31px;
+}
+
+.btn-text {
+    font-size: 14px;
+    padding-left: 29px;
+    margin-right: 7px;
+}
+
+.card .card-header-master button:focus,
+.card .card-header-master button:active {
+    border: none;
+    outline: none;
+}
+
+.form-master {
+    border: none !important; 
+    width: 100% !important;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.btn-save-cancel {
+    border-top: 1px solid #cdcdcd; 
+    padding: 1rem 0 0; 
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.btn-save {
+    margin-left: 10px;
+}
+
+.sidebar {
+    height: calc(100% - 0px) !important;
+}
