@@ -30,7 +30,7 @@
 }
 
 .sidebar-height-equipment {
-    height: calc(100% + 380px);
+    height: calc(100% + 520px);
 }
 
 .btn {
@@ -87,7 +87,7 @@
 }
 
 .main-content-height-equipment {
-    height: calc(100% + 380px);
+    height: calc(100% + 520px);
 }
 
 .sub-main-content{
