@@ -213,13 +213,13 @@
                             <div class="card-header pos-between">
                                 <div class="title-form">Detection, Isolation and Mitigation System</div>
                                 <div>
-                                    <button data-toggle="collapse" data-target="#panel-card1" aria-expanded="true"
-                                        aria-controls="panel-card1">
+                                    <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card1"
+                                        aria-expanded="true" aria-controls="panel-card1">
                                         <i class="fa fa-minus button-top-right"></i>
                                     </button>
-                                    <button onclick="setDisplayNone('card1')">
+                                    <!-- <button onclick="setDisplayNone('card1')">
                                         <i class="fa fa-times button-top-right"></i>
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                             <div id="panel-card1" class="collapse show">
@@ -426,6 +426,13 @@
     <script>
         $(document).ready(function () {
             $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        });
+        $('.btn-collapse').on("click", function (e) {
+            if ($(this).hasClass('collapsed')) {
+                $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+            }
         });
         function setDisplayNone(id) {
             document.getElementById(id).style.display = "none";

@@ -218,13 +218,13 @@
                                 <div class="card-header pos-between">
                                     <div class="title-form">Financial Consequence</div>
                                     <div>
-                                        <button data-toggle="collapse" data-target="#panel-card1" aria-expanded="true"
-                                            aria-controls="panel-card1">
+                                        <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card1"
+                                            aria-expanded="true" aria-controls="panel-card1">
                                             <i class="fa fa-minus button-top-right"></i>
                                         </button>
-                                        <button onclick="setDisplayNone('card1')">
+                                        <!-- <button onclick="setDisplayNone('card1')">
                                             <i class="fa fa-times button-top-right"></i>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div id="panel-card1" class="collapse show">
@@ -285,13 +285,13 @@
                                 <div class="card-header pos-between">
                                     <div class="title-form">Management Setting</div>
                                     <div>
-                                        <button data-toggle="collapse" data-target="#panel-card2" aria-expanded="true"
-                                            aria-controls="panel-card2">
+                                        <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card2"
+                                            aria-expanded="true" aria-controls="panel-card2">
                                             <i class="fa fa-minus button-top-right"></i>
                                         </button>
-                                        <button onclick="setDisplayNone('card2')">
+                                        <!-- <button onclick="setDisplayNone('card2')">
                                             <i class="fa fa-times button-top-right"></i>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div id="panel-card2" class="collapse show">
@@ -318,18 +318,18 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 mt-3" id="card3">
+                        <div class="col-6" id="card3">
                             <div class="card">
                                 <div class="card-header pos-between">
                                     <div class="title-form">Risk Parameter</div>
                                     <div>
-                                        <button data-toggle="collapse" data-target="#panel-card3" aria-expanded="true"
-                                            aria-controls="panel-card3">
+                                        <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card3"
+                                            aria-expanded="true" aria-controls="panel-card3">
                                             <i class="fa fa-minus button-top-right"></i>
                                         </button>
-                                        <button onclick="setDisplayNone('card3')">
+                                        <!-- <button onclick="setDisplayNone('card3')">
                                             <i class="fa fa-times button-top-right"></i>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div id="panel-card3" class="collapse show">
@@ -363,294 +363,301 @@
             </div>
         </div>
     </div>
-        <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="../bootstrap-4.6.1/js/jquery.slim.min.js"></script>
-        <script src="../bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
-        <script type="text/javascript" src="../tabs/ui.tabs.stretchyTabs.js"></script>
-        <script type="text/javascript" src="../tabs/lib/ui.tabs.closable.js"></script>
-        <script type="text/javascript" src="../tabs/lib/ui.tabs.addTab.js"></script>
-        <script type="text/javascript" src="../style/datepicker/bootstrap-datepicker.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
-        <script type="text/javascript">
-            $(function () {
-                $('#jstree_demo_div').jstree({
-                    'core':
-                    {
-                        "themes": {
-                            "icons": false
-                        },
-                        'data': [
-                            {
-                                'text': 'Company',
-                                'state': { 'opened': true },
-                                'children': [
-                                    {
-                                        'text': 'Plant',
-                                        'state': { 'opened': true, 'selected': true },
-                                        'children': [
-                                            {
-                                                'text': 'Plant Section',
-                                                'state': { 'opened': true },
-                                                'children': [
-                                                    {
-                                                        'text': 'System/Area',
-                                                        'state': { 'opened': true },
-                                                        'children': [
-                                                            { 'text': 'Equipment/Piping' },
-                                                            {
-                                                                'text': 'Horizontal Vessel',
-                                                                'children': [
-                                                                    { 'text': 'Shell' },
-                                                                    { 'text': 'Head' }
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'Vertical Vessel',
-                                                                'children': [
-                                                                    { 'text': 'Shell' },
-                                                                    { 'text': 'Top Head' },
-                                                                    { 'text': 'Bottom Head' }
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'Heat Exchanger',
-                                                                'children': [
-                                                                    { 'text': 'Shell' },
-                                                                    { 'text': 'Tube Bundle' },
-                                                                    { 'text': 'Front End Channel' },
-                                                                    { 'text': 'Rear End Channel' },
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'Cooler',
-                                                                'children': [
-                                                                    { 'text': 'Tube Section' },
-                                                                    { 'text': 'Header Box' }
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'Boiler',
-                                                                'children': [
-                                                                    { 'text': 'Tube Section' },
-                                                                    { 'text': 'Head' },
-                                                                    { 'text': 'Shell' }
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'Fired Heater',
-                                                                'children': [
-                                                                    { 'text': 'Heater Box' },
-                                                                    { 'text': 'Tube Section' },
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'Piping',
-                                                                'children': [
-                                                                    { 'text': 'Piping Tag' }
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'Tank',
-                                                                'children': [
-                                                                    { 'text': 'Tank Course' },
-                                                                    { 'text': 'Tank Bottom' },
-                                                                    { 'text': 'Tank Roof' }
-                                                                ]
-                                                            },
-                                                            {
-                                                                'text': 'PSV',
-                                                                'children': [
-                                                                    { 'text': 'PSV' }
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../bootstrap-4.6.1/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script type="text/javascript" src="../tabs/ui.tabs.stretchyTabs.js"></script>
+    <script type="text/javascript" src="../tabs/lib/ui.tabs.closable.js"></script>
+    <script type="text/javascript" src="../tabs/lib/ui.tabs.addTab.js"></script>
+    <script type="text/javascript" src="../style/datepicker/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
+    <script type="text/javascript">
+        $(function () {
+            $('#jstree_demo_div').jstree({
+                'core':
+                {
+                    "themes": {
+                        "icons": false
                     },
-                })
-            });
-
-            $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-                if (data.node.text == 'Company') {
-                    window.open("../asset.html", "_self")
-                }
-                if (data.node.text == 'Equipment/Piping') {
-                    window.open("equipment.html", "_self")
-                }
-                if (data.node.original.text == 'Shell') {
-                    window.open("hv_shell.html", "_self")
-                }
-                if (data.node.original.text == 'Head') {
-                    window.open("hv_head.html", "_self")
-                }
-                if (data.node.original.text == 'Plant Section') {
-                    window.open("plant_section.html", "_self")
-                }
-                if (data.node.original.text == 'System/Area') {
-                    window.open("system_area.html", "_self")
-                }
-            });
-        </script>
-        <script>
-            $(document).ready(function () {
-                $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-            });
-            function logout() {
-                swal({
-                    title: "Are you sure?",
-                    text: "Once logout, you will not be able to acces this aplication!",
-                    icon: "warning",
-                    buttons: true,
-                    dangerMode: true,
-                })
-                    .then((willDelete) => {
-                        if (willDelete) {
-                            window.location.href = "index.html"
+                    'data': [
+                        {
+                            'text': 'Company',
+                            'state': { 'opened': true },
+                            'children': [
+                                {
+                                    'text': 'Plant',
+                                    'state': { 'opened': true, 'selected': true },
+                                    'children': [
+                                        {
+                                            'text': 'Plant Section',
+                                            'state': { 'opened': true },
+                                            'children': [
+                                                {
+                                                    'text': 'System/Area',
+                                                    'state': { 'opened': true },
+                                                    'children': [
+                                                        { 'text': 'Equipment/Piping' },
+                                                        {
+                                                            'text': 'Horizontal Vessel',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Head' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Vertical Vessel',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Top Head' },
+                                                                { 'text': 'Bottom Head' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Heat Exchanger',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Tube Bundle' },
+                                                                { 'text': 'Front End Channel' },
+                                                                { 'text': 'Rear End Channel' },
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Cooler',
+                                                            'children': [
+                                                                { 'text': 'Tube Section' },
+                                                                { 'text': 'Header Box' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Boiler',
+                                                            'children': [
+                                                                { 'text': 'Tube Section' },
+                                                                { 'text': 'Head' },
+                                                                { 'text': 'Shell' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Fired Heater',
+                                                            'children': [
+                                                                { 'text': 'Heater Box' },
+                                                                { 'text': 'Tube Section' },
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Piping',
+                                                            'children': [
+                                                                { 'text': 'Piping Tag' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Tank',
+                                                            'children': [
+                                                                { 'text': 'Tank Course' },
+                                                                { 'text': 'Tank Bottom' },
+                                                                { 'text': 'Tank Roof' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'PSV',
+                                                            'children': [
+                                                                { 'text': 'PSV' }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
-                    });
+                    ]
+                },
+            })
+        });
 
+        $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
+            if (data.node.text == 'Company') {
+                window.open("../asset.html", "_self")
             }
-            function openSaPage(param) {
-                window.location.href = param;
+            if (data.node.text == 'Equipment/Piping') {
+                window.open("equipment.html", "_self")
             }
-            $(function () {
-                var $tabButtonItem = $('#tab-button li'),
-                    $tabSelect = $('#tab-select'),
-                    $tabContents = $('.tab-contents'),
-                    activeClass = 'is-active';
-
-                $tabButtonItem.first().addClass(activeClass);
-                $tabContents.not(':first').hide();
-
-                $tabButtonItem.find('a').on('click', function (e) {
-                    var target = $(this).attr('href');
-
-                    $tabButtonItem.removeClass(activeClass);
-                    $(this).parent().addClass(activeClass);
-                    $tabSelect.val(target);
-                    $tabContents.hide();
-                    $(target).show();
-                    e.preventDefault();
-                });
-
-                $tabSelect.on('change', function () {
-                    var target = $(this).val(),
-                        targetSelectNum = $(this).prop('selectedIndex');
-
-                    $tabButtonItem.removeClass(activeClass);
-                    $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
-                    $tabContents.hide();
-                    $(target).show();
-                });
-            });
-            $(function () {
-                $(".tabpanel").tabs({ closable: true, addTab: true }).tabs('stretchyTabs')
-                    .find(".ui-tabs-nav").sortable({
-                        distance: 10
-                    });
-                // $( ".tabpanel" ).tabs("remove", 0);
-            });
-            function addTab(name) {
-                const navbar = Array.from(document.querySelectorAll('.tabpanel>ul>li'));
-                console.log(navbar, 'navbar');
-                let found = 0
-                for (var i = 0; i < navbar.length; i++) {
-                    if (navbar[i].innerText == name) {
-                        found++
+            if (data.node.original.text == 'Shell') {
+                window.open("hv_shell.html", "_self")
+            }
+            if (data.node.original.text == 'Head') {
+                window.open("hv_head.html", "_self")
+            }
+            if (data.node.original.text == 'Plant Section') {
+                window.open("plant_section.html", "_self")
+            }
+            if (data.node.original.text == 'System/Area') {
+                window.open("system_area.html", "_self")
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        });
+        $('.btn-collapse').on("click", function (e) {
+            if ($(this).hasClass('collapsed')) {
+                $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+            }
+        });
+        function logout() {
+            swal({
+                title: "Are you sure?",
+                text: "Once logout, you will not be able to acces this aplication!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        window.location.href = "index.html"
                     }
-                }
-                if (found == 0) {
-                    $(".tabpanel").tabs("add", name, "content goes here");
+                });
+
+        }
+        function openSaPage(param) {
+            window.location.href = param;
+        }
+        $(function () {
+            var $tabButtonItem = $('#tab-button li'),
+                $tabSelect = $('#tab-select'),
+                $tabContents = $('.tab-contents'),
+                activeClass = 'is-active';
+
+            $tabButtonItem.first().addClass(activeClass);
+            $tabContents.not(':first').hide();
+
+            $tabButtonItem.find('a').on('click', function (e) {
+                var target = $(this).attr('href');
+
+                $tabButtonItem.removeClass(activeClass);
+                $(this).parent().addClass(activeClass);
+                $tabSelect.val(target);
+                $tabContents.hide();
+                $(target).show();
+                e.preventDefault();
+            });
+
+            $tabSelect.on('change', function () {
+                var target = $(this).val(),
+                    targetSelectNum = $(this).prop('selectedIndex');
+
+                $tabButtonItem.removeClass(activeClass);
+                $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+                $tabContents.hide();
+                $(target).show();
+            });
+        });
+        $(function () {
+            $(".tabpanel").tabs({ closable: true, addTab: true }).tabs('stretchyTabs')
+                .find(".ui-tabs-nav").sortable({
+                    distance: 10
+                });
+            // $( ".tabpanel" ).tabs("remove", 0);
+        });
+        function addTab(name) {
+            const navbar = Array.from(document.querySelectorAll('.tabpanel>ul>li'));
+            console.log(navbar, 'navbar');
+            let found = 0
+            for (var i = 0; i < navbar.length; i++) {
+                if (navbar[i].innerText == name) {
+                    found++
                 }
             }
-        </script>
-
-        <script>
-            function setDisplayNone(id) {
-                document.getElementById(id).style.display = "none";
+            if (found == 0) {
+                $(".tabpanel").tabs("add", name, "content goes here");
             }
+        }
+    </script>
 
-            $.fn.extend({
-                treed: function (o) {
+    <script>
+        function setDisplayNone(id) {
+            document.getElementById(id).style.display = "none";
+        }
 
-                    var openedClass = 'glyphicon-minus-sign';
-                    var closedClass = 'glyphicon-plus-sign';
+        $.fn.extend({
+            treed: function (o) {
 
-                    if (typeof o != 'undefined') {
-                        if (typeof o.openedClass != 'undefined') {
-                            openedClass = o.openedClass;
+                var openedClass = 'glyphicon-minus-sign';
+                var closedClass = 'glyphicon-plus-sign';
+
+                if (typeof o != 'undefined') {
+                    if (typeof o.openedClass != 'undefined') {
+                        openedClass = o.openedClass;
+                    }
+                    if (typeof o.closedClass != 'undefined') {
+                        closedClass = o.closedClass;
+                    }
+                };
+
+                //initialize each of the top levels
+                var tree = $(this);
+                tree.addClass("tree");
+                tree.find('li').has("ul").each(function () {
+                    var branch = $(this); //li with children ul
+                    branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+                    branch.addClass('branch');
+                    branch.on('click', function (e) {
+                        if (this == e.target) {
+                            var icon = $(this).children('i:first');
+                            icon.toggleClass(openedClass + " " + closedClass);
+                            $(this).children().children().toggle();
                         }
-                        if (typeof o.closedClass != 'undefined') {
-                            closedClass = o.closedClass;
-                        }
-                    };
+                    })
+                    branch.children().children().toggle();
+                });
+                //fire event from the dynamically added icon
+                tree.find('.branch .indicator').each(function () {
+                    $(this).on('click', function () {
+                        $(this).closest('li').click();
+                    });
+                });
+                //fire event to open branch if the li contains an anchor instead of text
+                tree.find('.branch>a').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
+                    });
+                });
+                //fire event to open branch if the li contains a button instead of text
+                tree.find('.branch>button').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
+                    });
+                });
+            }
+        });
 
-                    //initialize each of the top levels
-                    var tree = $(this);
-                    tree.addClass("tree");
-                    tree.find('li').has("ul").each(function () {
-                        var branch = $(this); //li with children ul
-                        branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
-                        branch.addClass('branch');
-                        branch.on('click', function (e) {
-                            if (this == e.target) {
-                                var icon = $(this).children('i:first');
-                                icon.toggleClass(openedClass + " " + closedClass);
-                                $(this).children().children().toggle();
-                            }
-                        })
-                        branch.children().children().toggle();
-                    });
-                    //fire event from the dynamically added icon
-                    tree.find('.branch .indicator').each(function () {
-                        $(this).on('click', function () {
-                            $(this).closest('li').click();
-                        });
-                    });
-                    //fire event to open branch if the li contains an anchor instead of text
-                    tree.find('.branch>a').each(function () {
-                        $(this).on('click', function (e) {
-                            $(this).closest('li').click();
-                            e.preventDefault();
-                        });
-                    });
-                    //fire event to open branch if the li contains a button instead of text
-                    tree.find('.branch>button').each(function () {
-                        $(this).on('click', function (e) {
-                            $(this).closest('li').click();
-                            e.preventDefault();
-                        });
-                    });
-                }
-            });
+        //Initialization of treeviews
+        $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
 
-            //Initialization of treeviews
-            $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
-
-            // DATEPICKER
-            $('#datepicker').datepicker({
-                format: 'dd-mm-yyyy',
-                autoclose: true
-            });
-            $("#datepickerYear").datepicker({
-                format: "yyyy",
-                viewMode: "years",
-                minViewMode: "years",
-                autoclose: true //to close picker once year is selected
-            });
-        </script>
+        // DATEPICKER
+        $('#datepicker').datepicker({
+            format: 'dd-mm-yyyy',
+            autoclose: true
+        });
+        $("#datepickerYear").datepicker({
+            format: "yyyy",
+            viewMode: "years",
+            minViewMode: "years",
+            autoclose: true //to close picker once year is selected
+        });
+    </script>
 </body>
 
 </html>

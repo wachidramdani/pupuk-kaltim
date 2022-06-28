@@ -218,13 +218,13 @@
                                 <div class="card-header pos-between">
                                     <div class="title-form">Risk Parameter</div>
                                     <div>
-                                        <button data-toggle="collapse" data-target="#panel-card5" aria-expanded="true"
-                                            aria-controls="panel-card5">
+                                        <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card5"
+                                            aria-expanded="true" aria-controls="panel-card5">
                                             <i class="fa fa-minus button-top-right"></i>
                                         </button>
-                                        <button onclick="setDisplayNone('card5')">
+                                        <!-- <button onclick="setDisplayNone('card5')">
                                             <i class="fa fa-times button-top-right"></i>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div id="panel-card5" class="collapse show">
@@ -303,7 +303,8 @@
                                                     Target
                                                     ($/yr)</label>
                                                 <div class="col-7">
-                                                    <select class="js-example-basic-single form-control form-control-sm" name="state">
+                                                    <select class="js-example-basic-single form-control form-control-sm"
+                                                        name="state">
                                                         <option value=""></option>
                                                         <option value="1">Satu</option>
                                                         <option value="2">Dua</option>
@@ -759,6 +760,13 @@
         function openSaPage(param) {
             window.location.href = param;
         }
+        $('.btn-collapse').on("click", function (e) {
+            if ($(this).hasClass('collapsed')) {
+                $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+            }
+        });
         $(document).ready(function () {
             $('.js-example-basic-single').select2({
                 width: '100%'
