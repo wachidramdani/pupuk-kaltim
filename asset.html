@@ -24,6 +24,8 @@
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+
 
     <title>Pupuk - Kaltim</title>
 </head>
@@ -36,7 +38,7 @@
             <ul class="navbar-nav mr-auto">
                 <div class="container">
                     <div class="row">
-                        <div class="col mx-2 mt-1">
+                        <div class="col mt-1">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="dashboard.html">
                                     <i class="fa fa-home menu-i"></i>
@@ -44,15 +46,15 @@
                                 </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
+                        <div class="col mt-1">
                             <li class="nav-item text-center">
                                 <a class="nav-link menu-active" href="asset.html">
-                                    <i class="fa fa-file-invoice-dollar menu-i"></i>
+                                    <i class="fa fa-folder menu-i"></i>
                                     <p>Asset</p>
                                 </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
+                        <div class="col mt-1">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="./master/master_cf.html">
                                     <i class="fa fa-database menu-i"></i>
@@ -60,7 +62,7 @@
                                 </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
+                        <div class="col mt-1">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="setting.html">
                                     <i class="fa fa-cog menu-i"></i>
@@ -68,7 +70,7 @@
                                 </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
+                        <div class="col mt-1">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="laporan.html">
                                     <i class="fa fa-print menu-i"></i>
@@ -76,7 +78,7 @@
                                 </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
+                        <div class="col mt-1">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="inspection.html">
                                     <i class="fa fa-clipboard-check menu-i"></i>
@@ -84,19 +86,19 @@
                                 </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
+                        <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="document.html">
+                                <a class="nav-link" href="../document.html">
                                     <i class="fa fa-book menu-i"></i>
                                     <p>Document</p>
                                 </a>
                             </li>
                         </div>
                         <div class="menu-line"></div>
-                        <div class="col ">
+                        <div class="col">
                             <div class="d-flex">
                                 <div class="ml-3 mt-2">
-                                    <img src="style/images/user.png" alt="image" class="menu-image">
+                                    <img src="./style/images/user.png" alt="image" class="menu-image">
                                 </div>
                                 <div class="menu-avatar mt-3">
                                     <span class="menu-avatar-name">John Kennedy</span>
@@ -302,18 +304,11 @@
                                                     Target
                                                     ($/yr)</label>
                                                 <div class="col-7">
-                                                    <select class="js-example-basic-single form-control form-control-sm"
-                                                        name="state">
+                                                    <select class="js-example-basic-single" name="state" required>
                                                         <option value=""></option>
-                                                        <option value="1">Satu</option>
-                                                        <option value="2">Dua</option>
-                                                        <option value="3">Tiga</option>
-                                                    </select>
-                                                    <!-- <select class="form-control form-control-sm js-example-responsive"
-                                                        style="width: 100%" name="states">
-                                                        <option value="">-- Silahkan Pilih --</option>
+                                                        <option value="AL">Alabama</option>
                                                         <option value="WY">Wyoming</option>
-                                                    </select> -->
+                                                    </select>
                                                 </div>
                                             </div>
                                         </form>
@@ -348,6 +343,16 @@
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
     <script type="text/javascript">
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2({
+                placeholder: 'Select an option',
+                allowClear: true
+            });
+            $('.select2-selection__rendered').hover(function () {
+                $(this).removeAttr('title');
+            });
+            // $('.js-example-basic-single').unbind('mouseenter mouseleave')({});
+        });
         function logout() {
             swal({
                 title: "Are you sure?",
@@ -765,11 +770,6 @@
             } else {
                 $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
             }
-        });
-        $(document).ready(function () {
-            $('.js-example-basic-single').select2({
-                width: '100%'
-            });
         });
 
         // $(".js-example-responsive").select2({
