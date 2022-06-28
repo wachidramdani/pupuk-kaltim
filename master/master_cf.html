@@ -116,8 +116,7 @@
                 <div style="width: 0px; height: 80px; border: 1px #6C757D solid;">
                 </div>
                 <div class="col mt-3">
-                    <a class="nav-link" href="#" style="color: rgba(0, 0, 0, 0.5);"> <i
-                            class="fa fa-search   "
+                    <a class="nav-link" href="#" style="color: rgba(0, 0, 0, 0.5);"> <i class="fa fa-search   "
                             style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
                 </div>
                 <div style="width: 0px; height: 80px; border: 1px #6C757D solid;">
@@ -323,7 +322,7 @@
                         <div class="form-group form-select row">
                             <label for="datepicker" class="col-5 col-form-label">Example Select</label>
                             <div class="col-7">
-                                <select class="js-example-basic-single" name="state" required>
+                                <select class="js-example-basic-single" name="state" title="" required>
                                     <option value=""></option>
                                     <option value="AL">Alabama</option>
                                     <option value="WY">Wyoming</option>
@@ -378,11 +377,14 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.js-example-basic-single').select2({
                 dropdownParent: $('#AddModal'),
                 placeholder: 'Select an option',
                 allowClear: true
+            });
+            $('.select2-selection__rendered').hover(function () {
+                $(this).removeAttr('title');
             });
         });
         function logout() {

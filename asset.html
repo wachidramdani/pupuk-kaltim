@@ -349,6 +349,10 @@
                 placeholder: 'Select an option',
                 allowClear: true
             });
+            $('.select2-selection__rendered').hover(function () {
+                $(this).removeAttr('title');
+            });
+            // $('.js-example-basic-single').unbind('mouseenter mouseleave')({});
         });
         function logout() {
             swal({
