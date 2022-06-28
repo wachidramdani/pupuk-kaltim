@@ -195,35 +195,36 @@
                     </ul>
                 </div>
                 <div id="tab01" class="tab-contents">
-                    <div class="row">
-                        <div class="col-sm-6 mt-3">
-                            <nav aria-label="breadcrumb">
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <span class="title-content">System/Area</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav aria-label="breadcrumb" class="bc">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Asset</a></li>
-                                    <li class="breadcrumb-item"><a href="#">System/Area</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">System(Area)</li>
                                     <li class="breadcrumb-item active" aria-current="page">Data Property</li>
                                 </ol>
                             </nav>
-                            <span class="title-content">System/Area</span>
                         </div>
-                        <div class="col-sm-6"></div>
                     </div>
                     <div class="col-6 mt-3 pl-0" id="card1">
                         <div class="card">
                             <div class="card-header pos-between">
                                 <div class="title-form">Detection, Isolation and Mitigation System</div>
                                 <div>
-                                    <button data-toggle="collapse" data-target="#panel-card1" aria-expanded="true"
-                                        aria-controls="panel-card1">
+                                    <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card1"
+                                        aria-expanded="true" aria-controls="panel-card1">
                                         <i class="fa fa-minus button-top-right"></i>
                                     </button>
-                                    <button onclick="setDisplayNone('card1')">
+                                    <!-- <button onclick="setDisplayNone('card1')">
                                         <i class="fa fa-times button-top-right"></i>
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                             <div id="panel-card1" class="collapse show">
-                                <div class="card-body" style="padding-top: 0;">
+                                <div class="card-body">
                                     <form class="mt-3">
                                         <div class="form-group row">
                                             <label for="lv4" class="col-5 col-form-label">Type of Mitigation
@@ -552,6 +553,13 @@
             viewMode: "years",
             minViewMode: "years",
             autoclose: true //to close picker once year is selected
+        });
+        $('.btn-collapse').on("click", function (e) {
+            if ($(this).hasClass('collapsed')) {
+                $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+            }
         });
     </script>
 </body>

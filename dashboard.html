@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="bootstrap-4.6.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/fontawesome-free-5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="style/style.css">
-
-    <link rel="stylesheet" href="./dataTable/">
-
+    <link rel="stylesheet" href="./dataTable/dataTables.bootstrap4.min.css">
 
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"> -->
 
@@ -39,7 +37,7 @@
                     <div class="row">
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-active" href="dashboard.html"> 
+                                <a class="nav-link menu-active" href="dashboard.html">
                                     <i class="fa fa-home menu-i"></i>
                                     <p>Home</p>
                                 </a>
@@ -55,7 +53,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="./master/master_cf.html"> 
+                                <a class="nav-link" href="./master/master_cf.html">
                                     <i class="fa fa-database menu-i"></i>
                                     <p>Master</p>
                                 </a>
@@ -63,7 +61,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="setting.html"> 
+                                <a class="nav-link" href="setting.html">
                                     <i class="fa fa-cog menu-i"></i>
                                     <p>Setting</p>
                                 </a>
@@ -71,7 +69,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="laporan.html"> 
+                                <a class="nav-link" href="laporan.html">
                                     <i class="fa fa-print menu-i"></i>
                                     <p>Laporan</p>
                                 </a>
@@ -79,7 +77,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="inspection.html"> 
+                                <a class="nav-link" href="inspection.html">
                                     <i class="fa fa-clipboard-check menu-i"></i>
                                     <p>Inspection</p>
                                 </a>
@@ -87,7 +85,7 @@
                         </div>
                         <div class="col mx-2 mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="document.html"> 
+                                <a class="nav-link" href="document.html">
                                     <i class="fa fa-book menu-i"></i>
                                     <p>Document</p>
                                 </a>
@@ -113,15 +111,16 @@
                 <div class="col mt-3">
                     <img src="style/images/logo-text-v2.png" alt="image" class="menu-logo"">
                 </div>
-                <div class="menu-line"></div>
+                <div class=" menu-line">
+                </div>
                 <div class="col mt-3">
-                    <a class="nav-link menu-side-right" href="#"> 
+                    <a class="nav-link menu-side-right" href="#">
                         <i class="fa fa-search menu-i"></i>
                     </a>
                 </div>
                 <div class="menu-line"></div>
                 <div class="col mt-3">
-                    <a class="nav-link first menu-side-right" onclick="logout()"> 
+                    <a class="nav-link first menu-side-right" onclick="logout()">
                         <i class="fa fa-power-off menu-i"></i>
                     </a>
                 </div>
@@ -175,8 +174,7 @@
                                 <div class="col-4 tab-img-inspection">
                                     <i class="fas fa-tasks"></i>
                                 </div>
-                                <div
-                                    class="col-8 d-flex justify-content-start align-self-center tab-text-inspection">
+                                <div class="col-8 d-flex justify-content-start align-self-center tab-text-inspection">
                                     INSPECTION
                                 </div>
                                 <b class="notch-inspection"></b>
@@ -289,8 +287,7 @@
                                         <div class="card wrimagecard bg-registered">
                                             <div id="panel-card3" class="collapse show">
                                                 <div class="row">
-                                                    <div
-                                                        class="col-8 d-flex align-self-center asset-card-registered">
+                                                    <div class="col-8 d-flex align-self-center asset-card-registered">
                                                         <div>
                                                             <div class="label-number pl-3">555</div>
                                                             <div class="labelmt-number pl-3">Total Registered
@@ -334,8 +331,7 @@
                                         <div class="card wrimagecard bg-validation">
                                             <div id="panel-card2" class="collapse show">
                                                 <div class="row">
-                                                    <div
-                                                        class="col-8 d-flex align-self-center asset-card-validation">
+                                                    <div class="col-8 d-flex align-self-center asset-card-validation">
                                                         <div>
                                                             <div class="label-number pl-3">555</div>
                                                             <div class="labelmt-number pl-3">Total Required
@@ -380,8 +376,9 @@
                                             <div class="card-header pos-between">
                                                 <div class="title-chart-dashboard">Registered Asset Type</div>
                                                 <div>
-                                                    <button data-toggle="collapse" data-target="#panel-card5"
-                                                        aria-expanded="true" aria-controls="panel-card5">
+                                                    <button class="btn-collapse" data-toggle="collapse"
+                                                        data-target="#panel-card5" aria-expanded="true"
+                                                        aria-controls="panel-card5">
                                                         <i class="fa fa-minus button-top-right"></i>
                                                     </button>
                                                     <button data-toggle="modal" data-target="#staticBackdrop">
@@ -407,8 +404,9 @@
                                     <div class="card-header pos-between">
                                         <div class="title-chart-dashboard">Detailed of Selected Category</div>
                                         <div>
-                                            <button data-toggle="collapse" data-target="#panel-card6"
-                                                aria-expanded="true" aria-controls="panel-card6">
+                                            <button class="btn-collapse" data-toggle="collapse"
+                                                data-target="#panel-card6" aria-expanded="true"
+                                                aria-controls="panel-card6">
                                                 <i class="fa fa-minus button-top-right"></i>
                                             </button>
                                             <button data-toggle="modal" data-target="#staticBackdrop">
@@ -423,7 +421,9 @@
                                     <div id="panel-card6" class="collapse show">
                                         <div class="card-body">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered table-striped">
+                                                <!-- <table class="table table-bordered table-striped"> -->
+                                                <table id="tabel-data" class="table table-striped table-bordered"
+                                                    width="100%" cellspacing="0">
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">No</th>
@@ -434,176 +434,6 @@
                                                             <th scope="col">Detail</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
                                                 </table>
                                             </div>
                                         </div>
@@ -1124,657 +954,512 @@
                                         <div class="card wrimagecard bg-remaining">
                                             <div id="panel-card3" class="collapse show">
                                                 <div class="row">
-                                                    <div class="col-8 d-flex align-self-center inspection-card-remaining">
+                                                    <div
+                                                        class="col-8 d-flex align-self-center inspection-card-remaining">
                                                         <div>
                                                             <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Remaining Life < 6 Months ? </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-inspection-1-v2.svg" class="wrimagecard-icon-remaining"/>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6" id="card2">
-                                        <!-- <div class="card wrimagecard" style="background-color:#5299D0"> -->
-                                        <div class="card wrimagecard bg-inspection">
-                                            <div id="panel-card3" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center inspection-card-activity">
-                                                        <div>
-                                                            <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Inspection Activity This Year </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-inspection-2-v2.svg" class="wrimagecard-icon-activity" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6" id="card3">
-                                        <!-- <div class="card wrimagecard" style="background-color:#74BA77"> -->
-                                        <div class="card wrimagecard bg-overdue">
-                                            <div id="panel-card2" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center inspection-card-overdue">
-                                                        <div>
-                                                            <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Overdue Inspection</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-inspection-3-v2.svg" class="wrimagecard-icon-overdue" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6" id="card4">
-                                        <!-- <div class="card wrimagecard" style="background-color:#C96161"> -->
-                                        <div class="card wrimagecard bg-overdue-ta">
-                                            <div id="panel-card4" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center inspection-card-ta">
-                                                        <div>
-                                                            <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Overdue Certification TA</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-inspection-4-v2.svg" class="wrimagecard-icon-ta" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" id="card11">
-                                        <div class="card">
-                                            <div class="card-header pos-between">
-                                                <div class="title-chart-dashboard">Damage Distributiion</div>
-                                                <div>
-                                                    <button data-toggle="collapse" data-target="#panel-card11"
-                                                        aria-expanded="true" aria-controls="panel-card11">
-                                                        <i class="fa fa-minus button-top-right"></i>
-                                                    </button>
-                                                    <button data-toggle="modal" data-target="#staticBackdrop">
-                                                        <i class="fa fa-filter button-top-right"></i>
-                                                    </button>
-                                                    <button onclick="setDisplayNone('card11')">
-                                                        <i class="fa fa-times button-top-right"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="panel-card11" class="collapse show">
-                                                <div class="card-body damage-distribution-chart">
-                                                    <div id="chart-damage-distribution"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- INSPECTION RIGHT CONTENT -->
-                            <div class="col-6" id="card12">
-                                <div class="card">
-                                    <div class="card-header pos-between">
-                                        <div class="title-chart-dashboard">Detailed of Selected Category</div>
-                                        <div>
-                                            <button data-toggle="collapse" data-target="#panel-card12"
-                                                aria-expanded="true" aria-controls="panel-card12">
-                                                <i class="fa fa-minus button-top-right"></i>
-                                            </button>
-                                            <button data-toggle="modal" data-target="#staticBackdrop">
-                                                <i class="fa fa-filter button-top-right"></i>
-                                            </button>
-                                            <button onclick="setDisplayNone('card12')">
-                                                <i class="fa fa-times button-top-right"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div id="panel-card12" class="collapse show">
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">No</th>
-                                                            <th scope="col">Plan</th>
-                                                            <th scope="col">Section</th>
-                                                            <th scope="col">System</th>
-                                                            <th scope="col">Equipment</th>
-                                                            <th scope="col">Detail</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FOLLOW UP ITEM -->
-                    <div id="tab4" class="tabcontent">
-                        <!-- FOLLOW UP ITEM FILTER -->
-                        <div class="filter">
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Plant Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Plant Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Setion Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Section Filter -->
-                            </div>
-                            <div class="filter-item mr-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Area Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Area Filter -->
-                            </div>
-                            <div class="filter-item">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">
-                                            <i class="fa fa-filter"></i>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Equipment Filter</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <!-- <i class="fa fa-filter"></i> Equipment Filter -->
-                            </div>
-                        </div>
-                        <div class="row">
-                            <!-- FOLLOW UP ITEM LEFT CONTENT -->
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-12" id="card1">
-                                        <!-- <div class="card wrimagecard" style="background-color:#4DB6AC"> -->
-                                        <div class="card wrimagecard bg-around">
-                                            <div id="panel-card1" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center followupitem-card-arround">
-                                                        <div>
-                                                            <div class="label pl-3">5 December 2025</div>
-                                                            <div class="labelmt pl-3">Next Turn Arround</div>
-                                                        </div>    
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-followup-around-v2.svg" class="wrimagecard-icon-arround" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" id="card2">
-                                        <!-- <div class="card wrimagecard" style="background-color:#A1887F"> -->
-                                        <div class="card wrimagecard bg-area">
-                                            <div id="panel-card2" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center followupitem-card-area">
-                                                        <div>
-                                                            <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Next Turn Arround Area
+                                                            <div class="labelmt-number pl-3">Remaining Life < 6 Months ?
+                                                                    </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-followup-area-v2.svg" class="wrimagecard-icon-area" />
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-inspection-1-v2.svg"
+                                                                class="wrimagecard-icon-remaining" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12" id="card3">
-                                        <!-- <div class="card wrimagecard" style="background-color:#F3B04B"> -->
-                                        <div class="card wrimagecard bg-latest">
-                                            <div id="panel-card3" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center followupitem-card-history">
-                                                        <div>
-                                                            <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Latest Inspection History 1 Year</div>
+                                        <div class="col-6" id="card2">
+                                            <!-- <div class="card wrimagecard" style="background-color:#5299D0"> -->
+                                            <div class="card wrimagecard bg-inspection">
+                                                <div id="panel-card3" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center inspection-card-activity">
+                                                            <div>
+                                                                <div class="label-number pl-3">5</div>
+                                                                <div class="labelmt-number pl-3">Inspection Activity
+                                                                    This Year </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-followup-latest-v2.svg" class="wrimagecard-icon-history" />
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-inspection-2-v2.svg"
+                                                                class="wrimagecard-icon-activity" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12" id="card4">
-                                        <!-- <div class="card wrimagecard" style="background-color:#74BA77"> -->
-                                        <div class="card wrimagecard bg-ta">
-                                            <div id="panel-card4" class="collapse show">
-                                                <div class="row">
-                                                    <div class="col-8 d-flex align-self-center followupitem-card-next-ta">
-                                                        <div>
-                                                            <div class="label-number pl-3">5</div>
-                                                            <div class="labelmt-number pl-3">Follow up Item For Next TA</div>
+                                        <div class="col-6" id="card3">
+                                            <!-- <div class="card wrimagecard" style="background-color:#74BA77"> -->
+                                            <div class="card wrimagecard bg-overdue">
+                                                <div id="panel-card2" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center inspection-card-overdue">
+                                                            <div>
+                                                                <div class="label-number pl-3">5</div>
+                                                                <div class="labelmt-number pl-3">Overdue Inspection
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-inspection-3-v2.svg"
+                                                                class="wrimagecard-icon-overdue" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-4 d-flex align-self-center position-absolute">
-                                                        <img src="style/images/icon/dashboard-followup-ta-v2.svg" class="wrimagecard-icon-next-ta" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6" id="card4">
+                                            <!-- <div class="card wrimagecard" style="background-color:#C96161"> -->
+                                            <div class="card wrimagecard bg-overdue-ta">
+                                                <div id="panel-card4" class="collapse show">
+                                                    <div class="row">
+                                                        <div class="col-8 d-flex align-self-center inspection-card-ta">
+                                                            <div>
+                                                                <div class="label-number pl-3">5</div>
+                                                                <div class="labelmt-number pl-3">Overdue Certification
+                                                                    TA</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-inspection-4-v2.svg"
+                                                                class="wrimagecard-icon-ta" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" id="card11">
+                                            <div class="card">
+                                                <div class="card-header pos-between">
+                                                    <div class="title-chart-dashboard">Damage Distributiion</div>
+                                                    <div>
+                                                        <button data-toggle="collapse" data-target="#panel-card11"
+                                                            aria-expanded="true" aria-controls="panel-card11">
+                                                            <i class="fa fa-minus button-top-right"></i>
+                                                        </button>
+                                                        <button data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fa fa-filter button-top-right"></i>
+                                                        </button>
+                                                        <button onclick="setDisplayNone('card11')">
+                                                            <i class="fa fa-times button-top-right"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div id="panel-card11" class="collapse show">
+                                                    <div class="card-body damage-distribution-chart">
+                                                        <div id="chart-damage-distribution"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- FOLLOW UP ITEM RIGHT CONTENT -->
-                            <div class="col-9" id="card13">
-                                <div class="card">
-                                    <div class="card-header pos-between">
-                                        <div class="title-chart-dashboard">Detailed of Selected Category</div>
-                                        <div>
-                                            <button data-toggle="collapse" data-target="#panel-card13"
-                                                aria-expanded="true" aria-controls="panel-card13">
-                                                <i class="fa fa-minus button-top-right"></i>
-                                            </button>
-                                            <button data-toggle="modal" data-target="#staticBackdrop">
-                                                <i class="fa fa-filter button-top-right"></i>
-                                            </button>
-                                            <button onclick="setDisplayNone('card13')">
-                                                <i class="fa fa-times button-top-right"></i>
-                                            </button>
+                                <!-- INSPECTION RIGHT CONTENT -->
+                                <div class="col-6" id="card12">
+                                    <div class="card">
+                                        <div class="card-header pos-between">
+                                            <div class="title-chart-dashboard">Detailed of Selected Category</div>
+                                            <div>
+                                                <button data-toggle="collapse" data-target="#panel-card12"
+                                                    aria-expanded="true" aria-controls="panel-card12">
+                                                    <i class="fa fa-minus button-top-right"></i>
+                                                </button>
+                                                <button data-toggle="modal" data-target="#staticBackdrop">
+                                                    <i class="fa fa-filter button-top-right"></i>
+                                                </button>
+                                                <button onclick="setDisplayNone('card12')">
+                                                    <i class="fa fa-times button-top-right"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="panel-card13" class="collapse show">
-                                        <div class="card-body">
-                                            <div class="table-responsive-followupitem">
-                                                <table class="table table-bordered table-striped">                                                            <!-- <table class="table table-bordered table-striped"> -->
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">No</th>
-                                                            <th scope="col">Plan</th>
-                                                            <th scope="col">Section</th>
-                                                            <th scope="col">System</th>
-                                                            <th scope="col">Equipment</th>
-                                                            <th scope="col">Detail</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                        <div id="panel-card12" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <!-- <table class="table table-bordered table-striped"> -->
+                                                    <table id="tabel-data-inspection"
+                                                        class="table table-striped table-bordered" width="100%"
+                                                        cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">No</th>
+                                                                <th scope="col">Plan</th>
+                                                                <th scope="col">Section</th>
+                                                                <th scope="col">System</th>
+                                                                <th scope="col">Equipment</th>
+                                                                <th scope="col">Detail</th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- FOLLOW UP ITEM -->
+                        <div id="tab4" class="tabcontent">
+                            <!-- FOLLOW UP ITEM FILTER -->
+                            <div class="filter">
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Plant Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Plant Filter -->
+                                </div>
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Setion Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Section Filter -->
+                                </div>
+                                <div class="filter-item mr-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Area Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Area Filter -->
+                                </div>
+                                <div class="filter-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa fa-filter"></i>
+                                            </label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Equipment Filter</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- <i class="fa fa-filter"></i> Equipment Filter -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- FOLLOW UP ITEM LEFT CONTENT -->
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-12" id="card1">
+                                            <!-- <div class="card wrimagecard" style="background-color:#4DB6AC"> -->
+                                            <div class="card wrimagecard bg-around">
+                                                <div id="panel-card1" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center followupitem-card-arround">
+                                                            <div>
+                                                                <div class="label pl-3">5 December 2025</div>
+                                                                <div class="labelmt pl-3">Next Turn Arround</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-followup-around-v2.svg"
+                                                                class="wrimagecard-icon-arround" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" id="card2">
+                                            <!-- <div class="card wrimagecard" style="background-color:#A1887F"> -->
+                                            <div class="card wrimagecard bg-area">
+                                                <div id="panel-card2" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center followupitem-card-area">
+                                                            <div>
+                                                                <div class="label-number pl-3">5</div>
+                                                                <div class="labelmt-number pl-3">Next Turn Arround Area
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-followup-area-v2.svg"
+                                                                class="wrimagecard-icon-area" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" id="card3">
+                                            <!-- <div class="card wrimagecard" style="background-color:#F3B04B"> -->
+                                            <div class="card wrimagecard bg-latest">
+                                                <div id="panel-card3" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center followupitem-card-history">
+                                                            <div>
+                                                                <div class="label-number pl-3">5</div>
+                                                                <div class="labelmt-number pl-3">Latest Inspection
+                                                                    History 1 Year</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-followup-latest-v2.svg"
+                                                                class="wrimagecard-icon-history" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" id="card4">
+                                            <!-- <div class="card wrimagecard" style="background-color:#74BA77"> -->
+                                            <div class="card wrimagecard bg-ta">
+                                                <div id="panel-card4" class="collapse show">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-8 d-flex align-self-center followupitem-card-next-ta">
+                                                            <div>
+                                                                <div class="label-number pl-3">5</div>
+                                                                <div class="labelmt-number pl-3">Follow up Item For Next
+                                                                    TA</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-self-center position-absolute">
+                                                            <img src="style/images/icon/dashboard-followup-ta-v2.svg"
+                                                                class="wrimagecard-icon-next-ta" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FOLLOW UP ITEM RIGHT CONTENT -->
+                                <div class="col-9" id="card13">
+                                    <div class="card">
+                                        <div class="card-header pos-between">
+                                            <div class="title-chart-dashboard">Detailed of Selected Category</div>
+                                            <div>
+                                                <button data-toggle="collapse" data-target="#panel-card13"
+                                                    aria-expanded="true" aria-controls="panel-card13">
+                                                    <i class="fa fa-minus button-top-right"></i>
+                                                </button>
+                                                <button data-toggle="modal" data-target="#staticBackdrop">
+                                                    <i class="fa fa-filter button-top-right"></i>
+                                                </button>
+                                                <button onclick="setDisplayNone('card13')">
+                                                    <i class="fa fa-times button-top-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="panel-card13" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="table-responsive-followupitem">
+                                                    <table class="table table-bordered table-striped">
+                                                        <!-- <table class="table table-bordered table-striped"> -->
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">No</th>
+                                                                <th scope="col">Plan</th>
+                                                                <th scope="col">Section</th>
+                                                                <th scope="col">System</th>
+                                                                <th scope="col">Equipment</th>
+                                                                <th scope="col">Detail</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>11</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>15</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>16</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>17</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>18</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
@@ -2304,7 +1989,7 @@
                                     "maxvalue": "100",
                                     "code": "#64B5F6"
                                 }
-                        ]
+                            ]
                         }, "dials": {
                             "dial": [
                                 {
@@ -2326,10 +2011,77 @@
             crossorigin="anonymous"></script>
         <!-- <script type="text/javascript" charset="utf8"
             src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script> -->
-            <script type="text/javascript" charset="utf8"
-            src="./dataTable/jquery-3.5.1.min.js"></script>
-            <script type="text/javascript" charset="utf8"
-            src="./dataTable/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="./dataTable/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="./dataTable/jquery.dataTables.min.js"></script>
+        <!-- <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script> -->
+
+
+        <script>
+            $(document).ready(function () {
+                $('.btn-collapse').on("click", function (e) {
+                    if ($(this).hasClass('collapsed')) {
+                        $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+                    } else {
+                        $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+                    }
+                });
+
+                var json = {
+                    result: [
+                        { field1: "1", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "2", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "3", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "4", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "5", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "6", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "7", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "8", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "9", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "10", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "11", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "12", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "13", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "14", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                        { field1: "15", field2: "", field3: "", field4: '', field5: '', field6: '' },
+                    ]
+                };
+
+                $('#tabel-data').DataTable({
+                    "dom": '<"top"f>rt<"bottom"lp><"clear">',
+                    // fixedHeader: {
+                    //     header: true,
+                    //     footer: true
+                    // },
+                    data: json.result,
+                    columns: [
+                        { data: "field1", className: "text-center" },
+                        { data: "field2" },
+                        { data: "field3" },
+                        { data: "field4" },
+                        { data: "field5" },
+                        { data: "field6" },
+                    ]
+                });
+
+                $('#tabel-data-inspection').DataTable({
+                    "dom": '<"top"f>rt<"bottom"lp><"clear">',
+                    // fixedHeader: {
+                    //     header: true,
+                    //     footer: true
+                    // },
+                    data: json.result,
+                    columns: [
+                        { data: "field1", className: "text-center" },
+                        { data: "field2" },
+                        { data: "field3" },
+                        { data: "field4" },
+                        { data: "field5" },
+                        { data: "field6" },
+                    ]
+                });
+            });
+        </script>
 </body>
 
 </html>

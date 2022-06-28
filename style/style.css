@@ -581,35 +581,114 @@ select {
     text-decoration: none;
 }
 
-/* Table */
-.table-responsive {
-    height: 517px;
-    overflow-y: scroll;
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    font-weight: 400;
+    min-width: 400px;
 }
 
-.table-risk {
-    height: 600px;
-    overflow-y: scroll;
-}
-
-.table-responsive-followupitem {
-    height: 455px;
-    overflow-y: scroll;
-}
-
-.checkBoxTbl {
-    margin-left: 20px
-}
-
-thead tr:nth-child(1) th {
-    /* background: white; */
-    /* background: #484640; */
-    color: #6C757D;
-    /* position: sticky; */
-    top: 0;
-    z-index: 10;
-    font-size: 12px;
+table thead th, table tfoot th {
+    font-weight: normal !important;
     text-align: center;
+}
+
+.dataTables_wrapper {
+    width: calc(100% - 10px);
+    font-size: 0.876rem !important;
+}
+
+.dataTables_wrapper .dataTables_filter input{
+    -webkit-appearance: textfield !important;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus{
+    outline:none !important
+}
+
+.dataTables_wrapper .dataTables_length {
+    margin-top: 9px;
+    font-size: 12px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 50% !important;
+    font-size: 12px !important;
+}
+
+table thead {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #64b5f6;
+    color: #fff;
+    z-index: 11;
+}
+
+
+table tr {
+    background-color: white;
+}
+
+table tr:nth-child(odd):hover,
+table tr:nth-child(even):hover {
+    background: #F8FFF5;
+}
+
+table tr:nth-child(odd) {
+    background: #FFB64D10 !important;
+}
+
+table tr:nth-child(even) {
+    background: #fff;
+}
+
+table td:first-child {
+    position: sticky;
+    left: 0;
+    /* box-shadow: -4px 14px 16px #3e3e3e50; */
+    border-right: 1px solid #b4b4b4;
+    border-left: 0;
+    background: inherit;
+}
+
+table th:first-child {
+    position: sticky;
+    left: 0;
+    box-shadow: -4px 3px 16px #3e3e3e50;
+}
+
+table tbody {
+    width: 100%;
+    background-color: inherit;
+}
+
+table td {
+    border-right: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+table td,
+table th {
+    /* padding: 10px; */
+    width: 1px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+table td:first-child,
+table th:first-child {
+    padding: 10px;
+    width: 1px;
+    max-width: 1000px;
+    text-align: left;
+    border-right: 1px solid #b4b4b4;
+    z-index: 10;
+}
+
+table th:first-child {
+    z-index: 11;
 }
 
 
@@ -720,7 +799,7 @@ thead tr:nth-child(1) th {
 
 /* RISK */
 .registered-chart {
-    height: 270px; 
+    height: 270px;
     padding-top: 0;
 }
 

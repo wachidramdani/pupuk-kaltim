@@ -198,19 +198,19 @@
                     </ul>
                 </div>
                 <div id="tab01" class="tab-contents">
-                    <div class="row">
-                        <div class="col-sm-6 mt-3">
-                            <!-- <nav aria-label="breadcrumb" class="bc"> -->
-                            <nav aria-label="breadcrumb">
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <span class="title-content">Company</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav aria-label="breadcrumb" class="bc">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Asset</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Company</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Company</li>
                                     <li class="breadcrumb-item active" aria-current="page">Data Property</li>
                                 </ol>
                             </nav>
-                            <span class="title-content">Company</span>
                         </div>
-                        <div class="col-sm-6"></div>
                     </div>
                     <div class="row">
                         <div class="col-6 mt-3" id="card1">
@@ -218,13 +218,13 @@
                                 <div class="card-header pos-between">
                                     <div class="title-form">Risk Parameter</div>
                                     <div>
-                                        <button data-toggle="collapse" data-target="#panel-card5" aria-expanded="true"
-                                            aria-controls="panel-card5">
+                                        <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card5"
+                                            aria-expanded="true" aria-controls="panel-card5">
                                             <i class="fa fa-minus button-top-right"></i>
                                         </button>
-                                        <button onclick="setDisplayNone('card5')">
+                                        <!-- <button onclick="setDisplayNone('card5')">
                                             <i class="fa fa-times button-top-right"></i>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div id="panel-card5" class="collapse show">
@@ -303,13 +303,18 @@
                                                     Target
                                                     ($/yr)</label>
                                                 <div class="col-7">
-                                                    <!-- <input type="text" class="form-control form-control-sm"
-                                                    id="financialriskTarget"> -->
-                                                    <select class="form-control form-control-sm js-example-responsive"
+                                                    <select class="js-example-basic-single form-control form-control-sm"
+                                                        name="state">
+                                                        <option value=""></option>
+                                                        <option value="1">Satu</option>
+                                                        <option value="2">Dua</option>
+                                                        <option value="3">Tiga</option>
+                                                    </select>
+                                                    <!-- <select class="form-control form-control-sm js-example-responsive"
                                                         style="width: 100%" name="states">
                                                         <option value="">-- Silahkan Pilih --</option>
                                                         <option value="WY">Wyoming</option>
-                                                    </select>
+                                                    </select> -->
                                                 </div>
                                             </div>
                                         </form>
@@ -755,6 +760,23 @@
         function openSaPage(param) {
             window.location.href = param;
         }
+        $('.btn-collapse').on("click", function (e) {
+            if ($(this).hasClass('collapsed')) {
+                $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+            }
+        });
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2({
+                width: '100%'
+            });
+        });
+
+        // $(".js-example-responsive").select2({
+        //     width: 'resolve' 
+        // });
+
         $(function () {
             var $tabButtonItem = $('#tab-button li'),
                 $tabSelect = $('#tab-select'),
@@ -805,10 +827,6 @@
                 $(".tabpanel").tabs("add", name, "content goes here");
             }
         }
-
-        $(".js-example-responsive").select2({
-            width: 'resolve' // need to override the changed default
-        });
 
     </script>
 
