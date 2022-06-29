@@ -32,6 +32,10 @@ body {
 } */
 
 /* MENU */
+.nav-font {
+    color: #fff
+}
+
 .navbar {
     padding: 0 1rem;
     border: 1px solid #CDCDCD
