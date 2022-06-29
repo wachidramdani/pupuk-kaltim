@@ -60,11 +60,11 @@
 }
 
 .card .card-header-master .btn-left-export {
-    background-color: #015aab;
+    background-color: #343a40;
 }
 
 .card .card-header-master .btn-left-import {
-    background-color: #e16333;
+    background-color: #74788d;
 }
 
 .card .card-header-master .btn-right-add {
@@ -76,7 +76,7 @@
 }
 
 .card .card-header-master .btn-right-edit {
-    background-color: #ffc107;
+    background-color: #591414;
 }
 
 .btn-right-cancel {
@@ -98,7 +98,7 @@
 }
 
 .bg-icon-export {
-    background-color: #004d94;
+    background-color: #343a40;
     padding: 9px;
     border-radius: 10px 0 0 10px;
     position: absolute;
@@ -108,7 +108,7 @@
 }
 
 .bg-icon-import {
-    background-color: #c8592d;
+    background-color: #74788d;
     padding: 9px;
     border-radius: 10px 0 0 10px;
     position: absolute;
@@ -138,7 +138,7 @@
 }
 
 .bg-icon-edit {
-    background-color: #ecb206;
+    background-color: #591414;
     padding: 9px;
     border-radius: 10px 0 0 10px;
     position: absolute;
