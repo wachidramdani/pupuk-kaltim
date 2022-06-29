@@ -384,7 +384,7 @@ body {
 .tab-btn-followupitem .tab-text-followupitem {
     font-size: 24px;
     font-weight: 500;
-    left: 100px;
+    left: 150px;
 }
 
 /* Style the tab content */
@@ -963,7 +963,7 @@ table th:first-child {
 
     .tab-btn-inspection .tab-text-inspection,
     .tab-btn-followupitem .tab-text-followupitem {
-        left: 95px;
+        left: 135px;
     }
 
     /* ASSET CARD  */
