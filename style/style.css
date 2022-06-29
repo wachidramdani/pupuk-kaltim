@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover; */
     font-family: myFirstFont;
-    zoom: 75%;
+    zoom: 80%;
     /* margin: 0;
     padding: 0;
     width: 100%;
@@ -22,7 +22,7 @@ body {
 .inner-body {
     margin: 0;
     padding: 0;
-    height: calc(100vh - 83px);
+    height: calc(100vh + 83px);
     width: 100%;
     overflow-y: auto;
 }
