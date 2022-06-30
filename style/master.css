@@ -43,7 +43,7 @@
 }
 
 .card-header-master:first-child {
-    border-radius: 10px 10px 0 0 !important;
+    border-radius: 0px 0px 0 0 !important;
 }
 
 .card .card-header-master button {
@@ -152,7 +152,7 @@
     padding: 8px;
     border-radius: 10px 0 0 10px !important;
     position: absolute;
-    right: 219px;
+    right: 222px;
     height: 31px;
 }
 
