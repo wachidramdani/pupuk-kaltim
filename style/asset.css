@@ -431,7 +431,8 @@
 }
 
 .subTab {
-    color: burlywood;
+    /* color: burlywood; */
+    color: #e16333
 }
 
 /* .tabs .card {
@@ -467,6 +468,7 @@
     /* padding: 2px 8px; */
     /* background: #eee; */
     /* border: 1px solid #ddd; */
+    font-size: 14px;
     text-align: center;
     color: #6C757D;
     text-decoration: none;
