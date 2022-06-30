@@ -44,8 +44,20 @@ body {
     font-weight: bold;
 }
 
+.bg-table {
+    background-color: #595d60;
+} 
+
+.bge-default {
+    background-color: #f8f9fa;
+}
+
+.icon-white {
+    color: #fff !important;
+}
+
 .tbody-default {
-    background-color: #f6f6f6 ;
+    background-color: #f6f6f6;
 }
 
 .navbar {
