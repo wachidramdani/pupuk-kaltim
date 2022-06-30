@@ -44,8 +44,20 @@ body {
     font-weight: bold;
 }
 
+.bg-table {
+    background-color: #595d60;
+} 
+
+.bge-default {
+    background-color: #f8f9fa;
+}
+
+.icon-white {
+    color: #fff !important;
+}
+
 .tbody-default {
-    background-color: #f6f6f6 ;
+    background-color: #f6f6f6;
 }
 
 .navbar {
@@ -614,6 +626,10 @@ table tfoot th {
 .dataTables_wrapper {
     width: calc(100% - 10px);
     font-size: 0.876rem !important;
+}
+
+table.dataTable thead .sorting {
+    border-right: 1px solid #b4b4b4 !important;
 }
 
 .dataTables_wrapper .dataTables_filter input {
