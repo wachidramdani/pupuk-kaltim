@@ -38,12 +38,12 @@
 }
 
 .card-header-master {
-    background-color: #FFFFFF;
+    background-color: #e0dfdd;
     padding: 15px;
 }
 
 .card-header-master:first-child {
-    border-radius: 0px 0px 0 0 !important;
+    border-radius: 5px 5px 0 0 !important;
 }
 
 .card .card-header-master button {

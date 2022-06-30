@@ -40,6 +40,8 @@ body {
 
 .thead-grey {
     background-color: #595d60;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .tbody-default {
@@ -1225,7 +1227,7 @@ table th:first-child {
 }
 
 .dataTables_wrapper .dataTables_filter input {
-    /* border-radius: 10px; */
+    border-radius: 5px;
     border: 1px #6C757D solid;
     color: #6C757D;
     padding-left: 5px;
