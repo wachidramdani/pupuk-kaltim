@@ -10,8 +10,9 @@
 
 .sidebar {
     float: left;
-    width: 295px;
-    height: calc(100% + 80px) !important;
+    /* width: 295px; */
+    width: 335px;
+    height: calc(100% - 10px) !important;
     /* background-color: #ffffff; */
     padding-top: 7px;
     overflow-y: auto;
@@ -76,7 +77,8 @@
 
 .main-content {
     float: left;
-    width: calc(100% - 295px);
+    /* width: calc(100% - 295px); */
+    width: calc(100% - 335px);
     height: calc(100% + 185px);
     /* border-left: 1px solid #cdcdcd; */
     background-color: #f8f9fa;

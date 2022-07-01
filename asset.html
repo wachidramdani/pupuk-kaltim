@@ -33,14 +33,14 @@
 <body class="hideScroll">
 
     <!-- MENU -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-table">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <div class="container">
                     <div class="row">
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="dashboard.html">
+                                <a class="nav-link icon-white" href="dashboard.html">
                                     <i class="fa fa-home menu-i"></i>
                                     <p>Home</p>
                                 </a>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link menu-active" href="asset.html">
+                                <a class="nav-link icon-white menu-active" href="asset.html">
                                     <i class="fa fa-folder menu-i"></i>
                                     <p>Asset</p>
                                 </a>
@@ -56,7 +56,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="./master/master_cf.html">
+                                <a class="nav-link icon-white" href="./master/master_cf.html">
                                     <i class="fa fa-database menu-i"></i>
                                     <p>Master</p>
                                 </a>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="setting.html">
+                                <a class="nav-link icon-white" href="setting.html">
                                     <i class="fa fa-cog menu-i"></i>
                                     <p>Setting</p>
                                 </a>
@@ -72,7 +72,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="laporan.html">
+                                <a class="nav-link icon-white" href="laporan.html">
                                     <i class="fa fa-print menu-i"></i>
                                     <p>Laporan</p>
                                 </a>
@@ -80,7 +80,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="inspection.html">
+                                <a class="nav-link icon-white" href="inspection.html">
                                     <i class="fa fa-clipboard-check menu-i"></i>
                                     <p>Inspection</p>
                                 </a>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="../document.html">
+                                <a class="nav-link icon-white" href="document.html">
                                     <i class="fa fa-book menu-i"></i>
                                     <p>Document</p>
                                 </a>
@@ -98,7 +98,7 @@
                         <div class="col">
                             <div class="d-flex">
                                 <div class="ml-3 mt-2">
-                                    <img src="./style/images/user.png" alt="image" class="menu-image">
+                                    <img src="style/images/user.png" alt="image" class="menu-image">
                                 </div>
                                 <div class="menu-avatar mt-3">
                                     <span class="menu-avatar-name">John Kennedy</span>
@@ -109,8 +109,9 @@
                     </div>
                 </div>
             </ul>
+
             <div class="row">
-                <div class="col mt-3">
+                <div class="col mt-2">
                     <img src="style/images/logo-text-v2.png" alt="image" class="menu-logo">
                 </div>
                 <div class="menu-line"></div>
@@ -121,7 +122,7 @@
                 </div>
                 <div class="menu-line"></div>
                 <div class="col mt-3">
-                    <a class="nav-link menu-side-right" onclick="logout()" pointer>
+                    <a class="nav-link menu-side-right" onclick="logout()">
                         <i class="fa fa-power-off menu-i"></i>
                     </a>
                 </div>
@@ -435,7 +436,11 @@
                 'core':
                 {
                     "themes": {
-                        "icons": false
+                        "icons": {
+                            'image': '/images/icon_plus.png'
+                        },
+                        "stripes": false,
+                        "variant": "large"
                     },
                     'data': [
                         {
@@ -454,12 +459,12 @@
                                                     'text': 'System/Area',
                                                     'state': { 'opened': true },
                                                     'children': [
-                                                        { 'text': 'Equipment/Piping' },
+                                                        { 'text': 'Equipment/Piping', "icon": "fa fa-dumbbell text-default" },
                                                         {
                                                             'text': 'Horizontal Vessel',
                                                             'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Head' }
+                                                                { 'text': 'Shell', "icon": "fa fa-dumbbell text-default" },
+                                                                { 'text': 'Head', "icon": "fa fa-dumbbell text-default" }
                                                             ]
                                                         },
                                                         {
@@ -531,6 +536,17 @@
                         }
                     ]
                 },
+                "types": {
+                    "default": {
+                        "icon": "fa fa-plus-circle text-primary"
+                    },
+                    "file": {
+                        "icon": "fa fa-file  text-warning"
+                    }
+                },
+                "plugins": [
+                    "state", "types", "wholerow"
+                ]
             })
         });
 
@@ -755,9 +771,9 @@
         });
     </script>
     <script>
-        $(document).ready(function () {
-            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-        });
+        // $(document).ready(function () {
+        //     $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        // });
         function setDisplayNone(id) {
             document.getElementById(id).style.display = "none";
         }
