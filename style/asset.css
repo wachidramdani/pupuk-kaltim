@@ -12,7 +12,7 @@
     float: left;
     /* width: 295px; */
     width: 335px;
-    height: calc(100% + 25px) !important;
+    height: calc(100% - 10px) !important;
     /* background-color: #ffffff; */
     padding-top: 7px;
     overflow-y: auto;
@@ -23,6 +23,10 @@
 
 .sidebar-height-asset {
     height: calc(100% - 10px);
+}
+
+.sidebar-height-master {
+    height: calc(100% + 25px) !important;
 }
 
 .sidebar-height-plant {
