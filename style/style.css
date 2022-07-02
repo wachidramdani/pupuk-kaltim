@@ -37,6 +37,39 @@ body {
 } */
 
 /* MENU */
+.menu-line {
+    width: 0px;
+    height: 80px;
+    border: 1px #6C757D solid;
+}
+
+.menu-image {
+    margin-top: 4px;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-avatar {
+    width: 120px;
+    margin-left: 10px;
+    /* color: #6C757D;  */
+    color: #fff;
+    font-weight: 500;
+}
+
+.menu-avatar-name {
+    font-size: 16px;
+}
+
+.menu-avatar-status {
+    font-size: 12px;
+}
+
+.menu-logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 2px;
+}
 
 .thead-grey {
     background-color: #595d60;
@@ -109,12 +142,12 @@ body {
     height: 50px;
 }
 
-.menu-avatar {
+/* .menu-avatar {
     width: 120px;
     margin-left: 10px;
     color: #6C757D;
     font-weight: 500;
-}
+} */
 
 .menu-avatar-name {
     font-size: 16px;
@@ -132,9 +165,16 @@ body {
 .menu-side-right {
     margin-bottom: -5px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    /* color: rgba(0,0,0,0.5); */
     cursor: pointer;
 }
+/* .menu-side-right {
+    margin-bottom: -5px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+} */
 
 .menu-side-right:hover {
     color: rgba(0, 0, 0, 0.5);
