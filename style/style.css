@@ -4,6 +4,7 @@ body {
     background-size: cover; */
     font-family: myFirstFont;
     zoom: 80%;
+    background-color: #F8F9FA;
     /* margin: 0;
     padding: 0;
     width: 100%;
@@ -31,11 +32,6 @@ body {
     overflow-y: auto;
 }
 
-/* .content .row {
-    margin-right: 0;
-    margin-left: 0;
-} */
-
 /* MENU */
 .menu-line {
     width: 0px;
@@ -52,7 +48,6 @@ body {
 .menu-avatar {
     width: 120px;
     margin-left: 10px;
-    /* color: #6C757D;  */
     color: #fff;
     font-weight: 500;
 }
@@ -260,8 +255,7 @@ body {
     border-bottom: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    /* border-top: 12px solid #FFB74D; */
-    border-top: 12px solid #FFB64D;
+    border-top: 12px solid #005BAC;
     padding: 0;
     width: 0;
     height: 0;
@@ -282,7 +276,6 @@ body {
     border-bottom: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    /* border-top: 12px solid #81C784; */
     border-top: 12px solid #64B5F6;
     padding: 0;
     width: 0;
@@ -304,8 +297,7 @@ body {
     border-bottom: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    /* border-top: 12px solid #E57373; */
-    border-top: 12px solid #FFB64D;
+    border-top: 12px solid #909090;
     padding: 0;
     width: 0;
     height: 0;
@@ -326,8 +318,7 @@ body {
     border-bottom: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    /* border-top: 12px solid #64B5F6; */
-    border-top: 12px solid #64B5F6;
+    border-top: 12px solid #4E4E4E;
     padding: 0;
     width: 0;
     height: 0;
@@ -342,13 +333,9 @@ body {
 
 .tab-btn-asset {
     position: relative;
-    /* color: #E5A545; */
-    color: #FFC573;
+    color: #3c7cb5;
     width: 100%;
-    /* font-size: 14px; */
-    /* background-color: #FFB74D; */
-    background-color: #FFB64D;
-    /* box-shadow: 3px 3px #F47920; */
+    background-color: #005BAC;
     height: 95px;
     border-radius: 10px;
     box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
@@ -356,13 +343,9 @@ body {
 
 .tab-btn-risk {
     position: relative;
-    /* color: #70AE72; */
     color: #7DC5FF;
     width: 100%;
-    /* font-size: 14px; */
-    /* background-color: #81C784; */
     background-color: #64B5F6;
-    /* box-shadow: 3px 3px #F47920; */
     height: 95px;
     border-radius: 10px;
     box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
@@ -370,13 +353,9 @@ body {
 
 .tab-btn-inspection {
     position: relative;
-    /* color: #C96161; */
-    color: #FFC573;
+    color: #A9A9A9;
     width: 100%;
-    /* font-size: 14px; */
-    /* background-color: #E57373; */
-    background-color: #FFB64D;
-    /* box-shadow: 3px 3px #F47920; */
+    background-color: #909090;
     height: 95px;
     border-radius: 10px;
     box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
@@ -384,13 +363,9 @@ body {
 
 .tab-btn-followupitem {
     position: relative;
-    /* color: #549BD4; */
-    color: #7DC5FF;
+    color: #666666;
     width: 100%;
-    /* font-size: 14px; */
-    /* background-color: #64B5F6; */
-    background-color: #64B5F6;
-    /* box-shadow: 3px 3px #F47920; */
+    background-color: #4E4E4E;
     height: 95px;
     border-radius: 10px;
     box-shadow: 0px 2px 2px rgb(0 0 0 / 25%);
@@ -398,9 +373,7 @@ body {
 
 .tab-btn-asset .tab-img-asset {
     position: absolute;
-    /* background-color: #D49A42; */
-    /* background-color: #005BAC; */
-    background-color: #F0A943;
+    background-color: #035299;
     height: 100%;
     left: 0;
     top: 0;
@@ -411,7 +384,6 @@ body {
 
 .tab-btn-risk .tab-img-risk {
     position: absolute;
-    /* background-color: #649D65; */
     background-color: #5EACEA;
     height: 100%;
     left: 0;
@@ -423,8 +395,7 @@ body {
 
 .tab-btn-inspection .tab-img-inspection {
     position: absolute;
-    /* background-color: #B25959; */
-    background-color: #F0A943;
+    background-color: #838383;
     height: 100%;
     left: 0;
     top: 0;
@@ -435,8 +406,7 @@ body {
 
 .tab-btn-followupitem .tab-img-followupitem {
     position: absolute;
-    /* background-color: #4A8CC0; */
-    background-color: #5EACEA;
+    background-color: #575757;
     height: 100%;
     left: 0;
     top: 0;
@@ -482,12 +452,10 @@ body {
 
 .filter-item {
     cursor: pointer;
-    /* color: #F47920; */
     color: #6C757D
 }
 
 .filter-item i {
-    /* color: #FFF1E5; */
     color: #6C757D
 }
 
@@ -525,8 +493,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1px;
-    /* background-color: #E16333; */
-    background-color: #005BAC;
+    background-color: #E0DFDD;
     color: #F8F9FA;
     font-size: 14px;
     border-radius: 10px 10px 0 0;
@@ -545,12 +512,12 @@ select {
 }
 
 .title-chart-dashboard {
-    color: #F8F9FA;
+    color: #000000;
     font-size: 16px;
 }
 
 .title-chart-dashboard-assessment {
-    color: #F8F9FA;
+    color: #000000;
     font-size: 14px;
 }
 
@@ -566,11 +533,8 @@ select {
     font-weight: normal;
     border-radius: 5px;
     border: none;
-    /* background-color: #F47920; */
     color: #000000;
-    /* background-color: #CED4DA; */
     background-color: #FFFFFF;
-    /* color: #FFFFFF; */
 }
 
 .card .card-header2 button {
@@ -580,10 +544,8 @@ select {
     font-weight: normal;
     border-radius: 5px;
     border: none;
-    /* background-color: #F47920; */
     color: #000000;
     background-color: #CED4DA;
-    /* color: #FFFFFF; */
 }
 
 .card .card-header button:focus,
@@ -699,7 +661,6 @@ table thead {
     z-index: 11;
 }
 
-
 table tr {
     background-color: white;
 }
@@ -764,7 +725,6 @@ table th:first-child {
 table th:first-child {
     z-index: 11;
 }
-
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
@@ -831,16 +791,6 @@ table th:first-child {
     color: #6C757D;
 }
 
-.bg-registered,
-.bg-offline {
-    /* background-color: #CED4DA; */
-    background-color: #FFB64D;
-}
-
-.bg-assessed,
-.bg-validation {
-    background-color: #64b5f6;
-}
 
 .wrimagecard-topimage_title {
     margin-left: 230px;
@@ -892,10 +842,22 @@ table th:first-child {
     margin-bottom: 10px;
 }
 
-/* .value {
-    font-size: 40px;
-    line-height: 46px;
-} */
+/* ASSET */
+.bg-registered {
+    background-color: #005BAC;
+}
+
+.bg-assessed {
+    background-color: #64b5f6;
+}
+
+.bg-validation {
+    background-color: #909090;
+}
+
+.bg-offline  {
+    background-color: #4E4E4E;
+}
 
 /* RISK */
 .registered-chart {
@@ -919,14 +881,20 @@ table th:first-child {
 }
 
 /* INSPECTION */
-.bg-remaining,
-.bg-overdue-ta {
-    background-color: #FFB64D;
+.bg-remaining {
+    background-color: #005BAC;
 }
 
-.bg-inspection,
-.bg-overdue {
+.bg-inspection {
     background-color: #64b5f6;
+}
+
+.bg-overdue {
+    background-color: #909090;
+}
+
+.bg-overdue-ta {
+    background-color: #4E4E4E;
 }
 
 .damage-distribution-chart {
@@ -935,15 +903,21 @@ table th:first-child {
 }
 
 /* FOLLOW UP ITEM */
-.bg-around,
-.bg-latest {
-    background-color: #FFB64D;
+.bg-around {
+    background-color: #005BAC;
 }
 
-.bg-area,
-.bg-ta {
+.bg-area {
     background-color: #64b5f6;
 }
+
+.bg-latest {
+    background-color: #909090;
+} 
+
+.bg-ta {
+    background-color: #4E4E4E;
+} 
 
 /* MEDIA */
 @media (min-width: 768px) {
@@ -972,7 +946,7 @@ table th:first-child {
 
     .tab-btn-inspection .tab-text-inspection,
     .tab-btn-followupitem .tab-text-followupitem {
-        left: 85px;
+        left: 120px;
     }
 
     /* ASSET CARD  */
@@ -985,10 +959,14 @@ table th:first-child {
 
     .wrimagecard-icon-registered,
     .wrimagecard-icon-assessed,
-    .wrimagecard-icon-validation,
     .wrimagecard-icon-offline {
-        margin-left: 210px;
-        margin-top: 10px;
+        margin-left: 250px;
+        margin-top: 30px;
+    }
+
+    .wrimagecard-icon-validation {
+        margin-left: 250px;
+        margin-top: 15px;
     }
 
     /* INSPECTION CARD  */
@@ -1024,14 +1002,14 @@ table th:first-child {
 
     .wrimagecard-icon-arround {
         margin-top: 25px;
-        margin-left: 210px;
+        margin-left: 250px;
     }
 
     .wrimagecard-icon-area,
     .wrimagecard-icon-history,
     .wrimagecard-icon-next-ta {
-        margin-top: 10px;
-        margin-left: 210px;
+        margin-top: 30px;
+        margin-left: 250px;
     }
 }
 
@@ -1047,10 +1025,10 @@ table th:first-child {
     .wrimagecard-icon-assessed,
     .wrimagecard-icon-validation,
     .wrimagecard-icon-offline {
-        margin-left: 230px;
+        margin-left: 270px;
     }
 
-    .wrimagecard-icon-offline {
+    .wrimagecard-icon-validation {
         margin-top: 30px;
     }
 
@@ -1071,11 +1049,7 @@ table th:first-child {
     .wrimagecard-icon-area,
     .wrimagecard-icon-history,
     .wrimagecard-icon-next-ta {
-        margin-left: 230px;
-    }
-
-    .wrimagecard-icon-area {
-        margin-top: 30px;
+        margin-left: 260px;
     }
 }
 
@@ -1083,7 +1057,7 @@ table th:first-child {
 
     .tab-btn-inspection .tab-text-inspection,
     .tab-btn-followupitem .tab-text-followupitem {
-        left: 100px;
+        left: 140px;
     }
 
     /* ASSET CARD  */
@@ -1091,12 +1065,7 @@ table th:first-child {
     .wrimagecard-icon-assessed,
     .wrimagecard-icon-validation,
     .wrimagecard-icon-offline {
-        margin-left: 245px;
-    }
-
-    .wrimagecard-icon-assessed,
-    .wrimagecard-icon-offline {
-        margin-top: 35px;
+        margin-left: 285px;
     }
 
     /* INSPECTION CARD  */
@@ -1112,11 +1081,7 @@ table th:first-child {
     .wrimagecard-icon-area,
     .wrimagecard-icon-history,
     .wrimagecard-icon-next-ta {
-        margin-left: 245px;
-    }
-
-    .wrimagecard-icon-next-ta {
-        margin-top: 35px;
+        margin-left: 280px;
     }
 }
 
@@ -1126,7 +1091,7 @@ table th:first-child {
     .tab-btn-risk .tab-text-risk,
     .tab-btn-inspection .tab-text-inspection,
     .tab-btn-followupitem .tab-text-followupitem {
-        left: 115px;
+        left: 150px;
     }
 
     /* ASSET CARD  */
@@ -1134,11 +1099,7 @@ table th:first-child {
     .wrimagecard-icon-assessed,
     .wrimagecard-icon-validation,
     .wrimagecard-icon-offline {
-        margin-left: 270px;
-    }
-
-    .wrimagecard-icon-registered {
-        margin-top: 35px;
+        margin-left: 295px;
     }
 
     /* INSPECTION CARD  */
@@ -1159,7 +1120,7 @@ table th:first-child {
     .wrimagecard-icon-area,
     .wrimagecard-icon-history,
     .wrimagecard-icon-next-ta {
-        margin-left: 270px;
+        margin-left: 300px;
     }
 }
 
@@ -1169,7 +1130,7 @@ table th:first-child {
     .tab-btn-risk .tab-text-risk,
     .tab-btn-inspection .tab-text-inspection,
     .tab-btn-followupitem .tab-text-followupitem {
-        left: 120px;
+        left: 170px;
     }
 
     /* ASSET CARD  */
@@ -1177,11 +1138,7 @@ table th:first-child {
     .wrimagecard-icon-assessed,
     .wrimagecard-icon-validation,
     .wrimagecard-icon-offline {
-        margin-left: 300px;
-    }
-
-    .wrimagecard-icon-validation {
-        margin-top: 35px;
+        margin-left: 320px;
     }
 
     /* INSPECTION CARD  */
@@ -1197,11 +1154,7 @@ table th:first-child {
     .wrimagecard-icon-area,
     .wrimagecard-icon-history,
     .wrimagecard-icon-next-ta {
-        margin-left: 300px;
-    }
-
-    .wrimagecard-icon-history {
-        margin-top: 35px;
+        margin-left: 320px;
     }
 }
 
@@ -1211,7 +1164,7 @@ table th:first-child {
     .tab-btn-risk .tab-text-risk,
     .tab-btn-inspection .tab-text-inspection,
     .tab-btn-followupitem .tab-text-followupitem {
-        left: 130px;
+        left: 180px;
     }
 
     /* ASSET CARD  */
@@ -1219,7 +1172,7 @@ table th:first-child {
     .wrimagecard-icon-assessed,
     .wrimagecard-icon-validation,
     .wrimagecard-icon-offline {
-        margin-left: 330px;
+        margin-left: 350px;
     }
 
     /* INSPECTION CARD  */
@@ -1235,7 +1188,7 @@ table th:first-child {
     .wrimagecard-icon-area,
     .wrimagecard-icon-history,
     .wrimagecard-icon-next-ta {
-        margin-left: 330px;
+        margin-left: 340px;
     }
 }
 
@@ -1245,7 +1198,7 @@ table th:first-child {
     .tab-btn-risk .tab-text-risk,
     .tab-btn-inspection .tab-text-inspection,
     .tab-btn-followupitem .tab-text-followupitem {
-        left: 150px;
+        left: 200px;
     }
 
     /* ASSET CARD  */
@@ -1253,7 +1206,7 @@ table th:first-child {
     .wrimagecard-icon-assessed,
     .wrimagecard-icon-validation,
     .wrimagecard-icon-offline {
-        margin-left: 360px;
+        margin-left: 380px;
     }
 
     /* INSPECTION CARD  */
