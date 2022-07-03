@@ -493,10 +493,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1px;
-    background-color: #E0DFDD;
+    background-color: #0b61af;
     color: #F8F9FA;
     font-size: 14px;
     border-radius: 10px 10px 0 0;
+}
+
+.grey {
+    background-color: #E0DFDD !important;
 }
 
 .card-header:first-child {
