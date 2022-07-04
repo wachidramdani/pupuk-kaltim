@@ -24,106 +24,100 @@
     <title>Pupuk - Kaltim</title>
 </head>
 
-<body style="overflow: hidden;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
+<body class="hideScroll">
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-table">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <div class="container">
                     <div class="row">
-                        <div class="col mx-2 mt-1">
-                            <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="dashboard.html"
-                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-home"
-                                        style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
-                                <span style="font-size: 10px;">Home</span>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="dashboard.html"> 
+                                    <i class="fa fa-home menu-i"></i>
+                                    <p>Home</p>
+                                </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
-                            <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="asset.html" style="margin-bottom: -10px; text-align: center;">
-                                    <i class="fa fa-folder"
-                                        style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
-                                <span style="font-size: 10px;">Asset</span>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="asset.html">
+                                    <i class="fa fa-folder menu-i"></i>
+                                    <p>Asset</p>
+                                </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
-                            <li class="nav-item" style="text-align: center;">
-                                <!-- <a class="nav-link" href="master.html" -->
-                                <a class="nav-link" href="./master/master_cf.html"
-                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-database"
-                                        style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
-                                <span style="font-size: 10px;">Master</span>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="./master/master_cf.html"> 
+                                    <i class="fa fa-database menu-i"></i>
+                                    <p>Master</p>
+                                </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
-                            <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="setting.html"
-                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-cog"
-                                        style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
-                                <span style="font-size: 10px;">Setting</span>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="setting.html"> 
+                                    <i class="fa fa-cog menu-i"></i>
+                                    <p>Setting</p>
+                                </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
-                            <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="laporan.html"
-                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-print"
-                                        style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
-                                <span style="font-size: 10px;">Laporan</span>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="laporan.html"> 
+                                    <i class="fa fa-print menu-i"></i>
+                                    <p>Laporan</p>
+                                </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
-                            <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="inspection.html"
-                                    style="margin-bottom: -10px; text-align: center;"> <i class="fa fa-clipboard-check"
-                                        style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
-                                <span style="font-size: 10px;">Inspection</span>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="inspection.html"> 
+                                    <i class="fa fa-clipboard-check menu-i"></i>
+                                    <p>Inspection</p>
+                                </a>
                             </li>
                         </div>
-                        <div class="col mx-2 mt-1">
-                            <li class="nav-item" style="text-align: center;">
-                                <a class="nav-link" href="document.html"
-                                    style="margin-bottom: -13px; text-align: center; color: #e16333;"> <i class="fa fa-book"
-                                        style="font-size: 30px; margin-top: 4px;"></i></a>
-                                <span style="font-size: 10px;">Document</span>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white menu-active" href="document.html"> 
+                                    <i class="fa fa-book menu-i"></i>
+                                    <p>Document</p>
+                                </a>
                             </li>
                         </div>
-                        <div style="width: 0px; height: 80px; border: 1px #6C757D solid;">
-                        </div>
+                        <div class="menu-line"></div>
                         <div class="col">
                             <div class="d-flex">
-                                <div class="image ml-3 mt-2">
-                                    <img src="style/images/user.png" alt="image" width="50px" height="50px"
-                                        style="margin-top: 4px;">
+                                <div class="ml-3 mt-2">
+                                    <img src="style/images/user.png" alt="image" class="menu-image">
                                 </div>
-                                <div class="mt-3"
-                                    style="width: 120px;  margin-left: 10px; color: rgba(0, 0, 0, 0.5); font-weight: 500;">
-                                    <span>John Kennedy</span>
-                                    <span style="font-size: 12px;">Super Admin</span>
-
+                                <div class=" menu-avatar mt-3">
+                                    <span class="menu-avatar-name">John Kennedy</span>
+                                    <span class="menu-avatar-status">Super Admin</span>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </ul>
             <div class="row">
+                <div class="col mt-2">
+                    <img src="style/images/logo-text-v2.png" alt="image" class="menu-logo">
+                </div>
+                <div class="menu-line"></div>
                 <div class="col mt-3">
-                    <img src="style/images/logo-text-v2.png" alt="image" width="60px" height="60px">
+                    <a class="nav-link menu-side-right" href="#"> 
+                        <i class="fa fa-search menu-i"></i>
+                    </a>
                 </div>
-                <div style="width: 0px; height: 80px; border: 1px #6C757D solid;">
-                </div>
+                <div class="menu-line"></div>
                 <div class="col mt-3">
-                    <a class="nav-link" href="#" style="color: rgba(0, 0, 0, 0.5);"> <i
-                            class="fa fa-search   "
-                            style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
-                </div>
-                <div style="width: 0px; height: 80px; border: 1px #6C757D solid;">
-                </div>
-                <div class="col mt-3">
-                    <a class="nav-link" onclick="logout()" style="color: rgba(0, 0, 0, 0.5);"> <i
-                            class="fa fa-power-off"
-                            style="font-size: 30px; margin-top: 4px; display: flex; justify-content: center;"></i></a>
+                    <a class="nav-link menu-side-right" onclick="logout()"> 
+                        <i class="fa fa-power-off menu-i"></i>
+                    </a>
                 </div>
             </div>
         </div>
