@@ -20,7 +20,7 @@
     height: calc(100% - 10px);
 }
 
-.sidebar-height-inspection {
+.sidebar-height-document {
     height: calc(100% + 0px) !important;
 }
 
@@ -141,16 +141,16 @@
     justify-content: flex-end;
 }
 
-.card-header-inspection {
+.card-header-document {
     background-color: #e0dfdd !important;
     padding: 15px;
 }
 
-.card-header-inspection:first-child {
+.card-header-document:first-child {
     border-radius: 5px 5px 0 0 !important;
 }
 
-.card .card-header-inspection button {
+.card .card-header-document button {
     /* margin-left: 5px; */
     padding: 5px;
     font-size: 12px;
@@ -176,33 +176,33 @@
     border: 0;
 }
 
-.card .card-header-inspection .btn-left-export {
+.card .card-header-document .btn-left-export {
     background-color: #343a40;
 }
 
-.card .card-header-inspection .btn-left-import {
+.card .card-header-document .btn-left-import {
     background-color: #74788d;
 }
 
-.card .card-header-inspection .btn-right-add {
+.card .card-header-document .btn-right-add {
     background-color: #64b5f6;
 }
 
-.card .card-header-inspection .btn-right-delete {
+.card .card-header-document .btn-right-delete {
     background-color: #585858;
 }
 
-.card .card-header-inspection .btn-right-edit {
+.card .card-header-document .btn-right-edit {
     background-color: #c55227;
 }
 
-.card .card-header-inspection button:focus,
-.card .card-header-inspection button:active {
+.card .card-header-document button:focus,
+.card .card-header-document button:active {
     border: none;
     outline: none;
 }
 
-.pos-between-inspection {
+.pos-between-document {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1px;
