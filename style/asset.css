@@ -26,15 +26,11 @@
 }
 
 .sidebar-height-master {
-<<<<<<< HEAD
-    height: calc(100% + 25px) !important;
-=======
     height: calc(100% + 15px) !important;
->>>>>>> origin/main
 }
 
 .sidebar-height-plant {
-    height: calc(100% + 254px);
+    height: calc(100% - 100px);
 }
 
 .sidebar-height-plant-section {
@@ -98,7 +94,9 @@
 }
 
 .main-content-height-plant {
-    height: calc(100% + 254px);
+    /* height: calc(100% + 254px); */
+    height: calc(100% - 100px);
+
 }
 
 .main-content-height-equipment {
