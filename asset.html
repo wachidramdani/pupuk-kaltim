@@ -551,24 +551,25 @@
         });
 
         $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-            // if (data.node.text == 'Equipment/Piping') {
-            //     window.open("./sub_asset/equipment.html", "_self")
-            // }
-            // if (data.node.original.text == 'Shell') {
-            //     window.open("./sub_asset/hv_shell.html", "_self")
-            // }
-            // if (data.node.original.text == 'Head') {
-            //     window.open("./sub_asset/hv_head.html", "_self")
-            // }
-            // if (data.node.original.text == 'Plant') {
-            //     window.open("./sub_asset/plant.html", "_self")
-            // }
-            // if (data.node.original.text == 'Plant Section') {
-            //     window.open("./sub_asset/plant_section.html", "_self")
-            // }
-            // if (data.node.original.text == 'System/Area') {
-            //     window.open("./sub_asset/system_area.html", "_self")
-            // }
+            console.log(data, 'data')
+            if (data.node.text == 'Equipment/Piping') {
+                window.open("./sub_asset/equipment.html", "_self")
+            }
+            if (data.node.original.text == 'Shell') {
+                window.open("./sub_asset/hv_shell.html", "_self")
+            }
+            if (data.node.original.text == 'Head') {
+                window.open("./sub_asset/hv_head.html", "_self")
+            }
+            if (data.node.original.text == 'Plant') {
+                window.open("./sub_asset/plant.html", "_self")
+            }
+            if (data.node.original.text == 'Plant Section') {
+                window.open("./sub_asset/plant_section.html", "_self")
+            }
+            if (data.node.original.text == 'System/Area') {
+                window.open("./sub_asset/system_area.html", "_self")
+            }
         });
 
         FusionCharts.ready(function () {
