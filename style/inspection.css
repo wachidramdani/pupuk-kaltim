@@ -14,6 +14,91 @@
     border-color: black;
 }
 
+.bg-icon-edit {
+    /* background-color: #c55227; */
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    /* position: absolute;
+    right: 106px; */
+    height: 30px;
+    /* top: 16px  */
+}
+
+.bg-icon-export {
+    background-color: #343a40;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    left: 16px;
+    height: 27px;
+    top: 16px
+}
+
+.bg-icon-import {
+    background-color: #74788d;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    left: 136px;
+    height: 27px;
+    top: 16px
+}
+
+.pos-between-master {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    /* background-color: #E16333; */
+    background-color: #FFFFFF;
+    color: #F8F9FA;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header-master {
+    background-color: #e0dfdd;
+    padding: 15px;
+}
+
+.card-header-master:first-child {
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.card .card-header-master button {
+    /* margin-left: 5px; */
+    padding: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    background-color: black;
+    width: 110px;
+    justify-content: center;
+}
+
+.card .card-header-master .btn-left-export {
+    background-color: #343a40;
+}
+
+.card .card-header-master .btn-left-import {
+    background-color: #74788d;
+}
+
+.card .card-header-master .btn-right-add {
+    background-color: #64b5f6;
+}
+
+.card .card-header-master .btn-right-delete {
+    background-color: #585858;
+}
+
+.card .card-header-master .btn-right-edit {
+    background-color: #c55227;
+}
+
+
 .navbar-btn .btn {
     margin: 0;
     color: #6C757D;

@@ -143,25 +143,10 @@
                 </div>
             </div>
             <div class="d-flex navbar-btn mt-2">
-                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true" data-toggle="tooltip"
-                    data-placement="top" title="Asset">
-                    <i class="fa fa-plus sidebar-left-i"></i>
-                </button>
-                <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
-                    title="Export">
-                    <i class="fa fa-upload sidebar-left-i"></i>
-                </button>
-                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true" data-toggle="tooltip"
-                    data-placement="top" title="Import">
-                    <i class="fa fa-download sidebar-left-i"></i>
-                </button>
-                <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
-                    title="Calculate">
-                    <i class="fa fa-calculator sidebar-left-i"></i>
-                </button>
-                <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
-                    title="Save">
-                    <i class="fa fa-save sidebar-left-i"></i>
+                <button data-toggle="modal" data-target="#AddModal" type="submit"
+                    class="btn d-flex align-items-center btn-right-edit">
+                    <i class="fas fa-eye bg-icon-edit"></i>
+                    <div class="btn-text">Asset View</div>
                 </button>
             </div>
             <div class="sidebar-body">
@@ -174,22 +159,28 @@
             <div class="tabs">
                 <div class="tab-button-outer">
                     <ul id="tab-button" class="row">
-                        <li class="col-4 tab-border">
+                        <li class="col-3 tab-border">
                             <a href="#tab01" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-info-circle pr-2"></i>
-                                <div class="tab-text">DATA PROPERTY</div>
+                                <div class="tab-text">Inspection Schedule</div>
                             </a>
                         </li>
-                        <li class="col-4 tab-border">
+                        <li class="col-3 tab-border">
                             <a href="#tab02" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-image pr-2"></i>
-                                <div class="tab-text">IMAGES</div>
+                                <div class="tab-text">Inspection Plan</div>
                             </a>
                         </li>
-                        <li class="col-4">
+                        <li class="col-3 tab-border">
+                            <a href="#tab01" class="d-flex justify-content-center py-2">
+                                <i class="fa fa-info-circle pr-2"></i>
+                                <div class="tab-text">Inspection Record</div>
+                            </a>
+                        </li>
+                        <li class="col-3">
                             <a href="#tab03" class="d-flex justify-content-center py-2">
                                 <i class="fa fa-file pr-2"></i>
-                                <div class="tab-text">FILE</div>
+                                <div class="tab-text">Inspection Information</div>
                             </a>
                         </li>
                     </ul>
@@ -202,53 +193,27 @@
                         <div class="col-sm-6">
                             <nav aria-label="breadcrumb" class="bc">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Asset</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">System(Area)</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Data Property</li>
+                                    <li class="breadcrumb-item"><a href="#">Inspection</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Inspeection Schedule</li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
-                    <div class="col-6 mt-3 pl-0" id="card1">
-                        <div class="card">
-                            <div class="card-header pos-between">
-                                <div class="title-form">Detection, Isolation and Mitigation System</div>
-                                <div>
-                                    <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card1"
-                                        aria-expanded="true" aria-controls="panel-card1">
-                                        <i class="fa fa-minus button-top-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div id="panel-card1" class="collapse show">
-                                <div class="card-body">
-                                    <form class="mt-3">
-                                        <div class="form-group row">
-                                            <label for="lv4" class="col-5 col-form-label">Type of Mitigation
-                                                System</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="lv4"
-                                                    disabled>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="lv5" class="col-5 col-form-label">Type of Detection
-                                                System</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm" id="lv5"
-                                                    disabled>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="datepickerYear" class="col-5 col-form-label">Type of Isolation
-                                                System</label>
-                                            <div class="col-7">
-                                                <input type="text" class="form-control form-control-sm"
-                                                    id="datepickerYear" disabled>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                    <div class="card m-4">
+                        <div class="card-header-master pos-between-master">
+                            <div class="d-flex">
+                                <button type="button" class="btn d-flex align-items-center btn-left-import">
+                                    <!-- <i class="fa fa-upload bg-icon-export"></i> -->
+                                    <div class="btn-text">Week</div>
+                                </button>
+                                <button type="button" class="btn d-flex align-items-center btn-left-import">
+                                    <!-- <i class="fa fa-download bg-icon-import"></i> -->
+                                    <div class="btn-text">Month</div>
+                                </button>
+                                <button type="button" class="btn d-flex align-items-center btn-left-import">
+                                    <!-- <i class="fa fa-download bg-icon-import"></i> -->
+                                    <div class="btn-text">Year</div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -282,7 +247,11 @@
                 'core':
                 {
                     "themes": {
-                        "icons": false
+                        "icons": {
+                            'image': '/images/icon_plus.png'
+                        },
+                        "stripes": false,
+                        "variant": "large"
                     },
                     'data': [
                         {
@@ -301,12 +270,12 @@
                                                     'text': 'System/Area',
                                                     'state': { 'opened': true, 'selected': true },
                                                     'children': [
-                                                        { 'text': 'Equipment/Piping' },
+                                                        { 'text': 'Equipment/Piping', "icon": "fa fa-dumbbell text-default" },
                                                         {
                                                             'text': 'Horizontal Vessel',
                                                             'children': [
-                                                                { 'text': 'Shell' },
-                                                                { 'text': 'Head' }
+                                                                { 'text': 'Shell', "icon": "fa fa-dumbbell text-default" },
+                                                                { 'text': 'Head', "icon": "fa fa-dumbbell text-default" }
                                                             ]
                                                         },
                                                         {
@@ -378,28 +347,39 @@
                         }
                     ]
                 },
+                "types": {
+                    "default": {
+                        "icon": "fa fa-plus-circle text-primary"
+                    },
+                    "file": {
+                        "icon": "fa fa-file  text-warning"
+                    }
+                },
+                "plugins": [
+                    "state", "types"
+                ]
             })
         });
 
         $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
-            if (data.node.text == 'Company') {
-                window.open("../asset.html", "_self")
-            }
-            if (data.node.text == 'Equipment/Piping') {
-                window.open("equipment.html", "_self")
-            }
-            if (data.node.text == 'Plant') {
-                window.open("plant.html", "_self")
-            }
-            if (data.node.text == 'Plant Section') {
-                window.open("plant_section.html", "_self")
-            }
-            if (data.node.original.text == 'Shell') {
-                window.open("hv_shell.html", "_self")
-            }
-            if (data.node.original.text == 'Head') {
-                window.open("hv_head.html", "_self")
-            }
+            // if (data.node.text == 'Company') {
+            //     window.open("../asset.html", "_self")
+            // }
+            // if (data.node.text == 'Equipment/Piping') {
+            //     window.open("equipment.html", "_self")
+            // }
+            // if (data.node.text == 'Plant') {
+            //     window.open("plant.html", "_self")
+            // }
+            // if (data.node.text == 'Plant Section') {
+            //     window.open("plant_section.html", "_self")
+            // }
+            // if (data.node.original.text == 'Shell') {
+            //     window.open("hv_shell.html", "_self")
+            // }
+            // if (data.node.original.text == 'Head') {
+            //     window.open("hv_head.html", "_self")
+            // }
         });
     </script>
     <script>
