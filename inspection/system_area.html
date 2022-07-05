@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/fontawesome-free-5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/inspection.css">
+    <link rel="stylesheet" href="../style/datepicker/bootstrap-datepicker.min.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../style/images/icon/logo-pavicon-v6.png">
+
+    <!-- Step 1 - Include the fusioncharts core library -->
+    <script type="text/javascript" src="../fusioncharts/fusioncharts.js"></script>
+    <!-- Step 2 - Include the fusion theme -->
+    <script type="text/javascript" src="../fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+
+    <title>Pupuk - Kaltim</title>
+</head>
+
+<body class="hideScroll">
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-table">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="../dashboard.html">
+                                    <i class="fa fa-home menu-i"></i>
+                                    <p>Home</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="../asset.html">
+                                    <i class="fa fa-folder menu-i"></i>
+                                    <p>Asset</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="../master/master_cf.html">
+                                    <i class="fa fa-database menu-i"></i>
+                                    <p>Master</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="../setting.html">
+                                    <i class="fa fa-cog menu-i"></i>
+                                    <p>Setting</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="../laporan.html">
+                                    <i class="fa fa-print menu-i"></i>
+                                    <p>Laporan</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white menu-active" href="../inspection/system_area.html">
+                                    <i class="fa fa-clipboard-check menu-i"></i>
+                                    <p>Inspection</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col mt-1">
+                            <li class="nav-item text-center">
+                                <a class="nav-link icon-white" href="document.html">
+                                    <i class="fa fa-book menu-i"></i>
+                                    <p>Document</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="menu-line"></div>
+                        <div class="col ">
+                            <div class="d-flex">
+                                <div class="ml-3 mt-2">
+                                    <img src="../style/images/user.png" alt="image" class="menu-image">
+                                </div>
+                                <div class="menu-avatar mt-3">
+                                    <span class="menu-avatar-name">John Kennedy</span>
+                                    <span class="menu-avatar-status">Super Admin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <div class="row">
+                <div class="col mt-2">
+                    <img src="../style/images/logo-text-v2.png" alt="image" class="menu-logo">
+                </div>
+                <div class="menu-line"></div>
+                <div class="col mt-3">
+                    <a class="nav-link menu-side-right" href="#">
+                        <i class="fa fa-search menu-i"></i>
+                    </a>
+                </div>
+                <div class="menu-line"></div>
+                <div class="col mt-3">
+                    <a class="nav-link menu-side-right" onclick="logout()" pointer>
+                        <i class="fa fa-power-off menu-i"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BODY CONTENT -->
+    <div class="inner-body">
+
+        <!-- SIDEBAR LEFT MENU -->
+        <div class="sidebar sidebar-height-asset">
+            <div class="d-flex justify-content-center navbar-btn">
+                <div class="filter-item mx-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">
+                                <i class="fa fa-search"></i>
+                            </label>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" placeholder="search...">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex navbar-btn mt-2">
+                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true" data-toggle="tooltip"
+                    data-placement="top" title="Asset">
+                    <i class="fa fa-plus sidebar-left-i"></i>
+                </button>
+                <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
+                    title="Export">
+                    <i class="fa fa-upload sidebar-left-i"></i>
+                </button>
+                <button class="btn mx-1" data-toggle="collapse" aria-expanded="true" data-toggle="tooltip"
+                    data-placement="top" title="Import">
+                    <i class="fa fa-download sidebar-left-i"></i>
+                </button>
+                <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
+                    title="Calculate">
+                    <i class="fa fa-calculator sidebar-left-i"></i>
+                </button>
+                <button class="btn mx-1" onclick="setDisplayNone('card5')" data-toggle="tooltip" data-placement="top"
+                    title="Save">
+                    <i class="fa fa-save sidebar-left-i"></i>
+                </button>
+            </div>
+            <div class="sidebar-body">
+                <div class="jstree-custom" id="jstree_demo_div"></div>
+            </div>
+        </div>
+
+        <!-- MAIN RIGHT CONTENT -->
+        <div class="main-content main-content-height-asset">
+            <div class="tabs">
+                <div class="tab-button-outer">
+                    <ul id="tab-button" class="row">
+                        <li class="col-4 tab-border">
+                            <a href="#tab01" class="d-flex justify-content-center py-2">
+                                <i class="fa fa-info-circle pr-2"></i>
+                                <div class="tab-text">DATA PROPERTY</div>
+                            </a>
+                        </li>
+                        <li class="col-4 tab-border">
+                            <a href="#tab02" class="d-flex justify-content-center py-2">
+                                <i class="fa fa-image pr-2"></i>
+                                <div class="tab-text">IMAGES</div>
+                            </a>
+                        </li>
+                        <li class="col-4">
+                            <a href="#tab03" class="d-flex justify-content-center py-2">
+                                <i class="fa fa-file pr-2"></i>
+                                <div class="tab-text">FILE</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab01" class="tab-contents">
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <span class="title-content">System/Area</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav aria-label="breadcrumb" class="bc">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Asset</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">System(Area)</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Data Property</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3 pl-0" id="card1">
+                        <div class="card">
+                            <div class="card-header pos-between">
+                                <div class="title-form">Detection, Isolation and Mitigation System</div>
+                                <div>
+                                    <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card1"
+                                        aria-expanded="true" aria-controls="panel-card1">
+                                        <i class="fa fa-minus button-top-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="panel-card1" class="collapse show">
+                                <div class="card-body">
+                                    <form class="mt-3">
+                                        <div class="form-group row">
+                                            <label for="lv4" class="col-5 col-form-label">Type of Mitigation
+                                                System</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="lv4"
+                                                    disabled>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lv5" class="col-5 col-form-label">Type of Detection
+                                                System</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm" id="lv5"
+                                                    disabled>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="datepickerYear" class="col-5 col-form-label">Type of Isolation
+                                                System</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control form-control-sm"
+                                                    id="datepickerYear" disabled>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab02" class="tab-contents">
+                <!-- <h2>Tab Images</h2> -->
+            </div>
+            <div id="tab03" class="tab-contents">
+                <!-- <h2>Tab File</h2> -->
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../bootstrap-4.6.1/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script type="text/javascript" src="../tabs/ui.tabs.stretchyTabs.js"></script>
+    <script type="text/javascript" src="../tabs/lib/ui.tabs.closable.js"></script>
+    <script type="text/javascript" src="../tabs/lib/ui.tabs.addTab.js"></script>
+    <script type="text/javascript" src="../style/datepicker/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
+    <script type="text/javascript">
+        $(function () {
+            $('#jstree_demo_div').jstree({
+                'core':
+                {
+                    "themes": {
+                        "icons": false
+                    },
+                    'data': [
+                        {
+                            'text': 'Company',
+                            'state': { 'opened': true },
+                            'children': [
+                                {
+                                    'text': 'Plant',
+                                    'state': { 'opened': true },
+                                    'children': [
+                                        {
+                                            'text': 'Plant Section',
+                                            'state': { 'opened': true },
+                                            'children': [
+                                                {
+                                                    'text': 'System/Area',
+                                                    'state': { 'opened': true, 'selected': true },
+                                                    'children': [
+                                                        { 'text': 'Equipment/Piping' },
+                                                        {
+                                                            'text': 'Horizontal Vessel',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Head' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Vertical Vessel',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Top Head' },
+                                                                { 'text': 'Bottom Head' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Heat Exchanger',
+                                                            'children': [
+                                                                { 'text': 'Shell' },
+                                                                { 'text': 'Tube Bundle' },
+                                                                { 'text': 'Front End Channel' },
+                                                                { 'text': 'Rear End Channel' },
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Cooler',
+                                                            'children': [
+                                                                { 'text': 'Tube Section' },
+                                                                { 'text': 'Header Box' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Boiler',
+                                                            'children': [
+                                                                { 'text': 'Tube Section' },
+                                                                { 'text': 'Head' },
+                                                                { 'text': 'Shell' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Fired Heater',
+                                                            'children': [
+                                                                { 'text': 'Heater Box' },
+                                                                { 'text': 'Tube Section' },
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Piping',
+                                                            'children': [
+                                                                { 'text': 'Piping Tag' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'Tank',
+                                                            'children': [
+                                                                { 'text': 'Tank Course' },
+                                                                { 'text': 'Tank Bottom' },
+                                                                { 'text': 'Tank Roof' }
+                                                            ]
+                                                        },
+                                                        {
+                                                            'text': 'PSV',
+                                                            'children': [
+                                                                { 'text': 'PSV' }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+            })
+        });
+
+        $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
+            if (data.node.text == 'Company') {
+                window.open("../asset.html", "_self")
+            }
+            if (data.node.text == 'Equipment/Piping') {
+                window.open("equipment.html", "_self")
+            }
+            if (data.node.text == 'Plant') {
+                window.open("plant.html", "_self")
+            }
+            if (data.node.text == 'Plant Section') {
+                window.open("plant_section.html", "_self")
+            }
+            if (data.node.original.text == 'Shell') {
+                window.open("hv_shell.html", "_self")
+            }
+            if (data.node.original.text == 'Head') {
+                window.open("hv_head.html", "_self")
+            }
+        });
+    </script>
+    <script>
+        function setDisplayNone(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        function openSaPage(param) {
+            window.location.href = param;
+        }
+        $(function () {
+            var $tabButtonItem = $('#tab-button li'),
+                $tabSelect = $('#tab-select'),
+                $tabContents = $('.tab-contents'),
+                activeClass = 'is-active';
+
+            $tabButtonItem.first().addClass(activeClass);
+            $tabContents.not(':first').hide();
+
+            $tabButtonItem.find('a').on('click', function (e) {
+                var target = $(this).attr('href');
+
+                $tabButtonItem.removeClass(activeClass);
+                $(this).parent().addClass(activeClass);
+                $tabSelect.val(target);
+                $tabContents.hide();
+                $(target).show();
+                e.preventDefault();
+            });
+
+            $tabSelect.on('change', function () {
+                var target = $(this).val(),
+                    targetSelectNum = $(this).prop('selectedIndex');
+
+                $tabButtonItem.removeClass(activeClass);
+                $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+                $tabContents.hide();
+                $(target).show();
+            });
+        });
+        $(function () {
+            $(".tabpanel").tabs({ closable: true, addTab: true }).tabs('stretchyTabs')
+                .find(".ui-tabs-nav").sortable({
+                    distance: 10
+                });
+            // $( ".tabpanel" ).tabs("remove", 0);
+        });
+        function addTab(name) {
+            const navbar = Array.from(document.querySelectorAll('.tabpanel>ul>li'));
+            console.log(navbar, 'navbar');
+            let found = 0
+            for (var i = 0; i < navbar.length; i++) {
+                if (navbar[i].innerText == name) {
+                    found++
+                }
+            }
+            if (found == 0) {
+                $(".tabpanel").tabs("add", name, "content goes here");
+            }
+        }
+    </script>
+
+    <script>
+        $.fn.extend({
+            treed: function (o) {
+
+                var openedClass = 'glyphicon-minus-sign';
+                var closedClass = 'glyphicon-plus-sign';
+
+                if (typeof o != 'undefined') {
+                    if (typeof o.openedClass != 'undefined') {
+                        openedClass = o.openedClass;
+                    }
+                    if (typeof o.closedClass != 'undefined') {
+                        closedClass = o.closedClass;
+                    }
+                };
+
+                //initialize each of the top levels
+                var tree = $(this);
+                tree.addClass("tree");
+                tree.find('li').has("ul").each(function () {
+                    var branch = $(this); //li with children ul
+                    branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+                    branch.addClass('branch');
+                    branch.on('click', function (e) {
+                        if (this == e.target) {
+                            var icon = $(this).children('i:first');
+                            icon.toggleClass(openedClass + " " + closedClass);
+                            $(this).children().children().toggle();
+                        }
+                    })
+                    branch.children().children().toggle();
+                });
+                //fire event from the dynamically added icon
+                tree.find('.branch .indicator').each(function () {
+                    $(this).on('click', function () {
+                        $(this).closest('li').click();
+                    });
+                });
+                //fire event to open branch if the li contains an anchor instead of text
+                tree.find('.branch>a').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
+                    });
+                });
+                //fire event to open branch if the li contains a button instead of text
+                tree.find('.branch>button').each(function () {
+                    $(this).on('click', function (e) {
+                        $(this).closest('li').click();
+                        e.preventDefault();
+                    });
+                });
+            }
+        });
+
+        //Initialization of treeviews
+        $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
+
+        // DATEPICKER
+        $('#datepicker').datepicker({
+            format: 'dd-mm-yyyy',
+            autoclose: true
+        });
+        $("#datepickerYear").datepicker({
+            format: "yyyy",
+            viewMode: "years",
+            minViewMode: "years",
+            autoclose: true //to close picker once year is selected
+        });
+        $('.btn-collapse').on("click", function (e) {
+            if ($(this).hasClass('collapsed')) {
+                $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+            }
+        });
+    </script>
+</body>
+
+</html>
