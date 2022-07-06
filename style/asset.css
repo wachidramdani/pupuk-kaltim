@@ -33,6 +33,10 @@
     height: calc(100% + 254px);
 }
 
+.sidebar-height-sa {
+    height: calc(100% + 0px);
+}
+
 .sidebar-height-plant-section {
     height: calc(100% + 10px);
 }
@@ -96,6 +100,11 @@
 .main-content-height-plant {
     height: calc(100% + 254px);
 }
+
+.main-content-height-sa {
+    height: calc(100% + 0px);
+}
+
 
 .main-content-height-equipment {
     height: calc(100% + 520px);
