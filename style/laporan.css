@@ -1,0 +1,250 @@
+.inner-body {
+    margin: 0;
+    padding: 0;
+    height: calc(100vh + 185px);
+    width: 100%;
+    overflow-y: auto;
+}
+
+/*SIDEBAR LEFT*/
+.sidebar {
+    float: left;
+    width: 335px;
+    padding-top: 7px;
+    overflow-y: auto;
+    background-color: #e0dfdd;
+    border-right: 1px solid #cdcdcd;
+}
+
+.sidebar-height-asset {
+    height: calc(100% - 10px);
+}
+
+.sidebar-height-laporan {
+    height: calc(100% + 0px) !important;
+}
+
+.sidebar-height-plant {
+    height: calc(100% - 100px);
+}
+
+.sidebar-height-plant-section {
+    height: calc(100% + 10px);
+}
+
+.sidebar-height-equipment {
+    height: calc(100% + 520px);
+}
+
+.sidebar-hv_shell,
+.sidebar-hv_head {
+    padding-top: 11px !important;
+}
+
+.sidebar .navbar-btn {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 8px;
+    justify-content: center;
+}
+
+.sidebar-hv_shell .navbar-btn,
+.sidebar-hv_head .navbar-btn {
+    padding-bottom: 14px !important;
+}
+
+.sidebar-left-i {
+    margin-top: 6px;
+    color: #6C757D;
+}
+
+/* jstree custom  */
+.jstree-custom {
+    margin: 1rem 0;
+}
+
+.jstree-default .jstree-anchor {
+    font-size: 12px !important;
+    color: #6C757D !important;
+    box-shadow: inset 0 0 0 #999 !important;
+}
+
+.jstree-default .jstree-anchor:hover {
+    color: #f47920 !important;
+    box-shadow: inset 0 0 0 #999 !important;
+}
+
+.jstree-default .jstree-clicked {
+    color: #f47920 !important;
+    box-shadow: inset 0 0 0 #999 !important;
+}
+
+/* MAIN CONTENT RIGHT */
+.main-content {
+    float: left;
+    width: calc(100% - 335px);
+    height: calc(100% + 0px);
+    background-color: #f8f9fa;
+    padding: 0;
+}
+
+.main-content-height-asset {
+    height: calc(100% - 10px);
+}
+
+.main-content-height-plant {
+    height: calc(100% - 100px);
+
+}
+
+.main-content-height-equipment {
+    height: calc(100% + 520px);
+}
+
+.sub-main-content {
+    float: left;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    background-color: #fff;
+    padding: 0;
+    position: relative;
+    top: -24px
+}
+
+.title-content {
+    font-size: 24px;
+    color: rgba(0,0,0,0.7);
+    padding-left: 23px;
+}
+
+.breadcrumb-position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.breadcrumb {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.breadcrumb-item a {
+    color: #6C757D;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb-position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-header-laporan {
+    background-color: #e0dfdd !important;
+    padding: 15px;
+}
+
+.card-header-laporan:first-child {
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.card .card-header-laporan button {
+    /* margin-left: 5px; */
+    padding: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    background-color: black;
+    width: 110px;
+    justify-content: center;
+}
+
+.btn {
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-color: black;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border: 0;
+}
+
+.card .card-header-laporan .btn-left-export {
+    background-color: #343a40;
+}
+
+.card .card-header-laporan .btn-left-import {
+    background-color: #74788d;
+}
+
+.card .card-header-laporan .btn-right-add {
+    background-color: #64b5f6;
+}
+
+.card .card-header-laporan .btn-right-delete {
+    background-color: #585858;
+}
+
+.card .card-header-laporan .btn-right-edit {
+    background-color: #c55227;
+}
+
+.card .card-header-laporan button:focus,
+.card .card-header-laporan button:active {
+    border: none;
+    outline: none;
+}
+
+.pos-between-laporan {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    background-color: #FFFFFF;
+    color: #F8F9FA;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.bg-icon-export {
+    background-color: #343a40;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    left: 16px;
+    height: 30px;
+    top: 16px
+}
+
+.btn-text {
+    font-size: 14px;
+    padding-left: 29px;
+    margin-right: 7px;
+}
+
+.bg-icon-import {
+    background-color: #74788d;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    left: 136px;
+    height: 30px;
+    top: 16px
+}
+
+.bg-icon-edit {
+    background-color: #c55227;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 106px;
+    height: 30px;
+    top: 16px 
+}
