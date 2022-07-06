@@ -230,7 +230,7 @@
                         <div id="panel-card6" class="collapse show">
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table id="tabel-data" cellspacing="0">
+                                    <table id="tabel-data" cellspacing="0" width="100%">
                                         <thead class="thead-grey">
                                             <tr>
                                                 <th scope="col">Jan 2022</th>
@@ -288,6 +288,36 @@
                         </nav>
                     </div>
                 </div>
+                <div class="card m-4">
+                    <div class="card-header-master pos-between-master">
+                        <div class="d-flex">
+                            <button type="button" class="btn d-flex align-items-center btn-left-import">
+                                <!-- <i class="fa fa-upload bg-icon-export"></i> -->
+                                <div class="btn-text">Modify</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="panel-card6" class="collapse show">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="tabel-data-plan" cellspacing="0" width="100%">
+                                    <thead class="thead-grey">
+                                        <tr>
+                                            <th scope="col">Damage Driven</th>
+                                            <th scope="col">Inspection Plan Category</th>
+                                            <th scope="col">Effectiveness Category</th>
+                                            <th scope="col">Inspection Type</th>
+                                            <th scope="col">Inspection Status</th>
+                                            <th scope="col">Inspection Date</th>
+                                            <th scope="col">Remark</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody-default"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="tab03" class="tab-contents">
                 <div class="row mt-4">
@@ -303,7 +333,31 @@
                         </nav>
                     </div>
                 </div>
-                <div id='calendar'></div>
+                <div class="card m-4">
+                    <div id="panel-card6" class="collapse show">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="tabel-data-record" cellspacing="0" width="100%">
+                                    <thead class="thead-grey">
+                                        <tr>
+                                            <th scope="col">Number of Reports</th>
+                                            <th scope="col">UT External Report</th>
+                                            <th scope="col"> </th>
+                                            <th scope="col">UT Internal Report </th>
+                                            <th scope="col">Cracking Report</th>
+                                            <th scope="col">CUI Report</th>
+                                            <th scope="col">Visual Report</th>
+                                            <th scope="col">Etc. Report</th>
+                                            <th scope="col">Detail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody-default"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id='calendar'></div> -->
             </div>
             <div id="tab04" class="tab-contents">
                 <div class="row mt-4">
@@ -627,7 +681,7 @@
     </script>
 
     <script type="text/javascript">
-            $(document).ready(function () {
+        $(document).ready(function () {
 
             var json = {
                 result: [
@@ -657,6 +711,27 @@
                 ]
             };
 
+            var jsonPlan = {
+                resultPlan: [
+                    { field1: 'General Thinning ', field2: 'A', field3: 'Highly Effective', field4: 'Intrusive ', field5: 'Incomplete ', field6: '17 Feb 2022', field7: 'Inspection B tambahan Penetrant' },
+                    { field1: 'General Thinning ', field2: 'A', field3: 'Highly Effective', field4: 'Intrusive ', field5: 'Incomplete ', field6: '17 Feb 2022', field7: 'Inspection B tambahan Penetrant' },
+                    { field1: 'General Thinning ', field2: 'A', field3: 'Highly Effective', field4: 'Intrusive ', field5: 'Incomplete ', field6: '17 Feb 2022', field7: 'Inspection B tambahan Penetrant' },
+                    { field1: 'General Thinning ', field2: 'A', field3: 'Highly Effective', field4: 'Intrusive ', field5: 'Incomplete ', field6: '17 Feb 2022', field7: 'Inspection B tambahan Penetrant' },
+                    { field1: 'General Thinning ', field2: 'A', field3: 'Highly Effective', field4: 'Intrusive ', field5: 'Incomplete ', field6: '17 Feb 2022', field7: 'Inspection B tambahan Penetrant' },
+                ]
+            };
+
+            var jsonRecord = {
+                resultRecord: [
+                    {field1: '4', field2: '1', field3: '0', field4: '3', field5: '', field6: '3', field7: '0', field8: '', field9: ''},
+                    {field1: '4', field2: '1', field3: '0', field4: '3', field5: '', field6: '3', field7: '0', field8: '', field9: ''},
+                    {field1: '4', field2: '1', field3: '0', field4: '3', field5: '', field6: '3', field7: '0', field8: '', field9: ''},
+                    {field1: '4', field2: '1', field3: '0', field4: '3', field5: '', field6: '3', field7: '0', field8: '', field9: ''},
+                    {field1: '4', field2: '1', field3: '0', field4: '3', field5: '', field6: '3', field7: '0', field8: '', field9: ''},
+                    {field1: '4', field2: '1', field3: '0', field4: '3', field5: '', field6: '3', field7: '0', field8: '', field9: ''}
+                ]
+            };
+
             $('#tabel-data').DataTable({
                 searching: false,
                 "dom": '<"top"f>rt<"bottom"lp><"clear">',
@@ -679,6 +754,48 @@
                     { data: "field10", className: "text-center" },
                     { data: "field11", className: "text-center" },
                     { data: "field12", className: "text-center" }
+                ]
+            });
+
+            $('#tabel-data-plan').DataTable({
+                searching: false,
+                "dom": '<"top"f>rt<"bottom"lp><"clear">',
+                fixedHeader: {
+                    header: true,
+                    // footer: true
+                },
+                data: jsonPlan.resultPlan,
+                // pageLength:  10,
+                columns: [
+                    { data: "field1", className: "text-center" },
+                    { data: "field2", className: "text-center" },
+                    { data: "field3", className: "text-center" },
+                    { data: "field4", className: "text-center" },
+                    { data: "field5", className: "text-center" },
+                    { data: "field6", className: "text-center" },
+                    { data: "field7", className: "text-center" }
+                ]
+            });
+
+            $('#tabel-data-record').DataTable({
+                searching: false,
+                "dom": '<"top"f>rt<"bottom"lp><"clear">',
+                fixedHeader: {
+                    header: true,
+                    // footer: true
+                },
+                data: jsonRecord.resultRecord,
+                // pageLength:  10,
+                columns: [
+                    { data: "field1", className: "text-center" },
+                    { data: "field2", className: "text-center" },
+                    { data: "field3", className: "text-center" },
+                    { data: "field4", className: "text-center" },
+                    { data: "field5", className: "text-center" },
+                    { data: "field6", className: "text-center" },
+                    { data: "field7", className: "text-center" },
+                    { data: "field8", className: "text-center" },
+                    { data: "field9", className: "text-center" },
                 ]
             });
         });
