@@ -25,9 +25,6 @@
     height: calc(100% - 10px);
 }
 
-.sidebar-height-master {
-    height: calc(100% + 15px) !important;
-}
 
 .sidebar-height-plant {
     height: calc(100% + 254px);
