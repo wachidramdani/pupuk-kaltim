@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="../style/style.css">
     <!-- <link href='../fullCalender/main.css' rel='stylesheet' /> -->
     <link rel="stylesheet" href="../style/calender/style.css">
-    <link rel="stylesheet" href="https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.css"
+    <link rel="stylesheet" href="..//style/calender/fullcalendar.css">
+    <!-- <link rel="stylesheet" href="https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.css"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://fullcalendar.io/releases/fullcalendar-scheduler/1.9.4/scheduler.min.css"
-        rel="stylesheet" />
+        rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
 
-    <script type="text/javascript" src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js"></script>
-    <script type="text/javascript" src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js"></script>
+    <script type="text/javascript" src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js"></script> -->
 
     <!-- <link rel="stylesheet" href="../style/master.css"> -->
     <link rel="stylesheet" href="../style/inspection.css">
@@ -34,6 +35,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Step 2 - Include the fusion theme -->
     <script type="text/javascript" src="../fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
+
     <title>Pupuk - Kaltim</title>
 </head>
 
@@ -196,10 +198,12 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Inspection Schedule -->
                 <div id="tab01" class="tab-contents">
                     <div class="row mt-4">
                         <div class="col-sm-6">
-                            <span class="title-content">System/Area</span>
+                            <span class="title-content">Inspection Schedule</span>
                         </div>
                         <div class="col-sm-6">
                             <nav aria-label="breadcrumb" class="bc">
@@ -211,25 +215,22 @@
                         </div>
                     </div>
                     <div class="card m-4">
-                        <div class="card-header-master pos-between-master">
+                        <!-- <div class="card-header-master pos-between-master">
                             <div class="d-flex">
                                 <button type="button" class="btn d-flex align-items-center btn-left-import">
-                                    <!-- <i class="fa fa-upload bg-icon-export"></i> -->
                                     <div class="btn-text">Week</div>
                                 </button>
                                 <button type="button" class="btn d-flex align-items-center btn-left-import">
-                                    <!-- <i class="fa fa-download bg-icon-import"></i> -->
                                     <div class="btn-text">Month</div>
                                 </button>
                                 <button type="button" class="btn d-flex align-items-center btn-left-import">
-                                    <!-- <i class="fa fa-download bg-icon-import"></i> -->
                                     <div class="btn-text">Year</div>
                                 </button>
                             </div>
                         </div>
                         <div id="panel-card6" class="collapse show">
                             <div class="card-body">
-                                <!-- <div id='calendar'></div> -->
+                                <div id='calendar'></div>
                                 <div class="table-responsive">
                                     <table id="tabel-data" cellspacing="0" width="100%">
                                         <thead class="thead-grey">
@@ -252,7 +253,8 @@
                                     </table>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <div id="calendar"></div>
                     </div>
                     <div class="row ml-4">
                         <div>
@@ -273,124 +275,131 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="tab02" class="tab-contents">
-                <!-- <h2>Tab Images</h2> -->
-                <div class="row mt-4">
-                    <div class="col-sm-6">
-                        <span class="title-content">System/Area</span>
-                    </div>
-                    <div class="col-sm-6">
-                        <nav aria-label="breadcrumb" class="bc">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Inspection</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Inspeection Plan</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-                <div class="card m-4">
-                    <div class="card-header-master pos-between-master">
-                        <div class="d-flex">
-                            <button type="button" class="btn d-flex align-items-center btn-left-import">
-                                <!-- <i class="fa fa-upload bg-icon-export"></i> -->
-                                <div class="btn-text">Modify</div>
-                            </button>
+
+                <!-- Inspection Plan -->
+                <div id="tab02" class="tab-contents">
+                    <!-- <h2>Tab Images</h2> -->
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <span class="title-content">Inspection Plan</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav aria-label="breadcrumb" class="bc">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Inspection</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Inspeection Plan</li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
-                    <div id="panel-card6" class="collapse show">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="tabel-data-plan" cellspacing="0" width="100%">
-                                    <thead class="thead-grey">
-                                        <tr>
-                                            <th scope="col">Damage Driven</th>
-                                            <th scope="col">Inspection Plan Category</th>
-                                            <th scope="col">Effectiveness Category</th>
-                                            <th scope="col">Inspection Type</th>
-                                            <th scope="col">Inspection Status</th>
-                                            <th scope="col">Inspection Date</th>
-                                            <th scope="col">Remark</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="tbody-default"></tbody>
-                                </table>
+                    <div class="card m-4">
+                        <div class="card-header-master pos-between-master">
+                            <div class="d-flex">
+                                <button type="button" class="btn d-flex align-items-center btn-left-import">
+                                    <!-- <i class="fa fa-upload bg-icon-export"></i> -->
+                                    <div class="btn-text">Modify</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="panel-card6" class="collapse show">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="tabel-data-plan" cellspacing="0" width="100%">
+                                        <thead class="thead-grey">
+                                            <tr>
+                                                <th scope="col">Damage Driven</th>
+                                                <th scope="col">Inspection Plan Category</th>
+                                                <th scope="col">Effectiveness Category</th>
+                                                <th scope="col">Inspection Type</th>
+                                                <th scope="col">Inspection Status</th>
+                                                <th scope="col">Inspection Date</th>
+                                                <th scope="col">Remark</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody-default"></tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="tab03" class="tab-contents">
-                <div class="row mt-4">
-                    <div class="col-sm-6">
-                        <span class="title-content">System/Area</span>
+
+                <!-- Inspection Record -->
+                <div id="tab03" class="tab-contents">
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <span class="title-content">Inspection Record</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav aria-label="breadcrumb" class="bc">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Inspection</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Inspeection Record</li>
+                                </ol>
+                            </nav>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <nav aria-label="breadcrumb" class="bc">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Inspection</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Inspeection Record</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-                <div class="card m-4">
-                    <div id="panel-card6" class="collapse show">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="tabel-data-record" cellspacing="0" width="100%">
-                                    <thead class="thead-grey">
-                                        <tr>
-                                            <th scope="col">Number of Reports</th>
-                                            <th scope="col">UT External Report</th>
-                                            <th scope="col"> </th>
-                                            <th scope="col">UT Internal Report </th>
-                                            <th scope="col">Cracking Report</th>
-                                            <th scope="col">CUI Report</th>
-                                            <th scope="col">Visual Report</th>
-                                            <th scope="col">Etc. Report</th>
-                                            <th scope="col">Detail</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="tbody-default"></tbody>
-                                </table>
+                    <div class="card m-4">
+                        <div id="panel-card6" class="collapse show">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="tabel-data-record" cellspacing="0" width="100%">
+                                        <thead class="thead-grey">
+                                            <tr>
+                                                <th scope="col">Number of Reports</th>
+                                                <th scope="col">UT External Report</th>
+                                                <th scope="col"> </th>
+                                                <th scope="col">UT Internal Report </th>
+                                                <th scope="col">Cracking Report</th>
+                                                <th scope="col">CUI Report</th>
+                                                <th scope="col">Visual Report</th>
+                                                <th scope="col">Etc. Report</th>
+                                                <th scope="col">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody-default"></tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="tab04" class="tab-contents">
-                <div class="row mt-4">
-                    <div class="col-sm-6">
-                        <span class="title-content">System/Area</span>
-                    </div>
-                    <div class="col-sm-6">
-                        <nav aria-label="breadcrumb" class="bc">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Inspection</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Inspeection Informaion</li>
-                            </ol>
-                        </nav>
+                <div id="tab04" class="tab-contents">
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <span class="title-content">Inspection Information</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav aria-label="breadcrumb" class="bc">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Inspection</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Inspeection Informaion</li>
+                                </ol>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="../bootstrap-4.6.1/js/jquery.slim.min.js"></script>
     <script src="../bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript"
-        src="https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js"></script>
-    <script type="text/javascript"
-        src="https://fullcalendar.io/releases/fullcalendar-scheduler/1.9.4/scheduler.min.js"></script>
 
+    <!-- <script type="text/javascript"
+    src="https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+    <script type="text/javascript"
+    src="https://fullcalendar.io/releases/fullcalendar-scheduler/1.9.4/scheduler.min.js"></script> -->
+    
     <!-- <script src='../fullcalendar/main.js'></script> -->
+    <!-- <script type="text/javascript" charset="utf8" src="../dataTable/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="../dataTable/jquery.dataTables.min.js"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" charset="utf8" src="../dataTable/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="../dataTable/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
     <script type="text/javascript" src="../tabs/ui.tabs.stretchyTabs.js"></script>
     <script type="text/javascript" src="../tabs/lib/ui.tabs.closable.js"></script>
@@ -400,6 +409,12 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+    <script src="../style/calender/fullcalendar.js"></script>
+    <script src="../style/calender/script.js"></script>
     <script type="text/javascript">
         $(function () {
             $('#jstree_demo_div').jstree({
@@ -732,30 +747,30 @@
                 ]
             };
 
-            $('#tabel-data').DataTable({
-                searching: false,
-                "dom": '<"top"f>rt<"bottom"lp><"clear">',
-                fixedHeader: {
-                    header: true,
-                    // footer: true
-                },
-                data: json.result,
-                // pageLength:  10,
-                columns: [
-                    { data: "field1", className: "text-center" },
-                    { data: "field2" },
-                    { data: "field3" },
-                    { data: "field4", className: "text-center" },
-                    { data: "field5", className: "text-center" },
-                    { data: "field6", className: "text-center" },
-                    { data: "field7" },
-                    { data: "field8" },
-                    { data: "field9", className: "text-center" },
-                    { data: "field10", className: "text-center" },
-                    { data: "field11", className: "text-center" },
-                    { data: "field12", className: "text-center" }
-                ]
-            });
+            // $('#tabel-data').DataTable({
+            //     searching: false,
+            //     "dom": '<"top"f>rt<"bottom"lp><"clear">',
+            //     fixedHeader: {
+            //         header: true,
+            //         // footer: true
+            //     },
+            //     data: json.result,
+            //     // pageLength:  10,
+            //     columns: [
+            //         { data: "field1", className: "text-center" },
+            //         { data: "field2" },
+            //         { data: "field3" },
+            //         { data: "field4", className: "text-center" },
+            //         { data: "field5", className: "text-center" },
+            //         { data: "field6", className: "text-center" },
+            //         { data: "field7" },
+            //         { data: "field8" },
+            //         { data: "field9", className: "text-center" },
+            //         { data: "field10", className: "text-center" },
+            //         { data: "field11", className: "text-center" },
+            //         { data: "field12", className: "text-center" }
+            //     ]
+            // });
 
             $('#tabel-data-plan').DataTable({
                 searching: false,
@@ -800,7 +815,7 @@
             });
         });
     </script>
-    <script>
+    <!-- <script>
         $(function () {
             $('#calendar').fullCalendar({
                 eventSources: [
@@ -845,6 +860,60 @@
                 }
             });
 
+        });
+    </script> -->
+    <script>
+        // Code goes here
+        $(document).ready(function() {
+
+        // page is now ready, initialize the calendar...
+
+        var calendar = $('#calendar').fullCalendar({
+        // put your options and callbacks here
+        header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'year,month,basicWeek,basicDay'
+
+        },
+        timezone: 'local',
+        height: "auto",
+        selectable: true,
+        dragabble: true,
+        defaultView: 'year',
+        yearColumns: 3,
+
+        durationEditable: true,
+        bootstrap: false,
+
+        events: [{
+        title: "Some event",
+        start: new Date('2017-1-10'),
+        end: new Date('2017-1-20'),
+        id: 1,
+        allDay: true,
+        editable: true,
+        eventDurationEditable: true,
+        }, ],
+        select: function(start, end, allDay) {
+        var title = prompt('Event Title:');
+        if (title) {
+            var event = {
+            title: title,
+            start: start.clone(),
+            end: end.clone(),
+            allDay: true,
+            editable: true,
+            eventDurationEditable: true,
+            eventStartEditable: true,
+            color: 'red',
+            };
+
+
+            calendar.fullCalendar('renderEvent', event, true);
+        }
+        },
+        })
         });
     </script>
 </body>
