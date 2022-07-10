@@ -1,11 +1,2 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-    font-size: 14px;
-}
+/* Styles go here */
 
-#calendar {
-    margin: 40px auto;
-}
