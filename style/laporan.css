@@ -33,7 +33,11 @@
 }
 
 .sidebar-height-laporan {
-    height: calc(100% + 200px) !important;
+    height: calc(100% + 0px) !important;
+}
+
+.sidebar-height-laporan-summary {
+    height: calc(100% + 100px) !important;
 }
 
 .sidebar-height-plant {
@@ -104,7 +108,7 @@
 }
 
 .main-content-height-summary {
-    height: calc(100% + 200px);
+    height: calc(100% + 100px);
 
 }
 
