@@ -25,6 +25,13 @@
     height: calc(100% - 10px);
 }
 
+.sidebar-height-hvshell {
+    height: calc(100% + 785px);
+}
+
+.sidebar-height-master {
+    height: calc(100% + 15px) !important;
+}
 
 .sidebar-height-plant {
     height: calc(100% + 254px);
@@ -80,6 +87,14 @@
     justify-content: center;
 }
 
+.nav-tabs {
+    font-size: 14px;
+}
+
+.nav-tabs-device {
+    font-size: 12px;
+}
+
 .main-content {
     float: left;
     /* width: calc(100% - 295px); */
@@ -92,6 +107,10 @@
 
 .main-content-height-asset {
     height: calc(100% - 10px);
+}
+
+.main-content-height-hvshell {
+    height: calc(100% + 785px);
 }
 
 .main-content-height-plant {
@@ -123,6 +142,26 @@
     border-radius: 10px;
     width: 100%;
     height: 120px;
+}
+
+.bg-number {
+    background-color: #005BAC;
+}
+
+.bg-risk {
+    background-color: #64B5F6;
+}
+
+.bg-likelihood {
+    background-color: #909090;
+}
+
+.bg-consequence {
+    background-color: #4E4E4E;
+}
+
+.bg-sap {
+    background-color: #f8f9fa;
 }
 
 .label-asset-text {
@@ -461,6 +500,148 @@
     border: 0;
 }
 
+.card-header-hvshell {
+    background-color: #e0dfdd;
+    padding: 15px;
+}
+
+.card-header-hvshell:first-child {
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.card .card-header-hvshell button {
+    /* margin-left: 5px; */
+    padding: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    background-color: black;
+    width: 110px;
+    justify-content: end;
+}
+
+.card .card-header-hvshell .btn-left-export {
+    background-color: #343a40;
+}
+
+.card .card-header-hvshell .btn-left-import {
+    background-color: #74788d;
+}
+
+.card .card-header-hvshell .btn-right-delete {
+    background-color: #f47920;
+}
+
+.card .card-header-hvshell .btn-right-add {
+    background-color: #c55227;
+}
+
+.card .card-header-hvshell .btn-right-edit {
+    background-color: #005BAC;
+}
+
+.card .card-header-hvshell button:focus,
+.card .card-header-hvshell button:active {
+    border: none;
+    outline: none;
+}
+
+.pos-between-hvshell {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1px;
+    /* background-color: #E16333; */
+    background-color: #FFFFFF;
+    color: #F8F9FA;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.bg-icon-hvshell-export {
+    background-color: #343a40;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 226px;
+    height: 30px;
+    top: 17px
+}
+
+.bg-icon-hvshell-import {
+    background-color: #74788d;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 106px;
+    height: 30px;
+    top: 17px
+}
+
+.bg-icon-add {
+    background-color: #c55227;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 339px;
+    height: 30px;
+    top: 16px 
+}
+
+.bg-icon-delete {
+    background-color: #f47920;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 222px;
+    height: 30px;
+    top: 16px 
+}
+
+.bg-icon-edit {
+    background-color: #005BAC;
+    padding: 9px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 106px;
+    height: 30px;
+    top: 16px 
+}
+
+.width-remove {
+    width: 100% !important;
+}
+
+.cml-height {
+    min-height: 600px
+}
+
+.cml-corrosion {
+    transform: rotate(-90deg); 
+    position: absolute; 
+    left: -50px; 
+    top: 130px
+}
+
+.cml-thickness {
+    transform: rotate(-90deg); 
+    position: absolute; 
+    left: -81px; 
+    top: 393px
+}
+
+.cml-margin {
+    margin-top: -30px
+}
+
+.btn-text {
+    font-size: 14px;
+    padding-left: 29px;
+    margin-right: 7px;
+}
+
 #tab-button {
     /* display: table; */
     table-layout: fixed;
@@ -550,11 +731,6 @@
     padding: 5px;
 }
 
-.tab-contents {
-    margin-top: 20px;
-}
-
-
 /* jstree custom  */
 .jstree-custom {
     margin: 1rem 0;
@@ -620,7 +796,7 @@
     /* CARD ASSET */
     .wrimagecard-image-asset-number,
     .wrimagecard-image-asset-text {
-        margin-left: 120px;
+        margin-left: 150px;
     }
 
     .wrimagecard-image-asset-number2,
@@ -643,18 +819,13 @@
 @media (min-width: 1280px) {
 
     /* CARD ASSET */
-    .wrimagecard-image-asset-number {
-        margin-left: 135px;
-        margin-top: 15px;
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+        margin-left: 180px;
     }
 
     .wrimagecard-image-asset-number2 {
         margin-left: 185px;
         margin-top: 15px;
-    }
-
-    .wrimagecard-image-asset-text {
-        margin-left: 130px;
     }
 
     .wrimagecard-image-asset-text2 {
@@ -671,14 +842,8 @@
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history {
-        margin-left: 200px;
-        margin-top: 10px;
-    }
-
-    .wrimagecard-image-asset-inspection {
-        margin-left: 220px;
-        margin-top: 10px;
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 270px;
     }
 
     .label-asset-inspection {
@@ -692,6 +857,14 @@
     /* COMPANY, DATA PROPERTY */
     .form-data-property .form-title {
         width: 14%;
+    }
+
+    .nav-tabs-device {
+        font-size: 9px;
+    }
+
+    .nav-tabs-device-cof {
+        font-size: 11px;
     }
 
     /* DAMAGE MECHANISM SUB TAB */
@@ -708,9 +881,8 @@
 @media (min-width: 1366px) {
 
     /* CARD ASSET */
-    .wrimagecard-image-asset-number {
-        margin-left: 150px;
-        margin-top: 5px;
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text {
+        margin-left: 200px;
     }
 
     .wrimagecard-image-asset-number2 {
@@ -718,18 +890,13 @@
         margin-top: 5px;
     }
 
-    .wrimagecard-image-asset-text {
-        margin-left: 150px;
-    }
-
     .wrimagecard-image-asset-text2 {
         margin-left: 200px;
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history {
-        margin-left: 230px;
-        margin-top: 20px;
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 300px;
     }
 
     .label-asset-inspection {
@@ -740,13 +907,17 @@
         margin-top: 15px;
     }
 
-    .wrimagecard-image-asset-inspection {
-        margin-left: 240px;
-    }
-
     /* COMPANY, DATA PROPERTY */
     .form-data-property .form-title {
         width: 13%;
+    }
+
+    .nav-tabs-device {
+        font-size: 10px;
+    }
+
+    .nav-tabs-device-cof {
+        font-size: 12px;
     }
 
     /* DAMAGE MECHANISM SUB TAB */
@@ -760,7 +931,12 @@
     /* CARD ASSET */
     .wrimagecard-image-asset-number,
     .wrimagecard-image-asset-text {
-        margin-left: 170px;
+        margin-left: 220px;
+        margin-top: 20px;
+    }
+
+    .top-device {
+        margin-top: 5px;
     }
 
     .wrimagecard-image-asset-number2,
@@ -769,13 +945,8 @@
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history {
-        margin-left: 255px;
-    }
-
-    .wrimagecard-image-asset-inspection {
-        margin-left: 265px;
-        margin-top: 15px;
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 320px;
     }
 
     .label-asset-inspection {
@@ -792,6 +963,14 @@
         width: 12%;
     }
 
+    .nav-tabs-device {
+        font-size: 11px;
+    }
+
+    .nav-tabs-device-cof {
+        font-size: 13px;
+    }
+
     /* DAMAGE MECHANISM SUB TAB */
     /* .damage-mechanism-sub-tab-a {
         width: 117.8px;
@@ -803,7 +982,7 @@
     /* CARD ASSET */
     .wrimagecard-image-asset-number,
     .wrimagecard-image-asset-text {
-        margin-left: 195px;
+        margin-left: 250px;
     }
 
     .wrimagecard-image-asset-number2,
@@ -812,13 +991,8 @@
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history {
-        margin-left: 290px;
-    }
-
-    .wrimagecard-image-asset-inspection {
-        margin-left: 300px;
-        margin-top: 10px;
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 360px;
     }
 
     .label-asset-inspection {
@@ -840,6 +1014,14 @@
         padding: 10px 20px;
     }
 
+    .nav-tabs-device {
+        font-size: 13px;
+    }
+
+    .nav-tabs-device-cof {
+        font-size: 15px;
+    }
+
     /* DAMAGE MECHANISM SUB TAB */
     /* .damage-mechanism-sub-tab {
         font-size: 12px;
@@ -855,7 +1037,7 @@
     /* CARD ASSET */
     .wrimagecard-image-asset-number,
     .wrimagecard-image-asset-text {
-        margin-left: 225px;
+        margin-left: 270px;
     }
 
     .wrimagecard-image-asset-number2,
@@ -864,12 +1046,8 @@
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history {
-        margin-left: 325px;
-    }
-
-    .wrimagecard-image-asset-inspection {
-        margin-left: 335px;
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 390px;
     }
 
     .label-asset-inspection {
@@ -894,6 +1072,14 @@
         padding: 10px 30px;
     }
 
+    .nav-tabs-device {
+        font-size: 14px;
+    }
+
+    .nav-tabs-device-cof {
+        font-size: 16px;
+    }
+
     /* DAMAGE MECHANISM SUB TAB */
     /* .damage-mechanism-sub-tab-a {
         width: 142px;
@@ -903,18 +1089,13 @@
 @media (min-width: 1770px) {
 
     /* CARD ASSET */
-    .wrimagecard-image-asset-number {
-        margin-left: 245px;
-        margin-top: 20px;
+    .wrimagecard-image-asset-number, .wrimagecard-image-asset-text  {
+        margin-left: 300px;
     }
 
     .wrimagecard-image-asset-number2 {
         margin-left: 295px;
         margin-top: 20px;
-    }
-
-    .wrimagecard-image-asset-text {
-        margin-left: 245px;
     }
 
     .wrimagecard-image-asset-text2 {
@@ -930,12 +1111,8 @@
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history {
-        margin-left: 360px;
-    }
-
-    .wrimagecard-image-asset-inspection {
-        margin-left: 370px;
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 420px;
     }
 
     .label-asset-inspection {
@@ -960,6 +1137,14 @@
         padding: 10px 40px;
     }
 
+    .nav-tabs-device {
+        font-size: 16px;
+    }
+
+    .nav-tabs-device-cof {
+        font-size: 18px;
+    }
+
     /* DAMAGE MECHANISM SUB TAB */
     /* .damage-mechanism-sub-tab-a {
         width: 154.5px;
@@ -971,7 +1156,7 @@
     /* CARD ASSET */
     .wrimagecard-image-asset-number,
     .wrimagecard-image-asset-text {
-        margin-left: 285px;
+        margin-left: 330px;
     }
 
     .wrimagecard-image-asset-number2,
@@ -980,12 +1165,8 @@
     }
 
     /* CARD CONTENT */
-    .wrimagecard-image-asset-history {
-        margin-left: 410px;
-    }
-
-    .wrimagecard-image-asset-inspection {
-        margin-left: 415px;
+    .wrimagecard-image-asset-history, .wrimagecard-image-asset-inspection {
+        margin-left: 470px;
     }
 
     .label-asset-inspection {
@@ -1003,6 +1184,14 @@
     /* COMPANY, DATA PROPERTY */
     .form-data-property .form-title {
         width: 8%;
+    }
+
+    .nav-tabs-device {
+        font-size: 18px;
+    }
+
+    .nav-tabs-device-cof {
+        font-size: 20px;
     }
 
     /* DAMAGE MECHANISM SUB TAB */
@@ -1143,4 +1332,5 @@
     border-radius: 10px;
     padding: 10px;
     margin-right: 10px;
+    margin-left: 15px;
 }
