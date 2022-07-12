@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-4.6.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/fontawesome-free-5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="dataTable/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/laporan.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/fontawesome-free-5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../dataTable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/laporan.css">
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="style/images/icon/logo-pavicon-v6.png">
+    <link rel="shortcut icon" href="../style/images/icon/logo-pavicon-v6.png">
 
     <!-- Step 1 - Include the fusioncharts core library -->
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+    <script type="text/javascript" src="../fusioncharts/fusioncharts.js"></script>
     <!-- Step 2 - Include the fusion theme -->
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="../fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -39,7 +39,7 @@
                     <div class="row">
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link icon-white" href="dashboard.html">
+                                <a class="nav-link icon-white" href="../dashboard.html">
                                     <i class="fa fa-home menu-i"></i>
                                     <p>Home</p>
                                 </a>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link icon-white" href="asset.html">
+                                <a class="nav-link icon-white" href="../asset.html">
                                     <i class="fa fa-folder menu-i"></i>
                                     <p>Asset</p>
                                 </a>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link icon-white" href="master/master_cf.html">
+                                <a class="nav-link icon-white" href="../master/master_cf.html">
                                     <i class="fa fa-database menu-i"></i>
                                     <p>Master</p>
                                 </a>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link icon-white" href="setting.html">
+                                <a class="nav-link icon-white" href="../setting.html">
                                     <i class="fa fa-cog menu-i"></i>
                                     <p>Setting</p>
                                 </a>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link icon-white menu-active" href="laporan.html">
+                                <a class="nav-link icon-white menu-active" href="../laporan.html">
                                     <i class="fa fa-print menu-i"></i>
                                     <p>Laporan</p>
                                 </a>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link icon-white" href="inspection/system_area.html">
+                                <a class="nav-link icon-white" href="../inspection/system_area.html">
                                     <i class="fa fa-clipboard-check menu-i"></i>
                                     <p>Inspection</p>
                                 </a>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="col mt-1">
                             <li class="nav-item text-center">
-                                <a class="nav-link icon-white" href="document.html">
+                                <a class="nav-link icon-white" href="../document.html">
                                     <i class="fa fa-book menu-i"></i>
                                     <p>Document</p>
                                 </a>
@@ -97,7 +97,7 @@
                         <div class="col">
                             <div class="d-flex">
                                 <div class="ml-3 mt-2">
-                                    <img src="style/images/user.png" alt="image" class="menu-image">
+                                    <img src="../style/images/user.png" alt="image" class="menu-image">
                                 </div>
                                 <div class="menu-avatar mt-3">
                                     <span class="menu-avatar-name">John Kennedy</span>
@@ -110,7 +110,7 @@
             </ul>
             <div class="row">
                 <div class="col mt-2">
-                    <img src="style/images/logo-text-v2.png" alt="image" class="menu-logo">
+                    <img src="../style/images/logo-text-v2.png" alt="image" class="menu-logo">
                 </div>
                 <div class="menu-line"></div>
                 <div class="col mt-3">
@@ -132,30 +132,30 @@
     <div class="inner-body">
 
         <!-- SIDEBAR LEFT MENU -->
-        <div class="sidebar sidebar-height-laporan">
+        <div class="sidebar sidebar-height-laporan-summary">
             <div class="jstree-custom" id="jstree_demo_div"></div>
         </div>
 
         <!-- MAIN RIGHT CONTENT -->
-        <div class="main-content">
+        <div class="main-content main-content-height-summary">
             <div class="row mt-4">
                 <div class="col-sm-6">
-                    <span class="title-content">Plan Of Page</span>
+                    <span class="title-content">RBI Summary</span>
                 </div>
                 <div class="col-sm-6 pr-4">
                     <nav aria-label="breadcrumb" class="breadcrumb-position">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Laporan</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Plan Of Page</li>
+                            <li class="breadcrumb-item active" aria-current="page">RBI Summary</li>
                         </ol>
                     </nav>
                 </div>
             </div>
             <div class="row row-content">
-                <div class="col-6 mt-3" id="card1">
+                <div class="col-7 mt-3" id="card1">
                     <div class="card">
                         <div class="card-header pos-between">
-                            <div class="title-form">Select Filter for Report</div>
+                            <div class="title-form">Select Content for Report</div>
                             <div>
                                 <button class="btn-collapse" data-toggle="collapse" data-target="#panel-card5"
                                     aria-expanded="true" aria-controls="panel-card5">
@@ -170,64 +170,66 @@
                             <div class="card-body">
                                 <form>
                                     <div class="form-group row">
-                                        <label for="datepicker" class="col-5 col-form-label">Plan</label>
-                                        <div class="col-7">
-                                            <select class="js-example-basic-single" name="state" required>
-                                                <option value=""></option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="WY">Wyoming</option>
-                                            </select>
+                                        <label for="lv4" class="col-7 col-form-label">Select All</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="form-group row">
+                                        <label for="lv4" class="col-7 col-form-label">Registered Asset</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="financialriskTarget" class="col-5 col-form-label">Section</label>
-                                        <div class="col-7">
-                                            <select class="js-example-basic-single" name="state" required>
-                                                <option value=""></option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="WY">Wyoming</option>
-                                            </select>
+                                        <label for="lv4" class="col-7 col-form-label">Data Completion</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="datepicker" class="col-5 col-form-label">System/Area</label>
-                                        <div class="col-7">
-                                            <select class="js-example-basic-single" name="state" required>
-                                                <option value=""></option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="WY">Wyoming</option>
-                                            </select>
+                                        <label for="lv4" class="col-7 col-form-label">Risk Summary</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="financialriskTarget" class="col-5 col-form-label">Equipment</label>
-                                        <div class="col-7">
-                                            <select class="js-example-basic-single" name="state" required>
-                                                <option value=""></option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="WY">Wyoming</option>
-                                            </select>
+                                        <label for="lv4" class="col-7 col-form-label">Corrosion Rate</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="datepicker" class="col-5 col-form-label">Component</label>
-                                        <div class="col-7">
-                                            <select class="js-example-basic-single" name="state" required>
-                                                <option value=""></option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="WY">Wyoming</option>
-                                            </select>
+                                        <label for="lv4" class="col-7 col-form-label">Recommendation Task</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="financialriskTarget" class="col-5 col-form-label">Document
-                                            Type</label>
-                                        <div class="col-7">
-                                            <select class="js-example-basic-single" name="state" required>
-                                                <option value=""></option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="WY">Wyoming</option>
-                                            </select>
+                                        <label for="lv4" class="col-7 col-form-label">Asset Exceeding Risk
+                                            Target</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lv4" class="col-7 col-form-label">Inspection Recomendation</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lv4" class="col-7 col-form-label">Inspection and Follow-up
+                                            Status</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lv4" class="col-7 col-form-label">Damage Distribution</label>
+                                        <div class="mt-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -250,19 +252,19 @@
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="bootstrap-4.6.1/js/jquery.slim.min.js"></script>
-    <script src="bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-4.6.1/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" charset="utf8" src="dataTable/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="dataTable/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="../dataTable/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="../dataTable/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
-    <script type="text/javascript" src="tabs/ui.tabs.stretchyTabs.js"></script>
-    <script type="text/javascript" src="tabs/lib/ui.tabs.closable.js"></script>
-    <script type="text/javascript" src="tabs/lib/ui.tabs.addTab.js"></script>
+    <script type="text/javascript" src="../tabs/ui.tabs.stretchyTabs.js"></script>
+    <script type="text/javascript" src="../tabs/lib/ui.tabs.closable.js"></script>
+    <script type="text/javascript" src="../tabs/lib/ui.tabs.addTab.js"></script>
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="tabs/ui.tabs.stretchyTabs.css">
+    <link rel="stylesheet" type="text/css" href="../tabs/ui.tabs.stretchyTabs.css">
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -316,7 +318,7 @@
                     'data': [
                         {
                             'text': 'Plan On Page',
-                            'state': { 'opened': false, 'selected': true },
+                            'state': { 'opened': false },
                             'children': [
                                 { 'text': 'Area 1', "icon": "fa fa-dumbbell text-default" },
                                 { 'text': 'Area 2', "icon": "fa fa-dumbbell text-default" },
@@ -325,7 +327,7 @@
                         },
                         {
                             'text': 'RBI Summary',
-                            'state': { 'opened': false },
+                            'state': { 'opened': false, 'selected': true },
                             'children': [
                                 { 'text': 'Area 1', "icon": "fa fa-dumbbell text-default" },
                                 { 'text': 'Area 2', "icon": "fa fa-dumbbell text-default" },
@@ -337,7 +339,7 @@
                             'state': { 'opened': false },
                             'children': [
                                 { 'text': 'Area 1', "icon": "fa fa-dumbbell text-default" },
-                                { 'text': 'Area 2', "icon": "fa fa-dumbbell text-default" },
+                                { 'text': 'Area 2', "icon": "fa fa-dumbbell text-default", 'selected': true },
                                 { 'text': 'Area 3', "icon": "fa fa-dumbbell text-default" },
                             ]
                         }
@@ -361,54 +363,14 @@
 
         $('#jstree_demo_div').on("select_node.jstree", function (e, data) {
             console.log(data.node, 'data')
-            if (data.node.original.text == 'RBI Summary') {
-                window.open("./sub-laporan/subSummary.html", "_self")
+            if (data.node.original.text == 'Plan On Page') {
+                window.open("../laporan.html", "_self")
             }
             if (data.node.original.text == 'RBI Result Summary') {
-                window.open("./sub-laporan/resultSummary.html", "_self")
+                window.open("resultSummary.html", "_self")
             }
         });
     </Script>
-
-    <script>
-        $(document).ready(function () {
-
-            var json = {
-                result: [
-                    { field1: "1", field2: "John Cena", field3: "Amine", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "2", field2: "Under Taker", field3: "Ammonia", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "3", field2: "Kane", field3: "Ammonia and Hydrochloric Acid", field4: "Non Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "4", field2: "Brock Lesnar", field3: "Ammonia and Sulfide", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "5", field2: "Rey Mysteryo", field3: "Ammonium Chloride", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "6", field2: "Kurt Angel", field3: "Amine", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "7", field2: "Ediie", field3: "Amine", field4: "Non Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "8", field2: "John Cena", field3: "Amine", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "9", field2: "Kane", field3: "Amine", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                    { field1: "10", field2: "Under Taker", field3: "Amine", field4: "Aktif", field5: '-', field6: '-', field7: '-', field8: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
-                ]
-            };
-
-            $('#tabel-data').DataTable({
-                "dom": '<"top"f>rt<"bottom"lp><"clear">',
-                fixedHeader: {
-                    header: true,
-                    // footer: true
-                },
-                data: json.result,
-                // pageLength:  10,
-                columns: [
-                    { data: "field1", className: "text-center" },
-                    { data: "field2" },
-                    { data: "field3" },
-                    { data: "field4", className: "text-center" },
-                    { data: "field5", className: "text-center" },
-                    { data: "field6", className: "text-center" },
-                    { data: "field7", className: "text-center" },
-                    { data: "field8", className: "text-center" },
-                ]
-            });
-        });
-    </script>
 
     <script>
         function openSaPage(param) {
@@ -530,8 +492,10 @@
 
         //Initialization of treeviews
         $('#tree3').treed({ openedClass: 'fa fa-angle-down', closedClass: 'fa fa-angle-right' });
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 </body>
 
 </html>

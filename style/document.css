@@ -16,12 +16,16 @@
     border-right: 1px solid #cdcdcd;
 }
 
+.txt {
+    color: #595d60 !important;
+}
+
 .sidebar-height-asset {
     height: calc(100% - 10px);
 }
 
 .sidebar-height-document {
-    height: calc(100% + 0px) !important;
+    height: calc(100% + 180px) !important;
 }
 
 .sidebar-height-plant {

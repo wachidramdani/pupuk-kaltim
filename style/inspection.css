@@ -200,7 +200,7 @@
 }
 
 .main-content-height-asset {
-    height: calc(100% - 10px);
+    height: calc(100% + 90px);
 }
 
 .main-content-height-plant {
@@ -269,6 +269,7 @@
 }
 
 .tabs {
+    height: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -277,6 +278,16 @@
 .tabs-center {
     display: flex;
     justify-content: center;
+}
+
+.over {
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.over-calendar {
+    height: calc(100vh - 50px);
+    overflow: auto;
 }
 
 .tab-button-outer {
@@ -366,6 +377,21 @@
     color: #6C757D;
 }
 
+/* custom table */
+.fc table {
+    margin: 0;
+}
+
+.fc th, .fc td {
+    width: 14% !important;
+    padding: 0 5px !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
 /* MEDIA */
 @media screen and (min-width: 768px) {
     /* TAB */
