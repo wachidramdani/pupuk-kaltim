@@ -138,7 +138,7 @@
 }
 
 .bg-icon-edit {
-    background-color: #c55227;
+    background-color: #c55227 !important;
     padding: 9px;
     border-radius: 10px 0 0 10px;
     position: absolute;
