@@ -175,14 +175,14 @@
         <div class="main-content main-content-height-hvshell">
             <div class="tabs">
                 <div class="tab-button-outer">
-                    <ul id="tab-button">
+                    <ul id="tab-button" class="tabs-center">
                         <!-- <li class="tab-border">
                             <a href="#tab01" class="d-flex justify-content-center">
                                 <i class="fa fa-home"></i>
                                 <div class="pt-2">Home</div>
                             </a>
                         </li> -->
-                        <li class="tab-border">
+                        <li class="tab-border tab-border-left">
                             <a href="#tab02" class="d-flex justify-content-center">
                                 <i class="fa fa-info-circle"></i>
                                 <div class="mt-1">Data Property</div>
@@ -215,13 +215,13 @@
                         <li class="tab-border">
                             <a href="#tab07" class="d-flex justify-content-center">
                                 <i class="fa fa-paper-plane"></i>
-                                <div class="mt-1">INSP Plan</div>
+                                <div class="mt-1">Foto / Gambar</div>
                             </a>
                         </li>
-                        <li class="">
+                        <li class="tab-border">
                             <a href="#tab08" class="d-flex justify-content-center">
                                 <i class="fa fa-image"></i>
-                                <div class="mt-1">Foto / Gambar</div>
+                                <div class="mt-1">Dokumen</div>
                             </a>
                         </li>
                     </ul>
@@ -253,7 +253,7 @@
                                 <a class="nav-item nav-link subTab" id="nav-contact-tab" data-toggle="tab"
                                     href="#nav-inspection" role="tab" aria-controls="nav-contact" aria-selected="false">
                                     <i class="fa fa-tasks pr-2"></i>
-                                    Inspection Data
+                                    Inspection Summary
                                 </a>
                             </div>
                         </nav>
@@ -1677,7 +1677,7 @@
                             </div>
                         </div>
 
-                        <!-- INSPECTION DATA -->
+                        <!-- INSPECTION SUMMARY -->
                         <div class="tab-pane fade" id="nav-inspection" role="tabpanel"
                             aria-labelledby="nav-contact-tab">
                             <div class="card" id="nav-home" role="tabpanel">
@@ -1743,17 +1743,9 @@
                                                         <div class="card" id="nav-home" role="tabpanel">
                                                             <div class="card-header-hvshell pos-between-hvshell">
                                                                 <div class="d-flex justify-content-end">
-                                                                    <button type="button" class="btn btn-right-add">
+                                                                    <button data-toggle="modal" data-target="#AddModal" type="button" class="btn btn-right-add">
                                                                         <i class="fa fa-plus bg-icon-add"></i>
                                                                         <div class="btn-text">Add Row</div>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-right-delete">
-                                                                        <i class="fa fa-trash bg-icon-delete"></i>
-                                                                        <div class="btn-text">Delete</div>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-right-edit">
-                                                                        <i class="fas fa-pen bg-icon-edit"></i>
-                                                                        <div class="btn-text">Edit</div>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -1767,25 +1759,27 @@
                                                                                     cellspacing="0">
                                                                                     <thead class="thead-grey">
                                                                                         <tr>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Date</th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Report No</th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Inspection Type</th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Inspection Result</th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Report Link</th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Cracking Type</th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Cracking Effectiveness
                                                                                             </th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Anomaly</th>
-                                                                                            <th scope="col">
+                                                                                            <th class="text-center" scope="col">
                                                                                                 Remarks</th>
+                                                                                            <th class="text-center" scope="col">
+                                                                                                Action</th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody class="tbody-default">
@@ -1797,6 +1791,245 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="AddModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-lg">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h7 class="modal-title" id="exampleModalLabel">Add Row</h7>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body bg-default">
+
+                                                                        <!-- EQUIPMENT INFORMATION -->
+                                                                        <div class="card" id="equin">
+                                                                            <div class="card-header pos-between">
+                                                                                <div class="title-form">Equipment Information</div>
+                                                                                <div>
+                                                                                    <button data-toggle="collapse" data-target="#panel-equin" aria-expanded="true"
+                                                                                        aria-controls="panel-equin">
+                                                                                        <i class="fa fa-minus mt-1"></i>
+                                                                                    </button>
+                                                                                    <button onclick="setDisplayNone('equin')">
+                                                                                        <i class="fa fa-times mt-1"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="panel-equin" class="collapse show">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Equip Name</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker" disabled>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Equip Tag</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker" disabled>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- INSPECTION RECORD FORM                                                                       EQUIPMENT INFORMATION -->
+                                                                        <div class="card" id="inref">
+                                                                            <div class="card-header pos-between">
+                                                                                <div class="title-form">Inspection Record Form</div>
+                                                                                <div>
+                                                                                    <button data-toggle="collapse" data-target="#panel-inref" aria-expanded="true"
+                                                                                        aria-controls="panel-inref">
+                                                                                        <i class="fa fa-minus mt-1"></i>
+                                                                                    </button>
+                                                                                    <button onclick="setDisplayNone('inref')">
+                                                                                        <i class="fa fa-times mt-1"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="panel-inref" class="collapse show">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Date of Inspection</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="date" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Report Number</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group form-select row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Inspection Type</label>
+                                                                                            <div class="col-7">
+                                                                                                <select class="js-example-basic-single" name="state" title="" required>
+                                                                                                    <option value=""></option>
+                                                                                                    <option value="AL">Alabama</option>
+                                                                                                    <option value="WY">Wyoming</option>
+                                                                                                </select>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Inspection Result</label>
+                                                                                            <div class="col-7">
+                                                                                                <textarea type="text-area" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required></textarea>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Report Number</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="file" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- <div class="form-group form-check">
+                                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
+                                                                                                required>
+                                                                                            <label class="form-check-label form-label" for="defaultCheck1">
+                                                                                                Default checkbox
+                                                                                            </label>
+                                                                                            <div class="valid-feedback">Looks good!</div>
+                                                                                            <div class="invalid-feedback">This field is required.</div>
+                                                                                        </div>
+                                                                                        <div class="form-group form-check">
+                                                                                            <input class="form-check-input" type="radio" name="choice"
+                                                                                                id="emailConsentRadio" value="optionB" required>
+                                                                                            <label class="form-check-label form-label" for="emailConsentRadio">
+                                                                                                Default Radio
+                                                                                            </label>
+                                                                                            <div class="valid-feedback">Looks good!</div>
+                                                                                            <div class="invalid-feedback">This field is required.</div>
+                                                                                        </div> -->
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- CRACKING INSPECTION RECORD FORM                                                                INSPECTION RECORD FORM                                                                       EQUIPMENT INFORMATION -->
+                                                                        <div class="card" id="crirf">
+                                                                            <div class="card-header pos-between">
+                                                                                <div class="title-form">Cracking Inspection Record Form</div>
+                                                                                <div>
+                                                                                    <button data-toggle="collapse" data-target="#panel-crirf" aria-expanded="true"
+                                                                                        aria-controls="panel-crirf">
+                                                                                        <i class="fa fa-minus mt-1"></i>
+                                                                                    </button>
+                                                                                    <button onclick="setDisplayNone('crirf')">
+                                                                                        <i class="fa fa-times mt-1"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="panel-crirf" class="collapse show">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="form-group form-select row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Cracking Type</label>
+                                                                                            <div class="col-7">
+                                                                                                <select class="js-example-basic-single" name="state" title="" required>
+                                                                                                    <option value=""></option>
+                                                                                                    <option value="AL">Alabama</option>
+                                                                                                    <option value="WY">Wyoming</option>
+                                                                                                </select>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group form-select row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Cracking Effectiveness</label>
+                                                                                            <div class="col-7">
+                                                                                                <select class="js-example-basic-single" name="state" title="" required>
+                                                                                                    <option value=""></option>
+                                                                                                    <option value="AL">Alabama</option>
+                                                                                                    <option value="WY">Wyoming</option>
+                                                                                                </select>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- REMARKS -->
+                                                                        <div class="card" id="remarks">
+                                                                            <div class="card-header pos-between">
+                                                                                <div class="title-form">Remarks</div>
+                                                                                <div>
+                                                                                    <button data-toggle="collapse" data-target="#panel-remarks" aria-expanded="true"
+                                                                                        aria-controls="panel-remarks">
+                                                                                        <i class="fa fa-minus mt-1"></i>
+                                                                                    </button>
+                                                                                    <button onclick="setDisplayNone('remarks')">
+                                                                                        <i class="fa fa-times mt-1"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="panel-remarks" class="collapse show">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Anomaly</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker" required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Remarks</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker" required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="btn-save-cancel">
+                                                                            <button type="button" class="btn d-flex align-items-center btn-right-cancel" data-dismiss="modal">
+                                                                                <i class="fas fa-times bg-icon-cancel"></i>
+                                                                                <div class="btn-text">Cancel</div>
+                                                                            </button>
+                                                                            <button type="submit" class="btn d-flex align-items-center btn-right-save">
+                                                                                <i class="fas fa-save bg-icon-save"></i>
+                                                                                <div class="btn-text">Save</div>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
 
                                                     <!-- POINT AND THICKNESS -->
@@ -1805,17 +2038,9 @@
                                                         <div class="card" id="nav-home" role="tabpanel">
                                                             <div class="card-header-hvshell pos-between-hvshell">
                                                                 <div class="d-flex justify-content-end">
-                                                                    <button type="button" class="btn btn-right-add">
+                                                                    <button data-toggle="modal" data-target="#AddModal2" type="button" class="btn btn-right-add">
                                                                         <i class="fa fa-plus bg-icon-add"></i>
                                                                         <div class="btn-text">Add Row</div>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-right-delete">
-                                                                        <i class="fa fa-trash bg-icon-delete"></i>
-                                                                        <div class="btn-text">Delete</div>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-right-edit">
-                                                                        <i class="fas fa-pen bg-icon-edit"></i>
-                                                                        <div class="btn-text">Edit</div>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -1869,12 +2094,204 @@
                                                                                                 Long R</th>
                                                                                             <th scope="col">
                                                                                                 Graph De</th>
+                                                                                            <th class="text-center" scope="col">
+                                                                                                Action</th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody class="tbody-default">
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="AddModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-lg">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h7 class="modal-title" id="exampleModalLabel">Add Row</h7>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body bg-default">
+
+                                                                        <!-- EQUIPMENT INFORMATION -->
+                                                                        <div class="card" id="equin2">
+                                                                            <div class="card-header pos-between">
+                                                                                <div class="title-form">Equipment Information</div>
+                                                                                <div>
+                                                                                    <button data-toggle="collapse" data-target="#panel-equin2" aria-expanded="true"
+                                                                                        aria-controls="panel-equin2">
+                                                                                        <i class="fa fa-minus mt-1"></i>
+                                                                                    </button>
+                                                                                    <button onclick="setDisplayNone('equin2')">
+                                                                                        <i class="fa fa-times mt-1"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="panel-equin2" class="collapse show">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Equip Name</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker" disabled>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Equip Tag</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker" disabled>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- THICKNESS RECORD FORM  -->
+                                                                        <div class="card" id="thirf">
+                                                                            <div class="card-header pos-between">
+                                                                                <div class="title-form">Thickness Record Form</div>
+                                                                                <div>
+                                                                                    <button data-toggle="collapse" data-target="#panel-thirf" aria-expanded="true"
+                                                                                        aria-controls="panel-thirf">
+                                                                                        <i class="fa fa-minus mt-1"></i>
+                                                                                    </button>
+                                                                                    <button onclick="setDisplayNone('thirf')">
+                                                                                        <i class="fa fa-times mt-1"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="panel-thirf" class="collapse show">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">CML ID</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group form-select row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Category</label>
+                                                                                            <div class="col-7">
+                                                                                                <select class="js-example-basic-single2" name="state" title="" required>
+                                                                                                    <option value=""></option>
+                                                                                                    <option value="AL">Alabama</option>
+                                                                                                    <option value="WY">Wyoming</option>
+                                                                                                </select>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Nominal Thickness (in)</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker"
+                                                                                                    disabled>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Initiall Date</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="date" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Latest Read Date</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="date" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Orientation (in)</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="number" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Previous Reading Date</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="date" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Orientation (in)</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="number" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required>
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Required Thickness (in)</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker"
+                                                                                                    disabled >
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Shoort Rate (mpy)</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required >
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="datepicker" class="col-5 col-form-label">Long Rate (mpy)</label>
+                                                                                            <div class="col-7">
+                                                                                                <input type="text" class="form-control form-control-sm" id="datepicker"
+                                                                                                    required >
+                                                                                                <div class="valid-feedback">Looks good!</div>
+                                                                                                <div class="invalid-feedback">This field is required.</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="btn-save-cancel">
+                                                                            <button type="button" class="btn d-flex align-items-center btn-right-cancel" data-dismiss="modal">
+                                                                                <i class="fas fa-times bg-icon-cancel"></i>
+                                                                                <div class="btn-text">Cancel</div>
+                                                                            </button>
+                                                                            <button type="submit" class="btn d-flex align-items-center btn-right-save">
+                                                                                <i class="fas fa-save bg-icon-save"></i>
+                                                                                <div class="btn-text">Save</div>
+                                                                            </button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -9950,8 +10367,26 @@
                     </form>
                 </div>
 
-                <!-- ============ TAB INSP Plan ========== -->
+                <!-- ============ TAB FOTO/GAMBAR ========== -->
                 <div id="tab07" class="tab-contents">
+                    <ul class="pgwSlideshow" style="padding-inline-start: 0 !important;">
+                        <li><img src="../slideshow/images/1.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/2.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/3.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/4.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/5.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/6.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/7.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/8.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/9.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/10.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/11.png" alt="" data-description=""></li>
+                        <li><img src="../slideshow/images/12.png" alt="" data-description=""></li>
+                    </ul>
+                </div>
+                
+                <!-- ============ TAB DOKUMEN ========== -->
+                <div id="tab08" class="tab-contents">
                     <div class="row">
                         <div class="col-6 mt-5">
 
@@ -10445,23 +10880,6 @@
                     </div>
                 </div>
 
-                <!-- ============ TAB FOTO/GAMBAR ========== -->
-                <div id="tab08" class="tab-contents">
-                    <ul class="pgwSlideshow" style="padding-inline-start: 0 !important;">
-                        <li><img src="../slideshow/images/1.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/2.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/3.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/4.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/5.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/6.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/7.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/8.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/9.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/10.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/11.png" alt="" data-description=""></li>
-                        <li><img src="../slideshow/images/12.png" alt="" data-description=""></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
@@ -10487,8 +10905,25 @@
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript" src="../slideshow/pgwslideshow.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../slideshow/pgwslideshow.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script type="text/javascript">
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2({
+                dropdownParent: $('#AddModal'),
+                placeholder: 'Select an option',
+                allowClear: true
+            });
+            $('.js-example-basic-single2').select2({
+                dropdownParent: $('#AddModal2'),
+                placeholder: 'Select an option',
+                allowClear: true
+            });
+            $('.select2-selection__rendered').hover(function () {
+                $(this).removeAttr('title');
+            });
+        });
         $(document).ready(function () {
             var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow();
             pgwSlideshow.startSlide();
@@ -11108,12 +11543,13 @@
 
             var json = {
                 result: [
-                    { field1: "11-Sep-13", field2: "042-ISP-MC-6016", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9: "" },
-                    { field1: "11-Sep-13", field2: "042-ISP-MC-6016", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9: "" },
-                    { field1: "11-Sep-13", field2: "042-ISP-MC-6016", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9: "" },
-                    { field1: "11-Sep-13", field2: "042-ISP-MC-6016", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9: "" },
-                    { field1: "11-Sep-13", field2: "042-ISP-MC-6016", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9: "" },
-                    { field1: "11-Sep-13", field2: "042-ISP-MC-6016", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9: "" },
+                    { field1: "11-Sep-13", field2: "042-ISP-MC-6016", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9:"", field10: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "14-May-15", field2: "042-ISP-MC-6061A", field3: "Visual Inspection", field4: "No Corrosion Under Insulation", field5: "", field6: "", field7: "", field8: "", field9:"", field10: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "15-May-15", field2: "042-ISP-MC-6061B", field3: "UT Scanning", field4: "No found Significant Thinning during inspection", field5: "", field6: "", field7: "", field8: "", field9:"", field10: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "14-Jul-15", field2: "042-ISP-MC-6075", field3: "", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9:"", field10: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "24-Jan-18", field2: "092-ISP-MC-7056", field3: "Fugitive Inspection", field4: "No fugitive observed", field5: "", field6: "", field7: "", field8: "", field9:"", field10: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "16-Jun-18", field2: "042-ISP-MC-7061", field3: "Visual Inspection", field4: "Good condition", field5: "", field6: "", field7: "", field8: "", field9:"", field10: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "05-Sep-18", field2: "042-ISP-MC-7068", field3: "UT Spot", field4: "The Result is no found Significant Thinning", field5: "", field6: "", field7: "", field8: "", field9:"", field10: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
                 ]
             };
 
@@ -11135,6 +11571,7 @@
                     { data: "field7" },
                     { data: "field8" },
                     { data: "field9" },
+                    { data: "field10", className: "text-center" },
                 ]
             });
         });
@@ -11145,12 +11582,15 @@
 
             var json = {
                 result: [
-                    { field1: "3", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "4.84", field6: "5.3", field7: "5.1", field8: "4.9", field9: "4.84", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>' },
-                    { field1: "3", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "4.84", field6: "5.3", field7: "5.1", field8: "4.9", field9: "4.84", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>' },
-                    { field1: "3", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "4.84", field6: "5.3", field7: "5.1", field8: "4.9", field9: "4.84", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>' },
-                    { field1: "3", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "4.84", field6: "5.3", field7: "5.1", field8: "4.9", field9: "4.84", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>' },
-                    { field1: "3", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "4.84", field6: "5.3", field7: "5.1", field8: "4.9", field9: "4.84", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>' },
-                    { field1: "3", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "4.84", field6: "5.3", field7: "5.1", field8: "4.9", field9: "4.84", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>' },
+                    { field1: "3", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "4.84", field7: "5.1", field8: "4.9", field9: "4.84", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "5", field2: "Inacti", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "4.98", field7: "4.9", field8: "4.9", field9: "4.21", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "8", field2: "Active", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "5.12", field7: "5.1", field8: "5.0", field9: "5.04", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "6", field2: "Active", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "5.04", field7: "4.9", field8: "5.1", field9: "4.67", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "9", field2: "Active", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "5.12", field7: "5.0", field8: "4.9", field9: "4.92", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "1", field2: "Active", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "4.6", field7: "4.8", field8: "5.1", field9: "4.6", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "2", field2: "Active", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "5.1", field7: "4.7", field8: "4.9", field9: "4.77", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "4", field2: "Active", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "5.35", field7: "4.6", field8: "5.0", field9: "4.67", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
+                    { field1: "7", field2: "Active", field3: "6", field4: "01/01/20", field5: "20/05/2016", field6: "5.18", field7: "4.9", field8: "4.8", field9: "4.87", field10: "01/01/2009", field11: "20/05/2016", field12: "4.84", field13: "5.3", field14: "5.1", field15: "4.9", field16: "4.84", field17: "2.5", field18: "0.059", field19: "0.06", field20: '<button>Detail</button>', field21: '<a href="#" class="dropdown-toggle btn btn-primary bg-blue-600" data-toggle="dropdown" style="color:#fff !Important; background-color: #f47920; border: none;">Action <i class="icon-menu9"></i> </a><ul class="dropdown-menu dropdown-menu-right"><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-pen"></i> Edit</a></li><li><a href="javascript:;" class="dropdown-item" onClick=""><i class="fa fa-trash"></i> Delete</a>' },
                 ]
             };
 
@@ -11183,6 +11623,7 @@
                     { data: "field18" },
                     { data: "field19" },
                     { data: "field20" },
+                    { data: "field21", className: "text-center" },
                 ]
             });
         });
