@@ -585,7 +585,7 @@
     padding: 9px;
     border-radius: 10px 0 0 10px;
     position: absolute;
-    right: 339px;
+    right: 108px;
     height: 30px;
     top: 16px 
 }
@@ -1337,4 +1337,39 @@
     padding: 10px;
     margin-right: 10px;
     margin-left: 15px;
+}
+
+/* INSPECTION */
+.form-master {
+    border: none !important; 
+    width: 100% !important;
+}
+
+.btn-save-cancel {
+    border-top: 1px solid #cdcdcd; 
+    padding: 1rem 0 0; 
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.btn-right-cancel {
+    background-color: rgba(0,0,0,.5) !important;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-right-cancel:hover {
+    color: #FFFFFF;
+}
+
+.btn-right-save {
+    background-color: #418bca !important;
+    border: 0;
+    color: #FFFFFF !important;
+    border-radius: 10px;
+}
+
+.form-label {
+    font-size: 12px;
 }
