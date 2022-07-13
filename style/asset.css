@@ -685,7 +685,12 @@
 
 #tab-button .tab-border {
     border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
 }
+#tab-button .tab-border-left {
+    border-left: 1px solid #cdcdcd;
+}
+
 
 .is-active {
     /* border-bottom: 4px solid #e16333; */
@@ -702,7 +707,6 @@
 .tab-button-outer {
     display: none;
     color: #6C757D;
-    border-bottom: 1px solid #cdcdcd;
 }
 
 .sub-tab-button-outer {
