@@ -418,6 +418,7 @@
                                 {
                                   text: "Shell",
                                   icon: "fa fa-dumbbell text-default",
+                                  selected: true 
                                 },
                                 {
                                   text: "Head",
@@ -498,11 +499,14 @@
             icon: "fa fa-file  text-warning",
           },
         },
-        plugins: ["state", "types"],
+        plugins: ["types"],
       });
     });
 
     $("#jstree_demo_div").on("select_node.jstree", function (e, data) {
+      if (data.node.original.text == 'Shell') {
+        window.open("hv_shell.html", "_self")
+      }
       // if (data.node.text == 'Company') {
       //     window.open("../asset.html", "_self")
       // }
@@ -1219,71 +1223,72 @@
             type: 'timeline',
             buttonText: 'Year',
             dateIncrement: { years: 1 }
-          }},
+          }
+        },
 
-            weekNumbers: true,
-            weekNumberCalculation: "ISO",
+        weekNumbers: true,
+        weekNumberCalculation: "ISO",
 
-            editable: true,
-            selectable: true,
-            dayMaxEvents: true, // allow "more" link when too many events
-            events: [
-              {
-                title: "All Day Event",
-                start: "2020-07-01",
-              },
-              {
-                title: "Long Event",
-                start: "2020-07-07",
-                end: "2020-07-10",
-              },
-              {
-                groupId: 999,
-                title: "Repeating Event",
-                start: "2020-07-09T16:00:00",
-              },
-              {
-                groupId: 999,
-                title: "Repeating Event",
-                start: "2020-07-16T16:00:00",
-              },
-              {
-                title: "Conference",
-                start: "2020-07-11",
-                end: "2020-07-13",
-              },
-              {
-                title: "Meeting",
-                start: "2020-07-12T10:30:00",
-                end: "2020-07-12T12:30:00",
-              },
-              {
-                title: "Lunch",
-                start: "2020-07-12T12:00:00",
-              },
-              {
-                title: "Meeting",
-                start: "2020-07-12T14:30:00",
-              },
-              {
-                title: "Happy Hour",
-                start: "2020-07-12T17:30:00",
-              },
-              {
-                title: "Dinner",
-                start: "2020-07-12T20:00:00",
-              },
-              {
-                title: "Birthday Party",
-                start: "2020-07-13T07:00:00",
-              },
-              {
-                title: "Click for Google",
-                url: "http://google.com/",
-                start: "2020-07-28",
-              },
-            ],
-          });
+        editable: true,
+        selectable: true,
+        dayMaxEvents: true, // allow "more" link when too many events
+        events: [
+          {
+            title: "All Day Event",
+            start: "2020-07-01",
+          },
+          {
+            title: "Long Event",
+            start: "2020-07-07",
+            end: "2020-07-10",
+          },
+          {
+            groupId: 999,
+            title: "Repeating Event",
+            start: "2020-07-09T16:00:00",
+          },
+          {
+            groupId: 999,
+            title: "Repeating Event",
+            start: "2020-07-16T16:00:00",
+          },
+          {
+            title: "Conference",
+            start: "2020-07-11",
+            end: "2020-07-13",
+          },
+          {
+            title: "Meeting",
+            start: "2020-07-12T10:30:00",
+            end: "2020-07-12T12:30:00",
+          },
+          {
+            title: "Lunch",
+            start: "2020-07-12T12:00:00",
+          },
+          {
+            title: "Meeting",
+            start: "2020-07-12T14:30:00",
+          },
+          {
+            title: "Happy Hour",
+            start: "2020-07-12T17:30:00",
+          },
+          {
+            title: "Dinner",
+            start: "2020-07-12T20:00:00",
+          },
+          {
+            title: "Birthday Party",
+            start: "2020-07-13T07:00:00",
+          },
+          {
+            title: "Click for Google",
+            url: "http://google.com/",
+            start: "2020-07-28",
+          },
+        ],
+      });
 
       calendar.render();
     });
